@@ -3455,20 +3455,23 @@ window.addEventListener('scroll', function() {
     position: relative;
     z-index: 2;
     text-align: center;
-    margin-top: 100px;
-    padding-top: 40px;
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .inst-footer-text {
-    color: rgba(255,255,255,0.4);
-    font-size: 0.95rem;
-    letter-spacing: 1px;
+    color: rgba(255,255,255,0.72);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
 }
 
-.inst-footer-text strong {
-    color: rgba(255,255,255,0.6);
-    font-weight: 600;
+@media (max-width: 767px) {
+    .inst-footer-text {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -3562,7 +3565,7 @@ window.addEventListener('scroll', function() {
     <!-- Section Footer -->
     <div class="inst-section-footer ca-animate-fade-up" style="transition-delay: 300ms;">
         <div class="inst-footer-text">
-            <strong>CriaA&ccedil;&atilde;o Entretenimento</strong> &mdash; H&aacute; mais de 30 anos transformando o Natal dos Shopping Centers brasileiros.
+            © 2026 CriaAção Entretenimento. Todos os direitos reservados.
         </div>
     </div>
 </section>
@@ -3570,23 +3573,7 @@ window.addEventListener('scroll', function() {
 
 <!-- mfn_hook_content_after -->
 <!-- mfn_hook_content_after -->
-<footer class="clearfix mfn-footer" id="Footer" role="contentinfo">
-<div class="footer_copy">
-<div class="container">
-<div class="column one mobile-one">
-<div class="mcb-column-inner">
-<div class="copyright">
-                © 2026 CriaAção Entretenimento. Todos os direitos reservados.
-                <div class="inst-section-footer ca-animate-fade-up" style="transition-delay: 300ms; margin-top: 20px;">
-                    <div class="inst-footer-text">
-                        <strong>CriaAção Entretenimento</strong> — Há mais de 30 anos transformando o Natal dos Shopping Centers brasileiros.
-                    </div>
-                </div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<footer class="clearfix mfn-footer" id="Footer" role="contentinfo" style="display:none;">
 </footer>
 <!-- End Footer Template -->
 </div>
