@@ -948,7 +948,7 @@ html,body{opacity:1!important;visibility:visible!important}
    MOBILE HEADER MENU
 ========================================================= */
 @media (max-width: 980px) {
-    #Top_bar.ca-topbar {
+    body #Top_bar {
         position: fixed !important;
         top: 0 !important;
         width: 100% !important;
@@ -960,7 +960,8 @@ html,body{opacity:1!important;visibility:visible!important}
         transition: all 0.3s ease !important;
         z-index: 1000 !important;
     }
-    #Top_bar.ca-topbar.is-scrolled {
+    body #Top_bar.is-scrolled,
+    html body.mobile-sticky #Top_bar.is-sticky {
         background: rgba(26, 3, 4, 0.95) !important;
         backdrop-filter: blur(10px) !important;
         padding: 12px 0 !important;
