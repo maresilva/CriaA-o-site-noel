@@ -935,12 +935,17 @@ html,body{opacity:1!important;visibility:visible!important}
         width: 100%;
         margin-top: 40px;
     }
-    .ca-hero-fixed { box-sizing: border-box; overflow-x: hidden; 
+    #hero.ca-hero-fixed { box-sizing: border-box; overflow-x: hidden; 
         padding-bottom: 40px;
         height: auto;
-        background-image: url('assets/images/gallery/imagem-papai-noel-crianca-hero-mobile-criaacao-entretenimento.png') !important;
+        background-image: url('assets/images/gallery/imagem-papai-noel-crianca-hero-mobile-criaacao-entretenimento.png?v=2') !important;
         background-position: center center !important;
         background-attachment: scroll !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+    #hero.ca-hero-fixed::before {
+        background: linear-gradient(180deg, rgba(15,0,0,0.85) 0%, rgba(15,0,0,0.4) 60%, rgba(15,0,0,0.1) 100%) !important;
     }
 }
 
