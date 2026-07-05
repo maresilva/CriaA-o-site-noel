@@ -1009,7 +1009,10 @@ html,body{opacity:1!important;visibility:visible!important}
         margin: 0 !important;
     }
     
-    body #Top_bar .top_bar_left a.ca-mobile-hamburger {
+    body #Top_bar .top_bar_left a.ca-mobile-hamburger,
+    body #Top_bar .top_bar_left a.ca-mobile-hamburger.is-sticky,
+    html body.mobile-sticky #Top_bar.is-sticky .top_bar_left a.ca-mobile-hamburger,
+    html body.mobile-header-mini #Top_bar.is-sticky .top_bar_left a.ca-mobile-hamburger {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
