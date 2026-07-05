@@ -979,13 +979,13 @@ html,body{opacity:1!important;visibility:visible!important}
     
     #Top_bar #menu { display: none !important; }
     
-    .ca-mobile-menu-right {
+    #Top_bar .top_bar_left .ca-mobile-menu-right {
         display: flex !important;
         align-items: center !important;
         gap: 10px !important;
     }
     
-    .ca-mobile-whatsapp {
+    body #Top_bar .top_bar_left .ca-mobile-whatsapp {
         display: inline-flex !important;
         align-items: center !important;
         gap: 6px !important;
@@ -1003,13 +1003,13 @@ html,body{opacity:1!important;visibility:visible!important}
         min-height: auto !important;
     }
     
-    .ca-mobile-whatsapp svg {
+    body #Top_bar .top_bar_left .ca-mobile-whatsapp svg {
         width: 16px !important;
         height: 16px !important;
         margin: 0 !important;
     }
     
-    .ca-mobile-hamburger {
+    body #Top_bar .top_bar_left a.ca-mobile-hamburger {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -1022,13 +1022,17 @@ html,body{opacity:1!important;visibility:visible!important}
         text-decoration: none !important;
         position: relative !important;
         top: auto !important;
+        left: auto !important;
         right: auto !important;
+        bottom: auto !important;
         margin: 0 !important;
+        transform: none !important;
     }
     
-    .ca-mobile-hamburger svg {
+    body #Top_bar .top_bar_left a.ca-mobile-hamburger svg {
         width: 18px !important;
         height: 18px !important;
+        margin: 0 !important;
     }
 }
 </style>
