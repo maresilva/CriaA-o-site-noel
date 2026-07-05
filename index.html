@@ -940,6 +940,205 @@ html,body{opacity:1!important;visibility:visible!important}
         height: auto;
     }
 }
+<<<<<<< HEAD
+=======
+
+/* =========================================================
+   HERO MOBILE ONLY
+   Aplicar somente em telas mobile.
+   Não alterar estilos Desktop.
+========================================================= */
+
+.hide-on-desktop { display: none !important; }
+
+@media (max-width: 768px) {
+  .hide-on-desktop { display: flex !important; }
+
+  #hero.ca-hero-fixed {
+    min-height: auto !important;
+    padding: 110px 24px 40px !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    overflow: hidden !important;
+    display: block !important;
+  }
+
+  /* Header adjustments */
+  #Header_wrapper #Top_bar {
+    height: auto !important;
+    padding: 18px 24px !important;
+  }
+  #menu { display: none !important; }
+
+  .ca-hero-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 24px !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .ca-hero-content {
+    width: 100% !important;
+    padding-top: 0 !important;
+    text-align: left !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .ca-hero-title {
+    font-size: clamp(44px, 12vw, 68px) !important;
+    line-height: .95 !important;
+    letter-spacing: -0.04em !important;
+    max-width: 100% !important;
+    order: 1;
+  }
+
+  .ca-hero-title .ca-hero-script {
+    display: block !important;
+    font-size: clamp(58px, 16vw, 88px) !important;
+    line-height: .85 !important;
+  }
+
+  .ca-hero-content > div:first-child {
+    order: 0;
+  }
+
+  .ca-hero-desc {
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+    max-width: 100% !important;
+    order: 2;
+  }
+
+  .ca-hero-mobile-assets {
+    order: 3;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .seal-30-years {
+    position: relative;
+    margin: 24px 0 -40px 0;
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    border: 1px solid #D4AF37;
+    background: radial-gradient(circle, rgba(30,3,4,0.9), rgba(10,0,0,0.7));
+    box-shadow: 0 0 25px rgba(212,175,55,0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #F2B84B;
+    z-index: 10;
+  }
+  
+  .seal-30-years .seal-icon {
+    margin-bottom: 2px;
+  }
+  
+  .seal-30-years b {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 900;
+  }
+  
+  .seal-30-years span {
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    margin-top: 4px;
+    color: #fff;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+    margin-top: 0px;
+    z-index: 1;
+  }
+
+  .hero-image-wrapper img {
+    width: 115%;
+    max-width: none;
+    margin-left: -8%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 100%);
+  }
+
+  .ca-hero-actions {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    order: 4;
+    margin: -70px 0 0 0 !important;
+    position: relative !important;
+    z-index: 5 !important;
+  }
+
+  .ca-hero-actions .ca-button-main,
+  .ca-hero-actions .ca-button-secondary {
+    width: 100% !important;
+    justify-content: center !important;
+    min-height: 64px !important;
+  }
+
+  .ca-hero-indicators {
+    order: 5;
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0 !important;
+    padding: 16px !important;
+    margin-top: 24px !important;
+    border-radius: 24px !important;
+    background: rgba(26,3,4,.40) !important;
+    backdrop-filter: blur(24px) !important;
+    border: 1px solid rgba(255,255,255,.10) !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+  }
+
+  .ca-indicator-item {
+    padding: 20px 12px !important;
+    border-right: 0 !important;
+    justify-content: flex-start !important;
+    gap: 12px !important;
+  }
+
+  .ca-indicator-item:nth-child(odd) {
+    border-right: 1px solid rgba(255,255,255,.16) !important;
+  }
+
+  .ca-indicator-item:nth-child(1),
+  .ca-indicator-item:nth-child(2) {
+    border-bottom: 1px solid rgba(255,255,255,.16) !important;
+  }
+
+  .ca-indicator-item .ca-indicator-icon svg {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .ca-indicator-item .ca-indicator-text strong {
+    font-size: 13px !important;
+  }
+  
+  .ca-indicator-item .ca-indicator-text span {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    margin-top: 2px !important;
+  }
+}
+>>>>>>> parent of 07281f7 (Corrigir gap gigante da hero no mobile e ocultar botões na rolagem)
 </style>
 
 <div id="Header_wrapper">
@@ -3580,7 +3779,7 @@ window.addEventListener('scroll', function() {
 <div id="body_overlay"></div>
 <div aria-expanded="false" aria-label="responsive menu" class="right dark" data-width="250" id="Side_slide" role="banner"><div class="close-wrapper"><a class="close" href="#"><i aria-label="menu close icon" class="icon-cancel-fine"></i></a></div><div class="extras"><a class="action_button" href="http://wa.me/5585988601400" target="_blank">Orçamento Online <i class="icon-star"></i></a><div aria-label="extras menu" class="extras-wrapper" role="navigation"></div></div><div aria-label="language menu" class="lang-wrapper" role="navigation"></div><div aria-label="main menu" class="menu_wrapper" role="navigation"></div><ul aria-label="social menu" class="social" role="navigation"><li class="whatsapp"><a href="https://wa.me/5585988601400?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20CriaA%C3%A7%C3%A3o%20Entretenimento%20e%20gostaria%20de%20conhecer%20melhor%20as%20solu%C3%A7%C3%B5es%20para%20o%20Natal%20do%20meu%20Shopping." title="WhatsApp" target="_blank" rel="noopener noreferrer"><i aria-label="WhatsApp icon" class="icon-whatsapp"></i></a></li><li class="instagram"><a href="https://instagram.com/criaacao" title="Instagram" target="_blank" rel="noopener noreferrer"><i aria-label="Instagram icon" class="icon-instagram"></i></a></li></ul></div>
 <!-- mfn_hook_bottom -->
-<div class="show" data-aligment="bottom" data-direction="horizontal" id="mfn-gdpr">
+<div class="show" data-aligment="bottom" data-direction="horizontal" id="mfn-gdpr" style="z-index: 9999999 !important; position: fixed !important; transform: translateZ(9999px) !important; -webkit-transform: translateZ(9999px) !important;">
 <div class="mfn-gdpr-image"><img alt="Aviso de Privacidade e Cookies - CriaAção Entretenimento" src="assets/images/gallery/cookies-criaacao-entretenimento.png"/></div>
 <div class="mfn-gdpr-content">
             Este site usa cookies para melhorar sua experiência. Ao usar este site, você concorda com nossa Política de Proteção de Dados.
