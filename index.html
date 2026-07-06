@@ -929,11 +929,37 @@ html,body{opacity:1!important;visibility:visible!important}
 }
 @media(max-width: 980px) {
     .ca-hero-indicators {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr) !important;
         position: relative;
         bottom: 0;
         width: 100%;
         margin-top: 40px;
+        padding: 10px 0 !important;
+    }
+    .ca-indicator-item {
+        padding: 16px 10px !important;
+        gap: 10px !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        border-right: none !important;
+    }
+    .ca-indicator-item:nth-child(1),
+    .ca-indicator-item:nth-child(2) {
+        border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+    }
+    .ca-indicator-item:nth-child(odd) {
+        border-right: 1px solid rgba(255,255,255,0.06) !important;
+    }
+    .ca-indicator-text strong {
+        font-size: 16px !important;
+    }
+    .ca-indicator-text span {
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+    }
+    .ca-indicator-icon svg {
+        width: 24px !important;
+        height: 24px !important;
     }
     #hero.ca-hero-fixed { box-sizing: border-box; overflow-x: hidden; 
         padding-bottom: 40px;
