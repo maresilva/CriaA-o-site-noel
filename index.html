@@ -415,6 +415,22 @@ html,body{opacity:1!important;visibility:visible!important}
 #Top_bar, #Top_bar * {
     box-sizing: border-box;
 }
+
+/* WhatsApp Floating Button Fix */
+#ht-ctc-chat {
+    position: fixed !important;
+    right: 20px !important;
+    bottom: 20px !important;
+    z-index: 99999 !important;
+}
+
+@media (max-width: 768px) {
+    #ht-ctc-chat {
+        right: 18px !important;
+        bottom: 18px !important;
+        z-index: 99999 !important;
+    }
+}
 #Top_bar .top_bar_left {
     display: flex !important;
     justify-content: space-between !important;
@@ -3845,12 +3861,6 @@ window.addEventListener('scroll', function() {
 <div class="ht_ctc_style ht_ctc_chat_style">
 <style id="ht-ctc-s3">
 .ht-ctc .ctc_s_3_1:hover svg stop{stop-color:#25D366;}.ht-ctc .ctc_s_3_1:hover .ht_ctc_padding,.ht-ctc .ctc_s_3_1:hover .ctc_cta_stick{background-color:#25D366 !important;box-shadow:0px 0px 11px rgba(0,0,0,.5);}
-.ht_ctc_style, .ht_ctc_chat_style, .ctc_s_3_1, .ht-ctc, .ht_ctc_padding, .ht_ctc_parent {
-    z-index: 2147483647 !important;
-}
-.ctc_s_3_1 {
-    position: fixed !important;
-}
 </style>
 <div class="ctc_s_3_1 ctc_s3_1 ctc_nb" data-nb_right="-4px" data-nb_top="-4px" style="display:flex;justify-content:center;align-items:center; " title="'WhatsApp'">
 <p class="ctc-analytics ctc_cta ctc_cta_stick ht-ctc-cta" style="padding: 0px 16px; line-height: 1.6; font-size: 15px; background-color: #25d366; color: #ffffff; border-radius:10px; margin:0 10px;  display: none; ">WhatsApp</p>
