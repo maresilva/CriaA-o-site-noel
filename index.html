@@ -1018,15 +1018,16 @@ html,body{opacity:1!important;visibility:visible!important}
         pointer-events: none !important;
         z-index: -1 !important;
     }
+    body.side-slide-is-open {
+        background-color: #1a0304 !important;
+    }
     body.side-slide-is-open #Wrapper {
         right: 0 !important;
         left: 0 !important;
         transform: none !important;
-        z-index: 1 !important;
-    }
-    body.side-slide-is-open #hero {
         opacity: 0 !important;
         visibility: hidden !important;
+        pointer-events: none !important;
         transition: opacity 0.2s ease !important;
         z-index: -9999 !important;
     }
