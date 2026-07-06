@@ -3885,28 +3885,28 @@ window.addEventListener('scroll', function() {
             <div class="inst-contact-card ca-floating">
                 <ul class="inst-info-list">
                     <li class="inst-info-item">
-                        <div class="inst-info-icon"><i data-lucide="map-pin" style="width: 20px; height: 20px;"></i></div>
+                        <div class="inst-info-icon"><i class="fas fa-map-marker-alt" style="font-size: 20px;"></i></div>
                         <div class="inst-info-content">
                             <span class="inst-info-label">Cobertura</span>
                             <span class="inst-info-value">Atendimento em todo o Brasil</span>
                         </div>
                     </li>
                     <li class="inst-info-item">
-                        <div class="inst-info-icon"><i data-lucide="phone" style="width: 20px; height: 20px;"></i></div>
+                        <div class="inst-info-icon"><i class="fab fa-whatsapp" style="font-size: 22px;"></i></div>
                         <div class="inst-info-content">
                             <span class="inst-info-label">WhatsApp</span>
                             <span class="inst-info-value">(85) 98860-1400</span>
                         </div>
                     </li>
                     <li class="inst-info-item">
-                        <div class="inst-info-icon"><i data-lucide="mail" style="width: 20px; height: 20px;"></i></div>
+                        <div class="inst-info-icon"><i class="fas fa-envelope" style="font-size: 20px;"></i></div>
                         <div class="inst-info-content">
                             <span class="inst-info-label">E-mail</span>
                             <span class="inst-info-value">comercial@criaacao.com.br</span>
                         </div>
                     </li>
                     <li class="inst-info-item">
-                        <div class="inst-info-icon"><i data-lucide="clock" style="width: 20px; height: 20px;"></i></div>
+                        <div class="inst-info-icon"><i class="fas fa-clock" style="font-size: 20px;"></i></div>
                         <div class="inst-info-content">
                             <span class="inst-info-label">Hor&aacute;rio</span>
                             <span class="inst-info-value">Segunda a Sexta, 08:00 &agrave;s 18:00</span>
@@ -3923,9 +3923,13 @@ window.addEventListener('scroll', function() {
     </div>
 
     <!-- Section Footer -->
-    <div class="inst-section-footer ca-animate-fade-up" style="transition-delay: 300ms;">
+        <div class="inst-section-footer ca-animate-fade-up" style="transition-delay: 300ms;">
         <div class="inst-footer-text">
             © 2026 CriaAção Entretenimento. Todos os direitos reservados.
+        </div>
+        <div style="margin-top: 15px; display: flex; justify-content: center; gap: 20px;">
+            <a href="https://www.instagram.com/criaacao.entretenimento/" target="_blank" style="color: rgba(255,255,255,0.72); font-size: 24px; transition: color 0.3s;" onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='rgba(255,255,255,0.72)'"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5585988601400" target="_blank" style="color: rgba(255,255,255,0.72); font-size: 24px; transition: color 0.3s;" onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='rgba(255,255,255,0.72)'"><i class="fab fa-whatsapp"></i></a>
         </div>
     </div>
 </section>
@@ -4290,6 +4294,7 @@ else window.addEventListener('load', go);
     document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');const t=document.querySelector(id);if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}}));
   </script>
 </body></html>
+
 
 
 
