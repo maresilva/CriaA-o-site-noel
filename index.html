@@ -417,18 +417,30 @@ html,body{opacity:1!important;visibility:visible!important}
 }
 
 /* WhatsApp Floating Button Fix */
-#ht-ctc-chat {
+#ht-ctc-chat,
+.ht-ctc-chat,
+.whatsapp-float,
+.floating-whatsapp,
+.whatsapp-button {
     position: fixed !important;
     right: 20px !important;
     bottom: 20px !important;
-    z-index: 99999 !important;
+    z-index: 2147483647 !important;
+    transform: translateZ(9999px) !important; /* Fix para bug do backdrop-filter no Safari/iOS */
+    -webkit-transform: translateZ(9999px) !important;
 }
 
 @media (max-width: 768px) {
-    #ht-ctc-chat {
+    #ht-ctc-chat,
+    .ht-ctc-chat,
+    .whatsapp-float,
+    .floating-whatsapp,
+    .whatsapp-button {
         right: 18px !important;
         bottom: 18px !important;
-        z-index: 99999 !important;
+        z-index: 2147483647 !important;
+        transform: translateZ(9999px) !important;
+        -webkit-transform: translateZ(9999px) !important;
     }
 }
 #Top_bar .top_bar_left {
