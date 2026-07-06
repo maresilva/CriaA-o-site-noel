@@ -426,8 +426,9 @@ html,body{opacity:1!important;visibility:visible!important}
     right: 20px !important;
     bottom: 20px !important;
     z-index: 2147483647 !important;
-    transform: translateZ(9999px) !important; /* Fix para bug do backdrop-filter no Safari/iOS */
-    -webkit-transform: translateZ(9999px) !important;
+    isolation: isolate !important;
+    will-change: transform, opacity !important;
+    transform: none !important;
 }
 
 @media (max-width: 768px) {
@@ -439,8 +440,9 @@ html,body{opacity:1!important;visibility:visible!important}
         right: 18px !important;
         bottom: 18px !important;
         z-index: 2147483647 !important;
-        transform: translateZ(9999px) !important;
-        -webkit-transform: translateZ(9999px) !important;
+        isolation: isolate !important;
+        will-change: transform, opacity !important;
+        transform: none !important;
     }
 }
 #Top_bar .top_bar_left {
