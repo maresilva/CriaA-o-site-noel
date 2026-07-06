@@ -1008,8 +1008,15 @@ html,body{opacity:1!important;visibility:visible!important}
         transition: all 0.3s ease !important;
         z-index: 1000 !important;
     }
+    body {
+        left: 0 !important;
+        right: 0 !important;
+    }
     body.side-slide-is-open #Top_bar {
-        z-index: 99 !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+        z-index: -1 !important;
     }
     body.side-slide-is-open #Wrapper {
         right: 0 !important;
