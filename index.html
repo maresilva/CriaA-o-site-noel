@@ -84,7 +84,7 @@
             var rel = pq.slice(dir.length - 1);
             if (ASSET_MAP[rel]) return ASSET_MAP[rel];
           }
-          // Next.js image optimization wrapper ÃƒÂ¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â peel the inner CDN URL
+          // Next.js image optimization wrapper Ã¢Ã¢â€šÂ¬Ã¢â‚¬Â peel the inner CDN URL
           if (/_next\/image$/.test(url.pathname)) {
             var t = url.searchParams.get('url');
             if (t) {
@@ -114,7 +114,7 @@
       //   img.crossOrigin = 'anonymous'; img.src = 'https://cdn/...'
       // and consumed via gl.texImage2D. file:// resources have no CORS
       // headers, so rewriting to local makes WebGL reject the texture
-      // (Access blocked by CORS policy ÃƒÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ black/missing 3D scene).
+      // (Access blocked by CORS policy Ã¢Ã¢â‚¬Â Ã¢â‚¬â„¢ black/missing 3D scene).
       // Better to keep the original URL: works online, fails offline,
       // matches non-patched behaviour.
       function patchSetter(klass, prop, transform) {
@@ -130,7 +130,7 @@
                 v = rewriteSrcset(v);
               } else {
                 // Captured runtime resource (UnicornStudio texture,
-                // etc.) ÃƒÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ serve as a data: URI. data: never CORS-
+                // etc.) Ã¢Ã¢â‚¬Â Ã¢â‚¬â„¢ serve as a data: URI. data: never CORS-
                 // taints a WebGL canvas, unlike a file:// texture,
                 // so gl.texImage2D still accepts it offline.
                 var du = window.__offlineDataUri && window.__offlineDataUri(v);
@@ -152,7 +152,7 @@
       patchSetter(window.HTMLSourceElement, 'srcset', 'srcset');
       patchSetter(window.HTMLMediaElement, 'src');
       patchSetter(window.HTMLIFrameElement, 'src');
-      // Patch setAttribute too ÃƒÂ¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â some libs use it instead of property set
+      // Patch setAttribute too Ã¢Ã¢â€šÂ¬Ã¢â‚¬Â some libs use it instead of property set
       var _setAttr = Element.prototype.setAttribute;
       Element.prototype.setAttribute = function (name, value) {
         try {
@@ -177,16 +177,16 @@
   <meta charset="utf-8" />
   <title>CriaAção Entretenimento | Natal para Shopping Centers em Todo o Brasil</title>
   <meta name="description"
-    content="Há mais de 30 anos criando experiências natalinas completas para Shopping Centers em todo o Brasil. Papai Noel profissional, cenografia, personagens, espaço fotográfico, plataforma 360°, brindes e operação completa.">
+    content="H� mais de 30 anos criando experiências natalinas completas para Shopping Centers em todo o Brasil. Papai Noel profissional, cenografia, personagens, espa�o fotogr�fico, plataforma 360�, brindes e opera��o completa.">
   <meta name="keywords"
-    content="Natal para Shopping Centers, Papai Noel para Shopping, Empresa de Natal para Shopping, Eventos Natalinos, Decoração Natalina para Shopping, Cenografia Natalina, Papai Noel Profissional, Espaço Fotográfico Natal, Plataforma 360, Personagens Natalinos, Ativações Natalinas, Natal Corporativo, Natal Comercial, Produção de Natal, CriaAção Entretenimento">
+    content="Natal para Shopping Centers, Papai Noel para Shopping, Empresa de Natal para Shopping, Eventos Natalinos, Decora��o Natalina para Shopping, Cenografia Natalina, Papai Noel Profissional, Espaço Fotogr�fico Natal, Plataforma 360, Personagens Natalinos, Ativa��es Natalinas, Natal Corporativo, Natal Comercial, Produ��o de Natal, CriaAção Entretenimento">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://cria-a-o-site-noel.vercel.app/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="CriaAção Entretenimento | Especialistas em Natal para Shopping Centers">
   <meta property="og:description"
-    content="Há mais de 30 anos transformando o Natal de Shopping Centers em experiências memoráveis em todo o Brasil.">
+    content="H� mais de 30 anos transformando o Natal de Shopping Centers em experiências memor�veis em todo o Brasil.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="CriaAção Entretenimento">
@@ -198,7 +198,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="CriaAção Entretenimento | Especialistas em Natal para Shopping Centers">
   <meta name="twitter:description"
-    content="Há mais de 30 transformando o Natal de Shopping Centers em experiências memoráveis em todo o Brasil.">
+    content="H� mais de 30 transformando o Natal de Shopping Centers em experiências memor�veis em todo o Brasil.">
   <meta name="twitter:image"
     content="https://cria-a-o-site-noel.vercel.app/assets/images/gallery/nossa-historia-criaacao-entretenimento.png">
 
@@ -252,16 +252,16 @@
       "areaServed": "BR",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Serviços de Natal",
+        "name": "Servi�os de Natal",
         "itemListElement": [
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Papai Noel Profissional" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Personagens Natalinos" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cenografia Natalina" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Espaço Fotográfico" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Plataforma 360°" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Espaço Fotogr�fico" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Plataforma 360�" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brindes Personalizados" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Operação Completa" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ativações Promocionais" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Opera��o Completa" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ativa��es Promocionais" } }
         ]
       }
     },
@@ -281,10 +281,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Como funciona o serviço de Papai Noel Profissional?",
+          "name": "Como funciona o servi�o de Papai Noel Profissional?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nossos profissionais são rigorosamente selecionados e treinados para entregar a melhor experiência lúdica para as famílias. Acompanhamos toda a operação, garantindo figurino impecável e postura acolhedora do início ao fim da campanha."
+            "text": "Nossos profissionais s�o rigorosamente selecionados e treinados para entregar a melhor experiência l�dica para as famílias. Acompanhamos toda a opera��o, garantindo figurino impec�vel e postura acolhedora do in�cio ao fim da campanha."
           }
         },
         {
@@ -292,7 +292,7 @@
           "name": "Vocês atendem shoppings de todo o Brasil?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sim! A CriaAção Entretenimento já atuou em mais de 15 estados brasileiros, levando nossa magia e excelência para as principais redes de Shopping Centers do país."
+            "text": "Sim! A CriaAção Entretenimento j� atuou em mais de 15 estados brasileiros, levando nossa magia e excel�ncia para as principais redes de Shopping Centers do pa�s."
           }
         },
         {
@@ -300,15 +300,15 @@
           "name": "Quais outros personagens natalinos vocês oferecem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Além do Papai Noel, temos um elenco completo com Mamãe Noel, Duendes, Noeletes, Mascotes Temáticos e outras figuras mágicas, perfeitas para Paradas de Natal, Chegadas Oficiais e interações diárias."
+            "text": "Além do Papai Noel, temos um elenco completo com Mam�e Noel, Duendes, Noeletes, Mascotes Tem�ticos e outras figuras m�gicas, perfeitas para Paradas de Natal, Chegadas Oficiais e intera��es di�rias."
           }
         },
         {
           "@type": "Question",
-          "name": "A CriaAção realiza a gestão completa do trono?",
+          "name": "A CriaAção realiza a gest�o completa do trono?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Com certeza. Fazemos a Gestão de Operações de ponta a ponta: desde a seleção do elenco, escala, treinamento, figurino e supervisão presencial até a entrega dos relatórios finais."
+            "text": "Com certeza. Fazemos a Gest�o de Opera��es de ponta a ponta: desde a sele��o do elenco, escala, treinamento, figurino e supervis�o presencial até a entrega dos relatérios finais."
           }
         }
       ]
@@ -324,12 +324,12 @@
   <meta content="#ffffff" media="(prefers-color-scheme: dark)" name="theme-color" />
   <link href="//www.googletagmanager.com" rel="dns-prefetch" />
   <link href="//fonts.googleapis.com" rel="dns-prefetch" />
-  <link href="assets/ca6271da81178603_file" rel="alternate" title="Feed para CriaAção Ãƒâ€šÃƒâ€šÃ‚Â»"
+  <link href="assets/ca6271da81178603_file" rel="alternate" title="Feed para CriaAção Ã‚Ã‚Â»"
     type="application/rss+xml" />
-  <link href="assets/bfe5c9daa56f4a89_file" rel="alternate" title="Feed de comentários para CriaAção Ãƒâ€šÃƒâ€šÃ‚Â»"
+  <link href="assets/bfe5c9daa56f4a89_file" rel="alternate" title="Feed de coment�rios para CriaAção Ã‚Ã‚Â»"
     type="application/rss+xml" />
   <link href="assets/67bddff85c6f6ce1_file" rel="alternate"
-    title="Feed de comentários para CriaAção Ãƒâ€šÃƒâ€šÃ‚Â» Home" type="application/rss+xml" />
+    title="Feed de coment�rios para CriaAção Ã‚Ã‚Â» Home" type="application/rss+xml" />
   <link href="assets/92274b32ad4eee30_embed.json" rel="alternate" title="oEmbed (JSON)"
     type="application/json+oembed" />
   <link href="assets/097f2dbfb73edb25_embed" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" />
@@ -6111,7 +6111,7 @@
       position: relative;
       width: 100%;
       padding: 120px 0 80px;
-      background-image: url('assets/images/backgrounds/background-segunda-sessão-shopping-decorado-natal-criaacao-entretenimento.png');
+      background-image: url('assets/images/backgrounds/background-segunda-sess�o-shopping-decorado-natal-criaacao-entretenimento.png');
       background-size: cover;
       background-position: top center;
       box-sizing: border-box;
@@ -6963,11 +6963,11 @@
         <div class="ca-hero-content reveal">
           <div
             style="color: #F2B84B; font-weight: 800; font-size: 11px; letter-spacing: 0.20em; text-transform: uppercase; margin-bottom: 18px;">
-            HÁ MAIS DE 30 ANOS CRIANDO AS MAIORES EXPERIÊNCIAS NATALINAS DO BRASIL</div>
+            H� MAIS DE 30 ANOS CRIANDO AS MAIORES EXPERIÊNCIAS NATALINAS DO BRASIL</div>
           <h1 class="ca-hero-title">Transformamos momentos em <span class="ca-hero-script">magia!</span></h1>
-          <p class="ca-hero-desc">Mais de 30 anos de experiência, 40+ shopping centers atendidos, atuação em 15 estados
+          <p class="ca-hero-desc">Mais de 30 anos de experiência, 40+ shopping centers atendidos, atua��o em 15 estados
             brasileiros e toda a Rede RioMar entre nossos clientes.
-            <br>Criamos experiências natalinas completas que unem emoção, excelência operacional e resultados para o seu
+            <br>Criamos experiências natalinas completas que unem emo��o, excel�ncia operacional e resultados para o seu
             empreendimento.</strong></br>
 
           <div class="ca-hero-actions">
@@ -7313,7 +7313,7 @@
 
     <!-- NOVA SESSÃO: DIFERENCIAIS -->
     <section id="diferenciais" class="ca-diferenciais-section"
-      style="position: relative; padding: 120px 20px; overflow: hidden; background: linear-gradient(to bottom, rgba(26, 3, 4, 0.95) 0%, rgba(26, 3, 4, 0.75) 50%, rgba(10, 1, 2, 0.95) 100%), url('assets/images/backgrounds/background-segunda-sessão-shopping-decorado-natal-criaacao-entretenimento.png') center/cover fixed;">
+      style="position: relative; padding: 120px 20px; overflow: hidden; background: linear-gradient(to bottom, rgba(26, 3, 4, 0.95) 0%, rgba(26, 3, 4, 0.75) 50%, rgba(10, 1, 2, 0.95) 100%), url('assets/images/backgrounds/background-segunda-sess�o-shopping-decorado-natal-criaacao-entretenimento.png') center/cover fixed;">
       <!-- Star Glow & Particles -->
       <div class="ca-dif-glow"></div>
       <div class="ca-dif-particles"></div>
@@ -7860,7 +7860,7 @@
       }
 
       .ca-client-card {
-        background: rgba(255, 255, 255, 0.02);
+        background: #ffffff;
         border: 1px solid rgba(255, 255, 255, 0.05);
         border-radius: 16px;
         padding: 20px 30px;
@@ -8018,78 +8018,254 @@
           <div class="ca-clients-marquee-track">
             <!-- Group 1 -->
             <div class="ca-client-card">
-              <img src="assets/images/clientes/iguatemi-criaacao-entretenimento.png"
-                alt="Shopping Iguatemi Bosque - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/1-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/rio-mar-criaacao-entretenimento.jpg"
-                alt="Shopping RioMar Fortaleza - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/2-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/nortao-criaacao-entretenimento.jpg"
-                alt="North Shopping - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/3-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/via-sul-criaacao-entretenimento.jpg"
-                alt="Shopping Via Sul - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/4-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/maracanau-criaacao-entretenimento.png"
-                alt="North Shopping Maracanaú - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/5-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/gallery/riomarkennedy-criaacao-entretenimento.png"
-                alt="Shopping RioMar Kennedy - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/6-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/gran-criaacao-entretenimento.jpg"
-                alt="Gran Shopping - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/7-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/joguei-criaacao-entretenimento.png"
-                alt="Jóquei Clube - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/8-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/eusebio-criaacao-entretenimento.jpg"
-                alt="Shopping Eusébio - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/9-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/10-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/11-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/12-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/13-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/14-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/15-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/16-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/17-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/18-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/19-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/20-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/21-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/22-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/23-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/24-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/25-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/26-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/27-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/28-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/29-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/30-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/31-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
 
             <!-- Group 2 (Duplicated for seamless infinite loop) -->
             <div class="ca-client-card">
-              <img src="assets/images/clientes/iguatemi-criaacao-entretenimento.png"
-                alt="Shopping Iguatemi Bosque - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/1-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/rio-mar-criaacao-entretenimento.jpg"
-                alt="Shopping RioMar Fortaleza - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/2-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/nortao-criaacao-entretenimento.jpg"
-                alt="North Shopping - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/3-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/via-sul-criaacao-entretenimento.jpg"
-                alt="Shopping Via Sul - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/4-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/maracanau-criaacao-entretenimento.png"
-                alt="North Shopping Maracanaú - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/5-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/gallery/riomarkennedy-criaacao-entretenimento.png"
-                alt="Shopping RioMar Kennedy - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/6-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/gran-criaacao-entretenimento.jpg"
-                alt="Gran Shopping - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/7-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/joguei-criaacao-entretenimento.png"
-                alt="Jóquei Clube - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/8-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
             <div class="ca-client-card">
-              <img src="assets/images/clientes/eusebio-criaacao-entretenimento.jpg"
-                alt="Shopping Eusébio - Cliente de Eventos Natalinos" class="ca-client-img" loading="lazy">
+              <img src="assets/images/clientes/9-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/10-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/11-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/12-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/13-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/14-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/15-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/16-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/17-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/18-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/19-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/20-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/21-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/22-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/23-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/24-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/25-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/26-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/27-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/28-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/29-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/30-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
+            </div>
+            <div class="ca-client-card">
+              <img src="assets/images/clientes/31-criaacao-entretenimento.png"
+                alt="Cliente - CriaAção Entretenimento" class="ca-client-img" loading="lazy">
             </div>
           </div>
         </div>
@@ -8112,7 +8288,7 @@
         overflow: hidden;
       }
 
-      /* Partículas de luxo (semelhante ao hero) */
+      /* Part�culas de luxo (semelhante ao hero) */
       .ca-portfolio-glow {
         position: absolute;
         top: 20%;
@@ -8562,7 +8738,7 @@
               decoding="async">
             <div class="ca-port-overlay"></div>
             <div class="ca-port-content">
-              <div class="ca-port-meta"><span>Ativação</span> Papai Noel</div>
+              <div class="ca-port-meta"><span>Ativa��o</span> Papai Noel</div>
               <div class="ca-port-name">Iguatemi Bosque</div>
               <div class="ca-port-location"><i class="fas fa-map-marker-alt"></i> Fortaleza &bull; CE</div>
               <div class="ca-port-btn">Ver Projeto <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -8577,7 +8753,7 @@
           <div class="ca-port-item reveal ca-animate-blur js-ca-port-open" data-index="2"
             style="transition-delay: 0.3s;">
             <img src="assets/images/solutions/espaco-fotografico-criaacao-entretenimento.png"
-              alt="Espaço fotográfico de Natal para Shopping Via Sul" class="ca-port-img" loading="lazy"
+              alt="Espaço fotogr�fico de Natal para Shopping Via Sul" class="ca-port-img" loading="lazy"
               decoding="async">
             <div class="ca-port-overlay"></div>
             <div class="ca-port-content">
@@ -8596,7 +8772,7 @@
           <div class="ca-port-item reveal ca-animate-blur js-ca-port-open" data-index="3"
             style="transition-delay: 0.4s;">
             <img src="assets/images/solutions/plataforma-360-criaacao-entretenimento.png"
-              alt="Plataforma 360° para evento de Natal no North Shopping" class="ca-port-img" loading="lazy"
+              alt="Plataforma 360� para evento de Natal no North Shopping" class="ca-port-img" loading="lazy"
               decoding="async">
             <div class="ca-port-overlay"></div>
             <div class="ca-port-content">
@@ -8687,9 +8863,9 @@
           </div>
           <h3 class="ca-modal-title" id="ca-modal-title">Nome</h3>
           <p class="ca-modal-desc" id="ca-modal-desc">
-            Este projeto exemplifica o alto padrão de entrega da CriaAção Entretenimento. Desde a concepção da
-            cenografia até a escalação e treinamento de atores profissionais, cuidamos de cada detalhe para garantir o
-            máximo de engajamento com o público do Shopping Center, transformando o momento em memórias valiosas e alto
+            Este projeto exemplifica o alto padr�o de entrega da CriaAção Entretenimento. Desde a concep��o da
+            cenografia até a escala��o e treinamento de atores profissionais, cuidamos de cada detalhe para garantir o
+            m�ximo de engajamento com o público do Shopping Center, transformando o momento em mem�rias valiosas e alto
             fluxo no empreendimento.
           </p>
           <a href="https://api.whatsapp.com/send/?phone=5585988601400" target="_blank" class="ca-btn-glow"
@@ -8702,7 +8878,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         const portData = [
           { img: "assets/images/gallery/papai-noel-shopping-rio-mar-fortaleza-criaacao-entretenimento.png", title: "Shopping RioMar Fortaleza", cat: "Projeto Completo", year: "Natal 2025", loc: "Fortaleza - CE" },
-          { img: "assets/images/backgrounds/imagem-background-hero-papai-noel-criacao-entretenimento-criaacao-entretenimento.png", title: "Iguatemi Bosque", cat: "Papai Noel", year: "Ativação", loc: "Fortaleza - CE" },
+          { img: "assets/images/backgrounds/imagem-background-hero-papai-noel-criacao-entretenimento-criaacao-entretenimento.png", title: "Iguatemi Bosque", cat: "Papai Noel", year: "Ativa��o", loc: "Fortaleza - CE" },
           { img: "assets/images/solutions/espaco-fotografico-criaacao-entretenimento.png", title: "Shopping Via Sul", cat: "Espaço Foto", year: "Cenografia", loc: "Fortaleza - CE" },
           { img: "assets/images/solutions/plataforma-360-criaacao-entretenimento.png", title: "North Shopping", cat: "Plataforma 360", year: "Tecnologia", loc: "Fortaleza - CE" },
           { img: "assets/images/solutions/personagens-tematicos-criaacao-entretenimento.png", title: "Gran Shopping", cat: "Personagens", year: "Ação Integrada", loc: "Messejana - CE" },
@@ -9305,34 +9481,34 @@
               style="display: inline-flex; align-items: center; gap: 8px; background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.3); padding: 8px 16px; border-radius: 100px; margin-bottom: 24px; backdrop-filter: blur(10px);">
               <i data-lucide="star" style="color: #D4AF37; width: 16px; height: 16px;"></i>
               <span
-                style="color: #D4AF37; font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;">HÁ
+                style="color: #D4AF37; font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;">H�
                 MAIS DE 30 ANOS</span>
             </div>
 
             <h2 class="institucional-title"
               style="color: #ffffff; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 700; line-height: 1.1; margin-bottom: 32px;">
               Criando <span
-                style="font-family: 'Great Vibes', cursive; color: #D4AF37; font-weight: 400; font-size: 1.2em;">memórias</span>
-              que atravessam gerações.
+                style="font-family: 'Great Vibes', cursive; color: #D4AF37; font-weight: 400; font-size: 1.2em;">mem�rias</span>
+              que atravessam gera��es.
             </h2>
 
             <div class="institucional-text"
               style="color: rgba(255,255,255,0.85); font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px; display: flex; flex-direction: column; gap: 20px;">
-              <p>A CriaAção nasceu com um propósito muito simples: transformar o Natal em uma experiência inesquecível.
+              <p>A CriaAção nasceu com um prop�sito muito simples: transformar o Natal em uma experiência inesquec�vel.
               </p>
-              <p>Ao longo de mais de três décadas, participamos da história de Shopping Centers em todo o Brasil,
-                desenvolvendo projetos completos que unem planejamento, cenografia, personagens, fotografia e operação.
+              <p>Ao longo de mais de três d�cadas, participamos da hist�ria de Shopping Centers em todo o Brasil,
+                desenvolvendo projetos completos que unem planejamento, cenografia, personagens, fotografia e opera��o.
               </p>
-              <p>Cada projeto é pensado para criar momentos que aproximam famílias, fortalecem marcas e transformam
-                visitas em lembranças que permanecem por muitos anos.</p>
-              <p>Mais do que decorar ambientes, criamos experiências que fazem parte da memória afetiva de milhares de
+              <p>Cada projeto � pensado para criar momentos que aproximam famílias, fortalecem marcas e transformam
+                visitas em lembran�as que permanecem por muitos anos.</p>
+              <p>Mais do que decorar ambientes, criamos experiências que fazem parte da mem�ria afetiva de milhares de
                 pessoas.</p>
             </div>
 
             <a href="https://wa.me/5585988601400?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20CriaA%C3%A7%C3%A3o%20Entretenimento%20e%20gostaria%20de%20conhecer%20melhor%20as%20solu%C3%A7%C3%B5es%20para%20o%20Natal%20do%20meu%20Shopping."
               target="_blank" rel="noopener noreferrer" class="ca-btn ca-btn-primary"
               style="display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(90deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%); color: #1a050a; padding: 16px 32px; border-radius: 100px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(212,175,55,0.3); background-size: 200% auto;">
-              <span>Conheça nossa trajetória</span>
+              <span>Conhe�a nossa trajet�ria</span>
               <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
             </a>
           </div>
@@ -9346,7 +9522,7 @@
                 style="position: absolute; inset: 0; border-radius: 32px; border: 1px solid rgba(212,175,55,0.3); z-index: 2; pointer-events: none;">
               </div>
               <img src="assets/images/gallery/nossa-historia-criaacao-entretenimento.png"
-                alt="História da CriaAção Entretenimento - Produção de Natal Corporativo" class="institucional-img"
+                alt="Hist�ria da CriaAção Entretenimento - Produ��o de Natal Corporativo" class="institucional-img"
                 style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/5; display: block; transition: transform 0.7s ease;"
                 loading="lazy">
             </div>
@@ -9553,7 +9729,7 @@
           </div>
           <h2 class="faq-title">Tudo o que você precisa saber antes de contratar.</h2>
           <p class="faq-subtitle">Reunimos as perguntas mais comuns feitas por Shopping Centers para tornar o processo
-            de contratação ainda mais simples e transparente.</p>
+            de contrata��o ainda mais simples e transparente.</p>
         </div>
 
         <div class="faq-container">
@@ -9565,8 +9741,8 @@
             </div>
             <div class="faq-answer-wrapper">
               <div class="faq-answer">
-                Recomendamos iniciar o planejamento com alguns meses de antecedência para garantir disponibilidade da
-                equipe, personalização do projeto e uma implantação tranquila.
+                Recomendamos iniciar o planejamento com alguns meses de anteced�ncia para garantir disponibilidade da
+                equipe, personaliza��o do projeto e uma implanta��o tranquila.
               </div>
             </div>
           </div>
@@ -9580,7 +9756,7 @@
             <div class="faq-answer-wrapper">
               <div class="faq-answer">
                 Sim. Atuamos em diversos estados brasileiros, levando nossa estrutura completa para Shopping Centers em
-                diferentes regiões do país.
+                diferentes regi�es do pa�s.
               </div>
             </div>
           </div>
@@ -9588,12 +9764,12 @@
           <!-- FAQ 3 -->
           <div class="faq-card ca-animate-fade-up" style="transition-delay: 200ms;">
             <div class="faq-question">
-              <span>É possível contratar apenas alguns serviços?</span>
+              <span>� poss�vel contratar apenas alguns servi�os?</span>
               <div class="faq-icon-cross"></div>
             </div>
             <div class="faq-answer-wrapper">
               <div class="faq-answer">
-                Sim. O Shopping pode contratar desde um único serviço até uma operação completa, conforme sua
+                Sim. O Shopping pode contratar desde um único servi�o até uma opera��o completa, conforme sua
                 necessidade.
               </div>
             </div>
@@ -9602,12 +9778,12 @@
           <!-- FAQ 4 -->
           <div class="faq-card ca-animate-fade-up" style="transition-delay: 250ms;">
             <div class="faq-question">
-              <span>Os projetos são personalizados?</span>
+              <span>Os projetos s�o personalizados?</span>
               <div class="faq-icon-cross"></div>
             </div>
             <div class="faq-answer-wrapper">
               <div class="faq-answer">
-                Todos os projetos são desenvolvidos considerando o perfil do Shopping, o público-alvo, a campanha e os
+                Todos os projetos s�o desenvolvidos considerando o perfil do Shopping, o público-alvo, a campanha e os
                 objetivos do empreendimento.
               </div>
             </div>
@@ -9621,8 +9797,8 @@
             </div>
             <div class="faq-answer-wrapper">
               <div class="faq-answer">
-                Sim. Trabalhamos com Papais Noéis profissionais, cuidadosamente selecionados, treinados e preparados
-                para proporcionar uma experiência memorável.
+                Sim. Trabalhamos com Papais No�is profissionais, cuidadosamente selecionados, treinados e preparados
+                para proporcionar uma experiência memor�vel.
               </div>
             </div>
           </div>
@@ -9630,13 +9806,13 @@
           <!-- FAQ 6 -->
           <div class="faq-card ca-animate-fade-up" style="transition-delay: 350ms;">
             <div class="faq-question">
-              <span>A CriaAção realiza toda a operação do evento?</span>
+              <span>A CriaAção realiza toda a opera��o do evento?</span>
               <div class="faq-icon-cross"></div>
             </div>
             <div class="faq-answer-wrapper">
               <div class="faq-answer">
-                Sim. Nossa equipe acompanha todas as etapas, incluindo planejamento, produção, montagem, operação e
-                suporte durante todo o período do evento.
+                Sim. Nossa equipe acompanha todas as etapas, incluindo planejamento, produ��o, montagem, opera��o e
+                suporte durante todo o per�odo do evento.
               </div>
             </div>
           </div>
@@ -9644,13 +9820,13 @@
           <!-- FAQ 7 -->
           <div class="faq-card ca-animate-fade-up" style="transition-delay: 400ms;">
             <div class="faq-question">
-              <span>É possível incluir operação fotográfica e plataforma 360°?</span>
+              <span>� poss�vel incluir opera��o fotogr�fica e plataforma 360�?</span>
               <div class="faq-icon-cross"></div>
             </div>
             <div class="faq-answer-wrapper">
               <div class="faq-answer">
-                Sim. Também oferecemos operação fotográfica completa, espaços instagramáveis, plataforma 360° e outras
-                ativações que aumentam o engajamento do público.
+                Sim. Tamb�m oferecemos opera��o fotogr�fica completa, espa�os instagram�veis, plataforma 360� e outras
+                ativa��es que aumentam o engajamento do público.
               </div>
             </div>
           </div>
@@ -9658,7 +9834,7 @@
           <!-- FAQ 8 -->
           <div class="faq-card ca-animate-fade-up" style="transition-delay: 450ms;">
             <div class="faq-question">
-              <span>Como solicitar um orçamento?</span>
+              <span>Como solicitar um or�amento?</span>
               <div class="faq-icon-cross"></div>
             </div>
             <div class="faq-answer-wrapper">
@@ -9900,14 +10076,14 @@
         </div>
 
         <h2 class="final-cta-title ca-animate-fade-up" style="transition-delay: 100ms;">
-          Vamos criar o próximo <span
+          Vamos criar o pr�ximo <span
             style="font-family: 'Great Vibes', cursive; color: #D4AF37; font-weight: 400; font-size: 1.2em; display: inline-block;">Natal
-            inesquecível</span> do seu Shopping?
+            inesquec�vel</span> do seu Shopping?
         </h2>
 
         <div class="final-cta-text ca-animate-fade-up" style="transition-delay: 200ms;">
-          <p style="margin-bottom: 12px;">Há mais de 30 anos transformamos Shopping Centers em destinos de experiências
-            memoráveis para milhares de famílias.</p>
+          <p style="margin-bottom: 12px;">H� mais de 30 anos transformamos Shopping Centers em destinos de experiências
+            memor�veis para milhares de famílias.</p>
           <p>Agora queremos construir esse projeto junto com você.</p>
         </div>
 
@@ -9925,7 +10101,7 @@
           <a href="https://wa.me/5585988601400?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20CriaA%C3%A7%C3%A3o%20Entretenimento%20e%20gostaria%20de%20conhecer%20melhor%20as%20solu%C3%A7%C3%B5es%20para%20o%20Natal%20do%20meu%20Shopping."
             target="_blank" rel="noopener noreferrer" class="ca-btn-glass">
             <i data-lucide="calendar" style="width: 18px; height: 18px;"></i>
-            <span>Agendar uma Reunião</span>
+            <span>Agendar uma Reuni�o</span>
           </a>
         </div>
 
@@ -10319,7 +10495,7 @@
               <!-- Section Footer -->
               <div class="inst-section-footer ca-animate-fade-up" style="transition-delay: 300ms;">
                 <div class="inst-footer-text">
-                  © 2026 CriaAção Entretenimento. Todos os direitos reservados.
+                  � 2026 CriaAção Entretenimento. Todos os direitos reservados.
                 </div>
 
               </div>
@@ -10390,7 +10566,7 @@
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg></a></div>
-            <div class="extras"><a class="action_button" href="http://wa.me/5585988601400" target="_blank">Orçamento
+            <div class="extras"><a class="action_button" href="http://wa.me/5585988601400" target="_blank">Or�amento
                 Online <i class="icon-star"></i></a>
               <div aria-label="extras menu" class="extras-wrapper" role="navigation"></div>
             </div>
@@ -10419,7 +10595,7 @@
                 src="assets/images/gallery/cookies-criaacao-entretenimento.png" /></div>
             <div class="mfn-gdpr-content">
               Este site usa cookies para melhorar sua experiência. Ao usar este site, você concorda com nossa Política
-              de Proteção de Dados.
+              de Prote��o de Dados.
             </div>
             <a class="mfn-gdpr-readmore" href="#" target="_self">
               Ler mais
@@ -10580,7 +10756,7 @@
                 // with non-zero translation. Returns false for crossfade-only
                 // companions like scale(0.9) or pure centering translateX(-50%).
                 if (!t || t === 'none') return false;
-                // matrix(a,b,c,d,tx,ty) ÃƒÂ¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â parse tx/ty; matrix3d & friends ÃƒÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ assume slide.
+                // matrix(a,b,c,d,tx,ty) Ã¢Ã¢â€šÂ¬Ã¢â‚¬Â parse tx/ty; matrix3d & friends Ã¢Ã¢â‚¬Â Ã¢â‚¬â„¢ assume slide.
                 var matMatch = t.match(/matrix\(([^)]+)\)/);
                 if (matMatch) {
                   var parts = matMatch[1].split(',').map(function (x) { return parseFloat(x.trim()); });
@@ -10623,7 +10799,7 @@
                 // Safety net: any 'before-state' element still hidden gets
                 // forced visible. Used as a deadline pass for non-CSR mode
                 // (after GSAP/etc had a chance to play) and as a final guard.
-                // Skip pinned-chain elements ÃƒÂ¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â same reason as findScrollAnchor.
+                // Skip pinned-chain elements Ã¢Ã¢â€šÂ¬Ã¢â‚¬Â same reason as findScrollAnchor.
                 var n = 0;
                 document.querySelectorAll('[style]').forEach(function (el) {
                   if (!isHiddenStart(el.style)) return;
@@ -10643,7 +10819,7 @@
               function findScrollAnchor(el) {
                 // Pinned-narrative sections (one position:fixed ancestor wrapping
                 // many sequenced headings the live JS reveals one-by-one across
-                // scroll progress) can't be orchestrated offline ÃƒÂ¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â revealing all
+                // scroll progress) can't be orchestrated offline Ã¢Ã¢â€šÂ¬Ã¢â‚¬Â revealing all
                 // of them at once produces an overlapping mess. Skip them: leave
                 // the parked state intact, matching the live site at scroll=0.
                 // For sticky chains, observe the sticky container itself (fires
@@ -10657,7 +10833,7 @@
                 return el;
               }
               function progressiveReveal() {
-                // CSR mode: scripts stripped ÃƒÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ no GSAP/IO is going to fire.
+                // CSR mode: scripts stripped Ã¢Ã¢â‚¬Â Ã¢â‚¬â„¢ no GSAP/IO is going to fire.
                 // Mimic a scroll-driven reveal: each parked element gets a
                 // CSS transition + IntersectionObserver. As it enters viewport
                 // we transition to the 'after' state, with a small stagger by
@@ -10679,7 +10855,7 @@
                   return;
                 }
                 // Group targets by their scroll anchor. Anchors in sticky
-                // sections share one observation point ÃƒÂ¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â when that anchor
+                // sections share one observation point Ã¢Ã¢â€šÂ¬Ã¢â‚¬Â when that anchor
                 // intersects, we reveal all its parked descendants.
                 // Targets with null anchor (inside position:fixed) are skipped.
                 var groups = new Map();
@@ -10742,7 +10918,7 @@
               var go = function () {
                 // CSR: scripts stripped, so 'before-state' elements stay parked
                 // forever unless we do something. Use IntersectionObserver to
-                // reveal them progressively as the user scrolls ÃƒÂ¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â preserves the
+                // reveal them progressively as the user scrolls Ã¢Ã¢â€šÂ¬Ã¢â‚¬Â preserves the
                 // scroll-triggered animation feel for SplitType chars, etc.
                 // Non-CSR: GSAP/Framer may still play; let them, then catch any
                 // leftovers with a snap pass at 5 s.
