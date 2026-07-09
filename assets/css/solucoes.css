@@ -205,38 +205,109 @@ body {
 }
 
 /* 3. Soluções por Segmento */
+.sol-segments-section {
+  background: linear-gradient(135deg, #130a10 0%, #0d0608 100%);
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sol-segments-section::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%; right: -50%; bottom: -50%;
+  background: radial-gradient(circle at 50% 50%, rgba(242, 184, 75, 0.03) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .sol-segments-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+  position: relative;
+  z-index: 2;
 }
 
 .sol-segment-item {
-  background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
-  border: 1px solid var(--ca-vidro-border);
-  border-radius: var(--ca-border-radius);
-  padding: 30px 20px;
-  text-align: center;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  flex: 1 1 320px;
+  max-width: 380px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: left;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+}
+
+.sol-segment-item::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle at top right, rgba(242, 184, 75, 0.15), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .sol-segment-item:hover {
-  border-color: var(--ca-dourado);
-  background: rgba(242, 184, 75, 0.05);
+  transform: translateY(-8px);
+  border-color: rgba(242, 184, 75, 0.5);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(242, 184, 75, 0.1);
+}
+
+.sol-segment-item:hover::after {
+  opacity: 1;
+}
+
+.sol-segment-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(242, 184, 75, 0.1);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ca-dourado);
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(242, 184, 75, 0.2);
+}
+
+.sol-segment-item:hover .sol-segment-icon {
+  background: var(--ca-dourado);
+  color: #111;
+  transform: scale(1.1) rotate(-5deg);
 }
 
 .sol-segment-title {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 700;
+  color: var(--ca-branco);
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.sol-segment-item:hover .sol-segment-title {
   color: var(--ca-dourado);
-  margin-bottom: 10px;
 }
 
 .sol-segment-desc {
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  z-index: 2;
+  margin: 0;
 }
 
 /* 4. Timeline Como Funciona */
