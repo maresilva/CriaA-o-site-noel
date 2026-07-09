@@ -23,14 +23,37 @@
     transform: translateY(0);
 }
 
-.qs-stagger-1 { transition-delay: 100ms; }
-.qs-stagger-2 { transition-delay: 200ms; }
-.qs-stagger-3 { transition-delay: 300ms; }
-.qs-stagger-4 { transition-delay: 400ms; }
-.qs-stagger-5 { transition-delay: 500ms; }
-.qs-stagger-6 { transition-delay: 600ms; }
-.qs-stagger-7 { transition-delay: 700ms; }
-.qs-stagger-8 { transition-delay: 800ms; }
+.qs-stagger-1 {
+    transition-delay: 100ms;
+}
+
+.qs-stagger-2 {
+    transition-delay: 200ms;
+}
+
+.qs-stagger-3 {
+    transition-delay: 300ms;
+}
+
+.qs-stagger-4 {
+    transition-delay: 400ms;
+}
+
+.qs-stagger-5 {
+    transition-delay: 500ms;
+}
+
+.qs-stagger-6 {
+    transition-delay: 600ms;
+}
+
+.qs-stagger-7 {
+    transition-delay: 700ms;
+}
+
+.qs-stagger-8 {
+    transition-delay: 800ms;
+}
 
 /* 1. HERO SECTION (NOVA 2 COLUNAS) */
 .qs-hero2 {
@@ -51,8 +74,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        linear-gradient(90deg, rgba(22,7,7,1) 0%, rgba(35,8,8,0.94) 38%, rgba(35,8,8,0.55) 68%, rgba(35,8,8,0.10) 100%),
+    background-image:
+        linear-gradient(90deg, rgba(22, 7, 7, 1) 0%, rgba(35, 8, 8, 0.94) 38%, rgba(35, 8, 8, 0.55) 68%, rgba(35, 8, 8, 0.10) 100%),
         url('../images/gallery/papai-noel-com-crianca-quem-somos-criaacao-entretenimento.png');
     background-size: cover;
     background-position: center right;
@@ -92,6 +115,7 @@
     gap: 15px;
     margin-bottom: 20px;
 }
+
 .qs-eyebrow::after {
     content: '';
     display: block;
@@ -140,6 +164,7 @@
     text-decoration: none;
     transition: all 0.3s ease;
 }
+
 .qs-btn2-primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(212, 167, 76, 0.3);
@@ -185,21 +210,25 @@
 
 @media (max-width: 991px) {
     .qs-hero2-bg {
-        background-image: 
-            linear-gradient(to bottom, rgba(22,7,7,0.98) 0%, rgba(35,8,8,0.95) 50%, rgba(35,8,8,0.3) 100%),
+        background-image:
+            linear-gradient(to bottom, rgba(22, 7, 7, 0.98) 0%, rgba(35, 8, 8, 0.95) 50%, rgba(35, 8, 8, 0.3) 100%),
             url('../images/gallery/papai-noel-com-crianca-quem-somos-criaacao-entretenimento.png');
         background-position: center top;
     }
+
     .qs-hero2-grid {
         grid-template-columns: 1fr;
     }
+
     .qs-indicators {
         grid-template-columns: repeat(2, 1fr);
         padding: 30px 20px;
     }
+
     .qs-hero2-buttons {
         flex-direction: column;
     }
+
     .qs-btn2-primary {
         width: 100%;
     }
@@ -328,6 +357,7 @@
 .qs-timeline-item:nth-child(odd) .qs-timeline-card {
     align-items: flex-end;
 }
+
 .qs-timeline-item:nth-child(even) .qs-timeline-card {
     align-items: flex-start;
 }
@@ -360,7 +390,7 @@
 
 .qs-timeline-img {
     width: 100%;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
     border-radius: 12px;
     margin-top: 10px;
@@ -391,34 +421,37 @@
     .qs-timeline::before {
         left: 20px;
     }
-    
+
     .qs-timeline-item {
         width: 100%;
         padding: 0 0 0 50px;
     }
-    
+
     .qs-timeline-item:nth-child(odd),
     .qs-timeline-item:nth-child(even) {
         left: 0;
         text-align: left;
     }
-    
+
     .qs-timeline-item:nth-child(odd) .qs-timeline-dot,
     .qs-timeline-item:nth-child(even) .qs-timeline-dot {
         left: 10px;
         right: auto;
     }
-    
+
     .qs-timeline-item:nth-child(odd) .qs-timeline-card,
     .qs-timeline-item:nth-child(even) .qs-timeline-card {
         align-items: flex-start;
         padding: 30px 20px;
     }
-    
-    .slide-in-left, .slide-in-right {
+
+    .slide-in-left,
+    .slide-in-right {
         transform: translateY(30px);
     }
-    .qs-visible.slide-in-left, .qs-visible.slide-in-right {
+
+    .qs-visible.slide-in-left,
+    .qs-visible.slide-in-right {
         transform: translateY(0);
     }
 }
@@ -495,6 +528,7 @@
     .qs-numbers-grid {
         grid-template-columns: 1fr;
     }
+
     .qs-numbers-parallax {
         background-attachment: scroll;
     }
@@ -581,22 +615,27 @@
         grid-template-columns: 1fr;
         gap: 50px;
     }
+
     .qs-purpose-content {
         padding-right: 0;
     }
+
     .qs-purpose-images {
         height: 500px;
         margin-top: 30px;
     }
 }
+
 @media (max-width: 576px) {
     .qs-purpose-images {
         height: 400px;
     }
+
     .qs-purpose-img-main {
         width: 90%;
         height: 75%;
     }
+
     .qs-purpose-img-float {
         width: 65%;
         height: 50%;
@@ -611,10 +650,10 @@
 }
 
 .qs-mvv-card {
-    background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
     border-radius: 20px;
     padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
 }
@@ -622,7 +661,10 @@
 .qs-mvv-card::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 4px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
     background: var(--qs-gold);
     transform: scaleX(0);
     transform-origin: left;
@@ -657,6 +699,7 @@
     font-size: 0.9rem;
     transition: all 0.3s ease;
 }
+
 .qs-mvv-list li:hover {
     background: var(--qs-gold);
     color: var(--qs-dark);
@@ -676,7 +719,7 @@
     padding: 20px;
     background: rgba(255, 255, 255, 0.02);
     border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
 }
 
@@ -714,7 +757,7 @@
 .qs-trust-tag {
     padding: 15px 30px;
     background: transparent;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
     border-radius: 30px;
     font-size: 1.1rem;
@@ -758,7 +801,7 @@
 .qs-struct-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 60%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%);
     display: flex;
     align-items: flex-end;
     padding: 20px;
@@ -828,9 +871,3 @@
     background: var(--qs-gold);
     color: var(--qs-dark);
 }
-
-
-
-
-
-

@@ -1,0 +1,409 @@
+/* solucoes.css - Design System for Soluções page */
+:root {
+  --ca-vinho: #1A050A;
+  --ca-vinho-light: #2b0a12;
+  --ca-dourado: #F2B84B;
+  --ca-dourado-dark: #D4AF37;
+  --ca-branco: #FFFFFF;
+  --ca-vidro: rgba(255, 255, 255, 0.05);
+  --ca-vidro-border: rgba(255, 255, 255, 0.1);
+  --ca-border-radius: 24px;
+}
+
+body {
+  background-color: var(--ca-vinho);
+  color: var(--ca-branco);
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Animations */
+.sol-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.sol-reveal.sol-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sol-stagger-1 { transition-delay: 100ms; }
+.sol-stagger-2 { transition-delay: 200ms; }
+.sol-stagger-3 { transition-delay: 300ms; }
+.sol-stagger-4 { transition-delay: 400ms; }
+.sol-stagger-5 { transition-delay: 500ms; }
+.sol-stagger-6 { transition-delay: 600ms; }
+
+/* Global Components */
+.sol-section {
+  padding: 100px 20px;
+  position: relative;
+}
+
+.sol-section-alt {
+  background: linear-gradient(180deg, var(--ca-vinho) 0%, var(--ca-vinho-light) 100%);
+}
+
+.sol-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.sol-title-eyebrow {
+  color: var(--ca-dourado);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sol-title-eyebrow::before,
+.sol-title-eyebrow::after {
+  content: '';
+  height: 1px;
+  width: 40px;
+  background: var(--ca-dourado);
+}
+
+.sol-title-main {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: var(--ca-branco);
+}
+
+.sol-title-main span {
+  color: var(--ca-dourado);
+}
+
+.sol-text-main {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.sol-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: var(--ca-dourado);
+  color: var(--ca-vinho);
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(242, 184, 75, 0.3);
+}
+
+.sol-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(242, 184, 75, 0.5);
+}
+
+/* 1. Hero Institucional */
+.sol-hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 120px;
+  background: 
+    linear-gradient(to right, rgba(26, 5, 10, 0.95) 0%, rgba(26, 5, 10, 0.7) 50%, rgba(26, 5, 10, 0.2) 100%),
+    url('../images/backgrounds/background-768x543-criaacao-entretenimento.png') center/cover;
+}
+
+/* 2. Grid de Soluções Principais */
+.sol-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.sol-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--ca-vidro-border);
+  border-radius: var(--ca-border-radius);
+  padding: 40px 30px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sol-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--ca-dourado);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.sol-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(242, 184, 75, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 40px rgba(242, 184, 75, 0.1);
+}
+
+.sol-card:hover::before {
+  transform: scaleX(1);
+}
+
+.sol-card-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(242, 184, 75, 0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ca-dourado);
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.sol-card:hover .sol-card-icon {
+  background: var(--ca-dourado);
+  color: var(--ca-vinho);
+  transform: scale(1.1) rotate(5deg);
+}
+
+.sol-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--ca-branco);
+}
+
+.sol-card-text {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+/* 3. Soluções por Segmento */
+.sol-segments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.sol-segment-item {
+  background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+  border: 1px solid var(--ca-vidro-border);
+  border-radius: var(--ca-border-radius);
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sol-segment-item:hover {
+  border-color: var(--ca-dourado);
+  background: rgba(242, 184, 75, 0.05);
+}
+
+.sol-segment-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ca-dourado);
+  margin-bottom: 10px;
+}
+
+.sol-segment-desc {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* 4. Timeline Como Funciona */
+.sol-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 60px auto 0;
+}
+
+.sol-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 2px; height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sol-time-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50%;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.sol-time-item:nth-child(even) {
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: 50%;
+}
+
+.sol-time-dot {
+  position: absolute;
+  top: 0; right: -8px;
+  width: 16px; height: 16px;
+  background: var(--ca-dourado);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--ca-dourado);
+}
+
+.sol-time-item:nth-child(even) .sol-time-dot {
+  left: -8px; right: auto;
+}
+
+.sol-time-content {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--ca-vidro-border);
+  border-radius: var(--ca-border-radius);
+  padding: 30px;
+  width: calc(100% - 40px);
+  transition: all 0.3s ease;
+}
+
+.sol-time-item:hover .sol-time-content {
+  transform: translateY(-5px);
+  border-color: rgba(242, 184, 75, 0.3);
+}
+
+.sol-time-title {
+  color: var(--ca-dourado);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* 5. Cards O que está incluso */
+.sol-included-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.sol-included-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 16px;
+  border-left: 4px solid var(--ca-dourado);
+}
+
+.sol-included-icon {
+  color: #4CAF50; /* Green check */
+}
+
+/* 6. Galeria Institucional */
+.sol-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-rows: 250px;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.sol-gallery-item {
+  border-radius: var(--ca-border-radius);
+  overflow: hidden;
+  position: relative;
+}
+
+.sol-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.sol-gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.sol-gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26,5,10,0.9), transparent);
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sol-gallery-item:hover .sol-gallery-overlay {
+  opacity: 1;
+}
+
+/* 7. CTA Final */
+.sol-cta {
+  background: linear-gradient(135deg, var(--ca-vinho) 0%, rgba(212, 175, 55, 0.1) 100%);
+  padding: 100px 20px;
+  text-align: center;
+  border-top: 1px solid var(--ca-vidro-border);
+}
+
+.sol-cta-box {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.02);
+  backdrop-filter: blur(20px);
+  padding: 60px 40px;
+  border-radius: var(--ca-border-radius);
+  border: 1px solid rgba(242, 184, 75, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sol-timeline::before {
+    left: 20px;
+  }
+  .sol-time-item, .sol-time-item:nth-child(even) {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: 50px;
+  }
+  .sol-time-dot, .sol-time-item:nth-child(even) .sol-time-dot {
+    left: 12px; right: auto;
+  }
+  .sol-time-content {
+    width: 100%;
+  }
+  .sol-title-eyebrow {
+    justify-content: center;
+  }
+  .sol-hero {
+    text-align: center;
+  }
+}
