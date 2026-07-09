@@ -47,6 +47,7 @@ body {
 }
 
 .sol-container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -123,7 +124,7 @@ body {
   padding-top: 120px;
   background: 
     linear-gradient(to right, rgba(26, 5, 10, 0.95) 0%, rgba(26, 5, 10, 0.7) 50%, rgba(26, 5, 10, 0.2) 100%),
-    url('../images/backgrounds/background-768x543-criaacao-entretenimento.png') center/cover;
+    url('../images/gallery/desktop-papai-noel-na-poltrona-criaacao-entretenimento.png') center/cover;
 }
 
 /* 2. Grid de Soluções Principais */
@@ -374,26 +375,63 @@ body {
   margin-bottom: 10px;
 }
 
+.sol-included-section {
+  background: linear-gradient(180deg, #180d14 0%, #0d0608 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.sol-included-section::before {
+  content: '';
+  position: absolute;
+  top: -20%; left: -20%; right: -20%; bottom: -20%;
+  background: radial-gradient(circle at top center, rgba(242, 184, 75, 0.05) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 /* 5. Cards O que está incluso */
 .sol-included-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
   margin-top: 50px;
 }
 
 .sol-included-card {
+  flex: 1 1 300px;
+  max-width: 360px;
   display: flex;
   align-items: center;
-  gap: 15px;
-  background: rgba(0,0,0,0.2);
-  padding: 20px;
+  gap: 18px;
+  background: linear-gradient(135deg, rgba(20, 10, 15, 0.6), rgba(10, 5, 8, 0.9));
+  padding: 24px;
   border-radius: 16px;
+  border: 1px solid rgba(242, 184, 75, 0.1);
   border-left: 4px solid var(--ca-dourado);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+
+.sol-included-card:hover {
+  transform: translateX(5px) translateY(-2px);
+  border-color: rgba(242, 184, 75, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, rgba(30, 15, 20, 0.7), rgba(15, 8, 12, 0.95));
 }
 
 .sol-included-icon {
   color: #4CAF50; /* Green check */
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(76, 175, 80, 0.4));
+}
+
+.sol-included-card:hover .sol-included-icon {
+  transform: scale(1.15);
 }
 
 /* 6. Galeria Institucional */
@@ -439,20 +477,66 @@ body {
 
 /* 7. CTA Final */
 .sol-cta {
-  background: linear-gradient(135deg, var(--ca-vinho) 0%, rgba(212, 175, 55, 0.1) 100%);
-  padding: 100px 20px;
+  background: radial-gradient(circle at top right, #3A0305 0%, #1A0304 80%, #0a0102 100%);
+  padding: 120px 20px;
   text-align: center;
-  border-top: 1px solid var(--ca-vidro-border);
+  position: relative;
+  border: none;
 }
 
 .sol-cta-box {
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(20px);
-  padding: 60px 40px;
-  border-radius: var(--ca-border-radius);
-  border: 1px solid rgba(242, 184, 75, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 80px 60px;
+  border-radius: 32px;
+  border: 1px solid rgba(242, 184, 75, 0.3);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.sol-cta-box .sol-title-main {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+  color: #FFFFFF;
+}
+
+.sol-cta-box .sol-title-main span {
+  color: var(--ca-dourado);
+}
+
+.sol-cta-box .sol-text-main {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.sol-cta-box .sol-btn-primary {
+  padding: 18px 40px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--ca-vinho);
+  background: var(--ca-dourado);
+  border: none;
+  box-shadow: 0 10px 30px rgba(242, 184, 75, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sol-cta-box .sol-btn-primary svg {
+  width: 22px;
+  height: 22px;
+}
+
+.sol-cta-box .sol-btn-primary:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(242, 184, 75, 0.5);
 }
 
 /* Responsive */
@@ -476,5 +560,8 @@ body {
   }
   .sol-hero {
     text-align: center;
+    background: 
+      linear-gradient(to bottom, rgba(26, 5, 10, 0.95) 0%, rgba(26, 5, 10, 0.7) 40%, rgba(26, 5, 10, 0.1) 100%),
+      url('../images/gallery/mobile-papai-noel-na-poltrona-criaacao-entretenimento.png') center/cover;
   }
 }
