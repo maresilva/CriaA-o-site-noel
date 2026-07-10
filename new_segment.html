@@ -1,0 +1,363 @@
+    <!-- START OUTROS SEGMENTOS SECTION -->
+    <style id="ca-outros-segmentos-style">
+      .ca-segmentos-section {
+        position: relative;
+        padding: 100px 20px;
+        background: #0a0102;
+        overflow: hidden;
+        z-index: 10;
+        background-image: radial-gradient(circle at 50% 50%, rgba(212, 167, 76, 0.05) 0%, transparent 60%);
+      }
+
+      .ca-segmentos-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+      }
+
+      .ca-segmentos-header {
+        text-align: center;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .ca-segmentos-eyebrow {
+        color: #D4A74C;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .ca-segmentos-eyebrow::before,
+      .ca-segmentos-eyebrow::after {
+        content: '\2726';
+        font-size: 10px;
+        color: #D4A74C;
+        opacity: 0.8;
+      }
+
+      .ca-segmentos-title {
+        color: #FFFFFF;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 24px;
+        max-width: 760px;
+      }
+
+      .ca-segmentos-title span {
+        color: #D4A74C;
+      }
+
+      .ca-segmentos-text {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* Bento Grid Layout */
+      .ca-segmentos-grid {
+        display: grid;
+        grid-template-columns: repeat(24, 1fr);
+        grid-template-rows: repeat(2, 340px);
+        gap: 20px;
+        margin-bottom: 50px;
+      }
+
+      .ca-segmento-card {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 1px solid rgba(212, 167, 76, 0.2);
+        transition: all 0.4s ease;
+        text-decoration: none !important;
+      }
+
+      .ca-segmento-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(212, 167, 76, 0.5);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 167, 76, 0.15);
+      }
+
+      .ca-segmento-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        transition: transform 0.8s ease;
+      }
+
+      .ca-segmento-card:hover .ca-segmento-bg {
+        transform: scale(1.05);
+      }
+
+      .ca-segmento-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(10, 1, 2, 0.95) 0%, rgba(10, 1, 2, 0.6) 40%, rgba(10, 1, 2, 0.2) 100%);
+        z-index: 2;
+        transition: all 0.4s ease;
+      }
+
+      .ca-segmento-card:hover .ca-segmento-overlay {
+        background: linear-gradient(to top, rgba(10, 1, 2, 0.98) 0%, rgba(10, 1, 2, 0.7) 50%, rgba(10, 1, 2, 0.3) 100%);
+      }
+
+      .ca-segmento-content {
+        position: relative;
+        z-index: 3;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      /* Icons */
+      .ca-segmento-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid #D4A74C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: auto;
+        color: #D4A74C;
+        background: rgba(10, 1, 2, 0.4);
+        backdrop-filter: blur(4px);
+      }
+
+      .ca-segmento-icon svg {
+        width: 22px;
+        height: 22px;
+        stroke-width: 1.5px;
+      }
+
+      .ca-segmento-title {
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .ca-segmento-desc {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+      }
+
+      .ca-segmento-link {
+        color: #D4A74C;
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        transition: gap 0.3s ease;
+      }
+
+      .ca-segmento-card:hover .ca-segmento-link {
+        gap: 12px;
+      }
+
+      /* Grid Placements */
+      .ca-card-shopping { grid-column: 1 / span 6; grid-row: 1 / span 2; }
+      .ca-card-shopping .ca-segmento-title { font-size: 28px; }
+      
+      .ca-card-prefeituras { grid-column: 7 / span 6; grid-row: 1; }
+      .ca-card-escolas { grid-column: 13 / span 6; grid-row: 1; }
+      .ca-card-empresas { grid-column: 19 / span 6; grid-row: 1; }
+      .ca-card-residencias { grid-column: 7 / span 9; grid-row: 2; }
+      .ca-card-sociais { grid-column: 16 / span 9; grid-row: 2; }
+
+      /* Centered Main CTA */
+      .ca-segmentos-cta {
+        text-align: center;
+      }
+
+      .ca-segmentos-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: linear-gradient(90deg, #D4A74C 0%, #F2B84B 100%);
+        color: #1A0909;
+        font-weight: 800;
+        font-size: 14px;
+        padding: 18px 40px;
+        border-radius: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        box-shadow: 0 5px 20px rgba(212, 167, 76, 0.2);
+      }
+
+      .ca-segmentos-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(212, 167, 76, 0.4);
+      }
+
+      @media (max-width: 1200px) {
+        .ca-segmentos-grid {
+          grid-template-columns: repeat(12, 1fr);
+          grid-auto-rows: 320px;
+          grid-template-rows: auto;
+        }
+        .ca-card-shopping { grid-column: 1 / span 6; grid-row: 1 / span 2; }
+        .ca-card-prefeituras { grid-column: 7 / span 6; grid-row: 1; }
+        .ca-card-escolas { grid-column: 7 / span 6; grid-row: 2; }
+        .ca-card-empresas { grid-column: 1 / span 6; grid-row: 3; }
+        .ca-card-residencias { grid-column: 7 / span 6; grid-row: 3; }
+        .ca-card-sociais { grid-column: 1 / span 12; grid-row: 4; }
+      }
+
+      @media (max-width: 992px) {
+        .ca-segmentos-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .ca-card-shopping, .ca-card-prefeituras, .ca-card-escolas, .ca-card-empresas, .ca-card-residencias, .ca-card-sociais {
+          grid-column: span 1;
+          grid-row: span 1;
+        }
+        .ca-card-shopping { grid-column: span 2; }
+      }
+
+      @media (max-width: 640px) {
+        .ca-segmentos-grid {
+          grid-template-columns: 1fr;
+        }
+        .ca-card-shopping { grid-column: span 1; }
+        .ca-segmentos-section { padding: 60px 20px; }
+        .ca-segmentos-title { font-size: 32px; }
+      }
+    </style>
+
+    <section class="ca-segmentos-section">
+      <div class="ca-segmentos-container">
+        <div class="ca-segmentos-header reveal ca-animate-fadeup">
+          <div class="ca-segmentos-eyebrow">ONDE TAMBÉM ATUAMOS</div>
+          <h2 class="ca-segmentos-title">Muito além dos <span>Shopping Centers.</span></h2>
+          <p class="ca-segmentos-text">Criamos experiências natalinas personalizadas para diferentes públicos e ambientes, levando o mesmo padrão de excelência, organização e encantamento para cada projeto.<br><br>Do planejamento à execução, adaptamos nossas soluções para atender instituições públicas, empresas privadas e projetos sociais em todo o Brasil.</p>
+        </div>
+
+        <div class="ca-segmentos-grid">
+          <!-- Card 01: Shopping Centers -->
+          <a href="/solucoes" class="ca-segmento-card ca-card-shopping reveal ca-animate-fadeup" style="transition-delay: 0.1s;">
+            <img src="assets/images/gallery/shopping_natal_1783720410936.png" class="ca-segmento-bg" alt="Shopping Centers" loading="lazy">
+            <div class="ca-segmento-overlay"></div>
+            <div class="ca-segmento-content">
+              <div class="ca-segmento-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              </div>
+              <div>
+                <h3 class="ca-segmento-title">Shopping Centers</h3>
+                <p class="ca-segmento-desc">Projetos completos para campanhas natalinas, chegada do Papai Noel, espaços fotográficos, ativações e operação integral.</p>
+                <div class="ca-segmento-link">Conhecer soluções &rarr;</div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 02: Prefeituras -->
+          <a href="/solucoes" class="ca-segmento-card ca-card-prefeituras reveal ca-animate-fadeup" style="transition-delay: 0.2s;">
+            <img src="assets/images/gallery/prefeitura_natal_1783720420891.png" class="ca-segmento-bg" alt="Prefeituras" loading="lazy">
+            <div class="ca-segmento-overlay"></div>
+            <div class="ca-segmento-content">
+              <div class="ca-segmento-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V7l8-4v18"></path><path d="M19 21V11l-6-3"></path><path d="M9 11v-2"></path><path d="M9 15v-2"></path><path d="M9 19v-2"></path></svg>
+              </div>
+              <div>
+                <h3 class="ca-segmento-title">Prefeituras</h3>
+                <p class="ca-segmento-desc">Natal em praças, parques, bairros, eventos públicos e ações culturais para toda a comunidade.</p>
+                <div class="ca-segmento-link">Conhecer soluções &rarr;</div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 03: Escolas -->
+          <a href="/solucoes" class="ca-segmento-card ca-card-escolas reveal ca-animate-fadeup" style="transition-delay: 0.3s;">
+            <img src="assets/images/gallery/escola_natal_1783720429899.png" class="ca-segmento-bg" alt="Escolas" loading="lazy">
+            <div class="ca-segmento-overlay"></div>
+            <div class="ca-segmento-content">
+              <div class="ca-segmento-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+              </div>
+              <div>
+                <h3 class="ca-segmento-title">Escolas</h3>
+                <p class="ca-segmento-desc">Visitas especiais do Papai Noel, personagens, apresentações e atividades recreativas.</p>
+                <div class="ca-segmento-link">Conhecer soluções &rarr;</div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 04: Empresas -->
+          <a href="/solucoes" class="ca-segmento-card ca-card-empresas reveal ca-animate-fadeup" style="transition-delay: 0.4s;">
+            <img src="assets/images/gallery/empresa_natal_1783720439041.png" class="ca-segmento-bg" alt="Empresas" loading="lazy">
+            <div class="ca-segmento-overlay"></div>
+            <div class="ca-segmento-content">
+              <div class="ca-segmento-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg>
+              </div>
+              <div>
+                <h3 class="ca-segmento-title">Empresas</h3>
+                <p class="ca-segmento-desc">Eventos corporativos, confraternizações, campanhas promocionais e ações para colaboradores.</p>
+                <div class="ca-segmento-link">Conhecer soluções &rarr;</div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 05: Residências e Buffets -->
+          <a href="/solucoes" class="ca-segmento-card ca-card-residencias reveal ca-animate-fadeup" style="transition-delay: 0.5s;">
+            <img src="assets/images/gallery/casa_natal_1783720448832.png" class="ca-segmento-bg" alt="Residências e Buffets" loading="lazy">
+            <div class="ca-segmento-overlay"></div>
+            <div class="ca-segmento-content">
+              <div class="ca-segmento-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="ca-segmento-title">Residências e Buffets</h3>
+                <p class="ca-segmento-desc">Experiências exclusivas, visitas do Papai Noel e eventos familiares personalizados.</p>
+                <div class="ca-segmento-link">Conhecer soluções &rarr;</div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 06: Projetos Sociais -->
+          <a href="/solucoes" class="ca-segmento-card ca-card-sociais reveal ca-animate-fadeup" style="transition-delay: 0.6s;">
+            <img src="assets/images/gallery/social_natal_1783720457458.png" class="ca-segmento-bg" alt="Projetos Sociais" loading="lazy">
+            <div class="ca-segmento-overlay"></div>
+            <div class="ca-segmento-content">
+              <div class="ca-segmento-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </div>
+              <div>
+                <h3 class="ca-segmento-title">Projetos Sociais</h3>
+                <p class="ca-segmento-desc">Ações humanizadas em hospitais, creches, asilos e instituições beneficentes, levando o espírito do Natal a quem mais precisa.</p>
+                <div class="ca-segmento-link">Conhecer soluções &rarr;</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="ca-segmentos-cta reveal ca-animate-fadeup" style="transition-delay: 0.7s;">
+          <a href="/solucoes" class="ca-segmentos-btn">Conheça todas as soluções &rarr;</a>
+        </div>
+      </div>
+    </section>
