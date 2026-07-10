@@ -76,7 +76,7 @@
     height: 100%;
     background-image:
         linear-gradient(90deg, rgba(22, 7, 7, 1) 0%, rgba(35, 8, 8, 0.94) 38%, rgba(35, 8, 8, 0.55) 68%, rgba(35, 8, 8, 0.10) 100%),
-        url('../images/gallery/papai-noel-com-crianca-quem-somos-criaacao-entretenimento.png');
+        url('../images/gallery/background-pagina-quem-somos-papai-noel-na-poltrona-criaacao-entretenimento.png');
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
@@ -211,8 +211,8 @@
 @media (max-width: 991px) {
     .qs-hero2-bg {
         background-image:
-            linear-gradient(to bottom, rgba(22, 7, 7, 0.98) 0%, rgba(35, 8, 8, 0.95) 50%, rgba(35, 8, 8, 0.3) 100%),
-            url('../images/gallery/papai-noel-com-crianca-quem-somos-criaacao-entretenimento.png');
+            linear-gradient(to bottom, rgba(22, 7, 7, 0.2) 0%, rgba(35, 8, 8, 0.2) 50%, rgba(35, 8, 8, 0) 100%),
+            url('../images/gallery/mobile-background-pagina-quem-somos-papai-noel-na-poltrona-criaacao-entretenimento.png');
         background-position: center top;
     }
 
