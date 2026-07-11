@@ -1,0 +1,148 @@
+/* 
+ * ========================================================================
+ * DESIGN SYSTEM - TOKENS TIPOGRÁFICOS
+ * ========================================================================
+ * Apenas definição de tokens (variáveis). 
+ * Nenhum componente é alterado aqui.
+ */
+
+:root {
+    /* -----------------------------------------
+     * FAMÍLIAS TIPOGRÁFICAS
+     * ----------------------------------------- */
+    --ca-font-primary: 'Inter', 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --ca-font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --ca-font-script: 'Great Vibes', 'Brush Script MT', cursive;
+    --ca-font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, Monaco, monospace;
+
+    /* -----------------------------------------
+     * ESCALA DE TAMANHOS (FONT-SIZE)
+     * ----------------------------------------- */
+    --ca-text-xs: 0.75rem;    /* 12px */
+    --ca-text-sm: 0.875rem;   /* 14px */
+    --ca-text-md: 1rem;       /* 16px (Base) */
+    --ca-text-lg: 1.125rem;   /* 18px */
+    --ca-text-xl: 1.25rem;    /* 20px */
+    --ca-text-2xl: 1.5rem;    /* 24px */
+    --ca-text-3xl: 1.875rem;  /* 30px */
+    --ca-text-4xl: 2.25rem;   /* 36px */
+    --ca-text-5xl: 3rem;      /* 48px */
+    --ca-text-6xl: 3.75rem;   /* 60px */
+    --ca-text-7xl: 4.5rem;    /* 72px */
+
+    /* -----------------------------------------
+     * PESOS (FONT-WEIGHT)
+     * ----------------------------------------- */
+    --ca-weight-light: 300;
+    --ca-weight-regular: 400;
+    --ca-weight-medium: 500;
+    --ca-weight-semibold: 600;
+    --ca-weight-bold: 700;
+    --ca-weight-black: 900;
+
+    /* -----------------------------------------
+     * ALTURA DAS LINHAS (LINE-HEIGHT)
+     * ----------------------------------------- */
+    --ca-line-none: 1;
+    --ca-line-tight: 1.1;     /* Ideal para títulos grandes (H1, H2) */
+    --ca-line-snug: 1.3;      /* Ideal para subtítulos (H3, H4) */
+    --ca-line-normal: 1.5;    /* Ideal para parágrafos base */
+    --ca-line-relaxed: 1.75;  /* Ideal para blocos de leitura densa */
+    --ca-line-loose: 2;
+
+    /* -----------------------------------------
+     * ESPAÇAMENTO ENTRE LETRAS (LETTER-SPACING)
+     * ----------------------------------------- */
+    --ca-tracking-tighter: -0.05em;
+    --ca-tracking-tight: -0.025em;
+    --ca-tracking-normal: 0em;
+    --ca-tracking-wide: 0.025em;
+    --ca-tracking-wider: 0.05em;
+    --ca-tracking-widest: 0.1em;      /* Ideal para sobrancelhas (eyebrow) / uppercase */
+    --ca-tracking-mega: 0.2em;        /* Para destaques muito específicos em maiúsculas */
+}
+
+/* ========================================================================
+ * APLICAÃ‡ÃƒO DESKTOP (ETAPA 2)
+ * ========================================================================
+ * AplicaÃ§Ã£o estrita no Desktop para nÃ£o afetar os componentes Mobile.
+ */
+@media (min-width: 992px) {
+    /* HEROS / GRANDES TÃTULOS */
+    h1, .ca-hero-title {
+        font-family: var(--ca-font-display, serif) !important;
+        font-size: 56px !important;
+        line-height: var(--ca-line-tight) !important;
+        font-weight: var(--ca-weight-bold) !important;
+        letter-spacing: var(--ca-tracking-tight) !important;
+    }
+
+    /* H2 / TÃ TULOS DE SEÃ‡ÃƒO */
+    h2, .ca-title, .sol-title-main {
+        font-family: var(--ca-font-display, serif) !important;
+        font-size: var(--ca-text-4xl) !important;
+        line-height: var(--ca-line-snug) !important;
+        font-weight: var(--ca-weight-bold) !important;
+        letter-spacing: var(--ca-tracking-normal) !important;
+        margin-bottom: 24px !important;
+    }
+
+    /* H3 / TÃ TULOS DE CARDS E SUBSEÃ‡Ã•ES */
+    h3, .ca-card-title, .oa-segment-title, .sol-segment-title, .sol-time-title {
+        font-family: var(--ca-font-primary, sans-serif) !important;
+        font-size: var(--ca-text-2xl) !important;
+        line-height: var(--ca-line-snug) !important;
+        font-weight: var(--ca-weight-semibold) !important;
+        letter-spacing: var(--ca-tracking-normal) !important;
+    }
+
+    /* H4 / MENORES DESTAQUES */
+    h4 {
+        font-family: var(--ca-font-primary, sans-serif) !important;
+        font-size: var(--ca-text-xl) !important;
+        line-height: var(--ca-line-snug) !important;
+        font-weight: var(--ca-weight-medium) !important;
+    }
+
+    /* TEXTOS / PARÃGRAFOS GERAIS */
+    p, .ca-card-desc, .oa-segment-text, .sol-segment-desc, .sol-text-main {
+        font-family: var(--ca-font-primary, sans-serif) !important;
+        font-size: var(--ca-text-md) !important;
+        line-height: var(--ca-line-relaxed) !important;
+        font-weight: var(--ca-weight-regular) !important;
+        letter-spacing: var(--ca-tracking-normal) !important;
+    }
+
+    /* BOTÃ•ES GERAIS */
+    .ca-btn-primary, .ca-btn-secondary, .sol-cta-btn, .ca-card-cta {
+        font-family: var(--ca-font-primary, sans-serif) !important;
+        font-size: var(--ca-text-sm) !important;
+        font-weight: var(--ca-weight-bold) !important;
+        letter-spacing: var(--ca-tracking-wider) !important;
+        text-transform: uppercase !important;
+    }
+
+    /* EYEBROWS (Sobrancelhas) */
+    .ca-eyebrow, .sol-title-eyebrow, .ca-segmentos-eyebrow {
+        font-family: var(--ca-font-primary, sans-serif) !important;
+        font-size: var(--ca-text-xs) !important;
+        font-weight: var(--ca-weight-bold) !important;
+        letter-spacing: var(--ca-tracking-widest) !important;
+        text-transform: uppercase !important;
+    }
+
+    /* MENU DESKTOP */
+    #menu-menu-principal-1 li a, .menu-item a {
+        font-family: var(--ca-font-primary, sans-serif) !important;
+        font-size: var(--ca-text-sm) !important;
+        font-weight: var(--ca-weight-semibold) !important;
+        letter-spacing: var(--ca-tracking-wide) !important;
+    }
+
+    /* FOOTER TEXTOS */
+    #footer p, #footer .textwidget, #footer a {
+        font-family: var(--ca-font-primary, sans-serif) !important;
+        font-size: var(--ca-text-sm) !important;
+        line-height: var(--ca-line-relaxed) !important;
+    }
+}
