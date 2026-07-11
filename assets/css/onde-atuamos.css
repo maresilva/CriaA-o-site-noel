@@ -1,0 +1,312 @@
+/* =========================================================================
+   ONDE ATUAMOS PAGE STYLES
+   ========================================================================= */
+
+/* Hero */
+.oa-hero-bg {
+    background-image: url('../images/backgrounds/onde_atuamos_hero_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.oa-hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to right, rgba(26,20,35,0.95) 0%, rgba(26,20,35,0.7) 100%);
+    z-index: 0;
+}
+
+.oa-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Base Styles */
+.oa-section {
+    padding: 80px 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* Typography Overrides for specific emphasis */
+.oa-title-highlight {
+    color: #d4a74c;
+    font-weight: 700;
+}
+
+/* Glassmorphism Generic Card */
+.oa-glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(212, 167, 76, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+.oa-glass-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(212, 167, 76, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Segmentos Grid (3 columns desktop) */
+.oa-segmentos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.oa-segment-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.oa-segment-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.oa-segment-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.oa-segment-card:hover .oa-segment-image-container img {
+    transform: scale(1.05);
+}
+
+.oa-segment-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.oa-segment-title {
+    color: #d4a74c;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.oa-segment-text {
+    color: #e5e5e5;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Soluções Adaptadas (Grid 4x2) */
+.oa-solucoes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.oa-solucao-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.oa-solucao-icon {
+    font-size: 32px;
+    color: #d4a74c;
+    margin-bottom: 15px;
+}
+
+.oa-solucao-title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Projetos Sociais */
+.oa-social-bg {
+    background-image: url('../images/backgrounds/onde_atuamos_social_bg.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.oa-social-bg::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(18, 12, 24, 0.85); /* Darker overlay for respectful tone */
+    z-index: 0;
+}
+
+/* Timeline */
+.oa-timeline-container {
+    margin-top: 60px;
+    position: relative;
+}
+.oa-timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+.oa-timeline::before {
+    content: '';
+    position: absolute;
+    top: 30px; /* Center of the icon/dot */
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: rgba(212, 167, 76, 0.3);
+    z-index: 1;
+}
+
+.oa-timeline-item {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.oa-timeline-icon {
+    width: 60px;
+    height: 60px;
+    background: #1a1423;
+    border: 2px solid #d4a74c;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4a74c;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(212, 167, 76, 0.2);
+}
+
+.oa-timeline-title {
+    color: #d4a74c;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.oa-timeline-desc {
+    color: #cccccc;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Galeria Filtering */
+.oa-gallery-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.oa-gallery-btn {
+    background: transparent;
+    border: 1px solid rgba(212, 167, 76, 0.5);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.oa-gallery-btn:hover, .oa-gallery-btn.active {
+    background: #d4a74c;
+    color: #1a1423;
+    font-weight: 600;
+}
+
+.oa-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.oa-gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.oa-gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.oa-gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .oa-segmentos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .oa-solucoes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .oa-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .oa-timeline {
+        flex-direction: column;
+    }
+    .oa-timeline::before {
+        top: 0;
+        bottom: 0;
+        left: 30px;
+        width: 2px;
+        height: auto;
+    }
+    .oa-timeline-item {
+        display: flex;
+        text-align: left;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .oa-timeline-icon {
+        margin: 0 20px 0 0;
+        flex-shrink: 0;
+    }
+    .oa-timeline-content {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .oa-segmentos-grid {
+        grid-template-columns: 1fr;
+    }
+    .oa-solucoes-grid {
+        grid-template-columns: 1fr;
+    }
+    .oa-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}

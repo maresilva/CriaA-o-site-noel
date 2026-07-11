@@ -1,0 +1,327 @@
+<div id="Content" style="background-color:#1a1423; overflow:hidden;">
+
+    <!-- 1. Hero -->
+    <section class="ca-section oa-hero-bg d-flex align-items-center" style="min-height: 100vh;">
+        <div class="oa-hero-content container text-center" style="padding-top:100px;">
+            <p class="ca-eyebrow text-uppercase ca-fade-up" style="color:#d4a74c; letter-spacing:0.18em; font-size:14px; margin-bottom:15px;">ONDE E PARA QUEM CRIAMOS MAGIA</p>
+            <h1 class="ca-title ca-fade-up" style="color:#fff; max-width:800px; margin:0 auto 30px; line-height:1.2;">
+                Transformamos diferentes ambientes em <br><span class="oa-title-highlight">Verdadeiros Cenários de Encantamento</span>
+            </h1>
+            <p class="ca-fade-up" style="color:#e5e5e5; font-size:18px; max-width:650px; margin:0 auto 40px; line-height:1.6;">
+                Nossa expertise não tem limites. Do grande varejo aos espaços corporativos e projetos sociais, adaptamos nossos projetos para impactar o seu público com excelência e emoção.
+            </p>
+            <div class="ca-fade-up" style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+                <a href="https://wa.me/5585988601400" target="_blank" class="ca-btn-primary">Falar com um Especialista</a>
+                <a href="solucoes.html" class="ca-btn-secondary" style="border:1px solid #d4a74c; color:#d4a74c; background:transparent; padding:15px 30px; border-radius:30px; text-decoration:none; font-weight:600; transition:all 0.3s;">Conhecer nossas Soluções</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Segmentos Atendidos -->
+    <section class="ca-section" style="padding: 100px 0;">
+        <div class="container">
+            <div class="text-center mb-5 ca-fade-up">
+                <p class="ca-eyebrow text-uppercase" style="color:#d4a74c; letter-spacing:0.18em; font-size:14px;">SEGMENTOS QUE ATENDEMOS</p>
+                <h2 class="ca-title" style="color:#fff;">Onde a <span class="oa-title-highlight">Magia</span> Acontece</h2>
+            </div>
+            
+            <div class="oa-segmentos-grid">
+                <!-- 1. Shopping Centers -->
+                <div class="oa-glass-card oa-segment-card ca-fade-up">
+                    <div class="oa-segment-image-container">
+                        <img src="assets/images/gallery/shopping_natal_1783720410936.png" alt="Decoração de Natal para Shopping Centers">
+                    </div>
+                    <div class="oa-segment-content">
+                        <h3 class="oa-segment-title">Shopping Centers</h3>
+                        <p class="oa-segment-text">Projetos grandiosos e interativos desenhados para atrair grande fluxo de pessoas, aumentar o tempo de permanência e gerar forte retorno comercial e engajamento.</p>
+                    </div>
+                </div>
+                
+                <!-- 2. Prefeituras -->
+                <div class="oa-glass-card oa-segment-card ca-fade-up" style="transition-delay: 0.1s;">
+                    <div class="oa-segment-image-container">
+                        <img src="assets/images/gallery/prefeitura_natal_1783720420891.png" alt="Natal de Luz para Prefeituras">
+                    </div>
+                    <div class="oa-segment-content">
+                        <h3 class="oa-segment-title">Prefeituras</h3>
+                        <p class="oa-segment-text">Iluminação monumental, praças decoradas e desfiles cênicos que fomentam o turismo local, valorizam o patrimônio histórico e unem a comunidade.</p>
+                    </div>
+                </div>
+
+                <!-- 3. Escolas -->
+                <div class="oa-glass-card oa-segment-card ca-fade-up" style="transition-delay: 0.2s;">
+                    <div class="oa-segment-image-container">
+                        <img src="assets/images/gallery/escola_natal_1783720429899.png" alt="Eventos natalinos para Escolas">
+                    </div>
+                    <div class="oa-segment-content">
+                        <h3 class="oa-segment-title">Escolas</h3>
+                        <p class="oa-segment-text">Chegadas lúdicas do Papai Noel, cantatas e cenários interativos que transformam o encerramento do ano letivo em uma memória inesquecível para alunos e famílias.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Empresas -->
+                <div class="oa-glass-card oa-segment-card ca-fade-up">
+                    <div class="oa-segment-image-container">
+                        <img src="assets/images/gallery/empresa_natal_1783720439041.png" alt="Festas de Natal Corporativas">
+                    </div>
+                    <div class="oa-segment-content">
+                        <h3 class="oa-segment-title">Empresas e Corporativo</h3>
+                        <p class="oa-segment-text">Decorações em halls de entrada, confraternizações temáticas e ativações para colaboradores que reforçam o clima organizacional e a cultura da empresa.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Residências -->
+                <div class="oa-glass-card oa-segment-card ca-fade-up" style="transition-delay: 0.1s;">
+                    <div class="oa-segment-image-container">
+                        <img src="assets/images/gallery/casa_natal_1783720448832.png" alt="Decoração de Natal Residencial e Condomínios">
+                    </div>
+                    <div class="oa-segment-content">
+                        <h3 class="oa-segment-title">Condomínios e Residências</h3>
+                        <p class="oa-segment-text">Projetos exclusivos de iluminação de fachadas e paisagismo natalino, trazendo a verdadeira essência da data para o conforto e requinte do seu lar.</p>
+                    </div>
+                </div>
+
+                <!-- 6. Buffets -->
+                <div class="oa-glass-card oa-segment-card ca-fade-up" style="transition-delay: 0.2s;">
+                    <div class="oa-segment-image-container">
+                        <img src="assets/images/gallery/buffet_natal.png" alt="Natal em Buffets Infantis e Espaços de Eventos">
+                    </div>
+                    <div class="oa-segment-content">
+                        <h3 class="oa-segment-title">Buffets e Espaços de Eventos</h3>
+                        <p class="oa-segment-text">Cenografias instagramáveis, personagens exclusivos e shows interativos que elevam o padrão das festas de fim de ano do seu espaço.</p>
+                    </div>
+                </div>
+
+                <!-- 7. Hospitais -->
+                <div class="oa-glass-card oa-segment-card ca-fade-up">
+                    <div class="oa-segment-image-container">
+                        <img src="assets/images/gallery/hospital_natal.png" alt="Visita do Papai Noel em Hospitais">
+                    </div>
+                    <div class="oa-segment-content">
+                        <h3 class="oa-segment-title">Hospitais</h3>
+                        <p class="oa-segment-text">Ações humanizadas e decorações acolhedoras projetadas para levar esperança, conforto e sorrisos para pacientes e equipes médicas em momentos delicados.</p>
+                    </div>
+                </div>
+
+                <!-- 8. Creches -->
+                <div class="oa-glass-card oa-segment-card ca-fade-up" style="transition-delay: 0.1s;">
+                    <div class="oa-segment-image-container">
+                        <img src="assets/images/gallery/creche_natal.png" alt="Magia do Natal em Creches">
+                    </div>
+                    <div class="oa-segment-content">
+                        <h3 class="oa-segment-title">Creches</h3>
+                        <p class="oa-segment-text">Interações cuidadosas, contação de histórias e um ambiente seguro e mágico adaptado para a primeira infância.</p>
+                    </div>
+                </div>
+
+                <!-- 9. Asilos -->
+                <div class="oa-glass-card oa-segment-card ca-fade-up" style="transition-delay: 0.2s;">
+                    <div class="oa-segment-image-container">
+                        <img src="assets/images/gallery/asilo_natal.png" alt="Natal em Casas de Repouso">
+                    </div>
+                    <div class="oa-segment-content">
+                        <h3 class="oa-segment-title">Asilos e Inst. de Acolhimento</h3>
+                        <p class="oa-segment-text">Apresentações musicais (cantatas), entrega de presentes com Papai Noel e uma atmosfera de respeito, carinho e profunda emoção.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Soluções Adaptadas -->
+    <section class="ca-section" style="background-color:#120c18; padding: 100px 0;">
+        <div class="container">
+            <div class="text-center mb-5 ca-fade-up">
+                <h2 class="ca-title" style="color:#fff;">O que muda de um <span class="oa-title-highlight">projeto para o outro?</span></h2>
+                <p style="color:#ccc; font-size:16px; max-width:700px; margin:20px auto 0;">Adaptamos nosso formato de entrega para garantir que cada cliente receba a solução perfeita, respeitando suas particularidades. Personalizamos:</p>
+            </div>
+            
+            <div class="oa-solucoes-grid">
+                <div class="oa-glass-card oa-solucao-item ca-fade-up">
+                    <div class="oa-solucao-icon"><i class="icon-users"></i></div>
+                    <h3 class="oa-solucao-title">Público e Faixa Etária</h3>
+                </div>
+                <div class="oa-glass-card oa-solucao-item ca-fade-up" style="transition-delay: 0.1s;">
+                    <div class="oa-solucao-icon"><i class="icon-layout"></i></div>
+                    <h3 class="oa-solucao-title">Espaço e Estrutura</h3>
+                </div>
+                <div class="oa-glass-card oa-solucao-item ca-fade-up" style="transition-delay: 0.2s;">
+                    <div class="oa-solucao-icon"><i class="icon-clock"></i></div>
+                    <h3 class="oa-solucao-title">Tempo de Duração</h3>
+                </div>
+                <div class="oa-glass-card oa-solucao-item ca-fade-up" style="transition-delay: 0.3s;">
+                    <div class="oa-solucao-icon"><i class="icon-target"></i></div>
+                    <h3 class="oa-solucao-title">Objetivo Principal</h3>
+                </div>
+                <div class="oa-glass-card oa-solucao-item ca-fade-up">
+                    <div class="oa-solucao-icon"><i class="icon-mic"></i></div>
+                    <h3 class="oa-solucao-title">Tom de Comunicação</h3>
+                </div>
+                <div class="oa-glass-card oa-solucao-item ca-fade-up" style="transition-delay: 0.1s;">
+                    <div class="oa-solucao-icon"><i class="icon-palette"></i></div>
+                    <h3 class="oa-solucao-title">Estética e Identidade</h3>
+                </div>
+                <div class="oa-glass-card oa-solucao-item ca-fade-up" style="transition-delay: 0.2s;">
+                    <div class="oa-solucao-icon"><i class="icon-chart-line"></i></div>
+                    <h3 class="oa-solucao-title">Orçamento Disponível</h3>
+                </div>
+                <div class="oa-glass-card oa-solucao-item ca-fade-up" style="transition-delay: 0.3s;">
+                    <div class="oa-solucao-icon"><i class="icon-shield"></i></div>
+                    <h3 class="oa-solucao-title">Protocolos de Segurança</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Projetos Sociais -->
+    <section class="ca-section oa-social-bg" style="padding: 120px 0;">
+        <div class="container text-center position-relative" style="z-index: 1;">
+            <p class="ca-eyebrow text-uppercase ca-fade-up" style="color:#d4a74c; letter-spacing:0.18em; font-size:14px; margin-bottom:15px;">IMPACTO COM PROPÓSITO</p>
+            <h2 class="ca-title ca-fade-up" style="color:#fff; max-width:800px; margin:0 auto 30px;">
+                Também abraçamos <span class="oa-title-highlight">Projetos Sociais</span>
+            </h2>
+            <p class="ca-fade-up" style="color:#e5e5e5; font-size:18px; max-width:750px; margin:0 auto 40px; line-height:1.6;">
+                A magia do Natal pertence a todos. Em parceria com empresas patrocinadoras ou por iniciativa própria, levamos estrutura, brilho e espetáculos gratuitos para comunidades carentes, ONGs e projetos sociais, transformando realidades através da emoção.
+            </p>
+            <a href="https://wa.me/5585988601400" target="_blank" class="ca-btn-primary ca-fade-up" style="padding:15px 40px; font-size:16px;">Seja um Patrocinador Social</a>
+        </div>
+    </section>
+
+    <!-- 5. Como Criamos (Timeline) -->
+    <section class="ca-section" style="padding: 100px 0;">
+        <div class="container">
+            <div class="text-center mb-5 ca-fade-up">
+                <p class="ca-eyebrow text-uppercase" style="color:#d4a74c; letter-spacing:0.18em; font-size:14px;">NOSSO PROCESSO</p>
+                <h2 class="ca-title" style="color:#fff;">Do briefing ao <span class="oa-title-highlight">espetáculo final</span></h2>
+            </div>
+            
+            <div class="oa-timeline-container ca-fade-up">
+                <ul class="oa-timeline">
+                    <li class="oa-timeline-item">
+                        <div class="oa-timeline-icon">1</div>
+                        <div class="oa-timeline-content">
+                            <h4 class="oa-timeline-title">Briefing e Imersão</h4>
+                            <p class="oa-timeline-desc">Entendemos o seu público, ambiente e o objetivo da sua ação natalina.</p>
+                        </div>
+                    </li>
+                    <li class="oa-timeline-item">
+                        <div class="oa-timeline-icon">2</div>
+                        <div class="oa-timeline-content">
+                            <h4 class="oa-timeline-title">Projeto Criativo</h4>
+                            <p class="oa-timeline-desc">Desenvolvemos o conceito, cenografia, roteiro e figurinos exclusivos.</p>
+                        </div>
+                    </li>
+                    <li class="oa-timeline-item">
+                        <div class="oa-timeline-icon">3</div>
+                        <div class="oa-timeline-content">
+                            <h4 class="oa-timeline-title">Aprovação</h4>
+                            <p class="oa-timeline-desc">Alinhamos todos os detalhes técnicos, visuais e de investimento.</p>
+                        </div>
+                    </li>
+                    <li class="oa-timeline-item">
+                        <div class="oa-timeline-icon">4</div>
+                        <div class="oa-timeline-content">
+                            <h4 class="oa-timeline-title">Produção</h4>
+                            <p class="oa-timeline-desc">Confecção de peças, ensaios de elenco e fabricação nos ateliês.</p>
+                        </div>
+                    </li>
+                    <li class="oa-timeline-item">
+                        <div class="oa-timeline-icon">5</div>
+                        <div class="oa-timeline-content">
+                            <h4 class="oa-timeline-title">Montagem</h4>
+                            <p class="oa-timeline-desc">Instalação segura, rápida e limpa no local do evento.</p>
+                        </div>
+                    </li>
+                    <li class="oa-timeline-item">
+                        <div class="oa-timeline-icon">6</div>
+                        <div class="oa-timeline-content">
+                            <h4 class="oa-timeline-title">Magia Acontece</h4>
+                            <p class="oa-timeline-desc">Execução impecável da ação ou espetáculo para encantar seu público.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Galeria por segmento -->
+    <section class="ca-section" style="background-color:#120c18; padding: 100px 0;">
+        <div class="container">
+            <div class="text-center mb-5 ca-fade-up">
+                <h2 class="ca-title" style="color:#fff;">Experiências <span class="oa-title-highlight">Memoráveis</span></h2>
+            </div>
+            
+            <div class="oa-gallery-filters ca-fade-up">
+                <button class="oa-gallery-btn active" data-filter="all">Todos</button>
+                <button class="oa-gallery-btn" data-filter="shopping">Shopping</button>
+                <button class="oa-gallery-btn" data-filter="corp">Corporativo</button>
+                <button class="oa-gallery-btn" data-filter="social">Projetos Sociais</button>
+            </div>
+            
+            <div class="oa-gallery-grid ca-fade-up">
+                <!-- Shopping -->
+                <div class="oa-gallery-item shopping" data-category="shopping">
+                    <img src="assets/images/gallery/shopping_natal_1783720410936.png" alt="Galeria Shopping">
+                </div>
+                <!-- Corporativo (Empresa) -->
+                <div class="oa-gallery-item corp" data-category="corp">
+                    <img src="assets/images/gallery/empresa_natal_1783720439041.png" alt="Galeria Corporativo">
+                </div>
+                <!-- Social (Asilo) -->
+                <div class="oa-gallery-item social" data-category="social">
+                    <img src="assets/images/gallery/asilo_natal.png" alt="Galeria Social">
+                </div>
+                <!-- Institucional (Prefeitura) -->
+                <div class="oa-gallery-item corp" data-category="corp">
+                    <img src="assets/images/gallery/prefeitura_natal_1783720420891.png" alt="Galeria Prefeitura">
+                </div>
+                <!-- Institucional (Escola) -->
+                <div class="oa-gallery-item corp" data-category="corp">
+                    <img src="assets/images/gallery/escola_natal_1783720429899.png" alt="Galeria Escola">
+                </div>
+                <!-- Social -->
+                <div class="oa-gallery-item social" data-category="social">
+                    <img src="assets/images/gallery/social_natal_1783720457458.png" alt="Galeria Social">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CTA Final -->
+    <section class="ca-section" style="padding: 100px 0;">
+        <div class="container text-center ca-fade-up">
+            <h2 class="ca-title" style="color:#fff; margin-bottom:20px;">Não importa o tamanho ou formato do seu espaço.</h2>
+            <p style="color:#e5e5e5; font-size:18px; max-width:600px; margin:0 auto 40px;">Se você deseja encantar pessoas e gerar resultados inesquecíveis neste Natal, nós temos o projeto ideal.</p>
+            <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+                <a href="https://wa.me/5585988601400" target="_blank" class="ca-btn-primary" style="padding:15px 40px; font-size:16px;">Solicitar Proposta Customizada</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Simple Gallery Filter
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.oa-gallery-btn');
+            const galleryItems = document.querySelectorAll('.oa-gallery-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to current
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if(filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</div>

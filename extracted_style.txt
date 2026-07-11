@@ -1,0 +1,331 @@
+﻿  <style id="ca-solutions-style">
+    .ca-solutions {
+      position: relative;
+      width: 100%;
+      padding: 120px 0 80px;
+      background-image: url('assets/images/backgrounds/background-segunda-sessão-shopping-decorado-natal-criaacao-entretenimento.jpg');
+      background-size: cover;
+      background-position: top center;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    .ca-solutions::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(26, 3, 4, 0.85) 0%, rgba(42, 5, 6, 0.40) 50%, rgba(26, 3, 4, 0.85) 100%);
+      z-index: 1;
+    }
+
+    .ca-solutions-container {
+      position: relative;
+      z-index: 2;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+
+    /* Header */
+    .ca-solutions-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .ca-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border: 1px solid rgba(242, 184, 75, 0.4);
+      border-radius: 30px;
+      background: rgba(242, 184, 75, 0.05);
+      backdrop-filter: blur(10px);
+      color: #F2B84B;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .ca-solutions-header .ca-title {
+      font-size: 48px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin: 0 0 10px 0;
+      line-height: 1.1;
+      font-family: inherit;
+    }
+
+    .ca-solutions-header .ca-subtitle {
+      font-family: 'Great Vibes', cursive;
+      font-size: 42px;
+      color: #F2B84B;
+      margin-bottom: 24px;
+      text-shadow: 0 0 20px rgba(242, 184, 75, 0.3);
+      font-weight: 400;
+    }
+
+    .ca-solutions-header .ca-desc {
+      max-width: 800px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Grid */
+    .ca-services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-bottom: 80px;
+    }
+
+    @media (max-width: 1200px) {
+      .ca-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .ca-services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Card */
+    .ca-service-card {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      height: 520px;
+      border: 1px solid rgba(242, 184, 75, 0.3);
+      box-shadow: 0 0 15px rgba(242, 184, 75, 0.1);
+      transition: all 0.4s ease;
+      cursor: pointer;
+      background: #1C0A09;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none !important;
+    }
+
+    .ca-service-card:hover {
+      transform: translateY(-10px);
+      border-color: rgba(242, 184, 75, 0.8);
+      box-shadow: 0 0 30px rgba(242, 184, 75, 0.3);
+    }
+
+    .ca-card-img-wrapper {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+    }
+
+    .ca-card-img-wrapper::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: linear-gradient(to bottom, rgba(28, 10, 9, 0) 0%, rgba(28, 10, 9, 1) 100%);
+      z-index: 2;
+    }
+
+    .ca-card-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.6s ease;
+      z-index: 1;
+    }
+
+    .ca-service-card:hover .ca-card-bg {
+      transform: scale(1.08);
+    }
+
+    .ca-card-content {
+      position: relative;
+      padding: 0 28px 32px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      flex: 1;
+      z-index: 3;
+    }
+
+    .ca-card-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(242, 184, 75, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -32px;
+      margin-bottom: 20px;
+      color: #F2B84B;
+      background: #140706;
+      box-shadow: 0 0 10px rgba(242, 184, 75, 0.2);
+    }
+
+    .ca-card-icon svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    .ca-card-title {
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 800;
+      margin: 0 0 12px 0;
+      line-height: 1.2;
+    }
+
+    .ca-card-desc {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 14px;
+      line-height: 1.55;
+      margin: 0 0 24px 0;
+      font-weight: 400;
+    }
+
+    .ca-card-cta {
+      color: #F2B84B;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+    }
+
+    .ca-card-cta svg {
+      margin-left: 6px;
+      transition: transform 0.3s ease;
+    }
+
+    .ca-service-card:hover .ca-card-cta svg {
+      transform: translateX(4px);
+    }
+
+    /* Countdown Block */
+    .ca-countdown-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(20, 3, 4, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 30px 40px;
+      backdrop-filter: blur(20px);
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .ca-countdown-block {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+      }
+    }
+
+    .ca-countdown-left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ca-countdown-label {
+      color: #F2B84B;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .ca-countdown-script {
+      font-family: 'Great Vibes', cursive;
+      font-size: 42px;
+      color: #FFF;
+      line-height: 1;
+    }
+
+    .ca-countdown-right {
+      display: flex;
+      gap: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .ca-countdown-right {
+        margin-top: 24px;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        width: 100%;
+      }
+
+      .ca-countdown-item {
+        min-width: 0 !important;
+        padding: 16px 8px !important;
+        border-radius: 12px !important;
+      }
+
+      .ca-countdown-num {
+        font-size: 34px !important;
+      }
+
+      .ca-countdown-text {
+        font-size: 10px !important;
+        letter-spacing: 0px !important;
+      }
+    }
+
+    .ca-countdown-item {
+      background: rgba(15, 2, 2, 0.6);
+      border: 1px solid rgba(242, 184, 75, 0.2);
+      border-radius: 12px;
+      padding: 16px;
+      min-width: 80px;
+      text-align: center;
+      box-shadow: inset 0 0 20px rgba(242, 184, 75, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .ca-countdown-item:hover {
+      border-color: rgba(242, 184, 75, 0.5);
+      box-shadow: inset 0 0 20px rgba(242, 184, 75, 0.15);
+    }
+
+    .ca-countdown-num {
+      font-size: 32px;
+      font-weight: 800;
+      color: #F2B84B;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .ca-countdown-text {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* Hide the old elementor section entirely */
+    .elementor-element-5690081 {
+      display: none !important;
+    }
+  </style>

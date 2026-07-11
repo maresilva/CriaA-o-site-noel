@@ -566,3 +566,107 @@ body {
   }
 }
 
+
+/* --- PREMIUM SECTION: ONDE A MAGIA ACONTECE --- */
+.oa-title-highlight {
+    font-family: var(--ca-font-script, 'Great Vibes', cursive);
+    font-size: 1.4em;
+    font-weight: normal;
+    padding: 0 5px;
+    color: var(--ca-dourado);
+    text-shadow: 0 0 15px rgba(242, 184, 75, 0.4);
+    font-style: italic;
+}
+
+.oa-segmentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.oa-glass-card {
+    background: rgba(26, 5, 10, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(242, 184, 75, 0.15);
+    border-radius: var(--ca-border-radius, 24px);
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.oa-glass-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(242, 184, 75, 0.6);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(242, 184, 75, 0.2);
+}
+
+.oa-segment-image-container {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+
+.oa-segment-image-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 70%;
+    background: linear-gradient(to top, rgba(26, 5, 10, 1), transparent);
+    pointer-events: none;
+}
+
+.oa-segment-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.oa-glass-card:hover .oa-segment-image-container img {
+    transform: scale(1.08);
+}
+
+.oa-segment-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    z-index: 2;
+    margin-top: -50px;
+}
+
+.oa-segment-title {
+    color: var(--ca-dourado);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.oa-segment-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* --- PREMIUM BACKGROUND FOR MAGIA SECTION --- */
+.ca-magia-bg {
+    background-image: linear-gradient(to bottom, rgba(26, 5, 10, 0.95) 0%, rgba(26, 5, 10, 0.75) 50%, rgba(26, 5, 10, 0.95) 100%), url('../images/backgrounds/background-segunda-sess%C3%A3o-shopping-decorado-natal-criaacao-entretenimento.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.ca-magia-bg .ca-title {
+    font-family: var(--ca-font-display, 'Playfair Display', Georgia, serif);
+    font-size: 42px;
+    letter-spacing: 1px;
+}
