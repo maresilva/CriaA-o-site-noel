@@ -1,0 +1,161 @@
+/* ========================================================================
+ * CRIAAÇÃO ENTRETENIMENTO - GLOBAL DESIGN SYSTEM
+ * ========================================================================
+ * Arquivo central de unificação visual (Tokens, Sombras, Bordas, Botões e Cards).
+ */
+
+:root {
+    /* CORES - MARCA PRINCIPAL (Vermelho Escuro) */
+    --ca-primary-950: #1a0304;
+    --ca-primary-900: #2a0506;
+    --ca-primary-850: #360607;
+    --ca-primary-800: #490b09;
+    --ca-primary-700: #6a0006;
+    --ca-primary-600: #8f1016;
+    --ca-primary-500: #b91620;
+    --ca-primary-400: #dc252f;
+    --ca-primary-300: #ff4b55;
+    
+    /* CORES - DOURADO (Acentos) */
+    --ca-gold-900: #5b3304;
+    --ca-gold-800: #7d4a08;
+    --ca-gold-700: #a66a10;
+    --ca-gold-600: #d2932a;
+    --ca-gold-500: #f2b84b;
+    --ca-gold-400: #f7c66b;
+    --ca-gold-300: #ffdc91;
+    --ca-gold-100: #fff4d8;
+
+    /* CORES - CREME (Bases Claras) */
+    --ca-cream-50: #fffaf0;
+    --ca-cream-100: #fff6e6;
+    --ca-cream-200: #f6e4c4;
+
+    /* CORES - NEUTROS */
+    --ca-neutral-950: #090606;
+    --ca-neutral-900: #111111;
+    --ca-neutral-800: #1b1b1b;
+    --ca-neutral-700: #2d2d2d;
+    --ca-neutral-500: #737373;
+    --ca-neutral-300: #c9c2b9;
+    --ca-neutral-100: #f4efe8;
+    --ca-white: #ffffff;
+
+    /* BORDAS (BORDER RADIUS) */
+    --ca-radius-sm: 8px;
+    --ca-radius-md: 12px;
+    --ca-radius-lg: 24px;
+    --ca-radius-full: 9999px;
+
+    /* SOMBRAS (SHADOWS & GLOWS) */
+    --ca-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --ca-shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --ca-shadow-glow: 0 0 20px rgba(242, 184, 75, 0.15);
+    --ca-shadow-glow-hover: 0 0 30px rgba(242, 184, 75, 0.35);
+
+    /* TRANSIÇÕES */
+    --ca-transition-fast: 0.2s ease;
+    --ca-transition-normal: 0.35s ease;
+}
+
+/* ========================================================================
+ * UTILITIES: CONTAINERS & GRID
+ * ======================================================================== */
+.ca-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px; /* Mobile safe padding */
+}
+
+@media (min-width: 768px) {
+    .ca-container {
+        padding: 0 24px;
+    }
+}
+
+/* ========================================================================
+ * COMPONENTES GLOBAIS
+ * ======================================================================== */
+
+/* ICONS */
+.ca-icon-gold {
+    color: var(--ca-gold-500);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+/* CARDS GERAIS (.ca-card, .ca-segmento-card, etc) */
+.ca-card, .ca-segmento-card, .sol-segment-card, .sol-time-item {
+    border-radius: var(--ca-radius-md) !important;
+    background: rgba(42, 5, 6, 0.4); 
+    border: 1px solid rgba(242, 184, 75, 0.15) !important;
+    box-shadow: var(--ca-shadow-card) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    transition: all var(--ca-transition-normal) !important;
+    overflow: hidden;
+    padding: 20px !important; /* Mobile friendly padding */
+}
+
+@media (min-width: 768px) {
+    .ca-card, .ca-segmento-card, .sol-segment-card, .sol-time-item {
+        padding: 28px !important; /* Desktop padding */
+    }
+}
+
+.ca-card:hover, .ca-segmento-card:hover, .sol-segment-card:hover, .sol-time-item:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(242, 184, 75, 0.4) !important;
+    box-shadow: var(--ca-shadow-glow-hover) !important;
+}
+
+/* BOTÕES GERAIS */
+.ca-btn-primary, .ca-btn-secondary, .sol-cta-btn, .ca-card-cta, .ca-segmentos-btn {
+    display: flex !important;
+    width: 100% !important; /* 100% no mobile */
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 14px 20px !important;
+    border-radius: var(--ca-radius-md) !important; 
+    text-decoration: none !important;
+    transition: all var(--ca-transition-normal) !important;
+    cursor: pointer;
+    box-shadow: var(--ca-shadow-glow) !important;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+    .ca-btn-primary, .ca-btn-secondary, .sol-cta-btn, .ca-card-cta, .ca-segmentos-btn {
+        display: inline-flex !important;
+        width: auto !important; /* Retorna a auto no tablet/desktop */
+        padding: 14px 28px !important;
+        margin-bottom: 0;
+    }
+}
+
+/* Botão Primário (Fundo Dourado) */
+.ca-btn-primary, .sol-cta-btn, .ca-segmentos-btn {
+    background-color: var(--ca-gold-500) !important;
+    color: var(--ca-primary-950) !important;
+    border: 1px solid var(--ca-gold-400) !important;
+}
+
+.ca-btn-primary:hover, .sol-cta-btn:hover, .ca-segmentos-btn:hover {
+    background-color: var(--ca-gold-400) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: var(--ca-shadow-glow-hover) !important;
+}
+
+/* Botão Secundário (Outline) */
+.ca-btn-secondary, .ca-card-cta {
+    background-color: transparent !important;
+    color: var(--ca-gold-500) !important;
+    border: 1px solid var(--ca-gold-500) !important;
+}
+
+.ca-btn-secondary:hover, .ca-card-cta:hover {
+    background-color: rgba(242, 184, 75, 0.1) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: var(--ca-shadow-glow-hover) !important;
+}

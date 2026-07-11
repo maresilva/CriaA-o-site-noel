@@ -1,23 +1,17 @@
 /* 
  * ========================================================================
- * DESIGN SYSTEM - TOKENS TIPOGRÁFICOS
+ * DESIGN SYSTEM - TOKENS TIPOGRÁFICOS & REGRAS
  * ========================================================================
- * Apenas definição de tokens (variáveis). 
- * Nenhum componente é alterado aqui.
  */
 
 :root {
-    /* -----------------------------------------
-     * FAMÍLIAS TIPOGRÁFICAS
-     * ----------------------------------------- */
+    /* FAMÍLIAS TIPOGRÁFICAS */
     --ca-font-primary: 'Inter', 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     --ca-font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
     --ca-font-script: 'Great Vibes', 'Brush Script MT', cursive;
     --ca-font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, Monaco, monospace;
 
-    /* -----------------------------------------
-     * ESCALA DE TAMANHOS (FONT-SIZE)
-     * ----------------------------------------- */
+    /* ESCALA DE TAMANHOS (FONT-SIZE) */
     --ca-text-xs: 0.75rem;    /* 12px */
     --ca-text-sm: 0.875rem;   /* 14px */
     --ca-text-md: 1rem;       /* 16px (Base) */
@@ -30,9 +24,7 @@
     --ca-text-6xl: 3.75rem;   /* 60px */
     --ca-text-7xl: 4.5rem;    /* 72px */
 
-    /* -----------------------------------------
-     * PESOS (FONT-WEIGHT)
-     * ----------------------------------------- */
+    /* PESOS (FONT-WEIGHT) */
     --ca-weight-light: 300;
     --ca-weight-regular: 400;
     --ca-weight-medium: 500;
@@ -40,108 +32,166 @@
     --ca-weight-bold: 700;
     --ca-weight-black: 900;
 
-    /* -----------------------------------------
-     * ALTURA DAS LINHAS (LINE-HEIGHT)
-     * ----------------------------------------- */
+    /* ALTURA DAS LINHAS (LINE-HEIGHT) */
     --ca-line-none: 1;
-    --ca-line-tight: 1.1;     /* Ideal para títulos grandes (H1, H2) */
-    --ca-line-snug: 1.3;      /* Ideal para subtítulos (H3, H4) */
-    --ca-line-normal: 1.5;    /* Ideal para parágrafos base */
-    --ca-line-relaxed: 1.75;  /* Ideal para blocos de leitura densa */
+    --ca-line-tight: 1.1;     
+    --ca-line-snug: 1.3;      
+    --ca-line-normal: 1.5;    
+    --ca-line-relaxed: 1.75;  
     --ca-line-loose: 2;
 
-    /* -----------------------------------------
-     * ESPAÇAMENTO ENTRE LETRAS (LETTER-SPACING)
-     * ----------------------------------------- */
+    /* ESPAÇAMENTO ENTRE LETRAS (LETTER-SPACING) */
     --ca-tracking-tighter: -0.05em;
     --ca-tracking-tight: -0.025em;
     --ca-tracking-normal: 0em;
     --ca-tracking-wide: 0.025em;
     --ca-tracking-wider: 0.05em;
-    --ca-tracking-widest: 0.1em;      /* Ideal para sobrancelhas (eyebrow) / uppercase */
-    --ca-tracking-mega: 0.2em;        /* Para destaques muito específicos em maiúsculas */
+    --ca-tracking-widest: 0.1em;      
+    --ca-tracking-mega: 0.2em;        
 }
 
 /* ========================================================================
- * APLICAÃ‡ÃƒO DESKTOP (ETAPA 2)
+ * APLICAÇÃO BASE (MOBILE-FIRST)
  * ========================================================================
- * AplicaÃ§Ã£o estrita no Desktop para nÃ£o afetar os componentes Mobile.
+ * 320px até 767px
  */
+
+/* HEROS / GRANDES TÍTULOS */
+h1, .ca-hero-title {
+    font-family: var(--ca-font-display, serif) !important;
+    font-size: 38px !important;
+    line-height: var(--ca-line-tight) !important;
+    font-weight: var(--ca-weight-bold) !important;
+    letter-spacing: var(--ca-tracking-tight) !important;
+}
+
+/* H2 / TÍTULOS DE SEÇÃO */
+h2, .ca-title, .sol-title-main {
+    font-family: var(--ca-font-display, serif) !important;
+    font-size: 28px !important;
+    line-height: var(--ca-line-snug) !important;
+    font-weight: var(--ca-weight-bold) !important;
+    letter-spacing: var(--ca-tracking-normal) !important;
+    margin-bottom: 20px !important;
+}
+
+/* H3 / TÍTULOS DE CARDS E SUBSEÇÕES */
+h3, .ca-card-title, .oa-segment-title, .sol-segment-title, .sol-time-title {
+    font-family: var(--ca-font-primary, sans-serif) !important;
+    font-size: var(--ca-text-xl) !important;
+    line-height: var(--ca-line-snug) !important;
+    font-weight: var(--ca-weight-semibold) !important;
+    letter-spacing: var(--ca-tracking-normal) !important;
+}
+
+/* H4 / MENORES DESTAQUES */
+h4 {
+    font-family: var(--ca-font-primary, sans-serif) !important;
+    font-size: var(--ca-text-lg) !important;
+    line-height: var(--ca-line-snug) !important;
+    font-weight: var(--ca-weight-medium) !important;
+}
+
+/* TEXTOS / PARÁGRAFOS GERAIS */
+p, .ca-card-desc, .oa-segment-text, .sol-segment-desc, .sol-text-main {
+    font-family: var(--ca-font-primary, sans-serif) !important;
+    font-size: 15px !important;
+    line-height: var(--ca-line-normal) !important;
+    font-weight: var(--ca-weight-regular) !important;
+    letter-spacing: var(--ca-tracking-normal) !important;
+}
+
+/* BOTÕES GERAIS */
+.ca-btn-primary, .ca-btn-secondary, .sol-cta-btn, .ca-card-cta {
+    font-family: var(--ca-font-primary, sans-serif) !important;
+    font-size: 13px !important;
+    font-weight: var(--ca-weight-bold) !important;
+    letter-spacing: var(--ca-tracking-wider) !important;
+    text-transform: uppercase !important;
+}
+
+/* EYEBROWS (Sobrancelhas) */
+.ca-eyebrow, .sol-title-eyebrow, .ca-segmentos-eyebrow {
+    font-family: var(--ca-font-primary, sans-serif) !important;
+    font-size: 11px !important;
+    font-weight: var(--ca-weight-bold) !important;
+    letter-spacing: var(--ca-tracking-widest) !important;
+    text-transform: uppercase !important;
+}
+
+/* MENU E LINKS */
+#menu-menu-principal-1 li a, .menu-item a {
+    font-family: var(--ca-font-primary, sans-serif) !important;
+    font-size: 15px !important;
+    font-weight: var(--ca-weight-semibold) !important;
+    letter-spacing: var(--ca-tracking-wide) !important;
+}
+
+/* FOOTER TEXTOS */
+#footer p, #footer .textwidget, #footer a {
+    font-family: var(--ca-font-primary, sans-serif) !important;
+    font-size: 14px !important;
+    line-height: var(--ca-line-normal) !important;
+}
+
+
+/* ========================================================================
+ * APLICAÇÃO DESKTOP / TABLET
+ * ========================================================================
+ */
+@media (min-width: 768px) {
+    /* Tablet Typography Tweaks */
+    h1, .ca-hero-title { font-size: 46px !important; }
+    h2, .ca-title, .sol-title-main { font-size: 32px !important; }
+}
+
 @media (min-width: 992px) {
-    /* HEROS / GRANDES TÃTULOS */
+    /* HEROS / GRANDES TÍTULOS */
     h1, .ca-hero-title {
-        font-family: var(--ca-font-display, serif) !important;
         font-size: 56px !important;
         line-height: var(--ca-line-tight) !important;
-        font-weight: var(--ca-weight-bold) !important;
-        letter-spacing: var(--ca-tracking-tight) !important;
     }
 
-    /* H2 / TÃ TULOS DE SEÃ‡ÃƒO */
+    /* H2 / TÍTULOS DE SEÇÃO */
     h2, .ca-title, .sol-title-main {
-        font-family: var(--ca-font-display, serif) !important;
         font-size: var(--ca-text-4xl) !important;
         line-height: var(--ca-line-snug) !important;
-        font-weight: var(--ca-weight-bold) !important;
-        letter-spacing: var(--ca-tracking-normal) !important;
         margin-bottom: 24px !important;
     }
 
-    /* H3 / TÃ TULOS DE CARDS E SUBSEÃ‡Ã•ES */
+    /* H3 / TÍTULOS DE CARDS E SUBSEÇÕES */
     h3, .ca-card-title, .oa-segment-title, .sol-segment-title, .sol-time-title {
-        font-family: var(--ca-font-primary, sans-serif) !important;
         font-size: var(--ca-text-2xl) !important;
-        line-height: var(--ca-line-snug) !important;
-        font-weight: var(--ca-weight-semibold) !important;
-        letter-spacing: var(--ca-tracking-normal) !important;
     }
 
     /* H4 / MENORES DESTAQUES */
     h4 {
-        font-family: var(--ca-font-primary, sans-serif) !important;
         font-size: var(--ca-text-xl) !important;
-        line-height: var(--ca-line-snug) !important;
-        font-weight: var(--ca-weight-medium) !important;
     }
 
-    /* TEXTOS / PARÃGRAFOS GERAIS */
+    /* TEXTOS / PARÁGRAFOS GERAIS */
     p, .ca-card-desc, .oa-segment-text, .sol-segment-desc, .sol-text-main {
-        font-family: var(--ca-font-primary, sans-serif) !important;
         font-size: var(--ca-text-md) !important;
         line-height: var(--ca-line-relaxed) !important;
-        font-weight: var(--ca-weight-regular) !important;
-        letter-spacing: var(--ca-tracking-normal) !important;
     }
 
-    /* BOTÃ•ES GERAIS */
+    /* BOTÕES GERAIS */
     .ca-btn-primary, .ca-btn-secondary, .sol-cta-btn, .ca-card-cta {
-        font-family: var(--ca-font-primary, sans-serif) !important;
         font-size: var(--ca-text-sm) !important;
-        font-weight: var(--ca-weight-bold) !important;
-        letter-spacing: var(--ca-tracking-wider) !important;
-        text-transform: uppercase !important;
     }
 
-    /* EYEBROWS (Sobrancelhas) */
+    /* EYEBROWS */
     .ca-eyebrow, .sol-title-eyebrow, .ca-segmentos-eyebrow {
-        font-family: var(--ca-font-primary, sans-serif) !important;
         font-size: var(--ca-text-xs) !important;
-        font-weight: var(--ca-weight-bold) !important;
-        letter-spacing: var(--ca-tracking-widest) !important;
-        text-transform: uppercase !important;
     }
 
     /* MENU DESKTOP */
     #menu-menu-principal-1 li a, .menu-item a {
-        font-family: var(--ca-font-primary, sans-serif) !important;
         font-size: var(--ca-text-sm) !important;
-        font-weight: var(--ca-weight-semibold) !important;
-        letter-spacing: var(--ca-tracking-wide) !important;
     }
 
     /* FOOTER TEXTOS */
     #footer p, #footer .textwidget, #footer a {
-        font-family: var(--ca-font-primary, sans-serif) !important;
         font-size: var(--ca-text-sm) !important;
         line-height: var(--ca-line-relaxed) !important;
     }
