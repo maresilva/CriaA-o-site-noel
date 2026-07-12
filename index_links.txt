@@ -1,0 +1,10 @@
+﻿index.html | Home
+quem-somos.html | Quem Somos
+solucoes.html | SOLU&Ccedil;&Otilde;ES
+portfolio.html | Portfólio
+contato.html | Contato
+/solucoes | Conheça todas as soluções →
+portfolio.html | Conhe&ccedil;a nossos projetos
+https://api.whatsapp.com/send/?phone=5585988601400 | Falar com Consultor
+http://wa.me/5585988601400 | Orçamento Online
+

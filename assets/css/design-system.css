@@ -159,3 +159,67 @@
     transform: translateY(-2px) !important;
     box-shadow: var(--ca-shadow-glow-hover) !important;
 }
+
+/* ========================================================================
+ * INNER PAGES HERO (.ca-inner-hero)
+ * ======================================================================== */
+.ca-inner-hero {
+    position: relative;
+    background: radial-gradient(circle at center, var(--ca-primary-900) 0%, var(--ca-primary-950) 100%);
+    min-height: 40vh;
+    padding-top: 180px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(242, 184, 75, 0.1);
+}
+
+.ca-inner-hero-particles {
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/backgrounds/particles.png');
+    opacity: 0.4;
+    z-index: 1;
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+
+.ca-inner-hero-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ca-eyebrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--ca-gold-500);
+    text-transform: uppercase;
+}
+
+.ca-eyebrow-line {
+    width: 40px;
+    height: 1px;
+    background-color: var(--ca-gold-500);
+    opacity: 0.5;
+}
+
+.ca-inner-hero-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--ca-neutral-100);
+    margin: 0 auto 30px;
+    max-width: 700px;
+    opacity: 0.9;
+}

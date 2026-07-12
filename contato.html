@@ -6609,7 +6609,7 @@
         color: #F2B84B;
       }
 
-      .ca-button-main {
+      .ca-btn-primary {
         background: linear-gradient(135deg, #dc252f, #6a0006);
         color: #fff;
         padding: 16px 32px;
@@ -6628,12 +6628,12 @@
         font-family: 'Inter', sans-serif;
       }
 
-      .ca-button-main:hover {
+      .ca-btn-primary:hover {
         transform: translateY(-3px);
         box-shadow: 0 20px 45px rgba(185, 22, 32, 0.4), 0 0 25px rgba(242, 184, 75, 0.2);
       }
 
-      .ca-button-secondary {
+      .ca-btn-secondary {
         background: transparent;
         color: #F2B84B;
         padding: 16px 32px;
@@ -6651,7 +6651,7 @@
         font-family: 'Inter', sans-serif;
       }
 
-      .ca-button-secondary:hover {
+      .ca-btn-secondary:hover {
         background: rgba(242, 184, 75, 0.12);
         border-color: #F2B84B;
       }
@@ -6987,7 +6987,7 @@
               </ul>
             </nav>
             <div class="ca-mobile-menu-right">
-              <a class="ca-button-secondary ca-mobile-whatsapp"
+              <a class="ca-btn-secondary ca-mobile-whatsapp"
                 href="https://wa.me/5585988601400?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20CriaA%C3%A7%C3%A3o%20Entretenimento%20e%20gostaria%20de%20conhecer%20melhor%20as%20solu%C3%A7%C3%B5es%20para%20o%20Natal%20do%20meu%20Shopping."
                 target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -7031,17 +7031,13 @@
     <!-- MAIN CONTENT: CONTATO -->
     <main id="contato-main">
 
-      <!-- HERO CONTATO -->
-      <section class="sol-section sol-hero"
-        style="background: radial-gradient(circle at center, #2b0a12 0%, #1a050a 100%); min-height: 40vh; padding-top: 180px; padding-bottom: 60px;">
-        <div class="sol-container" style="text-align: center;">
-          <div class="sol-title-eyebrow sol-reveal slide-in-up" style="justify-content: center;">FALE COM UM
-            ESPECIALISTA</div>
-          <h1 class="sol-title-main sol-reveal slide-in-up sol-stagger-1" style="font-size: clamp(3rem, 5vw, 4.5rem);">
-            Vamos criar o próximo <br><span>Natal inesquecível</span>?</h1>
-          <p class="sol-text-main sol-reveal slide-in-up sol-stagger-2" style="margin: 0 auto 30px; max-width: 700px;">
-            Nossa equipe está pronta para entender as necessidades do seu Shopping e desenhar uma proposta corporativa
-            sob medida para o seu orçamento.</p>
+      <!-- HERO UNIFICADO -->
+      <section class="ca-inner-hero">
+        <div class="ca-inner-hero-particles"></div>
+        <div class="ca-inner-hero-container">
+          <div class="ca-eyebrow ca-animate-fade-up" style="animation-delay: 100ms;"><div class="ca-eyebrow-line"></div>FALE COM UM ESPECIALISTA<div class="ca-eyebrow-line"></div></div>
+          <h1 class="ca-hero-title ca-animate-fade-up" style="animation-delay: 200ms;">Vamos criar o próximo <br><span>Natal inesquecível</span>?</h1>
+          <p class="ca-inner-hero-text ca-animate-fade-up" style="animation-delay: 300ms;">Nossa equipe está pronta para entender as necessidades do seu Shopping e desenhar uma proposta corporativa sob medida para o seu orçamento.</p>
         </div>
       </section>
 
@@ -7071,7 +7067,7 @@
           gap: 20px;
         }
 
-        .ca-contato-card {
+        .ca-card {
           background: rgba(255, 255, 255, 0.03) !important;
           border: 1px solid rgba(242, 184, 75, 0.15) !important;
           backdrop-filter: blur(10px) !important;
@@ -7084,7 +7080,7 @@
           box-sizing: border-box !important;
         }
 
-        .ca-contato-card:hover {
+        .ca-card:hover {
           background: rgba(255, 255, 255, 0.06) !important;
           border-color: rgba(242, 184, 75, 0.4) !important;
           transform: translateX(10px) !important;
@@ -7258,7 +7254,7 @@
           <!-- LEFT: Contact Cards -->
           <div class="ca-contato-info-grid sol-reveal slide-in-up sol-stagger-1">
 
-            <div class="ca-contato-card">
+            <div class="ca-card">
               <div class="ca-card-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -7273,7 +7269,7 @@
               </div>
             </div>
 
-            <div class="ca-contato-card">
+            <div class="ca-card">
               <div class="ca-card-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -7288,7 +7284,7 @@
               </div>
             </div>
 
-            <div class="ca-contato-card">
+            <div class="ca-card">
               <div class="ca-card-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -7303,7 +7299,7 @@
               </div>
             </div>
 
-            <div class="ca-contato-card">
+            <div class="ca-card">
               <div class="ca-card-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -7859,4 +7855,6 @@
 </body>
 
 </html>
+
+
 
