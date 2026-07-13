@@ -7115,6 +7115,300 @@
               </div>
             </div>
 
+            
+            <!-- NOVA SEÇÃO PREMIUM: SHOPPING CENTERS -->
+            <style>
+              .ca-premium-shopping {
+                grid-column: 1 / -1;
+                margin: 80px 0;
+                padding: 60px;
+                background: linear-gradient(135deg, rgba(26,3,4,0.8) 0%, rgba(16,1,2,0.95) 100%);
+                border: 1px solid rgba(242, 184, 75, 0.15);
+                border-radius: 24px;
+                display: grid;
+                grid-template-columns: 45% 1fr;
+                gap: 60px;
+                box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(255,255,255,0.05);
+                position: relative;
+                overflow: hidden;
+              }
+              
+              /* Decorative glow */
+              .ca-premium-shopping::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                width: 200%;
+                height: 200%;
+                background: radial-gradient(circle at top right, rgba(242, 184, 75, 0.05) 0%, transparent 60%);
+                pointer-events: none;
+              }
+
+              .ca-premium-left {
+                position: relative;
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              }
+
+              .ca-premium-badge {
+                display: inline-block;
+                background: rgba(242, 184, 75, 0.1);
+                color: var(--ca-gold-400);
+                padding: 6px 16px;
+                border-radius: 99px;
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                margin-bottom: 24px;
+                align-self: flex-start;
+                border: 1px solid rgba(242, 184, 75, 0.2);
+              }
+
+              .ca-premium-title {
+                font-family: var(--ca-font-primary);
+                font-size: clamp(32px, 4vw, 48px);
+                font-weight: 800;
+                color: #ffffff;
+                line-height: 1.1;
+                margin-bottom: 24px;
+                letter-spacing: -0.02em;
+              }
+
+              .ca-premium-text {
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                line-height: 1.7;
+                color: rgba(255, 255, 255, 0.75);
+                margin-bottom: 20px;
+              }
+
+              .ca-premium-btn {
+                margin-top: 20px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--ca-gold-500);
+                color: var(--ca-primary-950);
+                padding: 16px 32px;
+                border-radius: 99px;
+                font-family: 'Inter', sans-serif;
+                font-weight: 800;
+                font-size: 15px;
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                transition: all 0.3s ease;
+                align-self: flex-start;
+              }
+
+              .ca-premium-btn:hover {
+                background: var(--ca-gold-400);
+                transform: translateY(-2px);
+                box-shadow: 0 10px 20px rgba(242, 184, 75, 0.2);
+              }
+
+              /* Timeline Right Side */
+              .ca-premium-right {
+                position: relative;
+                z-index: 2;
+                padding-left: 30px;
+              }
+
+              .ca-timeline-line {
+                position: absolute;
+                left: 30px;
+                top: 20px;
+                bottom: 20px;
+                width: 2px;
+                background: linear-gradient(to bottom, rgba(242, 184, 75, 0.5), rgba(242, 184, 75, 0.05));
+                border-radius: 2px;
+              }
+
+              .ca-timeline-item {
+                position: relative;
+                padding-left: 50px;
+                margin-bottom: 30px;
+                opacity: 0;
+                transform: translateY(20px);
+                animation: slideUpTimeline 0.6s ease forwards;
+              }
+
+              .ca-timeline-item:last-child {
+                margin-bottom: 0;
+              }
+
+              @keyframes slideUpTimeline {
+                to { opacity: 1; transform: translateY(0); }
+              }
+
+              .ca-timeline-dot {
+                position: absolute;
+                left: -6px;
+                top: 24px;
+                width: 14px;
+                height: 14px;
+                background: var(--ca-gold-500);
+                border-radius: 50%;
+                box-shadow: 0 0 0 4px rgba(26,3,4,1), 0 0 15px rgba(242, 184, 75, 0.6);
+                z-index: 3;
+                transition: all 0.3s ease;
+              }
+
+              .ca-timeline-card {
+                background: rgba(255, 255, 255, 0.03);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                padding: 24px;
+                border-radius: 16px;
+                transition: all 0.3s ease;
+                display: flex;
+                gap: 20px;
+              }
+
+              .ca-timeline-item:hover .ca-timeline-card {
+                background: rgba(255, 255, 255, 0.06);
+                border-color: rgba(242, 184, 75, 0.3);
+                transform: translateX(5px);
+              }
+
+              .ca-timeline-item:hover .ca-timeline-dot {
+                transform: scale(1.3);
+                box-shadow: 0 0 0 4px rgba(26,3,4,1), 0 0 20px rgba(242, 184, 75, 0.8);
+              }
+
+              .ca-timeline-icon {
+                color: var(--ca-gold-500);
+                flex-shrink: 0;
+                width: 32px;
+                height: 32px;
+                opacity: 0.8;
+                transition: all 0.3s ease;
+              }
+
+              .ca-timeline-item:hover .ca-timeline-icon {
+                opacity: 1;
+                transform: scale(1.1);
+              }
+
+              .ca-timeline-content h4 {
+                font-family: var(--ca-font-primary);
+                color: #ffffff;
+                font-size: 20px;
+                margin-bottom: 8px;
+                font-weight: 700;
+              }
+
+              .ca-timeline-content p {
+                font-family: 'Inter', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+                color: rgba(255, 255, 255, 0.6);
+                margin: 0;
+              }
+
+              @media(max-width: 980px) {
+                .ca-premium-shopping {
+                  grid-template-columns: 1fr;
+                  padding: 40px 20px;
+                  margin: 40px 0;
+                  gap: 40px;
+                }
+                .ca-premium-right {
+                  padding-left: 0;
+                }
+                .ca-timeline-line {
+                  left: 14px; /* Align to the dots */
+                }
+                .ca-timeline-item {
+                  padding-left: 44px;
+                }
+                .ca-timeline-dot {
+                  left: 7px;
+                }
+                .ca-timeline-card {
+                  flex-direction: column;
+                  gap: 12px;
+                }
+              }
+            </style>
+
+            <div class="ca-premium-shopping ca-fade-up">
+              <!-- Esquerda -->
+              <div class="ca-premium-left">
+                <div class="ca-premium-badge">SHOPPING CENTERS</div>
+                <h2 class="ca-premium-title">Projetos completos para transformar o Natal do seu Shopping</h2>
+                <p class="ca-premium-text">O Natal é um dos períodos mais importantes para o varejo, e cada detalhe influencia a experiência dos visitantes. Na CriaAção, desenvolvemos projetos completos para Shopping Centers, unindo cenografia, entretenimento, operações especiais e experiências interativas que transformam o empreendimento em um verdadeiro destino de encantamento.</p>
+                <p class="ca-premium-text">Muito além da decoração, planejamos cada etapa do projeto para aumentar o fluxo de visitantes, ampliar o tempo de permanência, fortalecer o relacionamento com os lojistas e gerar conexões emocionais entre a marca do shopping e milhares de famílias.</p>
+                <p class="ca-premium-text">Nossa equipe acompanha todo o processo — do briefing inicial à desmontagem — garantindo organização, segurança operacional e uma execução impecável durante toda a temporada natalina.</p>
+                <a href="contato.html" class="ca-premium-btn">Solicitar Projeto para Shopping</a>
+              </div>
+
+              <!-- Direita (Timeline) -->
+              <div class="ca-premium-right">
+                <div class="ca-timeline-line"></div>
+                
+                <div class="ca-timeline-item" style="animation-delay: 100ms;">
+                  <div class="ca-timeline-dot"></div>
+                  <div class="ca-timeline-card">
+                    <svg class="ca-timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    <div class="ca-timeline-content">
+                      <h4>Planejamento Estratégico</h4>
+                      <p>Conhecemos o shopping, entendemos seus objetivos comerciais e desenvolvemos um conceito exclusivo para a campanha de Natal.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ca-timeline-item" style="animation-delay: 200ms;">
+                  <div class="ca-timeline-dot"></div>
+                  <div class="ca-timeline-card">
+                    <svg class="ca-timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                    <div class="ca-timeline-content">
+                      <h4>Projeto Personalizado</h4>
+                      <p>Criamos cenografia, atrações, experiências, personagens e espaços instagramáveis alinhados à identidade do empreendimento.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ca-timeline-item" style="animation-delay: 300ms;">
+                  <div class="ca-timeline-dot"></div>
+                  <div class="ca-timeline-card">
+                    <svg class="ca-timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    <div class="ca-timeline-content">
+                      <h4>Produção e Montagem</h4>
+                      <p>Fabricamos, organizamos a logística e realizamos toda a instalação com segurança e dentro do cronograma.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ca-timeline-item" style="animation-delay: 400ms;">
+                  <div class="ca-timeline-dot"></div>
+                  <div class="ca-timeline-card">
+                    <svg class="ca-timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <div class="ca-timeline-content">
+                      <h4>Operação Completa</h4>
+                      <p>Gerenciamos Papai Noel, atrações, equipes e experiências durante toda a campanha natalina.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ca-timeline-item" style="animation-delay: 500ms;">
+                  <div class="ca-timeline-dot"></div>
+                  <div class="ca-timeline-card">
+                    <svg class="ca-timeline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    <div class="ca-timeline-content">
+                      <h4>Encerramento</h4>
+                      <p>Realizamos desmontagem, acompanhamento final e encerramos o projeto mantendo o mesmo padrão de excelência.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
             <!-- 2. Prefeituras -->
             <div class="oa-glass-card oa-segment-card ca-fade-up" style="transition-delay: 0.1s;">
               <div class="oa-segment-image-container">
