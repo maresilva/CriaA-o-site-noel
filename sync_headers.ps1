@@ -1,11 +1,11 @@
-﻿$indexContent = [System.IO.File]::ReadAllText("index.html", [System.Text.Encoding]::UTF8)
+$indexContent = [System.IO.File]::ReadAllText("index.html", [System.Text.Encoding]::UTF8)
 
 # Extract Header from index.html
 $headerStart = $indexContent.IndexOf('<div id="Header_wrapper">')
 $headerEnd = $indexContent.IndexOf('</div>', $indexContent.IndexOf('</header>')) + 6
 $headerHtml = $indexContent.Substring($headerStart, $headerEnd - $headerStart)
 
-$files = @("contato.html", "quem-somos.html", "solucoes.html", "portfolio.html")
+$files = Get-ChildItem -Path "." -Filter "*.html" | Where-Object { $_.Name -ne "index.html" -and $_.Name -notmatch "header|missing|new|scratch" } | Select-Object -ExpandProperty Name
 
 foreach ($file in $files) {
     if (-not (Test-Path $file)) { continue }

@@ -1,16 +1,18 @@
-ï»¿<header id="Header">
+<div id="Header_wrapper">
+      <header id="Header">
+
         <div id="Top_bar">
           <div class="top_bar_left">
             <a class="logo" href="index.html"><img src="assets/logos/logo-criaacao-entretenimento.png"
-                title="CriaAÃ§Ã£o Entretenimento" loading="eager" fetchpriority="high"
-                alt="CriaAÃ§Ã£o Entretenimento - Empresa de Natal para Shopping" style="max-height: 48px;"></a>
+                title="CriaAção Entretenimento" loading="eager" fetchpriority="high"
+                alt="CriaAção Entretenimento - Empresa de Natal para Shopping" style="max-height: 48px;"></a>
             <nav id="menu">
               <ul class="menu-main">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="quem-somos.html">Quem Somos</a></li>
                 <li><a href="solucoes.html">SOLU&Ccedil;&Otilde;ES</a></li>
 
-                <li><a href="portfolio.html">PortfÃ³lio</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
                 <li><a href="eventos.html">Eventos</a></li>
                 <li><a href="contato.html">Contato</a></li>
               </ul>
@@ -37,25 +39,20 @@
           </div>
         </div>
         <script>
-          document.addEventListener('DOMContentLoaded', function() {
+          document.addEventListener('DOMContentLoaded', function () {
             var path = window.location.pathname;
             var page = path.split('/').pop();
-
-            // Map empty path or index.html to Home
-            if(page === '' || page === 'index.html') {
-               var homeLink = document.querySelector('.menu-main li a[href="index.html"]');
-               if(homeLink) homeLink.style.color = '#F2B84B';
+            if (page === '' || page === 'index.html') {
+              var homeLink = document.querySelector('.menu-main li a[href="index.html"]');
+              if (homeLink) homeLink.style.color = '#F2B84B';
             } else {
-               var links = document.querySelectorAll('.menu-main li a');
-               links.forEach(function(link) {
-                  if(link.getAttribute('href') === page) {
-                     link.style.color = '#F2B84B';
-                  }
-               });
+              var links = document.querySelectorAll('.menu-main li a');
+              links.forEach(function (link) {
+                if (link.getAttribute('href') === page) {
+                  link.style.color = '#F2B84B';
+                }
+              });
             }
           });
         </script>
       </header>
-
-
-
