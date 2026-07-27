@@ -18,12 +18,19 @@ foreach ($file in $files) {
         $content = $content.Substring(0, $fStart) + $headerHtml + $content.Substring($fEnd)
     }
 
-    # Make sure header-global.css is linked
-    if (-not $content.Contains("header-global.css")) {
+    # Make sure header-global.css and wp-global-styles.css are linked
+    if (-not $content.Contains("header-global.css") -or -not $content.Contains("wp-global-styles.css")) {
         $headEnd = $content.IndexOf('</head>')
         if ($headEnd -ge 0) {
-            $linkTag = "`n    <link rel=`"stylesheet`" href=`"assets/css/header-global.css`">`n"
-            $content = $content.Substring(0, $headEnd) + $linkTag + $content.Substring($headEnd)
+            $linkTags = ""
+            if (-not $content.Contains("header-global.css")) {
+                $linkTags += "`n    <link rel=`"stylesheet`" href=`"assets/css/header-global.css`">"
+            }
+            if (-not $content.Contains("wp-global-styles.css")) {
+                $linkTags += "`n    <link rel=`"stylesheet`" href=`"assets/css/wp-global-styles.css`">"
+            }
+            $linkTags += "`n"
+            $content = $content.Substring(0, $headEnd) + $linkTags + $content.Substring($headEnd)
         }
     }
 
