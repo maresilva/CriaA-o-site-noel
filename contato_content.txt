@@ -243,7 +243,7 @@
               </div>
               <div class="ca-card-content">
                 <h3>E-mail</h3>
-                <p><a href="mailto:comercial@criaacao.com.br">comercial@criaacao.com.br</a><br>Envie seu projeto estruturado ou RFP para análise.</p>
+                <p><a href="mailto:marcos.criaacao@gmail.com">marcos.criaacao@gmail.com</a><br>Envie seu projeto estruturado ou RFP para análise.</p>
               </div>
             </div>
 
@@ -347,5 +347,4 @@
       </script>
 
     </main>
-
 
