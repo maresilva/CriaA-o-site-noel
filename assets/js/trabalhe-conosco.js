@@ -16,7 +16,7 @@
                 pdfName.textContent = "Arquivo selecionado: " + this.files[0].name;
                 pdfName.style.color = "var(--ca-gold-500)";
             } else {
-                pdfName.textContent = "Tamanho máximo: 5MB";
+                pdfName.textContent = "Tamanho máximo: 5 MB";
                 pdfName.style.color = "";
             }
         });
@@ -28,7 +28,7 @@
                 videoName.textContent = "Arquivo selecionado: " + this.files[0].name;
                 videoName.style.color = "var(--ca-gold-500)";
             } else {
-                videoName.textContent = "Tamanho máximo: 50MB (mp4, mov)";
+                videoName.textContent = "Tamanho máximo: 50 MB (MP4 ou MOV)";
                 videoName.style.color = "";
             }
         });
@@ -47,7 +47,7 @@
             // LGPD Check
             const lgpd = document.getElementById('lgpd');
             if(!lgpd.checked) {
-                alert("Por favor, aceite os termos da LGPD para continuar.");
+                alert("Para continuar, autorize o uso dos seus dados.");
                 return;
             }
             
@@ -78,9 +78,9 @@
             })
             .catch(error => {
                 console.error('Error:', error);
-                alert("Ocorreu um erro ao enviar. Por favor, tente novamente mais tarde.");
+                alert("Não foi possível enviar o cadastro. Tente novamente mais tarde.");
                 submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Cadastrar Currículo <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>';
+                submitBtn.innerHTML = 'Cadastrar currículo <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>';
             });
         });
     }
