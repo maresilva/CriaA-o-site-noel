@@ -1014,7 +1014,350 @@
               fill: #fff !important;
             }
           </style>
-          <div id="body_overlay"></div>
+          <!-- START INSTITUTIONAL CONTACT SECTION -->
+            <style>
+              .inst-contact-section {
+                position: relative;
+                padding: 160px 20px 0px 20px;
+                background: linear-gradient(135deg, #2b0a12 0%, #1a050a 100%);
+                overflow: hidden;
+                color: #ffffff;
+              }
+
+              /* Background Elements */
+              .inst-contact-glow-left {
+                position: absolute;
+                top: 20%;
+                left: -10%;
+                width: 50%;
+                height: 70%;
+                background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+                filter: blur(80px);
+                z-index: 1;
+                pointer-events: none;
+              }
+
+              .inst-contact-glow-right {
+                position: absolute;
+                bottom: -10%;
+                right: -10%;
+                width: 40%;
+                height: 60%;
+                background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+                filter: blur(60px);
+                z-index: 1;
+                pointer-events: none;
+              }
+
+              .inst-contact-lines {
+                position: absolute;
+                inset: 0;
+                background:
+                  linear-gradient(90deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px) 0 0 / 100px 100px,
+                  linear-gradient(0deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px) 0 0 / 100px 100px;
+                z-index: 1;
+                mask-image: radial-gradient(circle at center, transparent 30%, black 100%);
+                -webkit-mask-image: radial-gradient(circle at center, transparent 30%, black 100%);
+              }
+
+              .inst-contact-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 2;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 60px;
+              }
+
+              /* Left Column */
+              .inst-contact-left {
+                flex: 0 0 55%;
+                max-width: 55%;
+              }
+
+              .inst-contact-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background: rgba(212, 175, 55, 0.1);
+                border: 1px solid rgba(212, 175, 55, 0.3);
+                padding: 8px 16px;
+                border-radius: 100px;
+                margin-bottom: 32px;
+                backdrop-filter: blur(10px);
+              }
+
+              .inst-contact-badge span {
+                color: #D4AF37;
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+              }
+
+              .inst-contact-title {
+                font-size: clamp(2.5rem, 4vw, 3.5rem);
+                font-weight: 700;
+                line-height: 1.15;
+                margin-bottom: 32px;
+                color: #ffffff;
+              }
+
+              .inst-contact-text {
+                font-size: clamp(1.1rem, 2vw, 1.25rem);
+                line-height: 1.7;
+                color: rgba(255, 255, 255, 0.85);
+                margin-bottom: 0;
+              }
+
+              .inst-contact-text p {
+                margin-bottom: 16px;
+              }
+
+              /* Right Column */
+              .inst-contact-right {
+                flex: 0 0 45%;
+                max-width: 45%;
+              }
+
+              .inst-contact-card {
+                background: rgba(43, 10, 18, 0.4);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                border: 1px solid rgba(212, 175, 55, 0.2);
+                border-radius: 24px;
+                padding: 48px;
+                box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+                transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                position: relative;
+                overflow: hidden;
+              }
+
+              .inst-contact-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
+              }
+
+              .inst-contact-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 30px rgba(212, 175, 55, 0.1);
+              }
+
+              .inst-info-list {
+                list-style: none;
+                padding: 0;
+                margin: 0 0 40px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+              }
+
+              .inst-info-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+              }
+
+              .inst-info-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: rgba(212, 175, 55, 0.1);
+                color: #D4AF37;
+                flex-shrink: 0;
+              }
+
+              .inst-info-content {
+                display: flex;
+                flex-direction: column;
+              }
+
+              .inst-info-label {
+                font-size: 0.9rem;
+                color: rgba(255, 255, 255, 0.6);
+                margin-bottom: 4px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+              }
+
+              .inst-info-value {
+                font-size: 1.15rem;
+                color: #ffffff;
+                font-weight: 500;
+              }
+
+              /* Section Footer */
+              .inst-section-footer {
+                position: relative;
+                z-index: 2;
+                text-align: center;
+                margin-top: 50px;
+                padding-top: 15px;
+                padding-bottom: 20px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+              }
+
+              .inst-footer-text {
+                color: rgba(255, 255, 255, 0.72);
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: normal;
+              }
+
+              @media (max-width: 767px) {
+                .inst-footer-text {
+                  font-size: 13px;
+                }
+              }
+
+              @media (max-width: 992px) {
+                .inst-contact-container {
+                  flex-direction: column;
+                  gap: 50px;
+                }
+
+                .inst-contact-left,
+                .inst-contact-right {
+                  flex: 0 0 100%;
+                  max-width: 100%;
+                  text-align: center;
+                }
+
+                .inst-contact-badge {
+                  margin: 0 auto 32px auto;
+                }
+
+                .inst-info-item {
+                  text-align: left;
+                }
+
+                .inst-contact-card {
+                  padding: 32px;
+                }
+              }
+            </style>
+
+            <section id="institucional-contato" class="inst-contact-section ca-section">
+              <div class="inst-contact-glow-left"></div>
+              <div class="inst-contact-glow-right"></div>
+              <div class="inst-contact-lines"></div>
+              <div class="ca-particles"
+                style="position: absolute; inset: 0; background-image: url('assets/images/backgrounds/particles.png'); opacity: 0.4; z-index: 1; pointer-events: none; mix-blend-mode: screen;">
+              </div>
+
+              <div class="inst-contact-container">
+                <!-- Left Column -->
+                <div class="inst-contact-left ca-animate-fade-up">
+                  <div class="inst-contact-badge">
+                    <i data-lucide="building-2" style="color: #D4AF37; width: 14px; height: 14px;"></i>
+                    <span>CRIAA&Ccedil;&Atilde;O ENTRETENIMENTO</span>
+                  </div>
+
+                  <h2 class="inst-contact-title">
+                    Vamos criar o pr&oacute;ximo <span
+                      style="font-family: 'Great Vibes', cursive; color: #D4AF37; font-weight: 400; font-size: 1.1em; display: inline-block;">Natal
+                      inesquec&iacute;vel</span> do seu Shopping?
+                  </h2>
+
+                  <div class="inst-contact-text">
+                    <p>H&aacute; mais de 30 anos transformamos espa&ccedil;os em experi&ecirc;ncias que encantam
+                      fam&iacute;lias, fortalecem marcas e impulsionam resultados.</p>
+                    <p>Ser&aacute; um prazer desenvolver um projeto exclusivo para o seu empreendimento.</p>
+                  </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="inst-contact-right ca-animate-fade-up" style="transition-delay: 200ms;">
+                  <div class="inst-contact-card ca-floating">
+                    <ul class="inst-info-list">
+                      <li class="inst-info-item">
+                        <div class="inst-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                          </svg></div>
+                        <div class="inst-info-content">
+                          <span class="inst-info-label">Cobertura</span>
+                          <span class="inst-info-value">Atendimento em todo o Brasil</span>
+                        </div>
+                      </li>
+                      <li class="inst-info-item">
+                        <div class="inst-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                            fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                          </svg></div>
+                        <div class="inst-info-content">
+                          <span class="inst-info-label">WhatsApp</span>
+                          <span class="inst-info-value">(85) 98860-1400</span>
+                        </div>
+                      </li>
+                      <li class="inst-info-item">
+                        <div class="inst-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path
+                              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                          </svg></div>
+                        <div class="inst-info-content">
+                          <span class="inst-info-label">E-mail</span>
+                          <span class="inst-info-value">marcos.criaacao@gmail.com</span>
+                        </div>
+                      </li>
+                      <li class="inst-info-item">
+                        <div class="inst-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                          </svg></div>
+                        <div class="inst-info-content">
+                          <span class="inst-info-label">Hor&aacute;rio</span>
+                          <span class="inst-info-value">De segunda a sexta-feira, das 8h &agrave;s 18h</span>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <a href="https://wa.me/5585988601400?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20CriaA%C3%A7%C3%A3o%20Entretenimento%20e%20gostaria%20de%20conhecer%20melhor%20as%20solu%C3%A7%C3%B5es%20para%20o%20Natal%20do%20meu%20Shopping."
+                      target="_blank" rel="noopener noreferrer" class="ca-btn ca-btn-primary"
+                      style="display: flex; justify-content: center; align-items: center; gap: 12px; width: 100%; background: linear-gradient(90deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%); color: #1a050a; padding: 18px 24px; border-radius: 12px; font-weight: 700; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(212,175,55,0.3); background-size: 200% auto; text-transform: uppercase; letter-spacing: 1px; box-sizing: border-box; max-width: 100%; white-space: normal; text-align: center;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                      </svg>
+                      <span>FALAR COM UM ESPECIALISTA</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section Footer -->
+              <div class="inst-section-footer ca-animate-fade-up" style="transition-delay: 300ms;">
+                <div class="inst-footer-text">
+                  &copy; 2026 CriaAção Entretenimento. Todos os direitos reservados.
+                </div>
+
+              </div>
+            </section>
+            <!-- END INSTITUTIONAL CONTACT SECTION -->
+
+            <!-- mfn_hook_content_after -->
+            <!-- mfn_hook_content_after -->
+            <footer class="clearfix mfn-footer" id="Footer" role="contentinfo" style="display:none;">
+            </footer>
+            <!-- End Footer Template -->
+          </div>
+
+<div id="body_overlay"></div>
           <div aria-expanded="false" aria-label="Menu responsivo" class="right dark" data-width="250" id="Side_slide"
             role="banner">
             <div class="close-wrapper"><a class="close" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
