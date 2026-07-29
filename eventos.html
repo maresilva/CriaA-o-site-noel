@@ -84,6 +84,19 @@
     }
   </style>
     <link rel="stylesheet" href="assets/css/wp-global-styles.css">
+
+  <!-- MOBILE PADDING OVERRIDE FIX -->
+  <style>
+    @media (max-width: 980px) {
+      .ca-section, .qs-section, .qs-section-alt,
+      .sol-section, .sol-section-alt, .sol-segments-section, .sol-included-section,
+      .ca-portfolio-section, .inst-contact-section,
+      .ca-contato-section, .ca-form-section {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+      }
+    }
+  </style>
 </head>
 <body class="eventos-body header-transparent sticky-header mobile-sticky mobile-side-slide">
   <div id="Wrapper">
@@ -1018,7 +1031,7 @@
             <style>
               .inst-contact-section {
                 position: relative;
-                padding: 160px 20px 0px 20px;
+                padding: 80px 20px;
                 background: linear-gradient(135deg, #2b0a12 0%, #1a050a 100%);
                 overflow: hidden;
                 color: #ffffff;

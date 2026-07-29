@@ -657,6 +657,15 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
+    color: #ffffff !important;
+}
+
+.qs-mvv-text, .qs-mvv-list li {
+    color: #ffffff !important;
+}
+.qs-mvv-icon svg {
+    color: #ffffff !important;
+    fill: #ffffff !important;
 }
 
 .qs-mvv-card::before {
