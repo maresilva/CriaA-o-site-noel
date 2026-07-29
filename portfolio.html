@@ -6437,7 +6437,7 @@
         position: relative;
         width: 100%;
         min-height: 100vh;
-        background-image: url('assets/images/backgrounds/imagem-background-hero-papai-noel-criacao-entretenimento-criaacao-entretenimento.jpg');
+        background-image: url('assets/images/portfolio/imagem-do-papai-noel-shopping-iguatemi-bosque-mar-fortaleza.png');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -6923,21 +6923,40 @@
                 <li><a href="contato.html">Contato</a></li>
               </ul>
             <style>
+#Top_bar { z-index: 999999 !important; position: relative; }
 .ca-has-dropdown { position: relative; }
 .ca-has-dropdown > a { display: inline-flex !important; align-items: center; }
 .ca-has-dropdown > a::after { content: ""; display: inline-block; margin-left: 8px; width: 6px; height: 6px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); transition: transform 0.3s ease; margin-top: -2px; }
-.ca-has-dropdown:hover > a::after { transform: rotate(225deg); margin-top: 4px; }
-.ca-dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: rgba(26,5,10,0.95); min-width: 260px; padding: 10px 0; margin: 0; list-style: none; border-top: 2px solid #D4AF37; box-shadow: 0 5px 20px rgba(0,0,0,0.5); z-index: 999; backdrop-filter: blur(10px); }
-.ca-has-dropdown:hover .ca-dropdown-menu { display: block; }
+.ca-has-dropdown:hover > a::after, .ca-has-dropdown.is-active > a::after { transform: rotate(225deg); margin-top: 4px; }
+.ca-dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: rgba(26,5,10,0.95); min-width: 260px; padding: 10px 0; margin: 0; list-style: none; border-top: 2px solid #D4AF37; box-shadow: 0 5px 20px rgba(0,0,0,0.5); z-index: 999999; backdrop-filter: blur(10px); margin-top: 15px; }
+.ca-dropdown-menu::before { content: ""; position: absolute; top: -20px; left: 0; width: 100%; height: 20px; background: transparent; }
+.ca-has-dropdown:hover .ca-dropdown-menu, .ca-has-dropdown.is-active .ca-dropdown-menu { display: block; }
 .ca-dropdown-menu li { padding: 0 !important; margin: 0 !important; }
 .ca-dropdown-menu li a { display: block; padding: 12px 20px !important; color: #fff !important; font-size: 14px !important; text-transform: none !important; text-decoration: none; transition: 0.3s; line-height: 1.4; font-weight: normal; }
 .ca-dropdown-menu li a:hover { color: #D4AF37 !important; background: rgba(212,175,55,0.1); }
-.ca-dropdown-menu li a::after { display: none !important; } /* Prevent caret on submenu links */
+.ca-dropdown-menu li a::after { display: none !important; }
 @media (max-width: 980px) {
-  .ca-dropdown-menu { position: static; background: transparent; box-shadow: none; border-top: none; padding-left: 15px; }
-  .ca-has-dropdown:hover .ca-dropdown-menu { display: block; }
+  .ca-dropdown-menu { position: static; background: transparent; box-shadow: none; border-top: none; padding-left: 15px; margin-top: 0; }
+  .ca-dropdown-menu::before { display: none; }
+  .ca-has-dropdown:hover .ca-dropdown-menu, .ca-has-dropdown.is-active .ca-dropdown-menu { display: block; }
 }
 </style>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var dropDownLink = document.querySelector(".ca-has-dropdown > a");
+  if(dropDownLink) {
+    dropDownLink.addEventListener("click", function(e) {
+      if(window.innerWidth <= 980 || ('ontouchstart' in window)) {
+        var parentLi = this.parentElement;
+        if(!parentLi.classList.contains("is-active")) {
+          e.preventDefault(); // Prevent navigation on first tap
+          parentLi.classList.add("is-active");
+        }
+      }
+    });
+  }
+});
+</script>
 </nav>
             <div class="ca-mobile-menu-right">
               <a class="ca-button-secondary ca-mobile-whatsapp"
@@ -7401,7 +7420,7 @@
             <!-- Project 2 -->
             <div class="ca-port-item reveal ca-animate-blur js-ca-port-open" data-index="1"
               style="transition-delay: 0.2s;">
-              <img src="assets/images/backgrounds/imagem-background-hero-papai-noel-criacao-entretenimento-criaacao-entretenimento.jpg"
+              <img src="assets/images/portfolio/imagem-do-papai-noel-shopping-iguatemi-bosque-mar-fortaleza.png"
                 alt="Papai Noel profissional em Shopping Center Iguatemi Bosque" class="ca-port-img" loading="lazy" decoding="async">
               <div class="ca-port-overlay"></div>
               <div class="ca-port-content">
@@ -7415,7 +7434,7 @@
             <!-- Project 3 -->
             <div class="ca-port-item reveal ca-animate-blur js-ca-port-open" data-index="2"
               style="transition-delay: 0.3s;">
-              <img src="assets/images/solutions/espaco-fotografico-criaacao-entretenimento.png"
+              <img src="assets/images/portfolio/imagem-do-papai-noel-e-noeletes-shopping-via-sul-fortaleza-criaacao-entretenimento.png"
                 alt="Espaço fotográfico de Natal para Shopping Via Sul" class="ca-port-img" loading="lazy" decoding="async">
               <div class="ca-port-overlay"></div>
               <div class="ca-port-content">
@@ -7429,7 +7448,7 @@
             <!-- Project 4 -->
             <div class="ca-port-item reveal ca-animate-blur js-ca-port-open" data-index="3"
               style="transition-delay: 0.4s;">
-              <img src="assets/images/solutions/plataforma-360-criaacao-entretenimento.png"
+              <img src="assets/images/portfolio/imagem-do-papai-noel-shopping-parangaba-criacao-entretenimento.png"
                 alt="Plataforma 360° para evento de Natal no North Shopping" class="ca-port-img" loading="lazy" decoding="async">
               <div class="ca-port-overlay"></div>
               <div class="ca-port-content">
@@ -7457,7 +7476,7 @@
             <!-- Project 6 -->
             <div class="ca-port-item reveal ca-animate-blur js-ca-port-open" data-index="5"
               style="transition-delay: 0.6s;">
-              <img src="assets/images/solutions/duendes-natal-criaacao-entretenimento.png"
+              <img src="assets/images/portfolio/imagem-acoes-com-doentes-North-Shopping-Maracanaú.png"
                 alt="Ações com Duendes e Personagens natalinos no North Shopping Maracanaú" class="ca-port-img"
                 loading="lazy" decoding="async">
               <div class="ca-port-overlay"></div>
@@ -7566,11 +7585,11 @@
         document.addEventListener("DOMContentLoaded", function () {
           const portData = [
             { img: "assets/images/portfolio/imagem-do-papai-noel-shopping-rio-mar-fortaleza.png", title: "Shopping RioMar Fortaleza", cat: "Projeto Completo", year: "Natal", loc: "Fortaleza - CE" },
-            { img: "assets/images/backgrounds/imagem-background-hero-papai-noel-criacao-entretenimento-criaacao-entretenimento.jpg", title: "Iguatemi Bosque", cat: "Papai Noel", year: "Ativação", loc: "Fortaleza - CE" },
-            { img: "assets/images/solutions/espaco-fotografico-criaacao-entretenimento.png", title: "Shopping Via Sul", cat: "Espaço Fotográfico", year: "Cenografia", loc: "Fortaleza - CE" },
-            { img: "assets/images/solutions/plataforma-360-criaacao-entretenimento.png", title: "North Shopping", cat: "Plataforma 360°", year: "Tecnologia", loc: "Fortaleza - CE" },
+            { img: "assets/images/portfolio/imagem-do-papai-noel-shopping-iguatemi-bosque-mar-fortaleza.png", title: "Iguatemi Bosque", cat: "Papai Noel", year: "Ativação", loc: "Fortaleza - CE" },
+            { img: "assets/images/portfolio/imagem-do-papai-noel-e-noeletes-shopping-via-sul-fortaleza-criaacao-entretenimento.png", title: "Shopping Via Sul", cat: "Espaço Fotográfico", year: "Cenografia", loc: "Fortaleza - CE" },
+            { img: "assets/images/portfolio/imagem-do-papai-noel-shopping-parangaba-criacao-entretenimento.png", title: "North Shopping", cat: "Plataforma 360°", year: "Tecnologia", loc: "Fortaleza - CE" },
             { img: "assets/images/solutions/personagens-tematicos-criaacao-entretenimento.png", title: "Gran Shopping", cat: "Personagens", year: "Ação Integrada", loc: "Messejana - CE" },
-            { img: "assets/images/solutions/duendes-natal-criaacao-entretenimento.png", title: "North Shopping Maracanaú", cat: "Ações com Duendes", year: "Recepção", loc: "Maracanaú - CE" },
+            { img: "assets/images/portfolio/imagem-acoes-com-doentes-North-Shopping-Maracanaú.png", title: "North Shopping Maracanaú", cat: "Ações com Duendes", year: "Recepção", loc: "Maracanaú - CE" },
             { img: "assets/images/gallery/desktop-papai-noel-na-poltrona-criaacao-entretenimento.jpg", title: "Shopping Parangaba", cat: "Trono do Papai Noel", year: "Interação", loc: "Fortaleza - CE" },
             { img: "assets/images/clientes/1-criaacao-entretenimento.png", title: "Shopping Iguatemi SP", cat: "Parada de Natal", year: "Evento", loc: "São Paulo - SP" },
             { img: "assets/images/gallery/mobile-papai-noel-na-poltrona-criaacao-entretenimento.jpg", title: "Shopping Benfica", cat: "Entrega Especial", year: "Brindes", loc: "Fortaleza - CE" }
@@ -7655,7 +7674,8 @@
     <style>
       .inst-contact-section {
         position: relative;
-        padding: 80px 20px;
+        padding-bottom: 0 !important;
+        padding: 80px 20px 0 20px;
         background: linear-gradient(135deg, #2b0a12 0%, #1a050a 100%);
         overflow: hidden;
         color: #ffffff;
@@ -7698,6 +7718,7 @@
       }
 
       .inst-contact-container {
+        padding: 0 67px 0 0;
         max-width: 1200px;
         margin: 0 auto;
         position: relative;
@@ -7859,6 +7880,7 @@
 
       @media (max-width: 992px) {
         .inst-contact-container {
+          padding: 0 20px;
           flex-direction: column;
           gap: 50px;
         }
