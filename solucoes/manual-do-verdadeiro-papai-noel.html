@@ -1,207 +1,33 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="js" itemscope="" itemtype="https://schema.org/WebPage" lang="pt-BR">
 
 <head>
   <meta charset="utf-8" />
-  <link rel="preload" as="image" href="assets/logos/logo-criaacao-entretenimento.png">
-  <script data-offline-runtime="1">(function () {
-      var D = { "entries": [{ "b": "eyJ2ZXJzaW9uIjoiQ29udGFjdCBGb3JtIDcgU1dWIFNjaGVtYSAyMDI0LTEwIiwibG9jYWxlIjoiZW5fVVMiLCJydWxlcyI6W3sicnVsZSI6InJlcXVpcmVkIiwiZmllbGQiOiJ5b3VyLW5hbWUiLCJlcnJvciI6IlRoZSBmaWVsZCBpcyByZXF1aXJlZC4ifSx7InJ1bGUiOiJtYXhsZW5ndGgiLCJmaWVsZCI6InlvdXItbmFtZSIsInRocmVzaG9sZCI6NDAwLCJlcnJvciI6IlRoZSBmaWVsZCBpcyB0b28gbG9uZy4ifSx7InJ1bGUiOiJyZXF1aXJlZCIsImZpZWxkIjoieW91ci1lbWFpbCIsImVycm9yIjoiVGhlIGZpZWxkIGlzIHJlcXVpcmVkLiJ9LHsicnVsZSI6ImVtYWlsIiwiZmllbGQiOiJ5b3VyLWVtYWlsIiwiZXJyb3IiOiJUaGUgZS1tYWlsIGFkZHJlc3MgZW50ZXJlZCBpcyBpbnZhbGlkLiJ9LHsicnVsZSI6Im1heGxlbmd0aCIsImZpZWxkIjoieW91ci1lbWFpbCIsInRocmVzaG9sZCI6NDAwLCJlcnJvciI6IlRoZSBmaWVsZCBpcyB0b28gbG9uZy4ifSx7InJ1bGUiOiJtYXhsZW5ndGgiLCJmaWVsZCI6InlvdXItc3ViamVjdCIsInRocmVzaG9sZCI6NDAwLCJlcnJvciI6IlRoZSBmaWVsZCBpcyB0b28gbG9uZy4ifSx7InJ1bGUiOiJtYXhsZW5ndGgiLCJmaWVsZCI6InlvdXItbWVzc2FnZSIsInRocmVzaG9sZCI6MjAwMCwiZXJyb3IiOiJUaGUgZmllbGQgaXMgdG9vIGxvbmcuIn1dfQ==", "t": "application/json" }], "keys": { "https://criaacao.com/wp-json/contact-form-7/v1/contact-forms/9/feedback/schema": 0 } };
-      var E = D.entries, K = D.keys;
-      function entry(u) {
-        if (!u) return null;
-        if (K[u] != null) return E[K[u]];
-        try {
-          var x = new URL(u, location.href);
-          if (K[x.href] != null) return E[K[x.href]];
-          var op = x.origin + x.pathname;
-          if (K[op] != null) return E[K[op]];
-        } catch (e) { }
-        return null;
-      }
-      function bytes(e) {
-        var s = atob(e.b), a = new Uint8Array(s.length);
-        for (var i = 0; i < s.length; i++) a[i] = s.charCodeAt(i);
-        return a;
-      }
-      window.__offlineDataUri = function (u) {
-        var e = entry(u);
-        return e ? ('data:' + e.t + ';base64,' + e.b) : null;
-      };
-      var _fetch = window.fetch;
-      if (_fetch) window.fetch = function (input, init) {
-        try {
-          var u = (typeof input === 'string') ? input : (input && input.url);
-          var e = entry(u);
-          if (e) return Promise.resolve(new Response(bytes(e),
-            { status: 200, headers: { 'Content-Type': e.t } }));
-        } catch (err) { }
-        return _fetch.apply(this, arguments);
-      };
-      var _open = XMLHttpRequest.prototype.open;
-      XMLHttpRequest.prototype.open = function (m, u) {
-        try { this.__offUrl = u; } catch (e) { }
-        return _open.apply(this, arguments);
-      };
-      var _send = XMLHttpRequest.prototype.send;
-      XMLHttpRequest.prototype.send = function () {
-        var e = entry(this.__offUrl);
-        if (!e) return _send.apply(this, arguments);
-        var self = this, txt = atob(e.b);
-        setTimeout(function () {
-          try {
-            Object.defineProperty(self, 'readyState', { value: 4, configurable: true });
-            Object.defineProperty(self, 'status', { value: 200, configurable: true });
-            Object.defineProperty(self, 'responseText', { value: txt, configurable: true });
-            Object.defineProperty(self, 'response', { value: txt, configurable: true });
-          } catch (err) { }
-          if (typeof self.onreadystatechange === 'function') self.onreadystatechange();
-          if (typeof self.onload === 'function') self.onload();
-        }, 0);
-      };
-    })();</script>
-  <script data-offline-resolve="1">(function () {
-      var ASSET_MAP = { "https://criaacao.com/": "assets/d445e40e5c04b268_file.html", "https://fonts.googleapis.com/css?family=Nunito:1,300,400,400italic,500,700,700italic&display=swap&ver=7.0": "assets/css/efcf90dc158ebfb4_css.css", "https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap": "assets/css/6adb6452bc1ee069_css.css", "https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap": "assets/css/e41380127b5ea983_css.css", "https://criaacao.com/wp-content/plugins/click-to-chat-for-whatsapp/new/inc/assets/css/main.css?ver=4.40": "assets/css/00d22094f77821e0_main.css", "https://criaacao.com/wp-content/themes/CriaAcao/assets/jplayer/css/jplayer.blue.monday.min.css?ver=26.5": "assets/css/10f8e5f272c9ae8c_jplayer.blue.monday.min.css", "https://fonts.googleapis.com/css?family=Nunito:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap": "assets/css/ed6aeded6a15f982_css.css", "https://fonts.googleapis.com/css?family=Estonia:400%7CRoboto:400&display=swap": "assets/css/ba47596392653c0a_css.css", "https://criaacao.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.6": "assets/css/a3b9f5df6bf638a4_styles.css", "https://criaacao.com/wp-content/themes/CriaAcao/assets/animations/animations.min.css?ver=26.5": "assets/css/622a07604bb0030b_animations.min.css", "https://criaacao.com/wp-content/themes/CriaAcao/fonts/fontawesome/fontawesome.css?ver=26.5": "assets/css/6a8f55d140604ca7_fontawesome.css", "https://criaacao.com/wp-content/themes/CriaAcao/css/responsive.css?ver=26.5": "assets/css/dd05c6edba0491dc_responsive.css", "https://criaacao.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.1.4": "assets/css/0a5d398672e25dc7_frontend.min.css", "https://criaacao.com/wp-content/uploads/elementor/css/post-52.css?ver=1782207469": "assets/css/80ad7b0867ffd0f4_post-52.css", "https://criaacao.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.1.4": "assets/css/d87ddf917b7a1449_all.min.css", "https://criaacao.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.1.4": "assets/css/fb8690e594b2f9b8_widget-image.min.css", "https://criaacao.com/wp-content/plugins/elementor/assets/css/widget-counter.min.css?ver=4.1.4": "assets/css/3d61aa64c53c42ed_widget-counter.min.css", "https://criaacao.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=4.1.4": "assets/css/c55902832fb84522_v4-shims.min.css", "https://criaacao.com/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=4.1.4": "assets/css/808a659eb4e85607_widget-spacer.min.css", "https://criaacao.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.1.4": "assets/css/f68e889145cb0e47_widget-heading.min.css", "https://criaacao.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png": "assets/images/gallery/dummy-criaacao-entretenimento.png", "https://criaacao.com/wp-content/themes/CriaAcao/css/be.css?ver=26.5": "assets/css/ea363803b32f6bd1_be.css", "https://criaacao.com/wp-content/uploads/2024/07/logo-1.png": "assets/logos/logo-criaacao-entretenimento.png", "https://criaacao.com/wp-content/themes/CriaAcao/functions/plugins/elementor/assets/elementor.css?ver=7.0": "assets/css/003fef8ad1cf80c4_elementor.css", "https://criaacao.com/wp-content/plugins/elementor/assets/css/widget-image-gallery.min.css?ver=4.1.4": "assets/css/6833ab2989ec3b33_widget-image-gallery.min.css", "https://criaacao.com/wp-content/uploads/elementor/css/post-2.css?ver=1782207471": "assets/css/9389762f5a948af4_post-2.css", "https://criaacao.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1": "assets/js/5274f11e6fb32ae0_jquery-migrate.min.js", "https://criaacao.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=4.1.4": "assets/js/6f35273b8502706e_v4-shims.min.js", "https://criaacao.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1": "assets/js/cb6f2d32c49d1c2b_jquery.min.js", "https://criaacao.com/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.4": "assets/css/d2a7a173045c7ed2_rs6.css", "https://criaacao.com/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d": "assets/js/1d231f080d1df633_hooks.min.js", "https://criaacao.com/wp-content/uploads/2019/11/christmas-icon1.png": "assets/icons/christmas-icon1-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-06-08-at-09.42.20-e1720274979627.jpeg": "assets/images/gallery/WhatsApp-Image-2024-06-08-at-0-criaacao-entretenimento.jpeg", "https://criaacao.com/wp-content/uploads/2019/11/christmas-icon2.png": "assets/icons/christmas-icon2-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-06-08-at-09.36.21-e1720274924328.jpeg": "assets/images/gallery/WhatsApp-Image-2024-06-08-at-0-criaacao-entretenimento.jpeg", "https://criaacao.com/wp-content/uploads/2024/07/Acoes-Tematicas-e1720275059494.png": "assets/images/gallery/Acoes-Tematicas-e1720275059494-criaacao-entretenimento.png", "https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaBTMnFcQ.woff2": "assets/fonts/20fc9b6fc618e7c3_XRXV3I6Li01BKofINeaBTMnFcQ.woff2", "https://criaacao.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.6": "assets/js/29fdd17a7002a2e1_index.js", "https://criaacao.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.6": "assets/js/ddcce687729cb358_index.js", "https://criaacao.com/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec": "assets/js/46668f561bd01aaa_i18n.min.js", "https://criaacao.com/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1": "assets/js/9aa9bb8be2b83405_jquery-numerator.min.js", "https://criaacao.com/wp-content/uploads/2024/07/Duendes-e1720275042996.png": "assets/images/gallery/Duendes-e1720275042996-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Brindes-e1720275106833.png": "assets/images/gallery/Brindes-e1720275106833-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Plataforma-360o-e1720275137989.png": "assets/images/gallery/Plataforma-360o-e1720275137989-criaacao-entretenimento.png", "https://criaacao.com/wp-content/themes/CriaAcao/images/cookies.png": "assets/images/gallery/cookies-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-06-08-at-09.38.25-e1720274961697.jpeg": "assets/images/gallery/WhatsApp-Image-2024-06-08-at-0-criaacao-entretenimento.jpeg", "https://fonts.gstatic.com/s/nunito/v32/XRXX3I6Li01BKofIMNaDRs7nczIH.woff2": "assets/fonts/60ad29f2b640800b_XRXX3I6Li01BKofIMNaDRs7nczIH.woff2", "https://fonts.gstatic.com/s/estonia/v13/7Au_p_4ijSecA1yHOCX2z24PMFk.woff2": "assets/db957a8d51366a0c_7Au_p_4ijSecA1yHOCX2z24PMFk.woff2", "https://criaacao.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3": "assets/js/699210a5ed06e497_core.min.js", "https://criaacao.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.13.3": "assets/js/a1ac109fb0da76a0_tabs.min.js", "https://criaacao.com/wp-content/themes/CriaAcao/js/menu.js?ver=26.5": "assets/js/e31562bbd4b9f377_menu.js", "https://criaacao.com/wp-content/themes/CriaAcao/assets/animations/animations.min.js?ver=26.5": "assets/js/d1bbd7ecc1eb2490_animations.min.js", "https://criaacao.com/wp-content/themes/CriaAcao/assets/jplayer/jplayer.min.js?ver=26.5": "assets/js/6e6c69ba30da6599_jplayer.min.js", "https://criaacao.com/wp-content/themes/CriaAcao/js/parallax/translate3d.js?ver=26.5": "assets/js/c0a00439e0c82d42_translate3d.js", "https://criaacao.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.1.4": "assets/js/8dd3674bae946e2e_webpack.runtime.min.js", "https://criaacao.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.1.4": "assets/js/c66f47147d5fe3cc_frontend-modules.min.js", "https://criaacao.com/wp-content/themes/CriaAcao/js/plugins.js?ver=26.5": "assets/js/54766cd48bb6d7cd_plugins.js", "https://criaacao.com/wp-content/plugins/click-to-chat-for-whatsapp/new/inc/assets/js/app.js?ver=4.40": "assets/js/c6e72caf2dad7af8_app.js", "https://criaacao.com/wp-content/themes/CriaAcao/js/scripts.js?ver=26.5": "assets/js/556004ab44e826f7_scripts.js", "https://criaacao.com/wp-content/uploads/2019/11/christmas-sectionbg1.png": "assets/images/gallery/christmas-sectionbg1-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-icon4.png": "assets/icons/christmas-icon4-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103924.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/themes/CriaAcao/fonts/mfn/icons.woff?31690507": "assets/fonts/559a910060423ed4_icons.woff", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103908-e1720273324483.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-icon3.png": "assets/icons/christmas-icon3-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-104006.png": "assets/images/gallery/Captura-de-tela-2024-07-06-104-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-sectionbg1-1.png": "assets/images/gallery/christmas-sectionbg1-1-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103949.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.1.4": "assets/js/1842d6e4d3c7399f_frontend.min.js", "https://criaacao.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-contact-form-7-0310812e6aa65ef3c958.js": "assets/js/a963f78c7d0e1478_googlesitekit-events-provider-.js", "https://criaacao.com/wp-content/plugins/revslider/sr6/assets/js/rbtools.min.js?ver=6.7.2": "assets/js/c4596b16b126326b_rbtools.min.js", "https://criaacao.com/wp-content/plugins/revslider/sr6/assets/js/rs6.min.js?ver=6.7.4": "assets/js/18c034e8caa6309a_rs6.min.js", "https://criaacao.com/wp-content/plugins/elementor/assets/css/conditionals/lightbox.min.css?ver=4.1.4": "assets/css/8766b9224b839b0e_lightbox.min.css", "https://criaacao.com/wp-content/plugins/elementor/assets/css/conditionals/dialog.min.css?ver=4.1.4": "assets/css/3c6bbf5f5e5ddb0e_dialog.min.css", "https://criaacao.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5": "assets/css/c57e64fcb72bddaf_swiper.min.css", "https://criaacao.com/wp-content/plugins/elementor/assets/js/397f2d183c19202777d6.bundle.min.js": "assets/js/813e816a1b807a4e_397f2d183c19202777d6.bundle.mi.js", "https://criaacao.com/wp-content/plugins/elementor/assets/js/lightbox.570c05c5a283cfb6b223.bundle.min.js": "assets/js/f9067c125b307e5a_lightbox.570c05c5a283cfb6b223..js", "https://criaacao.com/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.9.3": "assets/js/30770e96ca66d9f1_dialog.min.js", "https://criaacao.com/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=4.1.4": "assets/js/1030dee6b293cd2f_share-link.min.js", "https://criaacao.com/wp-content/plugins/elementor/assets/js/section-frontend-handlers.d85ab872da118940910d.bundle.min.js": "assets/js/55922883b5835837_section-frontend-handlers.d85a.js", "https://criaacao.com/wp-content/plugins/elementor/assets/js/text-editor.45609661e409413f1cef.bundle.min.js": "assets/js/4543f55b0b8bc8fe_text-editor.45609661e409413f1c.js", "https://criaacao.com/wp-content/plugins/elementor/assets/js/counter.12335f45aaa79d244f24.bundle.min.js": "assets/js/83bc2e5a1c113016_counter.12335f45aaa79d244f24.b.js", "https://criaacao.com/wp-content/plugins/elementor/assets/js/shared-frontend-handlers.03caa53373b56d3bab67.bundle.min.js": "assets/js/77c0a6d635dad44b_shared-frontend-handlers.03caa.js", "https://criaacao.com/wp-content/uploads/2024/07/background-768x543.png": "assets/images/backgrounds/background-768x543-criaacao-entretenimento.png", "https://criaacao.com/wp-json/contact-form-7/v1/contact-forms/9/feedback/schema": "assets/3bb7ffdb4834c549_schema.json", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103939.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-104028.png": "assets/images/gallery/Captura-de-tela-2024-07-06-104-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/eusebio-150x150.jpg": "assets/images/clientes/eusebio-150x150-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/gran-150x150.jpg": "assets/images/clientes/gran-150x150-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/joguei-150x150.png": "assets/images/clientes/joguei-150x150-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/maracanau-150x150.png": "assets/images/clientes/maracanau-150x150-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/iguatemi-150x150.png": "assets/images/clientes/iguatemi-150x150-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/nortao-150x150.jpg": "assets/images/clientes/nortao-150x150-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/rio-mar-150x150.jpg": "assets/images/clientes/rio-mar-150x150-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/riomarkennedy-150x150.png": "assets/images/gallery/riomarkennedy-150x150-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/via-sul-150x150.jpg": "assets/images/clientes/via-sul-150x150-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2019/11/christmas-pic2.png": "assets/images/gallery/christmas-pic2-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-contact1.png": "assets/images/gallery/christmas-contact1-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-contact2.png": "assets/images/gallery/christmas-contact2-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-contact3.png": "assets/images/gallery/christmas-contact3-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/nortao.jpg": "assets/images/clientes/nortao-criaacao-entretenimento.jpg", "https://instagram.com/criaacao": "assets/9a6dcd92536fa6d5_criaacao.html", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103908-e1720273324483-31x50.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/nortao-75x75.jpg": "assets/images/clientes/nortao-75x75-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-104006-50x50.png": "assets/images/gallery/Captura-de-tela-2024-07-06-104-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/riomarkennedy-50x50.png": "assets/images/gallery/riomarkennedy-50x50-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/eusebio-75x75.jpg": "assets/images/clientes/eusebio-75x75-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103908-e1720273324483-46x75.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-104006-77x75.png": "assets/images/gallery/Captura-de-tela-2024-07-06-104-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/joguei-75x75.png": "assets/images/clientes/joguei-75x75-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/eusebio-80x80.jpg": "assets/images/clientes/eusebio-80x80-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103949-50x46.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/via-sul.jpg": "assets/images/clientes/via-sul-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/riomarkennedy-75x75.png": "assets/images/gallery/riomarkennedy-75x75-criaacao-entretenimento.png", "https://criaacao.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcriaacao.com%2F&format=xml": "assets/097f2dbfb73edb25_embed", "https://criaacao.com/wp-content/uploads/2024/07/gran-50x50.jpg": "assets/images/clientes/gran-50x50-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/gran-80x80.jpg": "assets/images/clientes/gran-80x80-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/riomarkennedy.png": "assets/images/gallery/riomarkennedy-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/iguatemi-75x75.png": "assets/images/clientes/iguatemi-75x75-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/logo-1-1024x380.png": "assets/logos/logo-criaacao-entretenimento-1024.png", "https://criaacao.com/wp-content/uploads/2024/07/riomarkennedy-85x85.png": "assets/images/gallery/riomarkennedy-85x85-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103924-113x75.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/maracanau-75x75.png": "assets/images/clientes/maracanau-75x75-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/rio-mar.jpg": "assets/images/clientes/rio-mar-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103949-160x146.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/via-sul-85x85.jpg": "assets/images/clientes/via-sul-85x85-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/maracanau.png": "assets/images/clientes/maracanau-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-104006-150x146.png": "assets/images/gallery/Captura-de-tela-2024-07-06-104-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103908-e1720273324483-183x300.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/via-sul-147x146.jpg": "assets/images/clientes/via-sul-147x146-criaacao-entretenimento.jpg", "https://criaacao.com/wp-json/wp/v2/pages/2": "assets/9e057158cd7d3bba_2.json", "https://criaacao.com/wp-content/uploads/2024/07/eusebio.jpg": "assets/images/clientes/eusebio-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/eusebio-146x146.jpg": "assets/images/clientes/eusebio-146x146-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2019/11/christmas-icon1-36x50.png": "assets/icons/christmas-icon1-36x50-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/logo-1-150x56.png": "assets/2d8ce983791175ca_logo-1-150x56.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-104028-72x75.png": "assets/images/gallery/Captura-de-tela-2024-07-06-104-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/iguatemi-50x50.png": "assets/images/clientes/iguatemi-50x50-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/joguei-80x80.png": "assets/images/clientes/joguei-80x80-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/joguei-85x85.png": "assets/images/clientes/joguei-85x85-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/icone-1.png": "assets/icons/icone-1-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103949-768x701.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103924-50x33.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/nortao-146x146.jpg": "assets/images/clientes/nortao-146x146-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/eusebio-50x50.jpg": "assets/images/clientes/eusebio-50x50-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103924-219x146.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-104028-288x300.png": "assets/images/gallery/Captura-de-tela-2024-07-06-104-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/joguei-146x146.png": "assets/images/clientes/joguei-146x146-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-104028-768x800.png": "assets/images/gallery/Captura-de-tela-2024-07-06-104-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-icon4-53x75.png": "assets/icons/christmas-icon4-53x75-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/nortao-80x80.jpg": "assets/images/clientes/nortao-80x80-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103949-300x274.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103939-101x75.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/gran-146x146.jpg": "assets/images/clientes/gran-146x146-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103924-300x200.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/nortao-300x300.jpg": "assets/images/clientes/nortao-300x300-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2019/11/christmas-icon2-36x50.png": "assets/icons/christmas-icon2-36x50-criaacao-entretenimento.png", "https://criaacao.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcriaacao.com%2F": "assets/92274b32ad4eee30_embed.json", "https://criaacao.com/wp-content/uploads/2024/07/gran.jpg": "assets/images/clientes/gran-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/gran-85x85.jpg": "assets/images/clientes/gran-85x85-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/rio-mar-146x146.jpg": "assets/images/clientes/rio-mar-146x146-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/maracanau-146x146.png": "assets/images/clientes/maracanau-146x146-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/iguatemi.png": "assets/images/clientes/iguatemi-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-104028-48x50.png": "assets/images/gallery/Captura-de-tela-2024-07-06-104-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-icon4-36x50.png": "assets/icons/christmas-icon4-36x50-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/rio-mar-50x50.jpg": "assets/images/clientes/rio-mar-50x50-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/via-sul-75x75.jpg": "assets/images/clientes/via-sul-75x75-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2019/11/christmas-pic2-300x209.png": "assets/images/gallery/christmas-pic2-300x209-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/via-sul-80x80.jpg": "assets/images/clientes/via-sul-80x80-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/logo-1-50x19.png": "assets/logos/logo-1-50x19-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103939-768x573.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103924-768x512.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/gran-75x75.jpg": "assets/images/clientes/gran-75x75-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-104006-768x746.png": "assets/images/gallery/Captura-de-tela-2024-07-06-104-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-104006-300x292.png": "assets/images/gallery/Captura-de-tela-2024-07-06-104-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-icon3-36x50.png": "assets/icons/christmas-icon3-36x50-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/riomarkennedy-80x80.png": "assets/images/gallery/riomarkennedy-80x80-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/rio-mar-75x75.jpg": "assets/images/clientes/rio-mar-75x75-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/rio-mar-80x80.jpg": "assets/images/clientes/rio-mar-80x80-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/logo-1-260x97.png": "assets/logos/logo-1-260x97-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/nortao-50x50.jpg": "assets/images/clientes/nortao-50x50-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2019/11/christmas-pic2-50x35.png": "assets/images/gallery/christmas-pic2-50x35-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/logo-1-768x285.png": "assets/logos/logo-1-768x285-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-icon2-53x75.png": "assets/icons/christmas-icon2-53x75-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/joguei-50x50.png": "assets/images/clientes/joguei-50x50-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/nortao-85x85.jpg": "assets/images/clientes/nortao-85x85-criaacao-entretenimento.jpg", "https://criaacao.com/comments/feed/": "assets/bfe5c9daa56f4a89_file", "https://criaacao.com": "assets/d445e40e5c04b268_file.html", "https://criaacao.com/home/feed/": "assets/67bddff85c6f6ce1_file", "https://criaacao.com/wp-content/uploads/2024/07/rio-mar-85x85.jpg": "assets/images/clientes/rio-mar-85x85-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/logo-1-300x111.png": "assets/logos/logo-1-300x111-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/riomarkennedy-146x146.png": "assets/images/gallery/riomarkennedy-146x146-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103949-82x75.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/iguatemi-80x80.png": "assets/images/clientes/iguatemi-80x80-criaacao-entretenimento.png", "https://criaacao.com/xmlrpc.php?rsd": "assets/57aba91ee0c1c56e_xmlrpc.php", "https://criaacao.com/wp-content/uploads/2024/07/maracanau-85x85.png": "assets/images/clientes/maracanau-85x85-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103939-196x146.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/via-sul-50x50.jpg": "assets/images/clientes/via-sul-50x50-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/maracanau-80x80.png": "assets/images/clientes/maracanau-80x80-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/eusebio-85x85.jpg": "assets/images/clientes/eusebio-85x85-criaacao-entretenimento.jpg", "https://criaacao.com/wp-content/uploads/2024/07/iguatemi-85x85.png": "assets/images/clientes/iguatemi-85x85-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-pic2-210x146.png": "assets/images/gallery/christmas-pic2-210x146-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-icon1-53x75.png": "assets/icons/christmas-icon1-53x75-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/iguatemi-146x146.png": "assets/images/clientes/iguatemi-146x146-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-pic2-768x535.png": "assets/images/gallery/christmas-pic2-768x535-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103908-e1720273324483-89x146.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/maracanau-300x300.png": "assets/images/clientes/maracanau-300x300-criaacao-entretenimento.png", "https://wa.me/5585988601400": "assets/feaa9f1ccd99d18f_5585988601400.html", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103939-300x224.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-103939-50x37.png": "assets/images/gallery/Captura-de-tela-2024-07-06-103-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2019/11/christmas-icon3-53x75.png": "assets/icons/christmas-icon3-53x75-criaacao-entretenimento.png", "https://criaacao.com/feed/": "assets/ca6271da81178603_file", "https://criaacao.com/wp-content/uploads/2024/07/joguei.png": "assets/images/clientes/joguei-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/Captura-de-tela-2024-07-06-104028-140x146.png": "assets/images/gallery/Captura-de-tela-2024-07-06-104-criaacao-entretenimento.png", "https://criaacao.com/wp-content/uploads/2024/07/maracanau-50x50.png": "assets/images/clientes/maracanau-50x50-criaacao-entretenimento.png", "https://criaacao.com/wp-json/": "assets/66b88f39936f3169_file.json", "https://criaacao.com/wp-content/uploads/2019/11/christmas-pic2-108x75.png": "assets/images/gallery/christmas-pic2-108x75-criaacao-entretenimento.png" };
-      // Pre-populate path+query keys: when opened via file://, JS
-      // resolves '/foo.js' against file://... são we lose the original
-      // origin. Indexing by pathname+search lets the lookup succeed.
-      var _add = {};
-      for (var _k in ASSET_MAP) {
-        try { var _u = new URL(_k); _add[_u.pathname + _u.search] = ASSET_MAP[_k]; }
-        catch (e) { }
-      }
-      for (var _k in _add) if (!ASSET_MAP[_k]) ASSET_MAP[_k] = _add[_k];
-      function resolveLocal(u) {
-        if (!u || typeof u !== 'string') return null;
-        if (u.indexOf('data:') === 0 || u.indexOf('blob:') === 0) return null;
-        if (ASSET_MAP[u]) return ASSET_MAP[u];
-        try {
-          var url = new URL(u, location.href);
-          var pq = url.pathname + url.search;
-          if (ASSET_MAP[pq]) return ASSET_MAP[pq];
-          // The snapshot may be opened from a subdirectory, while
-          // ASSET_MAP paths are origin-rooted. Retry with the
-          // document's own directory prefix stripped off.
-          var dir = location.pathname.replace(/[^/]*$/, '');
-          if (dir.length > 1 && pq.indexOf(dir) === 0) {
-            var rel = pq.slice(dir.length - 1);
-            if (ASSET_MAP[rel]) return ASSET_MAP[rel];
-          }
-          // Next.js image optimization wrapper ÃƒÂ¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â peel the inner CDN URL
-          if (/_next\/image$/.test(url.pathname)) {
-            var t = url.searchParams.get('url');
-            if (t) {
-              var dec = decodeURIComponent(t);
-              if (ASSET_MAP[dec]) return ASSET_MAP[dec];
-              var bare = dec.split('?')[0];
-              for (var k in ASSET_MAP) {
-                if (k.split('?')[0] === bare) return ASSET_MAP[k];
-              }
-            }
-          }
-        } catch (e) { }
-        return null;
-      }
-      function rewriteSrcset(s) {
-        if (!s || typeof s !== 'string') return s;
-        return s.split(',').map(function (it) {
-          var p = it.trim().split(/\s+/);
-          var loc = resolveLocal(p[0]);
-          if (loc) p[0] = loc;
-          return p.join(' ');
-        }).join(', ');
-      }
-      // Patch property setters: el.src = '...' / el.href = '...'
-      // IMPORTANT: skip rewrite when the element has crossOrigin set.
-      // WebGL textures (UnicornStudio, Three.js, etc.) are loaded via
-      //   img.crossOrigin = 'anonymous'; img.src = 'https://cdn/...'
-      // and consumed via gl.texImage2D. file:// resources have no CORS
-      // headers, são rewriting to local makes WebGL reject the texture
-      // (Access blocked by CORS policy ÃƒÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ black/missing 3D scene).
-      // Better to keep the original URL: works online, fails offline,
-      // matches non-patched behaviour.
-      function patchSetter(klass, prop, transform) {
-        if (!klass || !klass.prototype) return;
-        var desc = Object.getOwnPropertyDescriptor(klass.prototype, prop);
-        if (!desc || !desc.set) return;
-        Object.defineProperty(klass.prototype, prop, {
-          configurable: true,
-          get: desc.get,
-          set: function (v) {
-            try {
-              if (transform === 'srcset') {
-                v = rewriteSrcset(v);
-              } else {
-                // Captured runtime resource (UnicornStudio texture,
-                // etc.) ÃƒÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ serve as a data: URI. data: never CORS-
-                // taints a WebGL canvas, unlike a file:// texture,
-                // são gl.texImage2D still accepts it offline.
-                var du = window.__offlineDataUri && window.__offlineDataUri(v);
-                if (du) { v = du; }
-                else if (!this.crossOrigin) {
-                  var loc = resolveLocal(v); if (loc) v = loc;
-                }
-              }
-            } catch (e) { }
-            desc.set.call(this, v);
-          }
-        });
-      }
-      patchSetter(window.HTMLScriptElement, 'src');
-      patchSetter(window.HTMLLinkElement, 'href');
-      patchSetter(window.HTMLImageElement, 'src');
-      patchSetter(window.HTMLImageElement, 'srcset', 'srcset');
-      patchSetter(window.HTMLSourceElement, 'src');
-      patchSetter(window.HTMLSourceElement, 'srcset', 'srcset');
-      patchSetter(window.HTMLMediaElement, 'src');
-      patchSetter(window.HTMLIFrameElement, 'src');
-      // Patch setAttribute too ÃƒÂ¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â some libs use it instead of property set
-      var _setAttr = Element.prototype.setAttribute;
-      Element.prototype.setAttribute = function (name, value) {
-        try {
-          if (typeof value === 'string') {
-            if (name === 'src' || name === 'href') {
-              var du = window.__offlineDataUri && window.__offlineDataUri(value);
-              if (du) { value = du; }
-              else if (!this.crossOrigin) {
-                var loc = resolveLocal(value); if (loc) value = loc;
-              }
-            } else if (name === 'srcset' && !this.crossOrigin) {
-              value = rewriteSrcset(value);
-            }
-          }
-        } catch (e) { }
-        return _setAttr.call(this, name, value);
-      };
-      // Expose for the late-init script in body
-      window.__resolveLocal = resolveLocal;
-      window.__rewriteSrcset = rewriteSrcset;
-    })();</script>
-  <meta charset="utf-8" />
-  <link rel="preload" as="image" href="assets/logos/logo-criaacao-entretenimento.png">
-  <title>Quem Somos | CriaAção Entretenimento</title>
+  <link rel="preload" as="image" href="../assets/logos/logo-criaacao-entretenimento.png">
+  <title>Manual do Verdadeiro Papai Noel | CriaAção Entretenimento</title>
   <meta name="description"
-    content="Conheça a história da CriaAção Entretenimento, líder em soluções de Natal para grandes eventos, shoppings e espaços corporativos.">
+    content="Descubra nossas soluções completas: Papai Noel Profissional, Cenografia, Plataforma 360°, Personagens, Espaços Fotográficos e mais.">
   <meta name="keywords"
     content="Natal para Shopping Centers, Papai Noel para Shopping, Empresa de Natal para Shopping, Eventos Natalinos, Decoração Natalina para Shopping, Cenografia Natalina, Papai Noel Profissional, Espaço Fotográfico Natal, Plataforma 360, Personagens Natalinos, Ativações Natalinas, Natal Corporativo, Natal Comercial, Produção de Natal, CriaAção Entretenimento">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="https://cria-a-o-site-noel.vercel.app/quem-somos.html">
+  <link rel="canonical" href="https://cria-a-o-site-noel.vercel.app/solucoes.html">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Quem Somos | CriaAção Entretenimento">
+  <meta property="og:title" content="Soluções de Natal para Shoppings e Empresas | CriaAção">
   <meta property="og:description"
-    content="Conheça a história da CriaAção Entretenimento, líder em soluções de Natal para grandes eventos, shoppings e espaços corporativos.">
+    content="Descubra nossas soluções completas: Papai Noel Profissional, Cenografia, Plataforma 360°, Personagens, Espaços Fotográficos e mais.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="CriaAção Entretenimento">
   <meta property="og:image"
     content="https://cria-a-o-site-noel.vercel.app/assets/images/gallery/nossa-historia-criaacao-entretenimento.jpg">
-  <meta property="og:url" content="https://cria-a-o-site-noel.vercel.app/quem-somos.html">
+  <meta property="og:url" content="https://cria-a-o-site-noel.vercel.app/solucoes.html">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Quem Somos | CriaAção Entretenimento">
+  <meta name="twitter:title" content="Soluções de Natal para Shoppings e Empresas | CriaAção">
   <meta name="twitter:description"
-    content="Conheça a história da CriaAção Entretenimento, líder em soluções de Natal para grandes eventos, shoppings e espaços corporativos.">
+    content="Descubra nossas soluções completas: Papai Noel Profissional, Cenografia, Plataforma 360°, Personagens, Espaços Fotográficos e mais.">
   <meta name="twitter:image"
     content="https://cria-a-o-site-noel.vercel.app/assets/images/gallery/nossa-historia-criaacao-entretenimento.jpg">
 
@@ -241,7 +67,7 @@
       "@type": "WebSite",
       "@id": "https://cria-a-o-site-noel.vercel.app/#website",
       "url": "https://cria-a-o-site-noel.vercel.app/",
-      "name": "Quem Somos | CriaAção Entretenimento",
+      "name": "Soluções de Natal para Shoppings e Empresas | CriaAção",
       "publisher": {
         "@id": "https://cria-a-o-site-noel.vercel.app/#organization"
       }
@@ -284,21 +110,21 @@
 </script>
   <meta content="telephone=no" name="format-detection" />
   <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
-  <link href="assets/icons/icone-1-criaacao-entretenimento.png" rel="shortcut icon" type="image/x-icon" />
-  <link href="assets/icons/icone-1-criaacao-entretenimento.png" rel="apple-touch-icon" />
+  <link href="../assets/icons/icone-1-criaacao-entretenimento.png" rel="shortcut icon" type="image/x-icon" />
+  <link href="../assets/icons/icone-1-criaacao-entretenimento.png" rel="apple-touch-icon" />
   <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color" />
   <meta content="#ffffff" media="(prefers-color-scheme: dark)" name="theme-color" />
   <link href="//www.googletagmanager.com" rel="dns-prefetch" />
   <link href="//fonts.googleapis.com" rel="dns-prefetch" />
-  <link href="assets/ca6271da81178603_file" rel="alternate" title="Feed para CriaAção Ãƒâ€šÃƒâ€šÃ‚Â»"
+  <link href="../assets/ca6271da81178603_file" rel="alternate" title="Feed para CriaAção Ãƒâ€šÃƒâ€šÃ‚Â»"
     type="application/rss+xml" />
-  <link href="assets/bfe5c9daa56f4a89_file" rel="alternate" title="Feed de comentários para CriaAção Ãƒâ€šÃƒâ€šÃ‚Â»"
+  <link href="../assets/bfe5c9daa56f4a89_file" rel="alternate" title="Feed de comentários para CriaAção Ãƒâ€šÃƒâ€šÃ‚Â»"
     type="application/rss+xml" />
-  <link href="assets/67bddff85c6f6ce1_file" rel="alternate"
+  <link href="../assets/67bddff85c6f6ce1_file" rel="alternate"
     title="Feed de comentários para CriaAção Ãƒâ€šÃƒâ€šÃ‚Â» Home" type="application/rss+xml" />
-  <link href="assets/92274b32ad4eee30_embed.json" rel="alternate" title="oEmbed (JSON)"
+  <link href="../assets/92274b32ad4eee30_embed.json" rel="alternate" title="oEmbed (JSON)"
     type="application/json+oembed" />
-  <link href="assets/097f2dbfb73edb25_embed" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" />
+  <link href="../assets/097f2dbfb73edb25_embed" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" />
   <style id="wp-img-auto-sizes-contain-inline-css">
     img:is([sizes=auto i], [sizes^="auto," i]) {
       contain-intrinsic-size: 3000px 1500px
@@ -306,7 +132,7 @@
 
     /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
   </style>
-  <link href="assets/css/00d22094f77821e0_main.css" id="ht_ctc_main_css-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/00d22094f77821e0_main.css" id="ht_ctc_main_css-css" media="all" rel="stylesheet" />
   <style id="wp-emoji-styles-inline-css">
     img.wp-smiley,
     img.emoji {
@@ -695,28 +521,28 @@
 
     /*# sourceURL=global-styles-inline-css */
   </style>
-  <link href="assets/css/a3b9f5df6bf638a4_styles.css" id="contact-form-7-css" media="all" rel="stylesheet" />
-  <link href="assets/css/ea363803b32f6bd1_be.css" id="mfn-be-css" media="all" rel="stylesheet" />
-  <link href="assets/css/622a07604bb0030b_animations.min.css" id="mfn-animations-css" media="all" rel="stylesheet" />
-  <link href="assets/css/6a8f55d140604ca7_fontawesome.css" id="mfn-font-awesome-css" media="all" rel="stylesheet" />
-  <link href="assets/css/10f8e5f272c9ae8c_jplayer.blue.monday.min.css" id="mfn-jplayer-css" media="all"
+  <link href="../assets/css/a3b9f5df6bf638a4_styles.css" id="contact-form-7-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/ea363803b32f6bd1_be.css" id="mfn-be-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/622a07604bb0030b_animations.min.css" id="mfn-animations-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/6a8f55d140604ca7_fontawesome.css" id="mfn-font-awesome-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/10f8e5f272c9ae8c_jplayer.blue.monday.min.css" id="mfn-jplayer-css" media="all"
     rel="stylesheet" />
-  <link href="assets/css/dd05c6edba0491dc_responsive.css" id="mfn-responsive-css" media="all" rel="stylesheet" />
-  <link href="assets/css/efcf90dc158ebfb4_css.css" id="mfn-fonts-css" media="all" rel="stylesheet" />
-  <link href="assets/css/3c6bbf5f5e5ddb0e_dialog.min.css" rel="stylesheet" />
-  <link href="assets/css/0a5d398672e25dc7_frontend.min.css" id="elementor-frontend-css" media="all" rel="stylesheet" />
-  <link href="assets/css/80ad7b0867ffd0f4_post-52.css" id="elementor-post-52-css" media="all" rel="stylesheet" />
-  <link href="assets/css/d87ddf917b7a1449_all.min.css" id="font-awesome-5-all-css" media="all" rel="stylesheet" />
-  <link href="assets/css/c55902832fb84522_v4-shims.min.css" id="font-awesome-4-shim-css" media="all" rel="stylesheet" />
-  <link href="assets/css/fb8690e594b2f9b8_widget-image.min.css" id="widget-image-css" media="all" rel="stylesheet" />
-  <link href="assets/css/3d61aa64c53c42ed_widget-counter.min.css" id="widget-counter-css" media="all"
+  <link href="../assets/css/dd05c6edba0491dc_responsive.css" id="mfn-responsive-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/efcf90dc158ebfb4_css.css" id="mfn-fonts-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/3c6bbf5f5e5ddb0e_dialog.min.css" rel="stylesheet" />
+  <link href="../assets/css/0a5d398672e25dc7_frontend.min.css" id="elementor-frontend-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/80ad7b0867ffd0f4_post-52.css" id="elementor-post-52-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/d87ddf917b7a1449_all.min.css" id="font-awesome-5-all-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/c55902832fb84522_v4-shims.min.css" id="font-awesome-4-shim-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/fb8690e594b2f9b8_widget-image.min.css" id="widget-image-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/3d61aa64c53c42ed_widget-counter.min.css" id="widget-counter-css" media="all"
     rel="stylesheet" />
-  <link href="assets/css/808a659eb4e85607_widget-spacer.min.css" id="widget-spacer-css" media="all" rel="stylesheet" />
-  <link href="assets/css/f68e889145cb0e47_widget-heading.min.css" id="widget-heading-css" media="all"
+  <link href="../assets/css/808a659eb4e85607_widget-spacer.min.css" id="widget-spacer-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/f68e889145cb0e47_widget-heading.min.css" id="widget-heading-css" media="all"
     rel="stylesheet" />
-  <link href="assets/css/6833ab2989ec3b33_widget-image-gallery.min.css" id="widget-image-gallery-css" media="all"
+  <link href="../assets/css/6833ab2989ec3b33_widget-image-gallery.min.css" id="widget-image-gallery-css" media="all"
     rel="stylesheet" />
-  <link href="assets/css/9389762f5a948af4_post-2.css" id="elementor-post-2-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/9389762f5a948af4_post-2.css" id="elementor-post-2-css" media="all" rel="stylesheet" />
   <style id="mfn-dynamic-inline-css">
     html {
       background-color: #ffffff
@@ -4629,12 +4455,12 @@
 
     /*# sourceURL=mfn-custom-inline-css */
   </style>
-  <link href="assets/css/6adb6452bc1ee069_css.css" id="elementor-gf-roboto-css" media="all" rel="stylesheet" />
-  <link href="assets/css/e41380127b5ea983_css.css" id="elementor-gf-robotoslab-css" media="all" rel="stylesheet" />
-  <link href="assets/css/ed6aeded6a15f982_css.css" id="elementor-gf-nunito-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/6adb6452bc1ee069_css.css" id="elementor-gf-roboto-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/e41380127b5ea983_css.css" id="elementor-gf-robotoslab-css" media="all" rel="stylesheet" />
+  <link href="../assets/css/ed6aeded6a15f982_css.css" id="elementor-gf-nunito-css" media="all" rel="stylesheet" />
   <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-M3L5RWJK"></script>
-  <script id="jquery-core-js" src="assets/js/cb6f2d32c49d1c2b_jquery.min.js"></script>
-  <script id="jquery-migrate-js" src="assets/js/5274f11e6fb32ae0_jquery-migrate.min.js"></script>
+  <script id="jquery-core-js" src="../assets/js/cb6f2d32c49d1c2b_jquery.min.js"></script>
+  <script id="jquery-migrate-js" src="../assets/js/5274f11e6fb32ae0_jquery-migrate.min.js"></script>
   <!-- Snippet da tag do Google (gtag.js) adicionado pelo Site Kit -->
   <!-- Snippet do Google Analytics adicionado pelo Site Kit -->
   <script async="" id="google_gtagjs-js" src="https://www.googletagmanager.com/gtag/js?id=GT-579Q7F4V"></script>
@@ -4647,13 +4473,13 @@
     window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify({ name, data }); if (!!window._googlesitekit.throttledEvents[key]) { return; } window._googlesitekit.throttledEvents[key] = true; setTimeout(() => { delete window._googlesitekit.throttledEvents[key]; }, 5); gtag("event", name, { ...data, event_source: "site-kit" }); };
     //# sourceURL=google_gtagjs-js-after
   </script>
-  <script id="font-awesome-4-shim-js" src="assets/js/6f35273b8502706e_v4-shims.min.js"></script>
-  <link href="assets/66b88f39936f3169_file.json" rel="https://api.w.org/" />
-  <link href="assets/9e057158cd7d3bba_2.json" rel="alternate" title="JSON" type="application/json" />
-  <link href="assets/57aba91ee0c1c56e_xmlrpc.php" rel="EditURI" title="RSD" type="application/rsd+xml" />
+  <script id="font-awesome-4-shim-js" src="../assets/js/6f35273b8502706e_v4-shims.min.js"></script>
+  <link href="../assets/66b88f39936f3169_file.json" rel="https://api.w.org/" />
+  <link href="../assets/9e057158cd7d3bba_2.json" rel="alternate" title="JSON" type="application/json" />
+  <link href="../assets/57aba91ee0c1c56e_xmlrpc.php" rel="EditURI" title="RSD" type="application/rsd+xml" />
   <meta content="WordPress 7.0" name="generator" />
-  <link href="assets/d445e40e5c04b268_file.html" rel="canonical" />
-  <link href="assets/d445e40e5c04b268_file.html" rel="shortlink" />
+  <link href="../assets/d445e40e5c04b268_file.html" rel="canonical" />
+  <link href="../assets/d445e40e5c04b268_file.html" rel="shortlink" />
   <meta content="Site Kit by Google 1.182.0" name="generator" />
   <meta
     content="Elementor 4.1.4; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"
@@ -4732,7 +4558,7 @@
       }
       //});
     };</script>
-  <link href="assets/css/c57e64fcb72bddaf_swiper.min.css" rel="stylesheet" />
+  <link href="../assets/css/c57e64fcb72bddaf_swiper.min.css" rel="stylesheet" />
   <style data-offline="1">
     /* offline: ensure content is visible regardless of JS init state */
     html,
@@ -6076,7 +5902,7 @@
       position: relative;
       width: 100%;
       padding: 80px 0 80px;
-      background-image: url('assets/images/backgrounds/background-segunda-sessão-shopping-decorado-natal-criaacao-entretenimento.jpg');
+      background-image: url('../assets/images/backgrounds/background-segunda-sessão-shopping-decorado-natal-criaacao-entretenimento.jpg');
       background-size: cover;
       background-position: top center;
       box-sizing: border-box;
@@ -6402,16 +6228,106 @@
       display: none !important;
     }
   </style>
-  <link href="assets/css/quem-somos.css" id="qs-css" media="all" rel="stylesheet" />
-  <link href="assets/css/typography.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/design-system.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/solucoes.css" id="qs-css" media="all" rel="stylesheet" />
 
-    <link rel="stylesheet" href="assets/css/header-global.css">
+  <!-- CA UX REFINEMENTS (ETAPA 3) -->
+  <style id="ca-refinements">
+    /* 1. Global Transients & Smoothness */
+    .ca-card,
+    .ca-timeline-item,
+    .sol-btn-secondary,
+    .ca-button-primary {
+      transition: all 250ms ease-out !important;
+    }
 
-    <link rel="stylesheet" href="assets/css/wp-global-styles.css">
+    /* 2. Cards Standardization & Hover (Glow, Scale) */
+    .ca-card,
+    .ca-timeline-item {
+      border-radius: 16px !important;
+      background: rgba(255, 255, 255, 0.03) !important;
+      border: 1px solid rgba(212, 175, 55, 0.2) !important;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+    }
 
-  <!-- MOBILE PADDING OVERRIDE FIX -->
-  <style>
+    .ca-card:hover,
+    .ca-timeline-item:hover {
+      transform: translateY(-5px) scale(1.02) !important;
+      border-color: rgba(242, 184, 75, 0.6) !important;
+      box-shadow: 0 10px 30px rgba(242, 184, 75, 0.15) !important;
+      z-index: 10;
+    }
+
+    /* 3. Buttons Standardization & Hover */
+    .sol-btn-secondary,
+    .ca-button-primary {
+      border-radius: 30px !important;
+      padding: 15px 35px !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 1.5px !important;
+    }
+
+    .sol-btn-secondary:hover,
+    .ca-button-primary:hover {
+      transform: translateY(-3px) !important;
+      box-shadow: 0 8px 25px rgba(242, 184, 75, 0.3) !important;
+    }
+
+    /* 4. Images Standardization */
+    .ca-card-image {
+      border-radius: 16px 16px 0 0 !important;
+    }
+
+    img {
+      transition: all 250ms ease-out !important;
+    }
+
+    /* 5. Typography and Spacing (Rhythm) */
+    .ca-card-title {
+      font-size: 1.25rem !important;
+      margin-bottom: 12px !important;
+      color: #FFF !important;
+      font-weight: 700 !important;
+    }
+
+    .ca-card-desc {
+      font-size: 0.95rem !important;
+      color: rgba(255, 255, 255, 0.8) !important;
+      line-height: 1.6 !important;
+      margin-bottom: 0 !important;
+    }
+
+    .sol-title-main {
+      margin-bottom: 25px !important;
+    }
+
+    .sol-text-main {
+      margin-bottom: 40px !important;
+      line-height: 1.7 !important;
+    }
+
+    /* 6. Section breathing space */
+    .sol-section {
+      padding: 80px 20px !important;
+    }
+
+    /* 7. Icon standardization */
+    .ca-card svg {
+      color: #F2B84B !important;
+      margin-right: 15px !important;
+      flex-shrink: 0 !important;
+    }
+  </style>
+  <meta name="description"
+    content="Especialistas em Natal para Shopping Centers, Empresas e Prefeituras. Papai Noel profissional e experiÃªncias natalinas sob medida. Transforme seu evento!">
+  <link href="../assets/css/typography.css" rel="stylesheet" type="text/css" />
+  <link href="../assets/css/design-system.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="../assets/css/header-global.css">
+
+    <link rel="stylesheet" href="../assets/css/wp-global-styles.css">
+
+  
     @media (max-width: 980px) {
       .ca-section, .qs-section, .qs-section-alt,
       .sol-section, .sol-section-alt, .sol-segments-section, .sol-included-section,
@@ -6439,7 +6355,7 @@
         position: relative;
         width: 100%;
         min-height: 100vh;
-        background-image: url('assets/images/backgrounds/imagem-background-hero-papai-noel-criacao-entretenimento-criaacao-entretenimento.jpg');
+        background-image: url('../assets/images/backgrounds/imagem-background-hero-papai-noel-criacao-entretenimento-criaacao-entretenimento.jpg');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -6722,7 +6638,7 @@
           padding-top: 160px !important;
           padding-bottom: 40px;
           height: auto;
-          background-image: url('assets/images/gallery/imagem-papai-noel-crianca-hero-mobile-criaacao-entretenimento.jpg?v=2') !important;
+          background-image: url('../assets/images/gallery/imagem-papai-noel-crianca-hero-mobile-criaacao-entretenimento.jpg?v=2') !important;
           background-position: center center !important;
           background-attachment: scroll !important;
           background-size: cover !important;
@@ -6907,22 +6823,22 @@
 
         <div id="Top_bar">
           <div class="top_bar_left">
-            <a class="logo" href="index.html"><img src="assets/logos/logo-criaacao-entretenimento.png"
+            <a class="logo" href="../index.html"><img src="../assets/logos/logo-criaacao-entretenimento.png"
                 title="CriaAção Entretenimento" loading="eager" fetchpriority="high"
                 alt="CriaAção Entretenimento - Empresa de Natal para Shopping" style="max-height: 48px;"></a>
             <nav id="menu">
               <ul class="menu-main">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="quem-somos.html">Quem Somos</a></li>
-                <li class="ca-has-dropdown"><a href="solucoes.html">SOLU&Ccedil;&Otilde;ES</a>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../quem-somos.html">Quem Somos</a></li>
+                <li class="ca-has-dropdown"><a href="../solucoes.html">SOLU&Ccedil;&Otilde;ES</a>
   <ul class="ca-dropdown-menu">
-    <li><a href="solucoes/manual-do-verdadeiro-papai-noel.html">Manual do Verdadeiro Papai Noel</a></li>
+    <li><a href="manual-do-verdadeiro-papai-noel.html">Manual do Verdadeiro Papai Noel</a></li>
   </ul>
 </li>
 
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="../portfolio.html">Portfólio</a></li>
+                <li><a href="../eventos.html">Eventos</a></li>
+                <li><a href="../contato.html">Contato</a></li>
               </ul>
             <style>
 .ca-has-dropdown { position: relative; }
@@ -6965,9 +6881,9 @@
         <script>
           document.addEventListener('DOMContentLoaded', function () {
             var path = window.location.pathname;
-            var page = path.split('/').pop();
+            var page = 'solucoes.html';
             if (page === '' || page === 'index.html') {
-              var homeLink = document.querySelector('.menu-main li a[href="index.html"]');
+              var homeLink = document.querySelector('.menu-main li a[href="../index.html"]');
               if (homeLink) homeLink.style.color = '#F2B84B';
             } else {
               var links = document.querySelectorAll('.menu-main li a');
@@ -6983,655 +6899,311 @@
 
     </div>
 
-    <!-- MAIN CONTENT: QUEM SOMOS -->
-    <main id="quem-somos-main">
-      <!-- HERO UNIFICADO -->
-      <section class="ca-inner-hero"
-        style="background: linear-gradient(90deg, rgba(22, 7, 7, 1) 0%, rgba(35, 8, 8, 0.94) 38%, rgba(35, 8, 8, 0.55) 68%, rgba(35, 8, 8, 0.10) 100%), url('assets/images/gallery/background-pagina-quem-somos-papai-noel-na-poltrona-criaacao-entretenimento.png') center right / cover no-repeat;">
-        <div class="ca-inner-hero-particles"></div>
-        <div class="ca-inner-hero-container">
-          <div class="ca-eyebrow ca-animate-fade-up" style="animation-delay: 100ms;">
-            <div class="ca-eyebrow-line"></div>QUEM SOMOS<div class="ca-eyebrow-line"></div>
-          </div>
-          <h1 class="ca-hero-title ca-animate-fade-up" style="animation-delay: 200ms;">Há mais de 30 anos criando
-            experiências<br><span>que encantam gerações.</span></h1>
-          <p class="ca-inner-hero-text ca-animate-fade-up" style="animation-delay: 300ms;">A CriaAção Entretenimento é
-            especializada na criação, produção e operação de experiências natalinas para Shopping Centers, transformando
-            o Natal em momentos inesquecíveis para milhões de pessoas.</p>
-        </div>
-      </section>
+    <!-- MAIN CONTENT: SOLUCOES -->
+    
+    <main id="manual-main">
+      <!-- ==============================================
+           HERO: MANUAL DO VERDADEIRO PAPAI NOEL
+      =============================================== -->
+      <style>
+        .manual-hero-section {
+          position: relative;
+          padding: 200px 20px 100px; /* Large top padding to account for fixed header */
+          background: linear-gradient(135deg, #0a0102 0%, #1a0304 40%, #3a0305 70%, #0a0102 100%);
+          overflow: hidden;
+          color: #fff;
+          min-height: 90vh;
+          display: flex;
+          align-items: center;
+        }
+        
+        .manual-hero-bg-effects {
+          position: absolute;
+          inset: 0;
+          pointer-events: none;
+          z-index: 0;
+        }
+        
+        .manual-hero-bg-effects::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: -10%;
+          width: 60%;
+          height: 100%;
+          background: radial-gradient(circle at center, rgba(212, 175, 55, 0.15) 0%, transparent 60%);
+          filter: blur(60px);
+        }
 
-      <!-- 2. NOSSA HISTÓRIA -->
-      <section class="qs-section">
-        <div class="qs-container">
-          <div class="qs-title qs-reveal">Nossa História</div>
-          <h2 class="qs-heading qs-reveal qs-stagger-1">A CriaAção nasceu da paixão por transformar o Natal em
-            experiências memoráveis.</h2>
-          <p class="qs-text qs-reveal qs-stagger-2">Ao longo de mais de três décadas de atuação, a empresa consolidou
-            sua posição como uma das maiores especialistas em entretenimento natalino do Brasil, desenvolvendo projetos
-            completos para Shopping Centers, empresas, prefeituras, escolas e ações sociais.</p>
-          <p class="qs-text qs-reveal qs-stagger-3">Cada projeto é planejado de forma personalizada, unindo emoção,
-            organização, excelência operacional e encantamento.</p>
-
-          <div class="qs-timeline">
-            <div class="qs-timeline-item">
-              <div class="qs-timeline-dot"></div>
-              <div class="qs-timeline-card qs-reveal slide-in-left qs-stagger-1">
-                <div class="qs-timeline-year">1993</div>
-                <h3 class="qs-timeline-title">Fundação da Empresa</h3>
-                <p class="qs-timeline-text">A CriaAção Entretenimento nasceu do sonho de encantar pessoas, iniciando
-                  suas atividades com pequenas apresentações e foco absoluto na magia do Natal.</p>
-                <img src="assets/images/gallery/papai-noel-noeletes-na-poltrona-1993-criaacao-entretenimento.jpg"
-                  alt="Fundação CriaAção" class="qs-timeline-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-
-            <div class="qs-timeline-item">
-              <div class="qs-timeline-dot"></div>
-              <div class="qs-timeline-card qs-reveal slide-in-right qs-stagger-2">
-                <div class="qs-timeline-year">2005</div>
-                <h3 class="qs-timeline-title">Expansão Regional</h3>
-                <p class="qs-timeline-text">Com o sucesso dos primeiros projetos, a empresa expandiu sua estrutura e
-                  começou a atender grandes Shopping Centers em toda a Região Nordeste.</p>
-                <img src="assets/images/gallery/papai-e-mamae-noel-no-carro-criaacao-entretenimento.jpg"
-                  alt="Expansão Regional" class="qs-timeline-img" loading="lazy" decoding="async">
-              </div>
-            </div>
-
-            <div class="qs-timeline-item">
-              <div class="qs-timeline-dot"></div>
-              <div class="qs-timeline-card qs-reveal slide-in-left qs-stagger-3">
-                <div class="qs-timeline-year">2012</div>
-                <h3 class="qs-timeline-title">Grandes Shopping Centers</h3>
-                <p class="qs-timeline-text">Marcamos nossa entrada definitiva no cenário de grandes redes de Shopping
-                  Centers, oferecendo não apenas o Papai Noel, mas também operações cenográficas completas.</p>
-              </div>
-            </div>
-
-            <div class="qs-timeline-item">
-              <div class="qs-timeline-dot"></div>
-              <div class="qs-timeline-card qs-reveal slide-in-right qs-stagger-4">
-                <div class="qs-timeline-year">2018</div>
-                <h3 class="qs-timeline-title">Consolidação Nacional</h3>
-                <p class="qs-timeline-text">Ultrapassamos as fronteiras regionais e começamos a realizar espetáculos de
-                  Natal nas principais capitais do Norte, Nordeste, Centro-Oeste e Sudeste.</p>
-              </div>
-            </div>
-
-            <div class="qs-timeline-item">
-              <div class="qs-timeline-dot"></div>
-              <div class="qs-timeline-card qs-reveal slide-in-left qs-stagger-5">
-                <div class="qs-timeline-year">2023</div>
-                <h3 class="qs-timeline-title">Mais de 40 Shopping Centers</h3>
-                <p class="qs-timeline-text">Alcançamos o marco histórico de operar simultaneamente em mais de 40 grandes
-                  Shopping Centers durante a temporada natalina.</p>
-              </div>
-            </div>
-
-            <div class="qs-timeline-item">
-              <div class="qs-timeline-dot"></div>
-              <div class="qs-timeline-card qs-reveal slide-in-right qs-stagger-6">
-                <div class="qs-timeline-year">2026</div>
-                <h3 class="qs-timeline-title">Atuação em 15 estados</h3>
-                <p class="qs-timeline-text">Consolidamo-nos como a principal referência nacional, levando a magia do
-                  Natal para milhões de famílias em 15 estados diferentes do Brasil.</p>
-                <img src="assets/images/gallery/papai-noel-com-crianca-quem-somos-criaacao-entretenimento.jpg"
-                  alt="Atuação Nacional" class="qs-timeline-img" style="object-position: right center;" loading="lazy"
-                  decoding="async">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 3. NOSSOS NÚMEROS -->
-      <section class="qs-section qs-numbers-parallax">
-        <div class="qs-container">
-          <div class="qs-title qs-reveal">O Impacto da Magia</div>
-          <h2 class="qs-heading qs-reveal qs-stagger-1">Nossos Números</h2>
-          <div class="qs-numbers-grid">
-            <div class="qs-number-card qs-reveal qs-stagger-1">
-              <div class="qs-number-icon">
-                <svg width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                </svg>
-              </div>
-              <div class="qs-number-value"><span class="qs-counter" data-target="30">0</span>+</div>
-              <div class="qs-number-label">Anos de experiência</div>
-            </div>
-            <div class="qs-number-card qs-reveal qs-stagger-2">
-              <div class="qs-number-icon">
-                <svg width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z" />
-                  <path
-                    d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z" />
-                </svg>
-              </div>
-              <div class="qs-number-value"><span class="qs-counter" data-target="40">0</span>+</div>
-              <div class="qs-number-label">Shopping Centers</div>
-            </div>
-            <div class="qs-number-card qs-reveal qs-stagger-3">
-              <div class="qs-number-icon">
-                <svg width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
-                </svg>
-              </div>
-              <div class="qs-number-value"><span class="qs-counter" data-target="15">0</span></div>
-              <div class="qs-number-label">Estados brasileiros</div>
-            </div>
-            <div class="qs-number-card qs-reveal qs-stagger-4">
-              <div class="qs-number-icon">
-                <svg width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.344 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
-                </svg>
-              </div>
-              <div class="qs-number-value">+<span class="qs-counter" data-target="5000">0</span></div>
-              <div class="qs-number-label">Eventos realizados</div>
-            </div>
-            <div class="qs-number-card qs-reveal qs-stagger-5">
-              <div class="qs-number-icon">
-                <svg width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
-                </svg>
-              </div>
-              <div class="qs-number-value">+<span class="qs-counter" data-target="20">0</span>M</div>
-              <div class="qs-number-label">Visitantes impactados</div>
-            </div>
-            <div class="qs-number-card qs-reveal qs-stagger-6">
-              <div class="qs-number-icon">
-                <svg width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022h1.408z" />
-                  <path
-                    d="M0 2a2 2 0 0 1 2-2h7.28a2 2 0 0 1 1.94 1.515L11.54 2H14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2Zm14-1H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Zm-3 1a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8.28a1 1 0 0 0 .97-1.242l-1.25-5z" />
-                </svg>
-              </div>
-              <div class="qs-number-value">+<span class="qs-counter" data-target="1000">0</span></div>
-              <div class="qs-number-label">Projetos entregues</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 4. NOSSO PROPÓSITO -->
-      <section class="qs-section qs-purpose">
-        <div class="qs-container">
-          <div class="qs-purpose-grid">
-            <!-- Left: Text -->
-            <div class="qs-purpose-content qs-reveal slide-in-left">
-              <h2 class="qs-purpose-quote">Mais do que eventos.<br><span>Criamos memórias.</span></h2>
-              <p class="qs-purpose-text">Acreditamos que o Natal é uma das experiências mais emocionantes da vida das
-                famílias.</p>
-              <p class="qs-purpose-text">Nosso propósito é criar momentos capazes de aproximar pessoas, fortalecer
-                marcas e gerar lembranças que permanecerão por toda a vida.</p>
-              <p class="qs-purpose-text">Cada sorriso registrado representa muito mais do que uma
-                fotografia.<br><strong>Representa uma memória afetiva.</strong></p>
-            </div>
-
-            <!-- Right: Images Collage -->
-            <div class="qs-purpose-images qs-reveal slide-in-right">
-              <img src="assets/images/gallery/papai-noel-com-crianca-no-trono-criaacao-entretenimento.jpg"
-                alt="Ações Temáticas de Natal" class="qs-purpose-img-main" loading="lazy" decoding="async">
-              <img
-                src="assets/images/gallery/mulher-mostrando-foto-de-crainca-com-papai-noel-criaacao-entretenimento.jpg"
-                alt="Papai Noel com Criança" class="qs-purpose-img-float" loading="lazy" decoding="async">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 5. MISSÃO, VISÃO E VALORES -->
-      <section class="qs-section qs-section-alt">
-        <div class="qs-container">
-          <div class="qs-mvv-grid">
-            <div class="qs-mvv-card qs-reveal qs-stagger-1">
-              <div class="qs-mvv-icon">
-                <svg width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
-                </svg>
-              </div>
-              <div class="qs-mvv-title">Missão</div>
-              <p class="qs-mvv-text">Levar experiências natalinas memoráveis, unindo emoção, qualidade, segurança
-                operacional e excelência no atendimento.</p>
-            </div>
-            <div class="qs-mvv-card qs-reveal qs-stagger-2">
-              <div class="qs-mvv-icon">
-                <svg width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
-                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
-                </svg>
-              </div>
-              <div class="qs-mvv-title">Visão</div>
-              <p class="qs-mvv-text">Ser reconhecida como a principal referência nacional em experiências natalinas para
-                grandes empreendimentos e projetos especiais.</p>
-            </div>
-            <div class="qs-mvv-card qs-reveal qs-stagger-3">
-              <div class="qs-mvv-icon">
-                <svg width="48" height="48" fill="currentColor" viewBox="0 0 16 16">
-                  <path
-                    d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z" />
-                </svg>
-              </div>
-              <div class="qs-mvv-title">Valores</div>
-              <ul class="qs-mvv-list">
-                <li>Encantamento</li>
-                <li>Excelência</li>
-                <li>Compromisso</li>
-                <li>Ética</li>
-                <li>Segurança</li>
-                <li>Organização</li>
-                <li>Respeito</li>
-                <li>Inovação</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 9. ENCERRAMENTO -->
-      <section class="qs-cta">
-        <div class="qs-container">
-          <h2 class="qs-cta-title qs-reveal">Quando o Natal precisa ser inesquecível, grandes marcas escolhem a
-            CriaAção.</h2>
-          <p class="qs-text qs-reveal qs-stagger-1" style="max-width: 800px; margin: 0 auto;">Mais de três décadas de
-            experiência, milhares de eventos realizados e milhões de pessoas impactadas fazem da CriaAção uma referência
-            nacional em experiências natalinas.</p>
-
-          <div class="qs-cta-actions">
-            <a href="solucoes.html" class="qs-btn qs-btn-outline qs-reveal qs-stagger-2">Conheça nossas
-              soluções</a>
-            <a href="https://wa.me/5585988601400" target="_blank" class="qs-btn qs-btn-primary qs-reveal qs-stagger-3">
-              <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                <path
-                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-              </svg> Entrar em contato
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Animation Script -->
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('qs-visible');
-
-                const counters = entry.target.querySelectorAll('.qs-counter');
-                counters.forEach(counter => {
-                  if (!counter.classList.contains('counted')) {
-                    counter.classList.add('counted');
-                    const target = +counter.getAttribute('data-target');
-                    const duration = 2000;
-                    const stepTime = Math.abs(Math.floor(duration / target));
-                    let current = 0;
-
-                    const timer = setInterval(() => {
-                      current += Math.ceil(target / 100);
-                      if (current >= target) {
-                        counter.innerText = target;
-                        clearInterval(timer);
-                      } else {
-                        counter.innerText = current;
-                      }
-                    }, stepTime);
-                  }
-                });
-
-                observer.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
-
-          document.querySelectorAll('.qs-reveal').forEach(el => observer.observe(el));
-        });
-      </script>
-    </main>
-    <!-- START INSTITUTIONAL CONTACT SECTION -->
-    <style>
-      .inst-contact-section {
-        position: relative;
-        padding: 80px 20px;
-        background: linear-gradient(135deg, #2b0a12 0%, #1a050a 100%);
-        overflow: hidden;
-        color: #ffffff;
-      }
-
-      /* Background Elements */
-      .inst-contact-glow-left {
-        position: absolute;
-        top: 20%;
-        left: -10%;
-        width: 50%;
-        height: 70%;
-        background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
-        filter: blur(80px);
-        z-index: 1;
-        pointer-events: none;
-      }
-
-      .inst-contact-glow-right {
-        position: absolute;
-        bottom: -10%;
-        right: -10%;
-        width: 40%;
-        height: 60%;
-        background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
-        filter: blur(60px);
-        z-index: 1;
-        pointer-events: none;
-      }
-
-      .inst-contact-lines {
-        position: absolute;
-        inset: 0;
-        background:
-          linear-gradient(90deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px) 0 0 / 100px 100px,
-          linear-gradient(0deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px) 0 0 / 100px 100px;
-        z-index: 1;
-        mask-image: radial-gradient(circle at center, transparent 30%, black 100%);
-        -webkit-mask-image: radial-gradient(circle at center, transparent 30%, black 100%);
-      }
-
-      .inst-contact-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 2;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 60px;
-      }
-
-      /* Left Column */
-      .inst-contact-left {
-        flex: 0 0 55%;
-        max-width: 55%;
-      }
-
-      .inst-contact-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background: rgba(212, 175, 55, 0.1);
-        border: 1px solid rgba(212, 175, 55, 0.3);
-        padding: 8px 16px;
-        border-radius: 100px;
-        margin-bottom: 32px;
-        backdrop-filter: blur(10px);
-      }
-
-      .inst-contact-badge span {
-        color: #D4AF37;
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-      }
-
-      .inst-contact-title {
-        font-size: clamp(2.5rem, 4vw, 3.5rem);
-        font-weight: 700;
-        line-height: 1.15;
-        margin-bottom: 32px;
-        color: #ffffff;
-      }
-
-      .inst-contact-text {
-        font-size: clamp(1.1rem, 2vw, 1.25rem);
-        line-height: 1.7;
-        color: rgba(255, 255, 255, 0.85);
-        margin-bottom: 0;
-      }
-
-      .inst-contact-text p {
-        margin-bottom: 16px;
-      }
-
-      /* Right Column */
-      .inst-contact-right {
-        flex: 0 0 45%;
-        max-width: 45%;
-      }
-
-      .inst-contact-card {
-        background: rgba(43, 10, 18, 0.4);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(212, 175, 55, 0.2);
-        border-radius: 24px;
-        padding: 48px;
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
-        overflow: hidden;
-      }
-
-      .inst-contact-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 1px;
-        background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
-      }
-
-      .inst-contact-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 30px rgba(212, 175, 55, 0.1);
-      }
-
-      .inst-info-list {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 40px 0;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-      }
-
-      .inst-info-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 16px;
-      }
-
-      .inst-info-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: rgba(212, 175, 55, 0.1);
-        color: #D4AF37;
-        flex-shrink: 0;
-      }
-
-      .inst-info-content {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .inst-info-label {
-        font-size: 0.9rem;
-        color: rgba(255, 255, 255, 0.6);
-        margin-bottom: 4px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-
-      .inst-info-value {
-        font-size: 1.15rem;
-        color: #ffffff;
-        font-weight: 500;
-      }
-
-      /* Section Footer */
-      .inst-section-footer {
-        position: relative;
-        z-index: 2;
-        text-align: center;
-        margin-top: 50px;
-        padding-top: 15px;
-        padding-bottom: 20px;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-      }
-
-      .inst-footer-text {
-        color: rgba(255, 255, 255, 0.72);
-        font-size: 14px;
-        font-weight: 400;
-        letter-spacing: normal;
-      }
-
-      @media (max-width: 767px) {
-        .inst-footer-text {
+        .manual-hero-container {
+          position: relative;
+          z-index: 10;
+          max-width: 1240px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 60px;
+          align-items: center;
+        }
+        
+        /* Breadcrumb */
+        .manual-breadcrumb {
+          font-family: var(--mfn-woo-font-family, 'Inter', sans-serif);
           font-size: 13px;
+          color: rgba(255,255,255,0.6);
+          margin-bottom: 24px;
+          animation: fadeUp 1s ease forwards;
+          opacity: 0;
         }
-      }
-
-      @media (max-width: 992px) {
-        .inst-contact-container {
-          flex-direction: column;
-          gap: 50px;
+        .manual-breadcrumb a {
+          color: rgba(255,255,255,0.6);
+          text-decoration: none;
+          transition: color 0.3s ease;
         }
-
-        .inst-contact-left,
-        .inst-contact-right {
-          flex: 0 0 100%;
-          max-width: 100%;
-          text-align: center;
+        .manual-breadcrumb a:hover {
+          color: #D4AF37;
         }
-
-        .inst-contact-badge {
-          margin: 0 auto 32px auto;
+        .manual-breadcrumb .current {
+          color: #D4AF37;
+          pointer-events: none;
         }
-
-        .inst-info-item {
-          text-align: left;
+        .manual-breadcrumb .separator {
+          margin: 0 8px;
+          font-size: 10px;
         }
 
-        .inst-contact-card {
-          padding: 32px;
+        /* Left Content */
+        .manual-hero-content {
+          max-width: 600px;
         }
-      }
-    </style>
 
-    <section id="institucional-contato" class="inst-contact-section ca-section">
-      <div class="inst-contact-glow-left"></div>
-      <div class="inst-contact-glow-right"></div>
-      <div class="inst-contact-lines"></div>
-      <div class="ca-particles"
-        style="position: absolute; inset: 0; background-image: url('assets/images/backgrounds/particles.png'); opacity: 0.4; z-index: 1; pointer-events: none; mix-blend-mode: screen;">
-      </div>
+        .manual-eyebrow {
+          font-family: var(--mfn-woo-font-family, 'Inter', sans-serif);
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 4px;
+          color: #D4AF37;
+          text-transform: uppercase;
+          margin-bottom: 16px;
+          display: block;
+          animation: fadeUp 1s ease 0.1s forwards;
+          opacity: 0;
+        }
 
-      <div class="inst-contact-container">
-        <!-- Left Column -->
-        <div class="inst-contact-left ca-animate-fade-up">
-          <div class="inst-contact-badge">
-            <i data-lucide="building-2" style="color: #D4AF37; width: 14px; height: 14px;"></i>
-            <span>CRIAA&Ccedil;&Atilde;O ENTRETENIMENTO</span>
-          </div>
+        .manual-title {
+          font-family: var(--mfn-heading-font-family, 'Cinzel', serif);
+          font-size: clamp(40px, 5vw, 64px);
+          line-height: 1.1;
+          font-weight: 700;
+          margin-bottom: 24px;
+          text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+          animation: fadeUp 1s ease 0.2s forwards;
+          opacity: 0;
+          color: #ffffff !important;
+        }
+        
+        .manual-title span {
+          color: #D4AF37;
+        }
 
-          <h2 class="inst-contact-title">
-            Vamos criar o pr&oacute;ximo <span
-              style="font-family: 'Great Vibes', cursive; color: #D4AF37; font-weight: 400; font-size: 1.1em; display: inline-block;">Natal
-              inesquec&iacute;vel</span> do seu Shopping?
-          </h2>
+        .manual-desc {
+          font-family: var(--mfn-woo-font-family, 'Inter', sans-serif);
+          font-size: 18px;
+          line-height: 1.6;
+          color: rgba(255,255,255,0.85);
+          margin-bottom: 32px;
+          animation: fadeUp 1s ease 0.3s forwards;
+          opacity: 0;
+        }
 
-          <div class="inst-contact-text">
-            <p>H&aacute; mais de 30 anos transformamos espa&ccedil;os em experi&ecirc;ncias que encantam
-              fam&iacute;lias, fortalecem marcas e impulsionam resultados.</p>
-            <p>Ser&aacute; um prazer desenvolver um projeto exclusivo para o seu empreendimento.</p>
-          </div>
-        </div>
+        /* Badge */
+        .manual-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 12px;
+          background: rgba(212, 175, 55, 0.1);
+          border: 1px solid rgba(212, 175, 55, 0.3);
+          border-radius: 8px;
+          padding: 12px 20px;
+          margin-bottom: 40px;
+          backdrop-filter: blur(5px);
+          animation: fadeUp 1s ease 0.4s forwards;
+          opacity: 0;
+        }
+        .manual-badge svg {
+          width: 24px;
+          height: 24px;
+          color: #D4AF37;
+          flex-shrink: 0;
+        }
+        .manual-badge span {
+          font-size: 13px;
+          font-weight: 600;
+          color: #ffffff;
+          letter-spacing: 0.5px;
+        }
 
-        <!-- Right Column -->
-        <div class="inst-contact-right ca-animate-fade-up" style="transition-delay: 200ms;">
-          <div class="inst-contact-card ca-floating">
-            <ul class="inst-info-list">
-              <li class="inst-info-item">
-                <div class="inst-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                  </svg></div>
-                <div class="inst-info-content">
-                  <span class="inst-info-label">Cobertura</span>
-                  <span class="inst-info-value">Atendimento em todo o Brasil</span>
-                </div>
-              </li>
-              <li class="inst-info-item">
-                <div class="inst-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                    fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                    <path
-                      d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                  </svg></div>
-                <div class="inst-info-content">
-                  <span class="inst-info-label">WhatsApp</span>
-                  <span class="inst-info-value">(85) 98860-1400</span>
-                </div>
-              </li>
-              <li class="inst-info-item">
-                <div class="inst-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
-                  </svg></div>
-                <div class="inst-info-content">
-                  <span class="inst-info-label">E-mail</span>
-                  <span class="inst-info-value">marcos.criaacao@gmail.com</span>
-                </div>
-              </li>
-              <li class="inst-info-item">
-                <div class="inst-info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
-                  </svg></div>
-                <div class="inst-info-content">
-                  <span class="inst-info-label">Hor&aacute;rio</span>
-                  <span class="inst-info-value">De segunda a sexta-feira, das 8h &agrave;s 18h</span>
-                </div>
-              </li>
-            </ul>
+        /* Buttons */
+        .manual-buttons {
+          display: flex;
+          gap: 16px;
+          animation: fadeUp 1s ease 0.5s forwards;
+          opacity: 0;
+        }
 
-            <a href="https://wa.me/5585988601400?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20CriaA%C3%A7%C3%A3o%20Entretenimento%20e%20gostaria%20de%20conhecer%20melhor%20as%20solu%C3%A7%C3%B5es%20para%20o%20Natal%20do%20meu%20Shopping."
-              target="_blank" rel="noopener noreferrer" class="ca-btn ca-btn-primary"
-              style="display: flex; justify-content: center; align-items: center; gap: 12px; width: 100%; background: linear-gradient(90deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%); color: #1a050a; padding: 18px 24px; border-radius: 12px; font-weight: 700; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(212,175,55,0.3); background-size: 200% auto; text-transform: uppercase; letter-spacing: 1px; box-sizing: border-box; max-width: 100%; white-space: normal; text-align: center;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                <path
-                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+        .manual-btn-primary {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(135deg, #D4AF37 0%, #AA8C2C 100%);
+          color: #1a050a !important;
+          padding: 16px 32px;
+          border-radius: 50px;
+          font-weight: 700;
+          font-size: 15px;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        .manual-btn-primary:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+          color: #1a050a !important;
+        }
+
+        .manual-btn-secondary {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background: transparent;
+          border: 1px solid rgba(212, 175, 55, 0.6);
+          color: #ffffff !important;
+          padding: 16px 32px;
+          border-radius: 50px;
+          font-weight: 600;
+          font-size: 15px;
+          text-decoration: none;
+          transition: all 0.3s ease;
+        }
+        .manual-btn-secondary:hover {
+          border-color: #D4AF37;
+          background: rgba(212, 175, 55, 0.05);
+          color: #D4AF37 !important;
+        }
+
+        /* Right Content - Mockup */
+        .manual-hero-visual {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          animation: fadeUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.6s forwards;
+          opacity: 0;
+        }
+
+        .manual-mockup-img {
+          width: 100%;
+          max-width: 500px;
+          height: auto;
+          filter: drop-shadow(0 30px 40px rgba(0,0,0,0.6));
+          animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes fadeUp {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+          0% { transform: translateY(0); }
+          50% { transform: translateY(-15px); }
+          100% { transform: translateY(0); }
+        }
+
+        /* Responsiveness */
+        @media (max-width: 980px) {
+          .manual-hero-container {
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 40px;
+          }
+          .manual-hero-content {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .manual-badge {
+            text-align: left;
+          }
+          .manual-buttons {
+            flex-direction: column;
+            width: 100%;
+          }
+          .manual-buttons a {
+            width: 100%;
+          }
+          .manual-hero-visual {
+            order: 2; /* Visual below content */
+          }
+          .manual-hero-section {
+            padding: 160px 20px 80px;
+          }
+        }
+      </style>
+
+      <section class="manual-hero-section">
+        <div class="manual-hero-bg-effects"></div>
+        <div class="manual-hero-container">
+          
+          <!-- Coluna Esquerda -->
+          <div class="manual-hero-content">
+
+
+            <span class="manual-eyebrow">Conhecimento que encanta</span>
+            
+            <h1 class="manual-title">Manual do Verdadeiro <span>Papai Noel</span></h1>
+            
+            <p class="manual-desc">
+              Um conteúdo exclusivo para quem acredita que a magia do Natal também nasce do preparo, da presença e de cada detalhe da experiência.
+            </p>
+
+            <div class="manual-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
               </svg>
-              <span>FALAR COM UM ESPECIALISTA</span>
-            </a>
+              <span>VERSÃO DIGITAL GRATUITA PARA CLIENTES DA CRIAAÇÃO</span>
+            </div>
+
+            <div class="manual-buttons">
+              <a href="../contato.html" class="manual-btn-primary" aria-label="Solicitar um projeto">SOLICITAR UM PROJETO</a>
+              <a href="#detalhes-manual" class="manual-btn-secondary" aria-label="Conhecer o manual">CONHECER O MANUAL</a>
+            </div>
           </div>
+
+          <!-- Coluna Direita -->
+          <div class="manual-hero-visual">
+            <!-- 
+              Substituir src desta imagem pela capa final quando fornecida pelo cliente. 
+              Variável/Componente: MOCKUP_LIVRO_PAPAI_NOEL 
+            -->
+            <img src="../assets/images/portfolio/mockup-manual-papai-noel.png" 
+                 alt="Mockup tridimensional do livro Manual do Verdadeiro Papai Noel" 
+                 class="manual-mockup-img"
+                 width="600" height="800"
+                 loading="eager" />
+          </div>
+          
         </div>
-      </div>
+      </section>
 
-      <!-- Section Footer -->
-      <div class="inst-section-footer ca-animate-fade-up" style="transition-delay: 300ms;">
-        <div class="inst-footer-text">
-          &copy; 2026 CriaAção Entretenimento. Todos os direitos reservados.
-        </div>
-
-      </div>
-    </section>
-    <!-- END INSTITUTIONAL CONTACT SECTION -->
-
-    <!-- mfn_hook_content_after -->
-    <!-- mfn_hook_content_after -->
-    <footer class="clearfix mfn-footer" id="Footer" role="contentinfo" style="display:none;">
+      <!-- Blank target section for scroll anchor -->
+      <section id="detalhes-manual" style="padding: 40px 20px; text-align: center; color: #fff;">
+         <!-- Conteúdo futuro da página irá aqui -->
+      </section>
+      
+    </main>
+<footer class="clearfix mfn-footer" id="Footer" role="contentinfo" style="display:none;">
     </footer>
     <!-- End Footer Template -->
   </div>
@@ -7718,8 +7290,9 @@
   <!-- mfn_hook_bottom -->
   <div class="show" data-aligment="bottom" data-direction="horizontal" id="mfn-gdpr"
     style="display: none !important; z-index: 9999999 !important; position: fixed !important; left: 0 !important; right: 0 !important; bottom: 0 !important;">
-    <div class="mfn-gdpr-image"><img alt="Aviso de Privacidade e Cookies - CriaAção Entretenimento"
-        src="assets/images/gallery/cookies-criaacao-entretenimento.png" / loading="lazy" decoding="async"></div>
+    <div class="mfn-gdpr-image"><img loading="lazy" decoding="async"
+        alt="Aviso de Privacidade e Cookies - CriaAção Entretenimento"
+        src="../assets/images/gallery/cookies-criaacao-entretenimento.png" / loading="lazy"></div>
     <div class="mfn-gdpr-content">
       Este site usa cookies para melhorar sua experiência. Ao usar este site, você concorda com nossa Política
       de Proteção de Dados.
@@ -7742,13 +7315,13 @@
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/CriaAcao/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
 
-  <script id="wp-hooks-js" src="assets/js/1d231f080d1df633_hooks.min.js"></script>
-  <script id="wp-i18n-js" src="assets/js/46668f561bd01aaa_i18n.min.js"></script>
+  <script id="wp-hooks-js" src="../assets/js/1d231f080d1df633_hooks.min.js"></script>
+  <script id="wp-i18n-js" src="../assets/js/46668f561bd01aaa_i18n.min.js"></script>
   <script id="wp-i18n-js-after">
     wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
     //# sourceURL=wp-i18n-js-after
   </script>
-  <script id="swv-js" src="assets/js/29fdd17a7002a2e1_index.js"></script>
+  <script id="swv-js" src="../assets/js/29fdd17a7002a2e1_index.js"></script>
   <script id="contact-form-7-js-translations">
     (function (domain, translations) {
       var localeData = translations.locale_data[domain] || translations.locale_data.messages;
@@ -7766,32 +7339,32 @@
     };
     //# sourceURL=contact-form-7-js-before
   </script>
-  <script id="contact-form-7-js" src="assets/js/ddcce687729cb358_index.js"></script>
-  <script async="" defer="" id="tp-tools-js" src="assets/js/c4596b16b126326b_rbtools.min.js"></script>
-  <script async="" defer="" id="revmin-js" src="assets/js/18c034e8caa6309a_rs6.min.js"></script>
-  <script id="jquery-ui-core-js" src="assets/js/699210a5ed06e497_core.min.js"></script>
-  <script id="jquery-ui-tabs-js" src="assets/js/a1ac109fb0da76a0_tabs.min.js"></script>
+  <script id="contact-form-7-js" src="../assets/js/ddcce687729cb358_index.js"></script>
+  <script async="" defer="" id="tp-tools-js" src="../assets/js/c4596b16b126326b_rbtools.min.js"></script>
+  <script async="" defer="" id="revmin-js" src="../assets/js/18c034e8caa6309a_rs6.min.js"></script>
+  <script id="jquery-ui-core-js" src="../assets/js/699210a5ed06e497_core.min.js"></script>
+  <script id="jquery-ui-tabs-js" src="../assets/js/a1ac109fb0da76a0_tabs.min.js"></script>
   <script id="mfn-plugins-js-extra">
     var mfn = { "mobileInit": "1240", "parallax": "translate3d", "responsive": "1", "sidebarSticky": "", "lightbox": { "disable": false, "disableMobile": false, "title": false }, "slider": { "blog": 0, "clients": 0, "offer": 0, "portfolio": 0, "shop": 0, "slider": 0, "testimonials": 0 }, "livesearch": { "minChar": 3, "loadPosts": 10, "translation": { "pages": "P\u00e1ginas", "categories": "Categorias", "portfolio": "Portf\u00f3lio", "post": "Postagens", "products": "Produtos" } }, "accessibility": { "translation": { "headerContainer": "Contêiner do cabeçalho", "toggleSubmenu": "Alternar submenu" } }, "home_url": "", "site_url": "https://criaacao.com", "ajax": "https://criaacao.com/wp-admin/admin-ajax.php" };
     //# sourceURL=mfn-plugins-js-extra
   </script>
-  <script id="mfn-plugins-js" src="assets/js/54766cd48bb6d7cd_plugins.js"></script>
-  <script id="mfn-menu-js" src="assets/js/e31562bbd4b9f377_menu.js"></script>
-  <script id="mfn-animations-js" src="assets/js/d1bbd7ecc1eb2490_animations.min.js"></script>
-  <script id="mfn-jplayer-js" src="assets/js/6e6c69ba30da6599_jplayer.min.js"></script>
-  <script id="mfn-parallax-js" src="assets/js/c0a00439e0c82d42_translate3d.js"></script>
-  <script id="mfn-scripts-js" src="assets/js/556004ab44e826f7_scripts.js"></script>
-  <script id="elementor-webpack-runtime-js" src="assets/js/8dd3674bae946e2e_webpack.runtime.min.js"></script>
-  <script id="elementor-frontend-modules-js" src="assets/js/c66f47147d5fe3cc_frontend-modules.min.js"></script>
+  <script id="mfn-plugins-js" src="../assets/js/54766cd48bb6d7cd_plugins.js"></script>
+  <script id="mfn-menu-js" src="../assets/js/e31562bbd4b9f377_menu.js"></script>
+  <script id="mfn-animations-js" src="../assets/js/d1bbd7ecc1eb2490_animations.min.js"></script>
+  <script id="mfn-jplayer-js" src="../assets/js/6e6c69ba30da6599_jplayer.min.js"></script>
+  <script id="mfn-parallax-js" src="../assets/js/c0a00439e0c82d42_translate3d.js"></script>
+  <script id="mfn-scripts-js" src="../assets/js/556004ab44e826f7_scripts.js"></script>
+  <script id="elementor-webpack-runtime-js" src="../assets/js/8dd3674bae946e2e_webpack.runtime.min.js"></script>
+  <script id="elementor-frontend-modules-js" src="../assets/js/c66f47147d5fe3cc_frontend-modules.min.js"></script>
   <script id="elementor-frontend-js-before">
     var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Compartilhar no Facebook", "shareOnTwitter": "Compartilhar no Twitter", "pinIt": "Fixar", "download": "Baixar", "downloadImage": "Baixar imagem", "fullscreen": "Tela cheia", "zoom": "Zoom", "share": "Compartilhar", "playVideo": "Reproduzir v\u00eddeo", "previous": "Anterior", "next": "Pr\u00f3ximo", "close": "Fechar", "a11yCarouselPrevSlideMessage": "Slide anterior", "a11yCarouselNextSlideMessage": "Pr\u00f3ximo slide", "a11yCarouselFirstSlideMessage": "Este \u00e9 o primeiro slide", "a11yCarouselLastSlideMessage": "Este \u00e9 o \u00faltimo slide", "a11yCarouselPaginationBulletMessage": "Ir para o slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 960, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Dispositivos m\u00f3veis no modo retrato", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Dispositivos m\u00f3veis no modo paisagem", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet no modo retrato", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet no modo paisagem", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Notebook", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Tela ampla (widescreen)", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": false }, "version": "4.1.4", "is_static": false, "experimentalFeatures": { "e_font_icon_svg": true, "additional_custom_breakpoints": true, "container": true, "e_panel_promotions": true, "nested-elements": true, "global_classes_should_enforce_capabilities": true, "e_variables": true, "e_opt_in_v4_page": true, "e_components": true, "e_interactions": true, "e_widget_creation": true, "import-export-customization": true }, "urls": { "assets": "https:\/\/criaacao.com\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "https:\/\/criaacao.com\/wp-admin\/admin-ajax.php", "uploadUrl": "https:\/\/criaacao.com\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "bd25297d04", "atomicFormsSendForm": "e91ce10623" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "stretched_section_container": "#Wrapper", "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 2, "title": "CriaA%C3%A7%C3%A3o%20%E2%80%93%20Entretenimento", "excerpt": "", "featuredImage": false } };
     //# sourceURL=elementor-frontend-js-before
   </script>
-  <script id="elementor-frontend-js" src="assets/js/1842d6e4d3c7399f_frontend.min.js"></script><span
+  <script id="elementor-frontend-js" src="../assets/js/1842d6e4d3c7399f_frontend.min.js"></script><span
     class="elementor-screen-only" id="elementor-device-mode"></span>
-  <script id="jquery-numerator-js" src="assets/js/9aa9bb8be2b83405_jquery-numerator.min.js"></script>
+  <script id="jquery-numerator-js" src="../assets/js/9aa9bb8be2b83405_jquery-numerator.min.js"></script>
   <script defer="" id="googlesitekit-events-provider-contact-form-7-js"
-    src="assets/js/a963f78c7d0e1478_googlesitekit-events-provider-.js"></script>
+    src="../assets/js/a963f78c7d0e1478_googlesitekit-events-provider-.js"></script>
   <script id="wp-emoji-settings" type="application/json">
 {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://criaacao.com/wp-includes/js/wp-emoji-release.min.js?ver=7.0"}}
 </script>
@@ -7857,9 +7430,9 @@
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-M3L5RWJK');</script>
   <!-- End Google Tag Manager -->
-  <script src="assets/js/30770e96ca66d9f1_dialog.min.js"></script>
-  <script src="assets/js/1030dee6b293cd2f_share-link.min.js"></script>
-  <link href="assets/css/8766b9224b839b0e_lightbox.min.css" rel="stylesheet" /><svg class="e-font-icon-svg-symbols"
+  <script src="../assets/js/30770e96ca66d9f1_dialog.min.js"></script>
+  <script src="../assets/js/1030dee6b293cd2f_share-link.min.js"></script>
+  <link href="../assets/css/8766b9224b839b0e_lightbox.min.css" rel="stylesheet" /><svg class="e-font-icon-svg-symbols"
     style="display: none;"></svg>
   <script data-offline-fix="1">(function () {
       var IS_CSR = false;
@@ -8074,5 +7647,4 @@
 </body>
 
 </html>
-
 

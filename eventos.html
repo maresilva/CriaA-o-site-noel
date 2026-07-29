@@ -112,13 +112,33 @@
               <ul class="menu-main">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="quem-somos.html">Quem Somos</a></li>
-                <li><a href="solucoes.html">SOLU&Ccedil;&Otilde;ES</a></li>
+                <li class="ca-has-dropdown"><a href="solucoes.html">SOLU&Ccedil;&Otilde;ES</a>
+  <ul class="ca-dropdown-menu">
+    <li><a href="solucoes/manual-do-verdadeiro-papai-noel.html">Manual do Verdadeiro Papai Noel</a></li>
+  </ul>
+</li>
 
                 <li><a href="portfolio.html">Portfólio</a></li>
                 <li><a href="eventos.html">Eventos</a></li>
                 <li><a href="contato.html">Contato</a></li>
               </ul>
-            </nav>
+            <style>
+.ca-has-dropdown { position: relative; }
+.ca-has-dropdown > a { display: inline-flex !important; align-items: center; }
+.ca-has-dropdown > a::after { content: ""; display: inline-block; margin-left: 8px; width: 6px; height: 6px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); transition: transform 0.3s ease; margin-top: -2px; }
+.ca-has-dropdown:hover > a::after { transform: rotate(225deg); margin-top: 4px; }
+.ca-dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: rgba(26,5,10,0.95); min-width: 260px; padding: 10px 0; margin: 0; list-style: none; border-top: 2px solid #D4AF37; box-shadow: 0 5px 20px rgba(0,0,0,0.5); z-index: 999; backdrop-filter: blur(10px); }
+.ca-has-dropdown:hover .ca-dropdown-menu { display: block; }
+.ca-dropdown-menu li { padding: 0 !important; margin: 0 !important; }
+.ca-dropdown-menu li a { display: block; padding: 12px 20px !important; color: #fff !important; font-size: 14px !important; text-transform: none !important; text-decoration: none; transition: 0.3s; line-height: 1.4; font-weight: normal; }
+.ca-dropdown-menu li a:hover { color: #D4AF37 !important; background: rgba(212,175,55,0.1); }
+.ca-dropdown-menu li a::after { display: none !important; } /* Prevent caret on submenu links */
+@media (max-width: 980px) {
+  .ca-dropdown-menu { position: static; background: transparent; box-shadow: none; border-top: none; padding-left: 15px; }
+  .ca-has-dropdown:hover .ca-dropdown-menu { display: block; }
+}
+</style>
+</nav>
             <div class="ca-mobile-menu-right">
               <a class="ca-button-secondary ca-mobile-whatsapp"
                 href="https://wa.me/5585988601400?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20CriaA%C3%A7%C3%A3o%20Entretenimento%20e%20gostaria%20de%20conhecer%20melhor%20as%20solu%C3%A7%C3%B5es%20para%20o%20Natal%20do%20meu%20Shopping."
@@ -1389,7 +1409,11 @@
     <ul class="menu-main">
     <li><a href="index.html">Home</a></li>
     <li><a href="quem-somos.html">Quem Somos</a></li>
-    <li><a href="solucoes.html">SOLU&Ccedil;&Otilde;ES</a></li>
+    <li class="ca-has-dropdown"><a href="solucoes.html">SOLU&Ccedil;&Otilde;ES</a>
+  <ul class="ca-dropdown-menu">
+    <li><a href="solucoes/manual-do-verdadeiro-papai-noel.html">Manual do Verdadeiro Papai Noel</a></li>
+  </ul>
+</li>
     <li><a href="portfolio.html">Portf&oacute;lio</a></li>
     <li><a href="eventos.html" style="color: rgb(242, 184, 75);">Eventos</a></li>
     <li><a href="contato.html">Contato</a></li>
