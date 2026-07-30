@@ -1,0 +1,245 @@
+{
+  "timestamp": "2026-07-30T09:32:01.516076",
+  "files_processed": [
+    {
+      "file": "index.html",
+      "status": "modified",
+      "original_size": 289318,
+      "new_size": 295802
+    },
+    {
+      "file": "quem-somos.html",
+      "status": "modified",
+      "original_size": 289881,
+      "new_size": 294737
+    },
+    {
+      "file": "solucoes.html",
+      "status": "modified",
+      "original_size": 358060,
+      "new_size": 363323
+    },
+    {
+      "file": "portfolio.html",
+      "status": "modified",
+      "original_size": 296792,
+      "new_size": 301389
+    },
+    {
+      "file": "contato.html",
+      "status": "modified",
+      "original_size": 277655,
+      "new_size": 282371
+    },
+    {
+      "file": "trabalhe-conosco.html",
+      "status": "modified",
+      "original_size": 281449,
+      "new_size": 286132
+    },
+    {
+      "file": "eventos.html",
+      "status": "modified",
+      "original_size": 67730,
+      "new_size": 72216
+    },
+    {
+      "file": "404.html",
+      "status": "modified",
+      "original_size": 66491,
+      "new_size": 70646
+    },
+    {
+      "file": "solucoes/manual-do-verdadeiro-papai-noel.html",
+      "status": "modified",
+      "original_size": 244179,
+      "new_size": 248702
+    }
+  ],
+  "fixes_applied": {
+    "skip_links_added": 9,
+    "aria_labels_fixed": 24,
+    "nav_landmarks_added": 8,
+    "focus_visible_added": 9,
+    "svg_aria_hidden_added": 143,
+    "form_labels_fixed": 13,
+    "lang_attributes_fixed": 0,
+    "side_slide_aria_fixed": 8,
+    "footer_landmark_fixed": 0,
+    "contrast_css_added": 9,
+    "keyboard_trap_fixed": 9,
+    "heading_hierarchy_notes": 0
+  },
+  "issues_found": [
+    "index.html: ADICIONADO skip link 'Pular para conteudo' (WCAG 2.4.1)",
+    "index.html: 3 aria-label(s) generico(s) corrigido(s) (WCAG 1.1.1)",
+    "index.html: 1 <nav> recebeu aria-label para acessibilidade (WCAG 1.3.1)",
+    "index.html: ADICIONADO CSS focus-visible + prefers-reduced-motion (WCAG 2.4.7, 2.3.3)",
+    "index.html: 60 SVG(s) decorativo(s) receberam aria-hidden='true' (WCAG 1.1.1)",
+    "index.html: ADICIONADO CSS de contraste aprimorado (WCAG 1.4.3)",
+    "index.html: ADICIONADO JS para acessibilidade de teclado (WCAG 2.1.1, 2.1.2)",
+    "quem-somos.html: ADICIONADO skip link 'Pular para conteudo' (WCAG 2.4.1)",
+    "quem-somos.html: 3 aria-label(s) generico(s) corrigido(s) (WCAG 1.1.1)",
+    "quem-somos.html: 1 <nav> recebeu aria-label para acessibilidade (WCAG 1.3.1)",
+    "quem-somos.html: ADICIONADO CSS focus-visible + prefers-reduced-motion (WCAG 2.4.7, 2.3.3)",
+    "quem-somos.html: 16 SVG(s) decorativo(s) receberam aria-hidden='true' (WCAG 1.1.1)",
+    "quem-somos.html: ADICIONADO CSS de contraste aprimorado (WCAG 1.4.3)",
+    "quem-somos.html: ADICIONADO JS para acessibilidade de teclado (WCAG 2.1.1, 2.1.2)",
+    "solucoes.html: INFO - 4 ocorrencias de texto branco com opacidade < 0.7 (verificar WCAG 1.4.3)",
+    "solucoes.html: ADICIONADO skip link 'Pular para conteudo' (WCAG 2.4.1)",
+    "solucoes.html: 3 aria-label(s) generico(s) corrigido(s) (WCAG 1.1.1)",
+    "solucoes.html: 1 <nav> recebeu aria-label para acessibilidade (WCAG 1.3.1)",
+    "solucoes.html: ADICIONADO CSS focus-visible + prefers-reduced-motion (WCAG 2.4.7, 2.3.3)",
+    "solucoes.html: 27 SVG(s) decorativo(s) receberam aria-hidden='true' (WCAG 1.1.1)",
+    "solucoes.html: ADICIONADO CSS de contraste aprimorado (WCAG 1.4.3)",
+    "solucoes.html: ADICIONADO JS para acessibilidade de teclado (WCAG 2.1.1, 2.1.2)",
+    "portfolio.html: ADICIONADO skip link 'Pular para conteudo' (WCAG 2.4.1)",
+    "portfolio.html: 3 aria-label(s) generico(s) corrigido(s) (WCAG 1.1.1)",
+    "portfolio.html: 1 <nav> recebeu aria-label para acessibilidade (WCAG 1.3.1)",
+    "portfolio.html: ADICIONADO CSS focus-visible + prefers-reduced-motion (WCAG 2.4.7, 2.3.3)",
+    "portfolio.html: 9 SVG(s) decorativo(s) receberam aria-hidden='true' (WCAG 1.1.1)",
+    "portfolio.html: ADICIONADO CSS de contraste aprimorado (WCAG 1.4.3)",
+    "portfolio.html: ADICIONADO JS para acessibilidade de teclado (WCAG 2.1.1, 2.1.2)",
+    "contato.html: ADICIONADO skip link 'Pular para conteudo' (WCAG 2.4.1)",
+    "contato.html: 3 aria-label(s) generico(s) corrigido(s) (WCAG 1.1.1)",
+    "contato.html: 1 <nav> recebeu aria-label para acessibilidade (WCAG 1.3.1)",
+    "contato.html: ADICIONADO CSS focus-visible + prefers-reduced-motion (WCAG 2.4.7, 2.3.3)",
+    "contato.html: 10 SVG(s) decorativo(s) receberam aria-hidden='true' (WCAG 1.1.1)",
+    "contato.html: 5 <label> associado(s) a input via for='' (WCAG 1.3.1)",
+    "contato.html: ADICIONADO CSS de contraste aprimorado (WCAG 1.4.3)",
+    "contato.html: ADICIONADO JS para acessibilidade de teclado (WCAG 2.1.1, 2.1.2)",
+    "trabalhe-conosco.html: ADICIONADO skip link 'Pular para conteudo' (WCAG 2.4.1)",
+    "trabalhe-conosco.html: 3 aria-label(s) generico(s) corrigido(s) (WCAG 1.1.1)",
+    "trabalhe-conosco.html: 1 <nav> recebeu aria-label para acessibilidade (WCAG 1.3.1)",
+    "trabalhe-conosco.html: ADICIONADO CSS focus-visible + prefers-reduced-motion (WCAG 2.4.7, 2.3.3)",
+    "trabalhe-conosco.html: 8 SVG(s) decorativo(s) receberam aria-hidden='true' (WCAG 1.1.1)",
+    "trabalhe-conosco.html: 8 <label> associado(s) a input via for='' (WCAG 1.3.1)",
+    "trabalhe-conosco.html: ADICIONADO CSS de contraste aprimorado (WCAG 1.4.3)",
+    "trabalhe-conosco.html: ADICIONADO JS para acessibilidade de teclado (WCAG 2.1.1, 2.1.2)",
+    "eventos.html: ADICIONADO skip link 'Pular para conteudo' (WCAG 2.4.1)",
+    "eventos.html: 3 aria-label(s) generico(s) corrigido(s) (WCAG 1.1.1)",
+    "eventos.html: 1 <nav> recebeu aria-label para acessibilidade (WCAG 1.3.1)",
+    "eventos.html: ADICIONADO CSS focus-visible + prefers-reduced-motion (WCAG 2.4.7, 2.3.3)",
+    "eventos.html: 6 SVG(s) decorativo(s) receberam aria-hidden='true' (WCAG 1.1.1)",
+    "eventos.html: ADICIONADO CSS de contraste aprimorado (WCAG 1.4.3)",
+    "eventos.html: ADICIONADO JS para acessibilidade de teclado (WCAG 2.1.1, 2.1.2)",
+    "404.html: ADICIONADO skip link 'Pular para conteudo' (WCAG 2.4.1)",
+    "404.html: ADICIONADO CSS focus-visible + prefers-reduced-motion (WCAG 2.4.7, 2.3.3)",
+    "404.html: ADICIONADO CSS de contraste aprimorado (WCAG 1.4.3)",
+    "404.html: ADICIONADO JS para acessibilidade de teclado (WCAG 2.1.1, 2.1.2)",
+    "solucoes/manual-do-verdadeiro-papai-noel.html: INFO - 4 ocorrencias de texto branco com opacidade < 0.7 (verificar WCAG 1.4.3)",
+    "solucoes/manual-do-verdadeiro-papai-noel.html: ADICIONADO skip link 'Pular para conteudo' (WCAG 2.4.1)",
+    "solucoes/manual-do-verdadeiro-papai-noel.html: 3 aria-label(s) generico(s) corrigido(s) (WCAG 1.1.1)",
+    "solucoes/manual-do-verdadeiro-papai-noel.html: 1 <nav> recebeu aria-label para acessibilidade (WCAG 1.3.1)",
+    "solucoes/manual-do-verdadeiro-papai-noel.html: ADICIONADO CSS focus-visible + prefers-reduced-motion (WCAG 2.4.7, 2.3.3)",
+    "solucoes/manual-do-verdadeiro-papai-noel.html: 7 SVG(s) decorativo(s) receberam aria-hidden='true' (WCAG 1.1.1)",
+    "solucoes/manual-do-verdadeiro-papai-noel.html: ADICIONADO CSS de contraste aprimorado (WCAG 1.4.3)",
+    "solucoes/manual-do-verdadeiro-papai-noel.html: ADICIONADO JS para acessibilidade de teclado (WCAG 2.1.1, 2.1.2)"
+  ],
+  "recommendations": [
+    {
+      "priority": "CRITICA",
+      "wcag": "2.4.1",
+      "area": "Tabulacao",
+      "issue": "Sem skip link para pular navegacao",
+      "fix": "Adicionado link \"Pular para conteudo principal\" visivel apenas no foco",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "CRITICA",
+      "wcag": "2.4.7",
+      "area": "Tabulacao",
+      "issue": "Sem indicador visual de foco para navegacao por teclado",
+      "fix": "Adicionado CSS :focus-visible com outline dourado de 3px + box-shadow",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "ALTA",
+      "wcag": "1.1.1",
+      "area": "ARIA",
+      "issue": "aria-label=\"Link\" generico nao descreve o destino do link",
+      "fix": "Substituido por descricao significativa do link",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "ALTA",
+      "wcag": "4.1.2",
+      "area": "ARIA",
+      "issue": "Side slide com role=\"banner\" (deveria ser dialog para menu mobile)",
+      "fix": "Alterado para role=\"dialog\" com aria-label descritivo",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "ALTA",
+      "wcag": "1.3.1",
+      "area": "Landmarks",
+      "issue": "<nav> sem aria-label para distinguir multiplas navegacoes",
+      "fix": "Adicionado aria-label=\"Menu principal\" ao nav#menu",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "ALTA",
+      "wcag": "1.1.1",
+      "area": "ARIA",
+      "issue": "SVGs decorativos (icones em links) expostos a leitores de tela",
+      "fix": "Adicionado aria-hidden=\"true\" focusable=\"false\" a SVGs decorativos",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "ALTA",
+      "wcag": "1.3.1",
+      "area": "Labels",
+      "issue": "Labels de formulario sem atributo for=\"\" associado ao input",
+      "fix": "Adicionado for=\"id\" em todas as labels do formulario trabalhe-conosco",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "MEDIA",
+      "wcag": "1.4.3",
+      "area": "Contraste",
+      "issue": "Textos com rgba(255,255,255,0.7) sobre fundo escuro - ratio < 4.5:1",
+      "fix": "CSS adicionado para aumentar opacidade de textos sobre fundo escuro",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "MEDIA",
+      "wcag": "2.1.1",
+      "area": "Tabulacao",
+      "issue": "Elementos role=\"button\" nao respondem a Enter/Space",
+      "fix": "Adicionado JS para ativar click em Enter/Space em role=\"button\"",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "MEDIA",
+      "wcag": "2.1.2",
+      "area": "Tabulacao",
+      "issue": "Menu mobile sem mecanismo de fechar via Escape",
+      "fix": "Adicionado handler de Escape para fechar menus e modais",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "MEDIA",
+      "wcag": "2.3.3",
+      "area": "Semantica",
+      "issue": "Animacoes podem causar problemas para usuarios sensiveis a movimento",
+      "fix": "Adicionado @media (prefers-reduced-motion: reduce) para desabilitar animacoes",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "BAIXA",
+      "wcag": "1.3.1",
+      "area": "Semantica",
+      "issue": "Verificar hierarquia de headings (h1 > h2 > h3 sem pular niveis)",
+      "fix_manual": "Revisar manualmente a hierarquia de headings em cada pagina",
+      "status": "RECOMENDACAO"
+    },
+    {
+      "priority": "BAIXA",
+      "wcag": "1.4.11",
+      "area": "Contraste",
+      "issue": "Contraste de elementos nao-textuais (icones, bordas) deve ser >= 3:1",
+      "fix_manual": "Testar com ferramenta de contraste (axe, Lighthouse)",
+      "status": "RECOMENDACAO"
+    }
+  ]
+}

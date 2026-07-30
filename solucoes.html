@@ -6284,11 +6284,86 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       ]
     }
   ]
-}</script><link href="assets/css/mobile-seo.css" rel="stylesheet"/></head>
+}</script><link href="assets/css/mobile-seo.css" rel="stylesheet"/><style id="ca-a11y-skip-link">
+.ca-skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #F2B84B;
+  color: #1a050a;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 14px;
+  z-index: 99999999;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.ca-skip-link:focus {
+  top: 0;
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+</style>
+<style id="ca-a11y-focus">
+/* Acessibilidade: Focus visible (WCAG 2.4.7) */
+*:focus-visible {
+  outline: 3px solid #F2B84B !important;
+  outline-offset: 3px !important;
+}
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid #F2B84B !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 6px rgba(242, 184, 75, 0.25) !important;
+}
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* High contrast mode support */
+@media (forced-colors: active) {
+  .ca-button-main, .ca-button-secondary {
+    border: 2px solid currentColor;
+  }
+}
+</style>
+<style id="ca-a11y-contrast">
+/* Acessibilidade: Melhorias de contraste (WCAG 1.4.3 - AA ratio 4.5:1) */
+/* Textos em rgba(255,255,255,0.7) sobre fundo escuro: ratio ~3.5:1 -> melhorar */
+.ca-countdown-text,
+.ca-indicator-text span,
+.ca-segmentos-text,
+.ca-desc {
+  color: rgba(255, 255, 255, 0.87) !important; /* ratio >= 4.5:1 sobre #1a050a */
+}
+/* Links no footer/contato sobre fundo escuro */
+.inst-contact-link {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+/* Placeholder text - minimo 4.5:1 */
+input::placeholder, textarea::placeholder, select::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* Textos sobre fundo dourado - garantir contraste */
+.ca-badge {
+  color: #F2B84B;
+}
+</style>
+</head>
 <body class="home wp-singular page-template-default page page-id-2 wp-theme-CriaAcao template-slider color-custom content-brightness-light input-brightness-light style-default button-round layout-full-width one-page if-zoom no-content-padding is-elementor header-transparent header-fw sticky-header sticky-tb-color ab-hide menu-line-below-80-1 menuo-right menuo-no-borders subheader-both-center footer-copy-center mobile-tb-center mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-sticky mobile-header-mini mobile-icon-user-ss mobile-icon-wishlist-ss mobile-icon-search-ss mobile-icon-wpml-ss mobile-icon-action-ss be-page-2 be-reg-265 elementor-default elementor-kit-52 elementor-page elementor-page-2 e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit rs-safari" data-elementor-device-mode="desktop">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5RHR2KX7" style="display:none;visibility:hidden" width="0"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<a class="ca-skip-link" href="#Content">Pular para o conteudo principal</a>
 <div id="home"></div>
 <!-- mfn_hook_top --><!-- mfn_hook_top -->
 <div aria-hidden="true" class="ca-cursor-light"></div>
@@ -6767,8 +6842,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <header id="Header">
 <div id="Top_bar">
 <div class="top_bar_left">
-<a aria-label="Link" class="logo" href="/"><img alt="CriaAção Entretenimento - Empresa de Natal para Shopping" fetchpriority="high" height="458" loading="eager" src="assets/logos/logo-criaacao-entretenimento.webp" style="max-height: 48px;; width: auto;" title="CriaAção Entretenimento" width="1233"/></a>
-<nav id="menu">
+<a aria-label="Pagina inicial - CriaAcao Entretenimento" class="logo" href="/"><img alt="CriaAção Entretenimento - Empresa de Natal para Shopping" fetchpriority="high" height="458" loading="eager" src="assets/logos/logo-criaacao-entretenimento.webp" style="max-height: 48px;; width: auto;" title="CriaAção Entretenimento" width="1233"/></a>
+<nav id="menu" aria-label="Menu principal">
 <ul class="menu-main">
 <li><a href="/">Home</a></li>
 <li><a href="/quem-somos">Quem Somos</a></li>
@@ -6819,13 +6894,13 @@ document.addEventListener("DOMContentLoaded", function() {
 </nav>
 <div class="ca-mobile-menu-right">
 <a class="ca-button-secondary ca-mobile-whatsapp" href="https://wa.me/5585988601400?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20CriaA%C3%A7%C3%A3o%20Entretenimento%20e%20gostaria%20de%20conhecer%20melhor%20as%20solu%C3%A7%C3%B5es%20para%20o%20Natal%20do%20meu%20Shopping." rel="noopener noreferrer" target="_blank">
-<svg fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" focusable="false" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
 </svg>
                 FALE CONOSCO
               </a>
 <a aria-label="Menu" class="responsive-menu-toggle ca-mobile-hamburger" href="#" role="button" tabindex="0">
-<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24">
+<svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24">
 <line x1="3" x2="21" y1="12" y2="12"></line>
 <line x1="3" x2="21" y1="6" y2="6"></line>
 <line x1="3" x2="21" y1="18" y2="18"></line>
@@ -6870,7 +6945,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <div class="ca-animate-fade-up" style="animation-delay: 400ms;">
 <a class="ca-btn-primary" href="https://wa.me/5585988601400?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20Soluções%20Natalinas." style="display: inline-flex; width: auto; padding: 16px 32px; font-size: 16px;" target="_blank">
               Falar com um especialista
-              <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="margin-left: 8px;" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+              <svg aria-hidden="true" focusable="false" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="margin-left: 8px;" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
 <line x1="5" x2="19" y1="12" y2="12"></line>
 <polyline points="12 5 19 12 12 19"></polyline>
 </svg>
@@ -6899,7 +6974,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <div class="ca-card-content">
 <div class="ca-card-icon">
-<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
+<svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
 <circle cx="12" cy="11" r="3"></circle>
 <path d="M4 14.5c0-4.14 3.58-7.5 8-7.5s8 3.36 8 7.5-3.58 7.5-8 7.5-8-3.36-8-7.5z"></path>
 <path d="M9 13h6"></path>
@@ -6910,7 +6985,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <h3 class="ca-card-title">Papai Noel</h3>
 <p class="ca-card-desc">Chegada, presença e interação que encantam crianças e famílias.</p>
-<div class="ca-card-cta">SAIBA MAIS <svg fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<div class="ca-card-cta">SAIBA MAIS <svg aria-hidden="true" focusable="false" fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
 </svg></div>
 </div>
@@ -6923,7 +6998,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <div class="ca-card-content">
 <div class="ca-card-icon">
-<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
+<svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
 </path>
 </svg>
@@ -6931,7 +7006,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <h3 class="ca-card-title">Mamãe Noel</h3>
 <p class="ca-card-desc">Acolhimento, doçura e interações encantadoras para fortalecer a magia do Natal.
                 </p>
-<div class="ca-card-cta">SAIBA MAIS <svg fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<div class="ca-card-cta">SAIBA MAIS <svg aria-hidden="true" focusable="false" fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
 </svg></div>
 </div>
@@ -6944,7 +7019,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <div class="ca-card-content">
 <div class="ca-card-icon">
-<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
+<svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
 <path d="M4 19h16v2H4z"></path>
 <path d="M18 19V9c0-3.31-2.69-6-6-6-2.07 0-3.9 1.05-5 2.66"></path>
 <path d="M9 5.66C5.55 7.02 3 10.37 3 14.5V19"></path>
@@ -6953,7 +7028,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <h3 class="ca-card-title">Duendes</h3>
 <p class="ca-card-desc">Personagens carismáticos que criam conexões e espalham alegria.</p>
-<div class="ca-card-cta">SAIBA MAIS <svg fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<div class="ca-card-cta">SAIBA MAIS <svg aria-hidden="true" focusable="false" fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
 </svg></div>
 </div>
@@ -6966,14 +7041,14 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <div class="ca-card-content">
 <div class="ca-card-icon">
-<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
+<svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
 </polygon>
 </svg>
 </div>
 <h3 class="ca-card-title">Personagens Temáticos</h3>
 <p class="ca-card-desc">Cenografias, ativações e ambientações que contam histórias.</p>
-<div class="ca-card-cta">SAIBA MAIS <svg fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<div class="ca-card-cta">SAIBA MAIS <svg aria-hidden="true" focusable="false" fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
 </svg></div>
 </div>
@@ -6986,7 +7061,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <div class="ca-card-content">
 <div class="ca-card-icon">
-<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
+<svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
 <polyline points="20 12 20 22 4 22 4 12"></polyline>
 <rect height="5" width="20" x="2" y="7"></rect>
 <line x1="12" x2="12" y1="22" y2="7"></line>
@@ -6996,7 +7071,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <h3 class="ca-card-title">Brindes</h3>
 <p class="ca-card-desc">Kits e brindes exclusivos que geram lembrança e fortalecimento de marca.</p>
-<div class="ca-card-cta">SAIBA MAIS <svg fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<div class="ca-card-cta">SAIBA MAIS <svg aria-hidden="true" focusable="false" fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
 </svg></div>
 </div>
@@ -7009,14 +7084,14 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <div class="ca-card-content">
 <div class="ca-card-icon">
-<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
+<svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
 <path d="M12 2v20"></path>
 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
 </svg>
 </div>
 <h3 class="ca-card-title">Plataforma 360°</h3>
 <p class="ca-card-desc">Experiência interativa que gera conteúdo compartilhável.</p>
-<div class="ca-card-cta">SAIBA MAIS <svg fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<div class="ca-card-cta">SAIBA MAIS <svg aria-hidden="true" focusable="false" fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
 </svg></div>
 </div>
@@ -7029,14 +7104,14 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <div class="ca-card-content">
 <div class="ca-card-icon">
-<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
+<svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24">
 <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
 <circle cx="12" cy="13" r="4"></circle>
 </svg>
 </div>
 <h3 class="ca-card-title">Espaço Fotográfico</h3>
 <p class="ca-card-desc">Ambientes completos para fotos profissionais e memoráveis.</p>
-<div class="ca-card-cta">SAIBA MAIS <svg fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<div class="ca-card-cta">SAIBA MAIS <svg aria-hidden="true" focusable="false" fill="currentColor" height="16" style="margin-right:4px; margin-top:-2px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
 </svg></div>
 </div>
@@ -9280,7 +9355,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <div class="sol-segments-grid sol-reveal slide-in-up sol-stagger-2">
 <div class="sol-segment-item">
 <div class="sol-segment-icon">
-<svg fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" focusable="false" fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
 <polyline points="9 22 9 12 15 12 15 22"></polyline>
 </svg>
@@ -9291,7 +9366,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <div class="sol-segment-item">
 <div class="sol-segment-icon">
-<svg fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" focusable="false" fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
 <rect height="16" rx="2" ry="2" width="16" x="4" y="4"></rect>
 <rect height="6" width="6" x="9" y="9"></rect>
 <line x1="9" x2="9" y1="1" y2="4"></line>
@@ -9310,7 +9385,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <div class="sol-segment-item">
 <div class="sol-segment-icon">
-<svg fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" focusable="false" fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 2v20"></path>
 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
 </svg>
@@ -9321,7 +9396,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <div class="sol-segment-item">
 <div class="sol-segment-icon">
-<svg fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" focusable="false" fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
 <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
 </svg>
@@ -9332,7 +9407,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <div class="sol-segment-item">
 <div class="sol-segment-icon">
-<svg fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" focusable="false" fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
 <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
 </svg>
 </div>
@@ -9353,7 +9428,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <p class="sol-text-main" style="margin: 0 auto 40px;">Fale agora com nossa equipe corporativa para
               desenvolvermos juntos um plano de ação dimensionado para o seu investimento.</p>
 <a class="sol-btn-primary" href="https://wa.me/5585988601400?text=Ol%C3%A1!%20Gostaria%20de%20montar%20um%20pacote%20de%20Solu%C3%A7%C3%B5es%20Natalinas%20Premium." target="_blank">
-<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
 </path>
 </svg> Solicitar Proposta Comercial
@@ -9680,7 +9755,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </li>
 </ul>
 <a class="ca-btn ca-btn-primary" href="https://wa.me/5585988601400?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20CriaA%C3%A7%C3%A3o%20Entretenimento%20e%20gostaria%20de%20conhecer%20melhor%20as%20solu%C3%A7%C3%B5es%20para%20o%20Natal%20do%20meu%20Shopping." rel="noopener noreferrer" style="display: flex; justify-content: center; align-items: center; gap: 12px; width: 100%; background: linear-gradient(90deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%); color: #1a050a; padding: 18px 24px; border-radius: 12px; font-weight: 700; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(212,175,55,0.3); background-size: 200% auto; text-transform: uppercase; letter-spacing: 1px; box-sizing: border-box; max-width: 100%; white-space: normal; text-align: center;" target="_blank">
-<svg fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+<svg aria-hidden="true" focusable="false" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
 </svg>
 <span>FALAR COM UM ESPECIALISTA</span>
@@ -9752,8 +9827,8 @@ document.addEventListener("DOMContentLoaded", function() {
       fill: #fff !important;
     }
   </style>
-<div aria-expanded="false" aria-label="Menu responsivo" class="right dark" data-width="250" id="Side_slide" role="banner">
-<div class="close-wrapper"><a aria-label="Ação ou Link" class="close" href="#" role="button" tabindex="0"><svg fill="none" height="24" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="margin-top: 18px;" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<div aria-expanded="false" aria-label="Menu responsivo" class="right dark" data-width="250" id="Side_slide" role="dialog" aria-label="Menu de navegacao mobile">
+<div class="close-wrapper"><a aria-label="Fechar menu lateral" class="close" href="#" role="button" tabindex="0"><svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="margin-top: 18px;" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <line x1="18" x2="6" y1="6" y2="18"></line>
 <line x1="6" x2="18" y1="6" y2="18"></line>
 </svg></a></div>
@@ -9763,10 +9838,10 @@ document.addEventListener("DOMContentLoaded", function() {
 <div aria-label="Menu de idiomas" class="lang-wrapper" role="navigation"></div>
 <div aria-label="Menu principal" class="menu_wrapper" role="navigation"></div>
 <ul aria-label="Menu de redes sociais" class="social" role="navigation">
-<li class="whatsapp"><a aria-label="Fale conosco no WhatsApp" href="https://wa.me/5585988601400?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20CriaA%C3%A7%C3%A3o%20Entretenimento%20e%20gostaria%20de%20conhecer%20melhor%20as%20solu%C3%A7%C3%B5es%20para%20o%20Natal%20do%20meu%20Shopping." rel="noopener noreferrer" target="_blank" title="WhatsApp"><svg fill="currentColor" height="24" viewbox="0 0 16 16" width="24" xmlns="http://www.w3.org/2000/svg">
+<li class="whatsapp"><a aria-label="Fale conosco no WhatsApp" href="https://wa.me/5585988601400?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20CriaA%C3%A7%C3%A3o%20Entretenimento%20e%20gostaria%20de%20conhecer%20melhor%20as%20solu%C3%A7%C3%B5es%20para%20o%20Natal%20do%20meu%20Shopping." rel="noopener noreferrer" target="_blank" title="WhatsApp"><svg aria-hidden="true" focusable="false" fill="currentColor" height="24" viewbox="0 0 16 16" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
 </svg></a></li>
-<li class="instagram"><a aria-label="Visite nosso Instagram" href="https://instagram.com/criaacao" rel="noopener noreferrer" target="_blank" title="Instagram"><svg fill="currentColor" height="24" viewbox="0 0 16 16" width="24" xmlns="http://www.w3.org/2000/svg">
+<li class="instagram"><a aria-label="Visite nosso Instagram" href="https://instagram.com/criaacao" rel="noopener noreferrer" target="_blank" title="Instagram"><svg aria-hidden="true" focusable="false" fill="currentColor" height="24" viewbox="0 0 16 16" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.036 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
 </svg></a></li>
 </ul>
@@ -10162,5 +10237,60 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       //});
     };</script>
+<script id="ca-a11y-keyboard">
+document.addEventListener("DOMContentLoaded", function() {
+  // Escape para fechar menus/modais (WCAG 2.1.2 - sem armadilha de teclado)
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+      // Fechar side slide
+      var side = document.getElementById("Side_slide");
+      if (side && side.classList.contains("open")) {
+        side.classList.remove("open");
+        var overlay = document.getElementById("body_overlay");
+        if (overlay) overlay.style.display = "none";
+        // Retornar foco ao botao que abriu o menu
+        var toggle = document.querySelector(".responsive-menu-toggle");
+        if (toggle) toggle.focus();
+      }
+      // Fechar GDPR
+      var gdpr = document.getElementById("mfn-gdpr");
+      if (gdpr && gdpr.style.display !== "none") {
+        var btn = gdpr.querySelector(".mfn-gdpr-button");
+        if (btn) btn.click();
+      }
+    }
+  });
+  // Enter/Space em role="button" (WCAG 2.1.1)
+  document.querySelectorAll('[role="button"]').forEach(function(el) {
+    el.addEventListener("keydown", function(e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        el.click();
+      }
+    });
+  });
+  // Dropdown com teclado: Enter/Space para abrir, Escape para fechar
+  var dropdown = document.querySelector(".ca-has-dropdown > a");
+  if (dropdown) {
+    dropdown.setAttribute("aria-expanded", "false");
+    dropdown.setAttribute("aria-haspopup", "true");
+    dropdown.addEventListener("keydown", function(e) {
+      var parent = this.parentElement;
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        var isOpen = parent.classList.contains("is-active");
+        parent.classList.toggle("is-active");
+        this.setAttribute("aria-expanded", !isOpen);
+      }
+      if (e.key === "Escape" && parent.classList.contains("is-active")) {
+        parent.classList.remove("is-active");
+        this.setAttribute("aria-expanded", "false");
+        this.focus();
+      }
+    });
+  }
+});
+</script>
+
 </body>
 </html>

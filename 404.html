@@ -795,8 +795,83 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link href="assets/css/design-system.css" rel="stylesheet" type="text/css"/>
 <link href="assets/css/header-global.css" rel="stylesheet"/>
 <link href="assets/css/wp-global-styles.css" rel="stylesheet"/>
-<link href="https://criaacao.com" rel="canonical"/><meta content="CriaAção Entretenimento" name="author"/></head>
+<link href="https://criaacao.com" rel="canonical"/><meta content="CriaAção Entretenimento" name="author"/><style id="ca-a11y-skip-link">
+.ca-skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #F2B84B;
+  color: #1a050a;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 14px;
+  z-index: 99999999;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.ca-skip-link:focus {
+  top: 0;
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+</style>
+<style id="ca-a11y-focus">
+/* Acessibilidade: Focus visible (WCAG 2.4.7) */
+*:focus-visible {
+  outline: 3px solid #F2B84B !important;
+  outline-offset: 3px !important;
+}
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid #F2B84B !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 6px rgba(242, 184, 75, 0.25) !important;
+}
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* High contrast mode support */
+@media (forced-colors: active) {
+  .ca-button-main, .ca-button-secondary {
+    border: 2px solid currentColor;
+  }
+}
+</style>
+<style id="ca-a11y-contrast">
+/* Acessibilidade: Melhorias de contraste (WCAG 1.4.3 - AA ratio 4.5:1) */
+/* Textos em rgba(255,255,255,0.7) sobre fundo escuro: ratio ~3.5:1 -> melhorar */
+.ca-countdown-text,
+.ca-indicator-text span,
+.ca-segmentos-text,
+.ca-desc {
+  color: rgba(255, 255, 255, 0.87) !important; /* ratio >= 4.5:1 sobre #1a050a */
+}
+/* Links no footer/contato sobre fundo escuro */
+.inst-contact-link {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+/* Placeholder text - minimo 4.5:1 */
+input::placeholder, textarea::placeholder, select::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* Textos sobre fundo dourado - garantir contraste */
+.ca-badge {
+  color: #F2B84B;
+}
+</style>
+</head>
 <body style="display:flex; justify-content:center; align-items:center; height:100vh; text-align:center; font-family:sans-serif; background-color:#f5f5f5; color:#333; margin:0;">
+<a class="ca-skip-link" href="#Content">Pular para o conteudo principal</a>
+
     <div>
         <h1 style="font-size: 4rem; margin-bottom: 10px;">404</h1>
         <p style="font-size: 1.5rem; margin-bottom: 20px;">Página não encontrada</p>
@@ -852,5 +927,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
       //});
     };</script>
+<script id="ca-a11y-keyboard">
+document.addEventListener("DOMContentLoaded", function() {
+  // Escape para fechar menus/modais (WCAG 2.1.2 - sem armadilha de teclado)
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+      // Fechar side slide
+      var side = document.getElementById("Side_slide");
+      if (side && side.classList.contains("open")) {
+        side.classList.remove("open");
+        var overlay = document.getElementById("body_overlay");
+        if (overlay) overlay.style.display = "none";
+        // Retornar foco ao botao que abriu o menu
+        var toggle = document.querySelector(".responsive-menu-toggle");
+        if (toggle) toggle.focus();
+      }
+      // Fechar GDPR
+      var gdpr = document.getElementById("mfn-gdpr");
+      if (gdpr && gdpr.style.display !== "none") {
+        var btn = gdpr.querySelector(".mfn-gdpr-button");
+        if (btn) btn.click();
+      }
+    }
+  });
+  // Enter/Space em role="button" (WCAG 2.1.1)
+  document.querySelectorAll('[role="button"]').forEach(function(el) {
+    el.addEventListener("keydown", function(e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        el.click();
+      }
+    });
+  });
+  // Dropdown com teclado: Enter/Space para abrir, Escape para fechar
+  var dropdown = document.querySelector(".ca-has-dropdown > a");
+  if (dropdown) {
+    dropdown.setAttribute("aria-expanded", "false");
+    dropdown.setAttribute("aria-haspopup", "true");
+    dropdown.addEventListener("keydown", function(e) {
+      var parent = this.parentElement;
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        var isOpen = parent.classList.contains("is-active");
+        parent.classList.toggle("is-active");
+        this.setAttribute("aria-expanded", !isOpen);
+      }
+      if (e.key === "Escape" && parent.classList.contains("is-active")) {
+        parent.classList.remove("is-active");
+        this.setAttribute("aria-expanded", "false");
+        this.focus();
+      }
+    });
+  }
+});
+</script>
+
 </body>
 </html>
