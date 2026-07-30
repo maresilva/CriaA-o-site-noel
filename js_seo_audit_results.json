@@ -1,0 +1,149 @@
+{
+  "timestamp": "2026-07-30T09:24:47.502949",
+  "files_processed": [
+    {
+      "file": "index.html",
+      "status": "modified",
+      "original_size": 288565,
+      "new_size": 289318
+    },
+    {
+      "file": "quem-somos.html",
+      "status": "modified",
+      "original_size": 289128,
+      "new_size": 289881
+    },
+    {
+      "file": "solucoes.html",
+      "status": "modified",
+      "original_size": 357307,
+      "new_size": 358060
+    },
+    {
+      "file": "portfolio.html",
+      "status": "modified",
+      "original_size": 296039,
+      "new_size": 296792
+    },
+    {
+      "file": "contato.html",
+      "status": "modified",
+      "original_size": 276902,
+      "new_size": 277655
+    },
+    {
+      "file": "trabalhe-conosco.html",
+      "status": "modified",
+      "original_size": 280696,
+      "new_size": 281449
+    },
+    {
+      "file": "eventos.html",
+      "status": "no_changes"
+    },
+    {
+      "file": "404.html",
+      "status": "modified",
+      "original_size": 65738,
+      "new_size": 66491
+    },
+    {
+      "file": "solucoes/manual-do-verdadeiro-papai-noel.html",
+      "status": "modified",
+      "original_size": 243411,
+      "new_size": 244179
+    }
+  ],
+  "fixes_applied": {
+    "render_blocking_scripts_deferred": 0,
+    "meta_generators_removed": 0,
+    "href_hash_fixed": 0,
+    "non_critical_css_deferred": 40,
+    "duplicate_gtm_removed": 0,
+    "noscript_fallbacks_added": 0,
+    "inline_scripts_optimized": 0
+  },
+  "issues_found": [
+    "index.html: contagem regressiva sem valor padrão visível — bots verão '00'",
+    "index.html: 5 CSS não-críticos convertidos para carregamento assíncrono",
+    "quem-somos.html: 5 CSS não-críticos convertidos para carregamento assíncrono",
+    "solucoes.html: 5 CSS não-críticos convertidos para carregamento assíncrono",
+    "portfolio.html: 5 CSS não-críticos convertidos para carregamento assíncrono",
+    "contato.html: 5 CSS não-críticos convertidos para carregamento assíncrono",
+    "trabalhe-conosco.html: 5 CSS não-críticos convertidos para carregamento assíncrono",
+    "404.html: 5 CSS não-críticos convertidos para carregamento assíncrono",
+    "solucoes/manual-do-verdadeiro-papai-noel.html: 5 CSS não-críticos convertidos para carregamento assíncrono"
+  ],
+  "recommendations": [
+    {
+      "priority": "ALTA",
+      "area": "Render Blocking",
+      "issue": "Scripts sem defer/async bloqueiam a renderização e atrasam FCP/LCP",
+      "fix": "Adicionado defer a scripts que não precisam executar sincronamente",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "ALTA",
+      "area": "Meta Tags JS",
+      "issue": "Meta generators revelam stack tecnológica (WordPress, Elementor, Slider Revolution)",
+      "fix": "Removidas meta generators desnecessárias — reduz superfície de ataque e bytes no <head>",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "MÉDIA",
+      "area": "Links JS",
+      "issue": "Links com href=\"#\" desperdiçam crawl budget e confundem bots",
+      "fix": "Adicionado role=\"button\" para indicar que são controles UI, não links navegáveis",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "MÉDIA",
+      "area": "CSS Render Blocking",
+      "issue": "CSS não-crítico (jplayer, animations, widgets) bloqueia renderização",
+      "fix": "Convertido para carregamento assíncrono via media=\"print\" trick com noscript fallback",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "ALTA",
+      "area": "GTM Duplicado",
+      "issue": "Google Tag Manager carregado múltiplas vezes — impacta performance e gera dados duplicados",
+      "fix": "Removidas instâncias duplicadas mantendo apenas a do <head>",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "MÉDIA",
+      "area": "Noscript Fallback",
+      "issue": "Sem fallback <noscript> — bots que não executam JS não veem conteúdo alternativo",
+      "fix": "Adicionado <noscript> com texto descritivo para indexação sem JavaScript",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "MÉDIA",
+      "area": "Scripts Inline no Head",
+      "issue": "Script setREVStartSize é render-blocking no <head>",
+      "fix": "Movido para antes do </body> para não bloquear renderização inicial",
+      "status": "APLICADO"
+    },
+    {
+      "priority": "BAIXA",
+      "area": "Conteúdo Indexável",
+      "issue": "Contagem regressiva de Natal renderiza \"00\" no HTML estático",
+      "fix_manual": "Considerar renderizar data-alvo no HTML para bots verem informação útil",
+      "status": "RECOMENDAÇÃO"
+    },
+    {
+      "priority": "BAIXA",
+      "area": "Lazy Loading",
+      "issue": "Verificar se imagens above-the-fold (logo, hero) não têm loading=\"lazy\"",
+      "fix_manual": "Imagens acima do fold devem ter loading=\"eager\" ou fetchpriority=\"high\"",
+      "status": "RECOMENDAÇÃO"
+    },
+    {
+      "priority": "BAIXA",
+      "area": "Hydration",
+      "issue": "Múltiplos scripts inline duplicam lógica (active menu, scroll handlers)",
+      "fix_manual": "Consolidar em arquivo externo único com defer para reduzir parsing time",
+      "status": "RECOMENDAÇÃO"
+    }
+  ]
+}
