@@ -1,0 +1,886 @@
+{
+  "index.html": {
+    "h1_count": 1,
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Transformamos momentos emmagia"
+      },
+      {
+        "tag": "h2",
+        "text": "Experi\u00eancias natalinas complet"
+      },
+      {
+        "tag": "h3",
+        "text": "Papai Noel"
+      },
+      {
+        "tag": "h3",
+        "text": "Duendes"
+      },
+      {
+        "tag": "h3",
+        "text": "Personagens Tem\u00e1ticos"
+      },
+      {
+        "tag": "h3",
+        "text": "Brindes"
+      },
+      {
+        "tag": "h3",
+        "text": "Plataforma 360\u00b0"
+      },
+      {
+        "tag": "h3",
+        "text": "Espa\u00e7o Fotogr\u00e1fico"
+      },
+      {
+        "tag": "h2",
+        "text": "Muito al\u00e9m dosShopping Centers"
+      },
+      {
+        "tag": "h3",
+        "text": "Shopping Centers"
+      },
+      {
+        "tag": "h3",
+        "text": "Gest\u00e3o P\u00fablica"
+      },
+      {
+        "tag": "h3",
+        "text": "Escolas"
+      },
+      {
+        "tag": "h3",
+        "text": "Empresas"
+      },
+      {
+        "tag": "h3",
+        "text": "Resid\u00eancias e Buffets"
+      },
+      {
+        "tag": "h3",
+        "text": "Projetos Sociais"
+      },
+      {
+        "tag": "h2",
+        "text": "Por que aCriaA\u00e7\u00e3o\u00e9 diferente?"
+      },
+      {
+        "tag": "h3",
+        "text": "Planejamento Estrat\u00e9gico"
+      },
+      {
+        "tag": "h4",
+        "text": "Projeto Personalizado"
+      },
+      {
+        "tag": "h4",
+        "text": "Gest\u00e3o 360\u00b0"
+      },
+      {
+        "tag": "h4",
+        "text": "Foco em Fluxo"
+      },
+      {
+        "tag": "h4",
+        "text": "Curadoria Art\u00edstica"
+      },
+      {
+        "tag": "h4",
+        "text": "Fabrica\u00e7\u00e3o Pr\u00f3pria"
+      },
+      {
+        "tag": "h4",
+        "text": "30 Anos de Mercado"
+      },
+      {
+        "tag": "h4",
+        "text": "Log\u00edstica Inteligente"
+      },
+      {
+        "tag": "h4",
+        "text": "Equipe Pr\u00f3pria"
+      },
+      {
+        "tag": "h4",
+        "text": "Atendimento Nacional"
+      },
+      {
+        "tag": "h2",
+        "text": "Quem j\u00e1 confia naCriaA\u00e7\u00e3o?"
+      },
+      {
+        "tag": "h2",
+        "text": "Projetos que transformaram o N"
+      },
+      {
+        "tag": "h3",
+        "text": "Nome"
+      },
+      {
+        "tag": "h2",
+        "text": "Transformamos sua ideia em uma"
+      },
+      {
+        "tag": "h3",
+        "text": "Briefing"
+      },
+      {
+        "tag": "h4",
+        "text": "Projeto Personalizado"
+      },
+      {
+        "tag": "h4",
+        "text": "Produ\u00e7\u00e3o"
+      },
+      {
+        "tag": "h4",
+        "text": "Implanta\u00e7\u00e3o"
+      },
+      {
+        "tag": "h4",
+        "text": "Opera\u00e7\u00e3o"
+      },
+      {
+        "tag": "h4",
+        "text": "Encantamento"
+      },
+      {
+        "tag": "h3",
+        "text": "Pronto para transformar o Nata"
+      },
+      {
+        "tag": "h2",
+        "text": "Manual do VerdadeiroPapai Noel"
+      },
+      {
+        "tag": "h2",
+        "text": "Criandomem\u00f3riasque atravessam "
+      },
+      {
+        "tag": "h2",
+        "text": "Tudo o que voc\u00ea precisa saber "
+      },
+      {
+        "tag": "h2",
+        "text": "Vamos criar o pr\u00f3ximoNatal\n   "
+      },
+      {
+        "tag": "h2",
+        "text": "Vamos criar o pr\u00f3ximoNatal\n   "
+      }
+    ],
+    "landmarks": {
+      "header": 1,
+      "nav": 1,
+      "main": 1,
+      "footer": 1,
+      "section": 13,
+      "article": 0,
+      "aside": 0
+    },
+    "a11y_issues": []
+  },
+  "portfolio.html": {
+    "h1_count": 1,
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Projetos que transformaramo Na"
+      },
+      {
+        "tag": "h2",
+        "text": "Nome"
+      },
+      {
+        "tag": "h2",
+        "text": "Vamos criar o pr\u00f3ximoNatal\n   "
+      }
+    ],
+    "landmarks": {
+      "header": 1,
+      "nav": 1,
+      "main": 1,
+      "footer": 1,
+      "section": 3,
+      "article": 0,
+      "aside": 0
+    },
+    "a11y_issues": []
+  },
+  "quem-somos.html": {
+    "h1_count": 1,
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "H\u00e1 mais de 30 anos criando\n   "
+      },
+      {
+        "tag": "h2",
+        "text": "A CriaA\u00e7\u00e3o nasceu da paix\u00e3o po"
+      },
+      {
+        "tag": "h3",
+        "text": "Funda\u00e7\u00e3o da Empresa"
+      },
+      {
+        "tag": "h3",
+        "text": "Expans\u00e3o Regional"
+      },
+      {
+        "tag": "h3",
+        "text": "Grandes Shopping Centers"
+      },
+      {
+        "tag": "h3",
+        "text": "Consolida\u00e7\u00e3o Nacional"
+      },
+      {
+        "tag": "h3",
+        "text": "Mais de 40 Shopping Centers"
+      },
+      {
+        "tag": "h3",
+        "text": "Atua\u00e7\u00e3o em 15 estados"
+      },
+      {
+        "tag": "h2",
+        "text": "Nossos N\u00fameros"
+      },
+      {
+        "tag": "h2",
+        "text": "Mais do que eventos.Criamos me"
+      },
+      {
+        "tag": "h2",
+        "text": "Quando o Natal precisa ser ine"
+      },
+      {
+        "tag": "h2",
+        "text": "Vamos criar o pr\u00f3ximoNatal\n   "
+      }
+    ],
+    "landmarks": {
+      "header": 1,
+      "nav": 1,
+      "main": 1,
+      "footer": 1,
+      "section": 7,
+      "article": 0,
+      "aside": 0
+    },
+    "a11y_issues": []
+  },
+  "solucoes.html": {
+    "h1_count": 1,
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "O Natal do seu Shopping come\u00e7a"
+      },
+      {
+        "tag": "h2",
+        "text": "O espet\u00e1culo que seu p\u00fablicome"
+      },
+      {
+        "tag": "h3",
+        "text": "Papai Noel"
+      },
+      {
+        "tag": "h3",
+        "text": "Mam\u00e3e Noel"
+      },
+      {
+        "tag": "h3",
+        "text": "Duendes"
+      },
+      {
+        "tag": "h3",
+        "text": "Personagens Tem\u00e1ticos"
+      },
+      {
+        "tag": "h3",
+        "text": "Brindes"
+      },
+      {
+        "tag": "h3",
+        "text": "Plataforma 360\u00b0"
+      },
+      {
+        "tag": "h3",
+        "text": "Espa\u00e7o Fotogr\u00e1fico"
+      },
+      {
+        "tag": "h2",
+        "text": "Onde aMagiaAcontece"
+      },
+      {
+        "tag": "h2",
+        "text": "Projetos completos para transf"
+      },
+      {
+        "tag": "h3",
+        "text": "Planejamento Estrat\u00e9gico"
+      },
+      {
+        "tag": "h4",
+        "text": "Projeto Personalizado"
+      },
+      {
+        "tag": "h4",
+        "text": "Produ\u00e7\u00e3o e Montagem"
+      },
+      {
+        "tag": "h4",
+        "text": "Opera\u00e7\u00e3o Completa"
+      },
+      {
+        "tag": "h4",
+        "text": "Encerramento"
+      },
+      {
+        "tag": "h2",
+        "text": "Levamos a magia do Natal para "
+      },
+      {
+        "tag": "h3",
+        "text": "Planejamento da A\u00e7\u00e3o"
+      },
+      {
+        "tag": "h4",
+        "text": "Defini\u00e7\u00e3o do Roteiro"
+      },
+      {
+        "tag": "h4",
+        "text": "Produ\u00e7\u00e3o e Log\u00edstica"
+      },
+      {
+        "tag": "h4",
+        "text": "Execu\u00e7\u00e3o"
+      },
+      {
+        "tag": "h4",
+        "text": "Encerramento"
+      },
+      {
+        "tag": "h2",
+        "text": "Levamos a magia do Natal para "
+      },
+      {
+        "tag": "h3",
+        "text": "Agendamento"
+      },
+      {
+        "tag": "h4",
+        "text": "Organiza\u00e7\u00e3o"
+      },
+      {
+        "tag": "h4",
+        "text": "Visita do Papai Noel"
+      },
+      {
+        "tag": "h4",
+        "text": "Produ\u00e7\u00e3o dos Kits"
+      },
+      {
+        "tag": "h4",
+        "text": "Entrega"
+      },
+      {
+        "tag": "h3",
+        "text": "Como funciona?"
+      },
+      {
+        "tag": "h4",
+        "text": "Transforme o encerramento do a"
+      },
+      {
+        "tag": "h2",
+        "text": "Transformamos o Natal em uma e"
+      },
+      {
+        "tag": "h3",
+        "text": "Briefing"
+      },
+      {
+        "tag": "h4",
+        "text": "Projeto Personalizado"
+      },
+      {
+        "tag": "h4",
+        "text": "Produ\u00e7\u00e3o"
+      },
+      {
+        "tag": "h4",
+        "text": "Evento"
+      },
+      {
+        "tag": "h4",
+        "text": "Encerramento"
+      },
+      {
+        "tag": "h3",
+        "text": "Ideal para diferentes formatos"
+      },
+      {
+        "tag": "h4",
+        "text": "Fa\u00e7a do Natal da sua empresa u"
+      },
+      {
+        "tag": "h2",
+        "text": "Fa\u00e7a da Noite de Natal uma lem"
+      },
+      {
+        "tag": "h3",
+        "text": "Escolha da Data"
+      },
+      {
+        "tag": "h4",
+        "text": "Planejamento"
+      },
+      {
+        "tag": "h4",
+        "text": "A Grande Chegada"
+      },
+      {
+        "tag": "h4",
+        "text": "Entrega dos Presentes"
+      },
+      {
+        "tag": "h4",
+        "text": "Recorda\u00e7\u00f5es"
+      },
+      {
+        "tag": "h3",
+        "text": "As datas mais disputadas do an"
+      },
+      {
+        "tag": "h4",
+        "text": "Garanta agora a visita do Papa"
+      },
+      {
+        "tag": "h2",
+        "text": "Transforme seu espa\u00e7o no desti"
+      },
+      {
+        "tag": "h3",
+        "text": "Planejamento"
+      },
+      {
+        "tag": "h4",
+        "text": "Projeto Personalizado"
+      },
+      {
+        "tag": "h4",
+        "text": "Prepara\u00e7\u00e3o"
+      },
+      {
+        "tag": "h4",
+        "text": "Evento"
+      },
+      {
+        "tag": "h4",
+        "text": "Encerramento"
+      },
+      {
+        "tag": "h3",
+        "text": "Ideal para diferentes formatos"
+      },
+      {
+        "tag": "h4",
+        "text": "Mais valor para o seu neg\u00f3cio."
+      },
+      {
+        "tag": "h4",
+        "text": "Seu espa\u00e7o pode ser o cen\u00e1rio "
+      },
+      {
+        "tag": "h2",
+        "text": "Quando a magia do Natal tamb\u00e9m"
+      },
+      {
+        "tag": "h3",
+        "text": "Planejamento"
+      },
+      {
+        "tag": "h4",
+        "text": "Organiza\u00e7\u00e3o"
+      },
+      {
+        "tag": "h4",
+        "text": "Visita Humanizada"
+      },
+      {
+        "tag": "h4",
+        "text": "Entrega de Lembran\u00e7as"
+      },
+      {
+        "tag": "h4",
+        "text": "Encerramento"
+      },
+      {
+        "tag": "h3",
+        "text": "Uma visita que vai al\u00e9m da com"
+      },
+      {
+        "tag": "h4",
+        "text": "Pequenos gestos podem transfor"
+      },
+      {
+        "tag": "h4",
+        "text": "Leve um momento de esperan\u00e7a p"
+      },
+      {
+        "tag": "h2",
+        "text": "O primeiro encontro com o Papa"
+      },
+      {
+        "tag": "h3",
+        "text": "Planejamento"
+      },
+      {
+        "tag": "h4",
+        "text": "Organiza\u00e7\u00e3o"
+      },
+      {
+        "tag": "h4",
+        "text": "Visita do Papai Noel"
+      },
+      {
+        "tag": "h4",
+        "text": "Registros"
+      },
+      {
+        "tag": "h4",
+        "text": "Encerramento"
+      },
+      {
+        "tag": "h3",
+        "text": "Pensado especialmente para os "
+      },
+      {
+        "tag": "h4",
+        "text": "Muito mais do que uma visita."
+      },
+      {
+        "tag": "h4",
+        "text": "Proporcione \u00e0s crian\u00e7as um pri"
+      },
+      {
+        "tag": "h2",
+        "text": "O Natal tamb\u00e9m \u00e9 tempo de resg"
+      },
+      {
+        "tag": "h3",
+        "text": "Planejamento"
+      },
+      {
+        "tag": "h4",
+        "text": "Organiza\u00e7\u00e3o"
+      },
+      {
+        "tag": "h4",
+        "text": "Visita do Papai Noel"
+      },
+      {
+        "tag": "h4",
+        "text": "Celebra\u00e7\u00e3o"
+      },
+      {
+        "tag": "h4",
+        "text": "Encerramento"
+      },
+      {
+        "tag": "h3",
+        "text": "Muito mais do que uma visita."
+      },
+      {
+        "tag": "h4",
+        "text": "O verdadeiro esp\u00edrito do Natal"
+      },
+      {
+        "tag": "h4",
+        "text": "Leve um Natal cheio de afeto p"
+      },
+      {
+        "tag": "h2",
+        "text": "O que est\u00e1 garantidono seu\n   "
+      },
+      {
+        "tag": "h2",
+        "text": "O passo a passo para osucesso"
+      },
+      {
+        "tag": "h3",
+        "text": "1. Diagn\u00f3stico e Planejamento"
+      },
+      {
+        "tag": "h3",
+        "text": "2. Curadoria e Treinamento"
+      },
+      {
+        "tag": "h3",
+        "text": "3. Est\u00e9tica e Produ\u00e7\u00e3o Visual"
+      },
+      {
+        "tag": "h3",
+        "text": "4. Gest\u00e3o e Opera\u00e7\u00e3o Total"
+      },
+      {
+        "tag": "h2",
+        "text": "A expertise exata paracada set"
+      },
+      {
+        "tag": "h3",
+        "text": "Shopping Centers"
+      },
+      {
+        "tag": "h4",
+        "text": "Eventos Corporativos"
+      },
+      {
+        "tag": "h4",
+        "text": "Prefeituras"
+      },
+      {
+        "tag": "h4",
+        "text": "Institui\u00e7\u00f5es de Ensino"
+      },
+      {
+        "tag": "h4",
+        "text": "Hospitais"
+      },
+      {
+        "tag": "h2",
+        "text": "Pronto para criar oNatal dos s"
+      },
+      {
+        "tag": "h2",
+        "text": "Vamos criar o pr\u00f3ximoNatal\n   "
+      }
+    ],
+    "landmarks": {
+      "header": 1,
+      "nav": 1,
+      "main": 1,
+      "footer": 1,
+      "section": 8,
+      "article": 0,
+      "aside": 0
+    },
+    "a11y_issues": []
+  },
+  "contato.html": {
+    "h1_count": 1,
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Vamos criar o pr\u00f3ximoNatal ine"
+      },
+      {
+        "tag": "h2",
+        "text": "Sede e Cobertura"
+      },
+      {
+        "tag": "h3",
+        "text": "WhatsApp Comercial"
+      },
+      {
+        "tag": "h3",
+        "text": "E-mail"
+      },
+      {
+        "tag": "h3",
+        "text": "Hor\u00e1rio de atendimento"
+      },
+      {
+        "tag": "h2",
+        "text": "Solicite uma proposta"
+      },
+      {
+        "tag": "h2",
+        "text": "Fa\u00e7a parte da equipe que criae"
+      }
+    ],
+    "landmarks": {
+      "header": 1,
+      "nav": 1,
+      "main": 1,
+      "footer": 1,
+      "section": 3,
+      "article": 0,
+      "aside": 0
+    },
+    "a11y_issues": []
+  },
+  "eventos.html": {
+    "h1_count": 1,
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Eventos que transformammomento"
+      },
+      {
+        "tag": "h2",
+        "text": "Eventos que conectammarcas, fa"
+      },
+      {
+        "tag": "h3",
+        "text": "Dia das M\u00e3es"
+      },
+      {
+        "tag": "h3",
+        "text": "Dia dos Namorados"
+      },
+      {
+        "tag": "h3",
+        "text": "Festas Juninas"
+      },
+      {
+        "tag": "h3",
+        "text": "Dia dos Pais"
+      },
+      {
+        "tag": "h3",
+        "text": "Dia das Crian\u00e7as"
+      },
+      {
+        "tag": "h3",
+        "text": "Eventos de Natal"
+      },
+      {
+        "tag": "h4",
+        "text": "Projetos personalizados"
+      },
+      {
+        "tag": "h4",
+        "text": "Equipe especializada"
+      },
+      {
+        "tag": "h4",
+        "text": "Opera\u00e7\u00e3o completa"
+      },
+      {
+        "tag": "h2",
+        "text": "Cada experi\u00eancia come\u00e7a com um"
+      },
+      {
+        "tag": "h3",
+        "text": "Briefing e diagn\u00f3stico"
+      },
+      {
+        "tag": "h4",
+        "text": "Cria\u00e7\u00e3o da experi\u00eancia"
+      },
+      {
+        "tag": "h4",
+        "text": "Planejamento e produ\u00e7\u00e3o"
+      },
+      {
+        "tag": "h4",
+        "text": "Opera\u00e7\u00e3o do evento"
+      },
+      {
+        "tag": "h4",
+        "text": "Experi\u00eancia e resultados"
+      },
+      {
+        "tag": "h3",
+        "text": "Voc\u00ea traz a ideia. A CriaA\u00e7\u00e3o "
+      },
+      {
+        "tag": "h2",
+        "text": "Vamos criar o pr\u00f3ximoNatal\n   "
+      }
+    ],
+    "landmarks": {
+      "header": 1,
+      "nav": 1,
+      "main": 1,
+      "footer": 1,
+      "section": 4,
+      "article": 6,
+      "aside": 0
+    },
+    "a11y_issues": []
+  },
+  "solucoes/manual-do-verdadeiro-papai-noel.html": {
+    "h1_count": 1,
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Manual do VerdadeiroPapai Noel"
+      },
+      {
+        "tag": "h2",
+        "text": "Vamos criar o pr\u00f3ximoNatal\n   "
+      }
+    ],
+    "landmarks": {
+      "header": 1,
+      "nav": 1,
+      "main": 1,
+      "footer": 1,
+      "section": 2,
+      "article": 0,
+      "aside": 0
+    },
+    "a11y_issues": []
+  },
+  "trabalhe-conosco.html": {
+    "h1_count": 1,
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Fa\u00e7a parte da equipe daCriaA\u00e7\u00e3"
+      },
+      {
+        "tag": "h2",
+        "text": "Cadastro enviado com sucesso!"
+      },
+      {
+        "tag": "h3",
+        "text": "Dados pessoais"
+      },
+      {
+        "tag": "h3",
+        "text": "Contato"
+      },
+      {
+        "tag": "h3",
+        "text": "\u00c1rea de interesse"
+      },
+      {
+        "tag": "h3",
+        "text": "Experi\u00eancia"
+      },
+      {
+        "tag": "h3",
+        "text": "Disponibilidade"
+      },
+      {
+        "tag": "h3",
+        "text": "Redes sociais"
+      },
+      {
+        "tag": "h3",
+        "text": "Envio de arquivos"
+      },
+      {
+        "tag": "h3",
+        "text": "Informa\u00e7\u00f5es adicionais"
+      }
+    ],
+    "landmarks": {
+      "header": 1,
+      "nav": 1,
+      "main": 1,
+      "footer": 1,
+      "section": 2,
+      "article": 0,
+      "aside": 0
+    },
+    "a11y_issues": []
+  }
+}
