@@ -1,4 +1,4 @@
-﻿#Header_wrapper {
+#Header_wrapper {
         position: fixed !important;
         top: 0 !important;
         left: 0 !important;
@@ -46,6 +46,7 @@
 
       .menu-main {
         display: flex;
+        align-items: center;
         gap: 28px;
         list-style: none;
         margin: 0;
@@ -53,6 +54,8 @@
       }
 
       .menu-main a {
+        display: flex;
+        align-items: center;
         color: #FFF6E6;
         font-size: 12px;
         font-weight: 800;
