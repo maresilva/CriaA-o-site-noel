@@ -966,7 +966,7 @@ setTimeout(loadAnalytics, 5000);
 
       @media(max-width: 980px) {
         .ca-hero-indicators {
-          grid-template-columns: repeat(2, 1fr) !important;
+          grid-template-columns: repeat(4, 1fr) !important;
           position: relative;
           bottom: 0;
           width: 100%;
@@ -975,20 +975,10 @@ setTimeout(loadAnalytics, 5000);
         }
 
         .ca-indicator-item {
-          padding: 16px 10px !important;
-          gap: 10px !important;
+          padding: 16px 5px !important;
+          gap: 5px !important;
           align-items: center !important;
-          justify-content: flex-start !important;
-          border-right: none !important;
-        }
-
-        .ca-indicator-item:nth-child(1),
-        .ca-indicator-item:nth-child(2) {
-          border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
-        }
-
-        .ca-indicator-item:nth-child(odd) {
-          border-right: 1px solid rgba(255, 255, 255, 0.06) !important;
+          justify-content: center !important;
         }
 
         .ca-indicator-text strong {
