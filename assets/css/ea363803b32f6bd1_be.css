@@ -239,7 +239,7 @@ a.button.button_green{background-color:#88be4c;color:#fff}
 
 /* Icons */
 
-@font-face{font-family:'mfn-icons';src:url(../fonts/mfn/icons.eot?31690507);src:url(../fonts/mfn/icons.eot?31690507#iefix) format("embedded-opentype"),url("../fonts/ea363803b32f6bd1_be.css") format("woff"),url(../fonts/mfn/icons.ttf?31690507) format("truetype"),url(../fonts/mfn/icons.svg?31690507#mfn) format("svg");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'mfn-icons';src:url(../fonts/mfn/icons.eot?31690507);src:url(../fonts/mfn/icons.eot?31690507#iefix) format("embedded-opentype"),url("../fonts/559a910060423ed4_icons.woff") format("woff"),url(../fonts/mfn/icons.ttf?31690507) format("truetype"),url(../fonts/mfn/icons.svg?31690507#mfn) format("svg");font-weight:400;font-style:normal;font-display:swap}
 [class^="icon-"]:before,[class*=" icon-"]:before{font-family:"mfn-icons";font-style:normal;font-weight:400;speak:none;display:inline-block;text-decoration:none!important;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em}
 
 .icon-acrobat:before{content:'\e800'}.icon-address:before{content:'\e801'}.icon-adjust:before{content:'\e802'}.icon-aim:before{content:'\e803'}.icon-air:before{content:'\e804'}.icon-alert:before{content:'\e805'}.icon-amazon:before{content:'\e806'}.icon-android:before{content:'\e807'}.icon-angellist:before{content:'\e808'}
