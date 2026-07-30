@@ -1,0 +1,21 @@
+/* Otimizacao de SEO Mobile (Core Web Vitals) */
+@media (max-width: 768px) {
+    /* Touch Targets (Zonas de toque) */
+    button, 
+    input[type="submit"], 
+    input[type="button"], 
+    .elementor-button,
+    a.button,
+    a.btn {
+        min-height: 48px !important;
+        min-width: 48px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    /* Prevenir fontes pequenas (Accessibility/SEO) */
+    p, li, span, a {
+        font-size: clamp(16px, 1em, 24px);
+    }
+}

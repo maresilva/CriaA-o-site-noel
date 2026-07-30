@@ -1,0 +1,170 @@
+{
+  "css_files": [
+    "assets/css/003fef8ad1cf80c4_elementor.css",
+    "assets/css/00d22094f77821e0_main.css",
+    "assets/css/0a5d398672e25dc7_frontend.min.css",
+    "assets/css/10f8e5f272c9ae8c_jplayer.blue.monday.min.css",
+    "assets/css/3c6bbf5f5e5ddb0e_dialog.min.css",
+    "assets/css/3d61aa64c53c42ed_widget-counter.min.css",
+    "assets/css/622a07604bb0030b_animations.min.css",
+    "assets/css/6833ab2989ec3b33_widget-image-gallery.min.css",
+    "assets/css/6a8f55d140604ca7_fontawesome.css",
+    "assets/css/6adb6452bc1ee069_css.css",
+    "assets/css/808a659eb4e85607_widget-spacer.min.css",
+    "assets/css/80ad7b0867ffd0f4_post-52.css",
+    "assets/css/8766b9224b839b0e_lightbox.min.css",
+    "assets/css/9389762f5a948af4_post-2.css",
+    "assets/css/a3b9f5df6bf638a4_styles.css",
+    "assets/css/ba47596392653c0a_css.css",
+    "assets/css/c55902832fb84522_v4-shims.min.css",
+    "assets/css/c57e64fcb72bddaf_swiper.min.css",
+    "assets/css/d2a7a173045c7ed2_rs6.css",
+    "assets/css/d87ddf917b7a1449_all.min.css",
+    "assets/css/dd05c6edba0491dc_responsive.css",
+    "assets/css/design-system.css",
+    "assets/css/e41380127b5ea983_css.css",
+    "assets/css/ea363803b32f6bd1_be.css",
+    "assets/css/ed6aeded6a15f982_css.css",
+    "assets/css/efcf90dc158ebfb4_css.css",
+    "assets/css/eventos.css",
+    "assets/css/f68e889145cb0e47_widget-heading.min.css",
+    "assets/css/fb8690e594b2f9b8_widget-image.min.css",
+    "assets/css/header-global.css",
+    "assets/css/header.css",
+    "assets/css/onde-atuamos.css",
+    "assets/css/quem-somos.css",
+    "assets/css/solucoes.css",
+    "assets/css/typography.css",
+    "assets/css/wp-global-styles.css"
+  ],
+  "js_files": [
+    "assets/js/1030dee6b293cd2f_share-link.min.js",
+    "assets/js/1842d6e4d3c7399f_frontend.min.js",
+    "assets/js/18c034e8caa6309a_rs6.min.js",
+    "assets/js/1d231f080d1df633_hooks.min.js",
+    "assets/js/29fdd17a7002a2e1_index.js",
+    "assets/js/30770e96ca66d9f1_dialog.min.js",
+    "assets/js/4543f55b0b8bc8fe_text-editor.45609661e409413f1c.js",
+    "assets/js/46668f561bd01aaa_i18n.min.js",
+    "assets/js/5274f11e6fb32ae0_jquery-migrate.min.js",
+    "assets/js/54766cd48bb6d7cd_plugins.js",
+    "assets/js/556004ab44e826f7_scripts.js",
+    "assets/js/55922883b5835837_section-frontend-handlers.d85a.js",
+    "assets/js/699210a5ed06e497_core.min.js",
+    "assets/js/6e6c69ba30da6599_jplayer.min.js",
+    "assets/js/6f35273b8502706e_v4-shims.min.js",
+    "assets/js/77c0a6d635dad44b_shared-frontend-handlers.03caa.js",
+    "assets/js/813e816a1b807a4e_397f2d183c19202777d6.bundle.mi.js",
+    "assets/js/83bc2e5a1c113016_counter.12335f45aaa79d244f24.b.js",
+    "assets/js/8dd3674bae946e2e_webpack.runtime.min.js",
+    "assets/js/9aa9bb8be2b83405_jquery-numerator.min.js",
+    "assets/js/a1ac109fb0da76a0_tabs.min.js",
+    "assets/js/a963f78c7d0e1478_googlesitekit-events-provider-.js",
+    "assets/js/c0a00439e0c82d42_translate3d.js",
+    "assets/js/c4596b16b126326b_rbtools.min.js",
+    "assets/js/c66f47147d5fe3cc_frontend-modules.min.js",
+    "assets/js/c6e72caf2dad7af8_app.js",
+    "assets/js/cb6f2d32c49d1c2b_jquery.min.js",
+    "assets/js/d1bbd7ecc1eb2490_animations.min.js",
+    "assets/js/ddcce687729cb358_index.js",
+    "assets/js/e31562bbd4b9f377_menu.js",
+    "assets/js/f9067c125b307e5a_lightbox.570c05c5a283cfb6b223..js",
+    "assets/js/header.js",
+    "assets/js/trabalhe-conosco.js"
+  ],
+  "fonts": [
+    "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&family=Great+Vibes&family=JetBrains+Mono:wght@500;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+  ],
+  "render_blocking_js": [
+    {
+      "file": "contato.html",
+      "src": "assets/js/cb6f2d32c49d1c2b_jquery.min.js"
+    },
+    {
+      "file": "contato.html",
+      "src": "assets/js/5274f11e6fb32ae0_jquery-migrate.min.js"
+    },
+    {
+      "file": "contato.html",
+      "src": "assets/js/6f35273b8502706e_v4-shims.min.js"
+    },
+    {
+      "file": "index.html",
+      "src": "assets/js/cb6f2d32c49d1c2b_jquery.min.js"
+    },
+    {
+      "file": "index.html",
+      "src": "assets/js/5274f11e6fb32ae0_jquery-migrate.min.js"
+    },
+    {
+      "file": "index.html",
+      "src": "assets/js/6f35273b8502706e_v4-shims.min.js"
+    },
+    {
+      "file": "portfolio.html",
+      "src": "assets/js/cb6f2d32c49d1c2b_jquery.min.js"
+    },
+    {
+      "file": "portfolio.html",
+      "src": "assets/js/5274f11e6fb32ae0_jquery-migrate.min.js"
+    },
+    {
+      "file": "portfolio.html",
+      "src": "assets/js/6f35273b8502706e_v4-shims.min.js"
+    },
+    {
+      "file": "quem-somos.html",
+      "src": "assets/js/cb6f2d32c49d1c2b_jquery.min.js"
+    },
+    {
+      "file": "quem-somos.html",
+      "src": "assets/js/5274f11e6fb32ae0_jquery-migrate.min.js"
+    },
+    {
+      "file": "quem-somos.html",
+      "src": "assets/js/6f35273b8502706e_v4-shims.min.js"
+    },
+    {
+      "file": "solucoes.html",
+      "src": "assets/js/cb6f2d32c49d1c2b_jquery.min.js"
+    },
+    {
+      "file": "solucoes.html",
+      "src": "assets/js/5274f11e6fb32ae0_jquery-migrate.min.js"
+    },
+    {
+      "file": "solucoes.html",
+      "src": "assets/js/6f35273b8502706e_v4-shims.min.js"
+    },
+    {
+      "file": "trabalhe-conosco.html",
+      "src": "assets/js/cb6f2d32c49d1c2b_jquery.min.js"
+    },
+    {
+      "file": "trabalhe-conosco.html",
+      "src": "assets/js/5274f11e6fb32ae0_jquery-migrate.min.js"
+    },
+    {
+      "file": "trabalhe-conosco.html",
+      "src": "assets/js/6f35273b8502706e_v4-shims.min.js"
+    },
+    {
+      "file": "solucoes\\manual-do-verdadeiro-papai-noel.html",
+      "src": "../assets/js/cb6f2d32c49d1c2b_jquery.min.js"
+    },
+    {
+      "file": "solucoes\\manual-do-verdadeiro-papai-noel.html",
+      "src": "../assets/js/5274f11e6fb32ae0_jquery-migrate.min.js"
+    },
+    {
+      "file": "solucoes\\manual-do-verdadeiro-papai-noel.html",
+      "src": "../assets/js/6f35273b8502706e_v4-shims.min.js"
+    }
+  ],
+  "vercel_cache": true,
+  "preconnects": [
+    "https://fonts.googleapis.com",
+    "https://fonts.gstatic.com"
+  ]
+}

@@ -1,0 +1,871 @@
+{
+  "index.html": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://criaacao.com/#organization",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "logo": "https://criaacao.com/assets/images/gallery/nossa-historia-criaacao-entretenimento.jpg",
+          "areaServed": "BR",
+          "knowsAbout": "Eventos Natalinos para Shopping Centers"
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://criaacao.com/#localbusiness",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "telephone": "+5585988601400",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Fortaleza",
+            "addressRegion": "CE",
+            "addressCountry": "BR"
+          },
+          "areaServed": "BR",
+          "priceRange": "$",
+          "parentOrganization": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://criaacao.com/#website",
+          "url": "https://criaacao.com/",
+          "name": "CriaA\u00e7\u00e3o Entretenimento | Natal para Shopping Centers no Brasil",
+          "publisher": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Eventos Natalinos para Shopping Centers",
+          "provider": {
+            "@id": "https://criaacao.com/#organization"
+          },
+          "areaServed": "BR",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servi\u00e7os de Natal",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Papai Noel Profissional"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Personagens Natalinos"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Cenografia Natalina"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Espa\u00e7o Fotogr\u00e1fico"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Plataforma 360\u00b0"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Brindes Personalizados"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Opera\u00e7\u00e3o Completa"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Ativa\u00e7\u00f5es Promocionais"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://criaacao.com/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "portfolio.html": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://criaacao.com/#organization",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "logo": "https://criaacao.com/assets/images/gallery/nossa-historia-criaacao-entretenimento.jpg",
+          "areaServed": "BR",
+          "knowsAbout": "Eventos Natalinos para Shopping Centers"
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://criaacao.com/#localbusiness",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "telephone": "+5585988601400",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Fortaleza",
+            "addressRegion": "CE",
+            "addressCountry": "BR"
+          },
+          "areaServed": "BR",
+          "priceRange": "$",
+          "parentOrganization": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://criaacao.com/#website",
+          "url": "https://criaacao.com/",
+          "name": "Portf\u00f3lio de Natal | Nossos Clientes | CriaA\u00e7\u00e3o",
+          "publisher": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Eventos Natalinos para Shopping Centers",
+          "provider": {
+            "@id": "https://criaacao.com/#organization"
+          },
+          "areaServed": "BR",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servi\u00e7os de Natal",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Papai Noel Profissional"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Personagens Natalinos"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Cenografia Natalina"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Espa\u00e7o Fotogr\u00e1fico"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Plataforma 360\u00b0"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Brindes Personalizados"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Opera\u00e7\u00e3o Completa"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Ativa\u00e7\u00f5es Promocionais"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://criaacao.com/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quem-somos.html": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://criaacao.com/#organization",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "logo": "https://criaacao.com/assets/images/gallery/nossa-historia-criaacao-entretenimento.jpg",
+          "areaServed": "BR",
+          "knowsAbout": "Eventos Natalinos para Shopping Centers"
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://criaacao.com/#localbusiness",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "telephone": "+5585988601400",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Fortaleza",
+            "addressRegion": "CE",
+            "addressCountry": "BR"
+          },
+          "areaServed": "BR",
+          "priceRange": "$",
+          "parentOrganization": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://criaacao.com/#website",
+          "url": "https://criaacao.com/",
+          "name": "Quem Somos | CriaA\u00e7\u00e3o Entretenimento",
+          "publisher": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Eventos Natalinos para Shopping Centers",
+          "provider": {
+            "@id": "https://criaacao.com/#organization"
+          },
+          "areaServed": "BR",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servi\u00e7os de Natal",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Papai Noel Profissional"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Personagens Natalinos"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Cenografia Natalina"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Espa\u00e7o Fotogr\u00e1fico"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Plataforma 360\u00b0"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Brindes Personalizados"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Opera\u00e7\u00e3o Completa"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Ativa\u00e7\u00f5es Promocionais"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://criaacao.com/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "solucoes.html": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://criaacao.com/#organization",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "logo": "https://criaacao.com/assets/images/gallery/nossa-historia-criaacao-entretenimento.jpg",
+          "areaServed": "BR",
+          "knowsAbout": "Eventos Natalinos para Shopping Centers"
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://criaacao.com/#localbusiness",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "telephone": "+5585988601400",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Fortaleza",
+            "addressRegion": "CE",
+            "addressCountry": "BR"
+          },
+          "areaServed": "BR",
+          "priceRange": "$",
+          "parentOrganization": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://criaacao.com/#website",
+          "url": "https://criaacao.com/",
+          "name": "Solu\u00e7\u00f5es de Natal para Shoppings e Empresas | CriaA\u00e7\u00e3o",
+          "publisher": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Eventos Natalinos para Shopping Centers",
+          "provider": {
+            "@id": "https://criaacao.com/#organization"
+          },
+          "areaServed": "BR",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servi\u00e7os de Natal",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Papai Noel Profissional"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Personagens Natalinos"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Cenografia Natalina"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Espa\u00e7o Fotogr\u00e1fico"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Plataforma 360\u00b0"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Brindes Personalizados"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Opera\u00e7\u00e3o Completa"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Ativa\u00e7\u00f5es Promocionais"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://criaacao.com/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contato.html": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://criaacao.com/#organization",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "logo": "https://criaacao.com/assets/images/gallery/nossa-historia-criaacao-entretenimento.jpg",
+          "areaServed": "BR",
+          "knowsAbout": "Eventos Natalinos para Shopping Centers"
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://criaacao.com/#localbusiness",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "telephone": "+5585988601400",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Fortaleza",
+            "addressRegion": "CE",
+            "addressCountry": "BR"
+          },
+          "areaServed": "BR",
+          "priceRange": "$",
+          "parentOrganization": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://criaacao.com/#website",
+          "url": "https://criaacao.com/",
+          "name": "Fale Conosco | Or\u00e7amento de Natal | CriaA\u00e7\u00e3o",
+          "publisher": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Eventos Natalinos para Shopping Centers",
+          "provider": {
+            "@id": "https://criaacao.com/#organization"
+          },
+          "areaServed": "BR",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servi\u00e7os de Natal",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Papai Noel Profissional"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Personagens Natalinos"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Cenografia Natalina"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Espa\u00e7o Fotogr\u00e1fico"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Plataforma 360\u00b0"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Brindes Personalizados"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Opera\u00e7\u00e3o Completa"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Ativa\u00e7\u00f5es Promocionais"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://criaacao.com/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "eventos.html": [],
+  "solucoes/manual-do-verdadeiro-papai-noel.html": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://criaacao.com/#organization",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "logo": "https://criaacao.com/assets/images/gallery/nossa-historia-criaacao-entretenimento.jpg",
+          "areaServed": "BR",
+          "knowsAbout": "Eventos Natalinos para Shopping Centers"
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://criaacao.com/#localbusiness",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "telephone": "+5585988601400",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Fortaleza",
+            "addressRegion": "CE",
+            "addressCountry": "BR"
+          },
+          "areaServed": "BR",
+          "priceRange": "$",
+          "parentOrganization": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://criaacao.com/#website",
+          "url": "https://criaacao.com/",
+          "name": "Solu\u00e7\u00f5es de Natal para Shoppings e Empresas | CriaA\u00e7\u00e3o",
+          "publisher": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Eventos Natalinos para Shopping Centers",
+          "provider": {
+            "@id": "https://criaacao.com/#organization"
+          },
+          "areaServed": "BR",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servi\u00e7os de Natal",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Papai Noel Profissional"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Personagens Natalinos"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Cenografia Natalina"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Espa\u00e7o Fotogr\u00e1fico"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Plataforma 360\u00b0"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Brindes Personalizados"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Opera\u00e7\u00e3o Completa"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Ativa\u00e7\u00f5es Promocionais"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://criaacao.com/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "trabalhe-conosco.html": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://criaacao.com/#organization",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "logo": "https://criaacao.com/assets/images/gallery/nossa-historia-criaacao-entretenimento.jpg",
+          "areaServed": "BR",
+          "knowsAbout": "Eventos Natalinos para Shopping Centers"
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://criaacao.com/#localbusiness",
+          "name": "CriaA\u00e7\u00e3o Entretenimento",
+          "url": "https://criaacao.com/",
+          "telephone": "+5585988601400",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Fortaleza",
+            "addressRegion": "CE",
+            "addressCountry": "BR"
+          },
+          "areaServed": "BR",
+          "priceRange": "$",
+          "parentOrganization": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://criaacao.com/#website",
+          "url": "https://criaacao.com/",
+          "name": "Fale Conosco | Or\u00e7amento de Natal | CriaA\u00e7\u00e3o",
+          "publisher": {
+            "@id": "https://criaacao.com/#organization"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Eventos Natalinos para Shopping Centers",
+          "provider": {
+            "@id": "https://criaacao.com/#organization"
+          },
+          "areaServed": "BR",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servi\u00e7os de Natal",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Papai Noel Profissional"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Personagens Natalinos"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Cenografia Natalina"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Espa\u00e7o Fotogr\u00e1fico"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Plataforma 360\u00b0"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Brindes Personalizados"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Opera\u00e7\u00e3o Completa"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Ativa\u00e7\u00f5es Promocionais"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://criaacao.com/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
