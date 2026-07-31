@@ -9,6 +9,8 @@
   grid-template-columns: 1fr; /* Mobile: 1 coluna */
   gap: 24px;
   width: 100%;
+  max-width: 1280px;
+  margin: 60px auto 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -32,7 +34,7 @@
   flex-direction: column;
   background: linear-gradient(135deg, rgba(26, 3, 4, 0.9) 0%, rgba(16, 1, 2, 0.95) 100%);
   border: 1px solid rgba(242, 184, 75, 0.15); /* Borda dourada discreta */
-  border-radius: 16px;
+  border-radius: 24px;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   height: 100%;
@@ -70,7 +72,7 @@
 
 /* Conteúdo de Textos */
 .ca-segment-card-content {
-  padding: 32px 24px;
+  padding: 28px 24px;
   display: flex;
   flex-direction: column;
   flex-grow: 1; /* Preenche a altura restante no flexbox do card */
@@ -96,8 +98,15 @@
 }
 
 .ca-segment-card-title a {
-  color: inherit;
+  color: #FFF6E6;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.ca-segment-card:hover .ca-segment-card-title a,
+.ca-segment-card-title a:hover,
+.ca-segment-card-title a:focus {
+  color: #F2B84B !important;
 }
 
 /* Truque de Acessibilidade: Pseudo-elemento cobrindo o card todo */
@@ -116,7 +125,7 @@
 .ca-segment-card-title a:focus-visible::after {
   outline: 2px solid #F2B84B;
   outline-offset: 4px;
-  border-radius: 16px;
+  border-radius: 24px;
 }
 
 .ca-segment-card-desc {
