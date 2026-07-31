@@ -1,0 +1,154 @@
+/*
+  Estilos Globais: Componente Segment Card
+  Uso: Importe este arquivo na página de Soluções ou inclua no build CSS principal.
+*/
+
+/* Container (Apenas documentação/exemplo de uso da grade responsiva) */
+.ca-segment-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile: 1 coluna */
+  gap: 24px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .ca-segment-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablet: 2 colunas */
+    gap: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ca-segment-grid {
+    grid-template-columns: repeat(3, 1fr); /* Desktop: 3 colunas */
+    gap: 40px;
+  }
+}
+
+/* Card Estrutura Principal */
+.ca-segment-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, rgba(26, 3, 4, 0.9) 0%, rgba(16, 1, 2, 0.95) 100%);
+  border: 1px solid rgba(242, 184, 75, 0.15); /* Borda dourada discreta */
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  height: 100%;
+}
+
+/* Interação de Hover (Desktop) */
+.ca-segment-card:hover,
+.ca-segment-card:focus-within {
+  transform: translateY(-4px); /* Elevação suave */
+  border-color: rgba(242, 184, 75, 0.5); /* Borda levemente iluminada */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(242, 184, 75, 0.1);
+}
+
+/* Imagem Responsiva */
+.ca-segment-card-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Mantém a proporção constante */
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02); /* Skeleton state */
+}
+
+.ca-segment-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom sutil na imagem ao hover */
+.ca-segment-card:hover .ca-segment-card-image img,
+.ca-segment-card:focus-within .ca-segment-card-image img {
+  transform: scale(1.04);
+}
+
+/* Conteúdo de Textos */
+.ca-segment-card-content {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Preenche a altura restante no flexbox do card */
+}
+
+.ca-segment-card-eyebrow {
+  color: #F2B84B;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.ca-segment-card-title {
+  font-family: var(--mfn-heading-font-family, 'Cinzel', serif); /* Fonte display premium */
+  font-size: 22px;
+  color: #FFF6E6;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+}
+
+.ca-segment-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Truque de Acessibilidade: Pseudo-elemento cobrindo o card todo */
+.ca-segment-card-title a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Removemos o outline padrão do 'a' e movemos para o 'after' na área total */
+.ca-segment-card-title a:focus {
+  outline: none;
+}
+
+.ca-segment-card-title a:focus-visible::after {
+  outline: 2px solid #F2B84B;
+  outline-offset: 4px;
+  border-radius: 16px;
+}
+
+.ca-segment-card-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  flex-grow: 1; /* Empurra o botão "Saiba mais" sempre para o rodapé do card */
+}
+
+/* Botão Saiba Mais (CTA Visual) */
+.ca-segment-card-cta {
+  color: #F2B84B; /* Link dourado */
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
+  transition: color 0.3s ease;
+}
+
+.ca-segment-card-cta svg {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Seta deslocando poucos pixels */
+.ca-segment-card:hover .ca-segment-card-cta svg,
+.ca-segment-card:focus-within .ca-segment-card-cta svg {
+  transform: translateX(5px);
+}

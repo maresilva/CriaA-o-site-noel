@@ -1,0 +1,48 @@
+<!--
+  Componente: Card de Segmento Reutilizável
+  Uso: Este é o template base para listar os 9 segmentos na página de Soluções.
+  Para renderizar os 9 cards, você repetirá este bloco (ou fará um script gerá-los)
+  alterando as propriedades abaixo.
+
+  PROPRIEDADES A SUBSTITUIR:
+  {{link}}            -> URL interna do segmento (ex: /solucoes/shopping-centers)
+  {{image_avif}}      -> Caminho da imagem AVIF (ex: /assets/images/segments/shopping.avif)
+  {{image_webp}}      -> Caminho da imagem WebP (ex: /assets/images/segments/shopping.webp)
+  {{image_fallback}}  -> Caminho da imagem JPG/PNG (ex: /assets/images/segments/shopping.jpg)
+  {{alt_text}}        -> Texto alternativo descritivo obrigatório
+  {{category}}        -> Categoria/Eyebrow (ex: SHOPPING CENTERS)
+  {{title}}           -> Título H3 descritivo (ex: Soluções para Shopping)
+  {{description}}     -> Descrição curta de até 3 linhas.
+-->
+<article class="ca-segment-card">
+  <!-- Imagem com Art Direction e Lazy Loading -->
+  <div class="ca-segment-card-image">
+    <picture>
+      <source srcset="{{image_avif}}" type="image/avif">
+      <source srcset="{{image_webp}}" type="image/webp">
+      <img src="{{image_fallback}}" alt="{{alt_text}}" width="400" height="250" loading="lazy">
+    </picture>
+  </div>
+  
+  <!-- Conteúdo Principal -->
+  <div class="ca-segment-card-content">
+    <span class="ca-segment-card-eyebrow">{{category}}</span>
+    
+    <h3 class="ca-segment-card-title">
+      <!-- O link engloba virtualmente todo o card devido ao CSS ::after -->
+      <a href="{{link}}" aria-label="Saiba mais sobre {{category}}">{{title}}</a>
+    </h3>
+    
+    <p class="ca-segment-card-desc">{{description}}</p>
+    
+    <!-- CTA Visual (não é um link real para não gerar conflito de foco, 
+         o aria-label acima já provê acessibilidade e o link <a> virtualiza o clique) -->
+    <div class="ca-segment-card-cta" aria-hidden="true">
+      SAIBA MAIS 
+      <svg focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" height="16" width="16">
+        <path d="M5 12h14"></path>
+        <path d="M12 5l7 7-7 7"></path>
+      </svg>
+    </div>
+  </div>
+</article>
