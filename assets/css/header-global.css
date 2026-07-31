@@ -496,3 +496,11 @@
     margin: 0 !important;
   }
 }
+
+/* Padronização: botão "Orçamento Online" do tema Betheme → Inter */
+a.action_button,
+body .extras .action_button,
+#Side_slide .extras .action_button {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700;
+}
