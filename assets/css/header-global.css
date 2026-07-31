@@ -58,6 +58,7 @@
         align-items: center;
         color: #FFF6E6 !important;
         font-size: 12px !important;
+    line-height: 16px !important;
         font-weight: 800 !important;
         text-transform: uppercase !important;
         letter-spacing: 0.08em !important;
@@ -79,6 +80,7 @@
         text-transform: uppercase;
         letter-spacing: 0.05em;
         font-size: 12px;
+        line-height: 16px;
         border: 1px solid rgba(255, 255, 255, 0.1);
         box-shadow: 0 15px 35px rgba(185, 22, 32, 0.25);
         cursor: pointer;
@@ -103,6 +105,7 @@
         text-transform: uppercase;
         letter-spacing: 0.05em;
         font-size: 12px;
+        line-height: 16px;
         border: 1px solid rgba(242, 184, 75, 0.4);
         cursor: pointer;
         transition: all 0.3s ease;
@@ -150,6 +153,7 @@
 
         .ca-indicator-text span {
           font-size: 12px !important;
+    line-height: 16px !important;
           line-height: 1.2 !important;
         }
 
@@ -456,3 +460,39 @@
           display: block;
         }
       }
+@media (min-width: 981px) {
+  .ca-mobile-hamburger {
+    display: none !important;
+  }
+  
+  body #Top_bar .top_bar_left .ca-mobile-whatsapp {
+    background: transparent !important;
+    color: #F2B84B !important;
+    padding: 16px 32px !important;
+    border-radius: 99px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    border: 1px solid rgba(242, 184, 75, 0.4) !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    font-family: 'Inter', sans-serif !important;
+    text-decoration: none !important;
+  }
+
+  body #Top_bar .top_bar_left .ca-mobile-whatsapp:hover {
+    background: rgba(242, 184, 75, 0.12) !important;
+    border-color: #F2B84B !important;
+  }
+  
+  body #Top_bar .top_bar_left .ca-mobile-whatsapp svg {
+    width: 16px !important;
+    height: 16px !important;
+    margin: 0 !important;
+  }
+}

@@ -1,4 +1,4 @@
-﻿#Header_wrapper {
+#Header_wrapper {
         position: fixed;
         top: 0;
         left: 0;
@@ -54,6 +54,7 @@
       .menu-main a {
         color: #FFF6E6;
         font-size: 12px;
+        line-height: 16px;
         font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 0.08em;
@@ -75,6 +76,7 @@
         text-transform: uppercase;
         letter-spacing: 0.05em;
         font-size: 12px;
+        line-height: 16px;
         border: 1px solid rgba(255, 255, 255, 0.1);
         box-shadow: 0 15px 35px rgba(185, 22, 32, 0.25);
         cursor: pointer;
@@ -99,6 +101,7 @@
         text-transform: uppercase;
         letter-spacing: 0.05em;
         font-size: 12px;
+        line-height: 16px;
         border: 1px solid rgba(242, 184, 75, 0.4);
         cursor: pointer;
         transition: all 0.3s ease;
