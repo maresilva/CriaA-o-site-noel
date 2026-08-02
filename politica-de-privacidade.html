@@ -28,7 +28,7 @@
   :root{--ca-font-primary:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif;--ca-gold-400:#F2B84B;--ca-gold-500:#F2B84B;--ca-primary-950:#1a0304;--ca-cream-100:#FFF6E6}
   *,*::before,*::after{box-sizing:border-box}
   body{margin:0;background:#1a0304;color:#FFF6E6;font-family:var(--ca-font-primary);font-size:16px;line-height:1.65;overflow-x:hidden}
-  a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+  a:not(.pp-btn-primary):not(.pp-btn-secondary):not(.ca-footer-cta):not(.pp-contact-block a):not(.pp-section a){color:inherit;text-decoration:none}img{max-width:100%;display:block}
   ::selection{background:var(--ca-gold-500);color:var(--ca-primary-950)}
   #Header_wrapper{position:fixed;top:0;left:0;width:100%;z-index:99}
   #Top_bar{width:100%;background:rgba(15,0,0,.25);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06);padding:18px 0;transition:all .35s ease}
@@ -95,9 +95,9 @@
   .pp-contact-block .pp-info-value{font-size:14px;color:rgba(255,246,230,.8)}
   .pp-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
   .pp-btn-primary,.pp-btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:8px;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;transition:all .25s ease}
-  .pp-btn-primary{background:#D4A83A;color:#1a0304;border:none}
+  .pp-btn-primary{background:#D4A83A;color:#1a0304 !important!important;border:none}
   .pp-btn-primary:hover{background:#F2B84B;transform:translateY(-2px)}
-  .pp-btn-secondary{border:1px solid rgba(212,168,58,.5);color:#D4A83A;background:transparent}
+  .pp-btn-secondary{border:1px solid rgba(212,168,58,.5);color:#D4A83A !important!important;background:transparent}
   .pp-btn-secondary:hover{background:rgba(212,168,58,.08);transform:translateY(-2px)}
   .pp-btn-primary:focus-visible,.pp-btn-secondary:focus-visible{outline:2px solid #F2B84B;outline-offset:3px}
 
