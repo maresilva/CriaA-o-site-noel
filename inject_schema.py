@@ -9,7 +9,7 @@ html_files = glob.glob('*.html') + glob.glob('solucoes/*.html')
 BASE_URL = 'https://www.criaacao.com'
 LOGO_URL = f'{BASE_URL}/assets/images/gallery/nossa-historia-criaacao-entretenimento.jpg'
 COMPANY_NAME = 'CriaAção Entretenimento'
-COMPANY_DESC = 'Empresa especializada em experiências natalinas, Papai Noel Profissional e Cenografia.'
+COMPANY_DESC = 'Empresa especializada em experiências natalinas para Shopping Centers e grandes empreendimentos.'
 
 def build_schema(filepath, soup):
     title = soup.title.string if soup.title else COMPANY_NAME
@@ -40,17 +40,16 @@ def build_schema(filepath, soup):
         },
         "image": {"@id": f"{BASE_URL}/#logo"},
         "description": COMPANY_DESC,
+        "slogan": "A maior empresa de Natal para Shopping Centers.",
         "telephone": "+5585988601400",
         "email": "marcos.criacao@gmail.com",
         "areaServed": ["BR"],
         "knowsAbout": [
             "Natal para Shopping Centers",
-            "Cenografia Natalina",
-            "Papai Noel Profissional",
-            "Personagens Temáticos",
-            "Espaço Fotográfico",
-            "Plataforma 360",
-            "Eventos Temáticos"
+            "Cenografia Natalina para Shoppings",
+            "Papai Noel Profissional para Empreendimentos",
+            "Experiências Temáticas de Natal",
+            "Projetos Natalinos de Alto Padrão"
         ]
     }
     graph.append(org)
@@ -153,7 +152,11 @@ def build_schema(filepath, soup):
             "description": description,
             "provider": {"@id": f"{BASE_URL}/#organization"},
             "areaServed": {"@id": f"{BASE_URL}/#localbusiness"},
-            "serviceType": "Entertainment Service"
+            "serviceType": "Projetos Natalinos e Experiências Temáticas",
+            "audience": {
+                "@type": "Audience",
+                "audienceType": "Shopping Centers e grandes empreendimentos"
+            }
         }
         graph.append(service)
         
