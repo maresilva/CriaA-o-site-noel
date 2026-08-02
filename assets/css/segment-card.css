@@ -139,6 +139,7 @@
 /* CTA */
 .ca-segment-card-cta {
   color: #F2B84B;
+  text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 800;
