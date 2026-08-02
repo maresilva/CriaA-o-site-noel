@@ -7035,18 +7035,24 @@
                 }
               </style>
               <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                  var dropDownLink = document.querySelector(".ca-has-dropdown > a");
+                document.addEventListener("click", function (e) {
+                  var dropDownLink = e.target.closest(".ca-has-dropdown > a");
                   if (dropDownLink) {
-                    dropDownLink.addEventListener("click", function (e) {
-                      if (window.innerWidth <= 980 || ('ontouchstart' in window)) {
-                        var parentLi = this.parentElement;
-                        if (!parentLi.classList.contains("is-active")) {
-                          e.preventDefault(); // Prevent navigation on first tap
-                          parentLi.classList.add("is-active");
-                        }
+                    if (window.innerWidth <= 980 || ('ontouchstart' in window)) {
+                      var parentLi = dropDownLink.parentElement;
+                      if (!parentLi.classList.contains("is-active")) {
+                        e.preventDefault(); // Impede a navegacao no primeiro clique para funcionar como accordion
+                        
+                        // Fecha outros dropdowns que possam estar abertos (Accordion UX)
+                        var siblings = parentLi.parentElement.querySelectorAll(".ca-has-dropdown.is-active");
+                        siblings.forEach(function(sib) { if(sib !== parentLi) sib.classList.remove("is-active"); });
+                        
+                        parentLi.classList.add("is-active");
+                      } else if (e.target.closest("#Side_slide") && e.target.closest(".ca-has-dropdown > a")) {
+                         // Se ja esta ativo e foi um clique na seta ou no texto
+                         // Para ter um UX perfeito, se clicar na propria pagina pai de novo navega.
                       }
-                    });
+                    }
                   }
                 });
               </script>
