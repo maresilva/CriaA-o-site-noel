@@ -5244,87 +5244,136 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     }
 </style>
-<meta content="CriaAção Entretenimento" name="author"/><script type="application/ld+json">{
+<meta content="CriaAção Entretenimento" name="author"/><script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://criaacao.com/#organization",
+      "@id": "https://www.criaacao.com/#organization",
       "name": "CriaAção Entretenimento",
-      "url": "https://criaacao.com/",
-      "logo": "https://criaacao.com/assets/images/gallery/nossa-historia-criaacao-entretenimento.webp",
-      "areaServed": "BR",
-      "knowsAbout": "Visitas de Papai Noel para Condomínios e Residências"
+      "url": "https://www.criaacao.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.criaacao.com/#logo",
+        "url": "https://www.criaacao.com/assets/images/gallery/nossa-historia-criaacao-entretenimento.jpg",
+        "width": 1200,
+        "height": 800,
+        "caption": "CriaAção Entretenimento"
+      },
+      "image": {
+        "@id": "https://www.criaacao.com/#logo"
+      },
+      "description": "Empresa especializada em experiências natalinas, Papai Noel Profissional e Cenografia.",
+      "telephone": "+5585988601400",
+      "email": "marcos.criacao@gmail.com",
+      "areaServed": [
+        "BR"
+      ],
+      "knowsAbout": [
+        "Natal para Shopping Centers",
+        "Cenografia Natalina",
+        "Papai Noel Profissional",
+        "Personagens Temáticos",
+        "Espaço Fotográfico",
+        "Plataforma 360",
+        "Eventos Temáticos"
+      ]
     },
     {
       "@type": "LocalBusiness",
-      "@id": "https://criaacao.com/#localbusiness",
+      "@id": "https://www.criaacao.com/#localbusiness",
       "name": "CriaAção Entretenimento",
-      "url": "https://criaacao.com/",
+      "url": "https://www.criaacao.com/",
       "telephone": "+5585988601400",
+      "parentOrganization": {
+        "@id": "https://www.criaacao.com/#organization"
+      },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Fortaleza",
         "addressRegion": "CE",
         "addressCountry": "BR"
       },
-      "areaServed": "BR",
-      "priceRange": "$",
-      "parentOrganization": {
-        "@id": "https://criaacao.com/#organization"
-      },
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": -3.731862,
         "longitude": -38.52667
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "08:00",
-        "closes": "18:00"
+      "image": {
+        "@id": "https://www.criaacao.com/#logo"
+      },
+      "priceRange": "$$$"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.criaacao.com/#website",
+      "url": "https://www.criaacao.com/",
+      "name": "CriaAção Entretenimento",
+      "description": "Empresa especializada em experiências natalinas, Papai Noel Profissional e Cenografia.",
+      "publisher": {
+        "@id": "https://www.criaacao.com/#organization"
       }
     },
     {
       "@type": "WebPage",
-      "@id": "https://criaacao.com/solucoes/manual-do-verdadeiro-papai-noel/#webpage",
-      "url": "https://criaacao.com/solucoes/manual-do-verdadeiro-papai-noel",
-      "name": "Manual do Verdadeiro Papai Noel | Treinamento | CriaAção",
+      "@id": "https://www.criaacao.com/solucoes/condominios-e-residencias#webpage",
+      "url": "https://www.criaacao.com/solucoes/condominios-e-residencias",
+      "name": "Eventos Natalinos para Condomínios e Residências | CriaAção",
+      "description": "Leve o clima festivo para o seu condomínio. Decoração de alto padrão e visita do Papai Noel para moradores e famílias.",
       "isPartOf": {
-        "@id": "https://criaacao.com/#website"
+        "@id": "https://www.criaacao.com/#website"
+      },
+      "about": {
+        "@id": "https://www.criaacao.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://www.criaacao.com/#logo"
+      },
+      "breadcrumb": {
+        "@id": "https://www.criaacao.com/solucoes/condominios-e-residencias#breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://www.criaacao.com/solucoes/condominios-e-residencias#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://criaacao.com/"
+          "item": "https://www.criaacao.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Soluções",
-          "item": "https://criaacao.com/solucoes"
+          "item": "https://www.criaacao.com/solucoes"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Condomínios e Residências",
-          "item": "https://criaacao.com/solucoes/condominios-e-residencias"
+          "name": "Condominios E Residencias",
+          "item": "https://www.criaacao.com/solucoes/condominios-e-residencias"
         }
       ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.criaacao.com/solucoes/condominios-e-residencias#service",
+      "name": "Eventos Natalinos para Condomínios e Residências | CriaAção",
+      "description": "Leve o clima festivo para o seu condomínio. Decoração de alto padrão e visita do Papai Noel para moradores e famílias.",
+      "provider": {
+        "@id": "https://www.criaacao.com/#organization"
+      },
+      "areaServed": {
+        "@id": "https://www.criaacao.com/#localbusiness"
+      },
+      "serviceType": "Entertainment Service"
     }
   ]
-}</script><link href="../assets/css/mobile-seo.css" media="print" onload="this.media='all'" rel="stylesheet"/><style id="ca-a11y-skip-link">
+}
+  </script><link href="../assets/css/mobile-seo.css" media="print" onload="this.media='all'" rel="stylesheet"/><style id="ca-a11y-skip-link">
 .ca-skip-link {
   position: absolute;
   top: -100%;
