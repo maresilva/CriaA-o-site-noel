@@ -7691,7 +7691,7 @@ input::placeholder, textarea::placeholder, select::placeholder {
             .sc-gallery-container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 40px; box-sizing: border-box; }
             .sc-gallery-eyebrow { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.15em; color: #F2B84B; text-transform: uppercase; text-align: center; margin-bottom: 12px; }
             .sc-gallery-title { font-family: var(--mfn-heading-font-family, 'Cinzel', serif); font-size: clamp(24px, 3vw, 36px); font-weight: 700; color: #ffffff; line-height: 1.2; margin: 0 0 56px 0; text-align: center; }
-            .sc-gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 48px; }
+            .sc-gallery-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin-bottom: 48px; }.sc-gallery-grid .sc-gallery-card { flex: 0 0 calc(33.333% - 16px); max-width: calc(33.333% - 16px); }
             .sc-gallery-card { position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 4/3; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); transition: all 0.3s ease; }
             .sc-gallery-card:hover { border-color: rgba(242, 184, 75, 0.3); transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); }
             .sc-gallery-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
@@ -7703,8 +7703,8 @@ input::placeholder, textarea::placeholder, select::placeholder {
             .sc-gallery-cta { text-align: center; }
             .sc-gallery-cta a { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 32px; border-radius: 99px; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; transition: all 0.3s ease; background: transparent; color: #F2B84B; border: 1px solid rgba(242, 184, 75, 0.4); }
             .sc-gallery-cta a:hover { background: rgba(242, 184, 75, 0.1); border-color: #F2B84B; transform: translateY(-3px); }
-            @media (max-width: 768px) { .sc-gallery-section { padding: 60px 0; } .sc-gallery-container { padding: 0 20px; } .sc-gallery-grid { grid-template-columns: 1fr 1fr; gap: 16px; } .sc-gallery-title { margin-bottom: 40px; } }
-            @media (max-width: 480px) { .sc-gallery-grid { grid-template-columns: 1fr; } }
+            @media (max-width: 768px) { .sc-gallery-section { padding: 60px 0; } .sc-gallery-container { padding: 0 20px; } .sc-gallery-grid .sc-gallery-card { flex: 0 0 calc(50% - 8px); max-width: calc(50% - 8px); } .sc-gallery-title { margin-bottom: 40px; } }
+            @media (max-width: 480px) { .sc-gallery-grid .sc-gallery-card { flex: 0 0 100%; max-width: 100%; } }
         </style>
         <div class="sc-gallery-container">
             <div class="sc-gallery-eyebrow">PRIMEIRAS LEMBRANÇAS</div>
