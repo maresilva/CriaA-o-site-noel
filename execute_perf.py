@@ -58,8 +58,7 @@ print(f"Total images converted to WebP: {converted_count}")
 
 print("\n--- 2. HTML OPTIMIZATION (Safe Regex) ---")
 
-def process_img_tag(match, filepath, html_content):
-    img_tag_orig = match.group(0)
+def process_img_tag(img_tag_orig, filepath, html_content):
     img_tag = img_tag_orig
     
     src_match = re.search(r'src=["\']([^"\']+)["\']', img_tag, re.IGNORECASE)
@@ -79,23 +78,19 @@ def process_img_tag(match, filepath, html_content):
                 pass
                 
     # 3. LCP and Lazy loading
-    # Check if it's the hero image (heuristic: first big image or inside a hero section)
-    # For safe regex, if it's within the first 4000 characters and has 'hero' or 'banner' it's LCP
     is_lcp = False
     idx = html_content.find(img_tag_orig)
     context_before = html_content[max(0, idx-500):idx].lower()
     
     if 'hero' in context_before or 'banner' in context_before or 'sc-hero' in img_tag_orig:
         is_lcp = True
-    elif idx < 2000 and 'logo' not in src.lower(): # First big image
+    elif idx < 2000 and 'logo' not in src.lower(): 
         is_lcp = True
         
     is_header_footer = 'logo' in src.lower() or 'header' in context_before or 'footer' in context_before or 'nav' in context_before
     
     if is_lcp:
-        # Remove lazy if exists
         img_tag = re.sub(r'\sloading=["\']lazy["\']', '', img_tag, flags=re.IGNORECASE)
-        # Add fetchpriority
         if 'fetchpriority' not in img_tag:
             img_tag = img_tag.replace('<img ', '<img fetchpriority="high" ')
     else:
@@ -107,7 +102,6 @@ def process_img_tag(match, filepath, html_content):
     if os.path.exists(webp_local) and not src.lower().endswith('.webp'):
         webp_src = os.path.splitext(src)[0] + '.webp'
         picture_tag = f'<picture>\n  <source srcset="{webp_src}" type="image/webp">\n  {img_tag}\n</picture>'
-        # Check if already wrapped in picture (primitive check)
         if '<picture>' not in context_before[-20:]: 
             return picture_tag
             
@@ -125,21 +119,14 @@ for filepath in html_files:
             preconnects = '<link rel="preconnect" href="https://fonts.googleapis.com">\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n  '
             new_html = new_html.replace('</title>', f'</title>\n  {preconnects}')
             
-        # Add display=swap
         new_html = re.sub(r'(href=["\']https://fonts\.googleapis\.com/css2\?[^"\']+)(["\'])', 
                           lambda m: m.group(1) + ('&display=swap' if 'display=swap' not in m.group(1) else '') + m.group(2), 
                           new_html)
 
-    # Process all img tags safely
-    # We use a custom function to replace each img tag individually
-    # Find all img tags first to avoid infinite loops if we replace with multiple tags
     img_tags = re.findall(r'<img[^>]+>', new_html, re.IGNORECASE)
     
-    # Sort by length descending to replace the most specific first (prevent replacing sub-parts)
-    # Actually, iterative replacement is better
-    
-    for img_tag_orig in set(img_tags): # unique tags
-        replacement = process_img_tag(re.match(r'.*', img_tag_orig), filepath, new_html)
+    for img_tag_orig in set(img_tags): 
+        replacement = process_img_tag(img_tag_orig, filepath, new_html)
         if replacement != img_tag_orig:
             new_html = new_html.replace(img_tag_orig, replacement)
 
