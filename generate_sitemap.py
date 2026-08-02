@@ -1,32 +1,61 @@
 import os
 import glob
 import re
+import subprocess
 from bs4 import BeautifulSoup
 from datetime import datetime
 
 BASE_URL = "https://www.criaacao.com"
-HTML_FILES = glob.glob('*.html') + glob.glob('solucoes/*.html')
+HTML_FILES = [f for f in glob.glob('*.html') + glob.glob('solucoes/*.html') 
+              if not any(ex in f for ex in ['design_system1.html', 'missing_footer.html', 'scratch_idx.html', 'header_standard.html', 'new_segment.html', '404.html'])]
 
-# Exclusions
-EXCLUDE_HTML = ['design_system1.html', 'missing_footer.html', 'scratch_idx.html', 'header_standard.html', 'new_segment.html', '404.html']
-EXCLUDE_IMG_KEYWORDS = ['icon', 'logo', 'cookie', 'dummy', 'shape', 'separador', 'banner-cookies', 'clientes']
+EXCLUDE_IMG_KEYWORDS = ['icon', 'cookie', 'dummy', 'shape', 'separador', 'banner-cookies']
+
+def get_git_lastmod(filepath):
+    try:
+        # Get the last commit date for the file
+        result = subprocess.run(
+            ['git', 'log', '-1', '--format=%Y-%m-%d', '--', filepath],
+            capture_output=True, text=True, check=True
+        )
+        date_str = result.stdout.strip()
+        if date_str:
+            return date_str
+    except Exception:
+        pass
+    return None
 
 def is_eligible_image(img_tag, filepath):
+    # Check explicit data attribute
+    explicit_sitemap = img_tag.get('data-image-sitemap')
+    if explicit_sitemap == 'false':
+        return False
+    if explicit_sitemap == 'true':
+        return True
+        
     src = img_tag.get('src', '')
     alt = img_tag.get('alt', '')
     
     if not src: return False
     
-    # 1. Purely decorative via alt
+    # Exclude decorative
     if alt == "": return False
     
-    # 2. Excluded keywords in filename/path
+    # Main institutional logo shouldn't repeat 20 times. 
+    # Usually the header logo is 'logo-criaacao-entretenimento' inside a link or header.
+    # We can exclude it if it's exactly the main logo, but allow others.
+    if 'logo-criaacao-entretenimento.webp' in src or 'logo-criaacao-entretenimento.png' in src:
+        # Only index the main logo on the homepage
+        if filepath != 'index.html':
+            return False
+            
+    # Keywords
     src_lower = src.lower()
     for kw in EXCLUDE_IMG_KEYWORDS:
         if kw in src_lower:
             return False
             
-    # 3. Check if broken locally (simulated via local path)
+    # Local exist validation for build step
     if not src.startswith('http'):
         if filepath.startswith('solucoes'):
             local_path = os.path.join(os.path.dirname(filepath), '..', src)
@@ -39,12 +68,9 @@ def is_eligible_image(img_tag, filepath):
     return True
 
 def get_canonical_url(filepath, soup):
-    # Try to find canonical tag
     canonical = soup.find('link', rel='canonical')
     if canonical and canonical.get('href'):
         return canonical.get('href')
-        
-    # Fallback deduction
     clean_path = filepath.replace('\\', '/').replace('.html', '')
     if clean_path == 'index':
         return f"{BASE_URL}/"
@@ -57,34 +83,28 @@ def get_absolute_img_url(src):
     return f"{BASE_URL}/{src}"
 
 def generate_sitemap():
-    # Header
     xml = []
     xml.append('<?xml version="1.0" encoding="UTF-8"?>')
     xml.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">')
     
-    today = datetime.now().strftime('%Y-%m-%d')
-    
     for filepath in HTML_FILES:
-        if any(ex in filepath for ex in EXCLUDE_HTML):
-            continue
-            
         with open(filepath, 'r', encoding='utf-8') as f:
             soup = BeautifulSoup(f.read(), 'html.parser')
             
         page_url = get_canonical_url(filepath, soup)
+        lastmod = get_git_lastmod(filepath)
         
-        # Collect unique valid images
         page_images = set()
         for img in soup.find_all('img'):
             if is_eligible_image(img, filepath):
                 abs_src = get_absolute_img_url(img.get('src'))
                 page_images.add(abs_src)
                 
-        # Generate URL block
         xml.append('  <url>')
         xml.append(f'    <loc>{page_url}</loc>')
-        xml.append(f'    <lastmod>{today}</lastmod>') # Only updating lastmod on script run, removing priority/changefreq
-        
+        if lastmod:
+            xml.append(f'    <lastmod>{lastmod}</lastmod>')
+            
         for img_url in sorted(page_images):
             xml.append('    <image:image>')
             xml.append(f'      <image:loc>{img_url}</image:loc>')
@@ -99,4 +119,4 @@ def generate_sitemap():
         
 if __name__ == '__main__':
     generate_sitemap()
-    print("Sitemap gerado com sucesso em sitemap.xml")
+    print("Sitemap gerado com sucesso!")
