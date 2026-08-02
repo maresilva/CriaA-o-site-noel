@@ -7021,21 +7021,26 @@
 
                 @media (max-width: 980px) {
                   .ca-dropdown-menu {
-                    position: static;
-                    background: transparent;
-                    box-shadow: none;
-                    border-top: none;
-                    padding-left: 15px;
-                    margin-top: 0;
-                  }
-
-                  .ca-dropdown-menu::before {
+                    position: static !important;
+                    background: transparent !important;
+                    box-shadow: none !important;
+                    border-top: none !important;
+                    padding-left: 15px !important;
+                    margin-top: 0 !important;
                     display: none;
                   }
 
+                  .ca-dropdown-menu::before {
+                    display: none !important;
+                  }
+
                   .ca-has-dropdown:hover .ca-dropdown-menu,
-                  .ca-has-dropdown.is-active .ca-dropdown-menu {
-                    display: block;
+                  .ca-has-dropdown.is-active .ca-dropdown-menu,
+                  #Side_slide .ca-has-dropdown.is-active .ca-dropdown-menu {
+                    display: block !important;
+                    visibility: visible !important;
+                    opacity: 1 !important;
+                    height: auto !important;
                   }
                 }
               </style>
