@@ -6093,389 +6093,858 @@
         </script>
       </header>
     </div>
-    <!-- MAIN CONTENT: CONTATO -->
+                <!-- MAIN CONTENT: CONTATO -->
     <main id="contato-main">
-      <!-- HERO UNIFICADO -->
-      <section class="ca-inner-hero">
-        <div class="ca-inner-hero-particles"></div>
-        <div class="ca-inner-hero-container">
-          <div class="ca-eyebrow ca-animate-fade-up" style="animation-delay: 100ms;">
-            <div class="ca-eyebrow-line"></div>FALE COM UM ESPECIALISTA<div class="ca-eyebrow-line"></div>
-          </div>
-          <h1 class="ca-hero-title ca-animate-fade-up" style="animation-delay: 200ms;">Vamos criar o próximo
-            <br /><span>Natal inesquecível</span>?</h1>
-          <p class="ca-inner-hero-text ca-animate-fade-up" style="animation-delay: 300ms;">Nossa equipe está pronta para
-            entender as necessidades do seu Shopping e desenhar uma proposta corporativa sob medida para o seu
-            orçamento.</p>
+
+      <!-- HERO CONTATO -->
+      <section class="sol-section sol-hero" style="background: radial-gradient(circle at center, #2b0a12 0%, #1a050a 100%); min-height: 40vh; padding-top: 180px; padding-bottom: 60px;">
+        <div class="sol-container" style="text-align: center;">
+          <div class="sol-title-eyebrow sol-reveal slide-in-up" style="justify-content: center;">FALE COM UM ESPECIALISTA</div>
+          <h1 class="sol-title-main sol-reveal slide-in-up sol-stagger-1" style="font-size: clamp(3rem, 5vw, 4.5rem);">Vamos criar o próximo <br><span>Natal inesquecível</span>?</h1>
+          <p class="sol-text-main sol-reveal slide-in-up sol-stagger-2" style="margin: 0 auto 30px; max-width: 700px;">Nossa equipe está pronta para entender as necessidades do seu Shopping e desenhar uma proposta corporativa sob medida para o seu orçamento.</p>
         </div>
       </section>
+
       <!-- CONTACT SECTION: SPLIT LAYOUT -->
       <style id="ca-contato-style">
         .ca-contato-section {
           position: relative;
-          padding: 80px 20px !important;
-          background: linear-gradient(to bottom, rgba(26, 3, 4, 0.95) 0%, rgba(26, 3, 4, 0.75) 50%, rgba(10, 1, 2, 0.95) 100%), url('assets/images/backgrounds/background-segunda-sessão-shopping-decorado-natal-criaacao-entretenimento.webp') center/cover fixed;
+          padding: 80px 20px 140px 20px;
+          background: linear-gradient(to bottom, rgba(26, 3, 4, 0.95) 0%, rgba(26, 3, 4, 0.75) 50%, rgba(10, 1, 2, 0.95) 100%), url('assets/images/backgrounds/background-segunda-sessão-shopping-decorado-natal-criaacao-entretenimento.png') center/cover fixed;
           overflow: hidden;
-          box-sizing: border-box !important;
-          width: 100%;
         }
 
         .ca-contato-container {
-          width: 100%;
           max-width: 1200px;
           margin: 0 auto;
           position: relative;
           z-index: 10;
           display: grid;
-          grid-template-columns: 1fr 1.2fr;
+          grid-template-columns: 1fr 1.4fr;
           gap: 60px;
           align-items: flex-start;
-          box-sizing: border-box !important;
         }
 
+        /* LEFT SIDE: INFO CARDS */
         .ca-contato-info-grid {
           display: flex;
           flex-direction: column;
           gap: 20px;
-          width: 100%;
-          min-width: 0;
         }
 
-        .ca-card {
-          background: rgba(255, 255, 255, 0.03) !important;
-          border: 1px solid rgba(242, 184, 75, 0.15) !important;
-          backdrop-filter: blur(10px) !important;
-          border-radius: 20px !important;
-          padding: 30px !important;
-          display: flex !important;
-          align-items: flex-start !important;
-          gap: 20px !important;
-          transition: all 0.4s ease !important;
-          box-sizing: border-box !important;
-          width: 100% !important;
+        .ca-contato-card {
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(242, 184, 75, 0.15);
+          backdrop-filter: blur(10px);
+          border-radius: 20px;
+          padding: 30px;
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+          transition: all 0.4s ease;
         }
 
-        .ca-card:hover {
-          background: rgba(255, 255, 255, 0.06) !important;
-          border-color: rgba(242, 184, 75, 0.4) !important;
-          transform: translateX(10px) !important;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+        .ca-contato-card:hover {
+          background: rgba(255, 255, 255, 0.05);
+          border-color: rgba(242, 184, 75, 0.4);
+          transform: translateX(10px);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
         .ca-card-icon {
-          width: 54px !important;
-          height: 54px !important;
-          background: rgba(242, 184, 75, 0.1) !important;
-          border-radius: 50% !important;
-          display: flex !important;
-          align-items: center !important;
-          justify-content: center !important;
-          color: #F2B84B !important;
-          flex-shrink: 0 !important;
-          margin: 0 !important;
+          width: 54px;
+          height: 54px;
+          background: rgba(242, 184, 75, 0.1);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #F2B84B;
+          flex-shrink: 0;
         }
 
-        .ca-card-content h2,
-        .ca-card-content h3,
-        .ca-card-content h4 {
-          color: #FFF !important;
-          font-size: 20px !important;
-          font-weight: 700 !important;
-          margin: 0 0 6px 0 !important;
-          line-height: 1.3 !important;
+        .ca-card-content h3 {
+          color: #FFF;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 6px;
         }
 
         .ca-card-content p {
-          color: rgba(255, 255, 255, 0.8) !important;
-          font-size: 16px !important;
-          line-height: 1.5 !important;
-          margin: 0 !important;
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 15px;
+          line-height: 1.5;
         }
 
         .ca-card-content a {
-          color: #F2B84B !important;
-          text-decoration: none !important;
-          font-weight: 700 !important;
-          transition: color 0.3s ease !important;
+          color: rgba(255, 255, 255, 0.7);
+          text-decoration: none;
+          transition: color 0.3s;
         }
 
         .ca-card-content a:hover {
-          color: #FFF !important;
+          color: #F2B84B;
         }
 
+        /* RIGHT SIDE: FORM */
         .ca-contato-form-wrapper {
-          background: rgba(10, 1, 2, 0.6) !important;
-          border: 1px solid rgba(255, 255, 255, 0.08) !important;
-          backdrop-filter: blur(20px) !important;
-          border-radius: 24px !important;
-          padding: 40px !important;
-          box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4) !important;
-          width: 100% !important;
-          min-width: 0 !important;
-          box-sizing: border-box !important;
+          background: #0a0102;
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 24px;
+          padding: 50px 40px;
+          box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+          position: relative;
+        }
+
+        .ca-contato-form-wrapper::before {
+          content: "";
+          position: absolute;
+          top: 0; left: 0; width: 100%; height: 4px;
+          background: linear-gradient(90deg, transparent, #F2B84B, transparent);
+          border-radius: 24px 24px 0 0;
         }
 
         .ca-form-title {
-          font-size: 24px !important;
-          font-weight: 800 !important;
-          color: #FFF !important;
-          margin: 0 0 8px 0 !important;
+          font-size: 28px;
+          font-weight: 800;
+          color: #FFF;
+          margin-bottom: 10px;
         }
 
         .ca-form-subtitle {
-          color: rgba(255, 255, 255, 0.7) !important;
-          font-size: 15px !important;
-          margin: 0 0 28px 0 !important;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 15px;
+          margin-bottom: 30px;
         }
 
-        .ca-form-header {
-          margin-bottom: 35px !important;
+        /* FORM SECTIONS */
+        .ca-form-section {
+          margin-bottom: 32px;
+          padding-bottom: 24px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
-        .ca-form-header h3 {
-          font-size: 32px !important;
-          font-weight: 800 !important;
-          color: #FFF !important;
-          margin: 0 0 10px 0 !important;
+        .ca-form-section:last-of-type {
+          border-bottom: none;
+          margin-bottom: 24px;
+          padding-bottom: 0;
         }
 
-        .ca-form-header p {
-          color: rgba(255, 255, 255, 0.7) !important;
-          font-size: 16px !important;
-          margin: 0 !important;
+        .ca-form-section-title {
+          color: #F2B84B;
+          font-size: 14px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin-bottom: 20px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
         }
 
-        .ca-form-row {
-          display: grid !important;
-          grid-template-columns: 1fr 1fr !important;
-          gap: 20px !important;
-          margin-bottom: 20px !important;
+        .ca-form-section-title::before {
+          content: "";
+          width: 4px;
+          height: 18px;
+          background: #F2B84B;
+          border-radius: 2px;
         }
 
         .ca-form-group {
-          display: flex !important;
-          flex-direction: column !important;
-          gap: 8px !important;
+          margin-bottom: 20px;
+          position: relative;
+        }
+
+        .ca-form-row {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+
+        .ca-form-row-3 {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 16px;
         }
 
         .ca-form-label {
-          color: #F2B84B !important;
-          font-size: 13px !important;
-          font-weight: 700 !important;
-          text-transform: uppercase !important;
-          letter-spacing: 1px !important;
+          display: block;
+          color: rgba(255, 255, 255, 0.8);
+          font-size: 13px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 8px;
+        }
+
+        .ca-form-label .ca-required {
+          color: #F2B84B;
+          margin-left: 2px;
         }
 
         .ca-form-input {
-          width: 100% !important;
-          background: rgba(255, 255, 255, 0.06) !important;
-          border: 1px solid rgba(255, 255, 255, 0.15) !important;
-          border-radius: 12px !important;
-          padding: 16px 20px !important;
-          color: #FFF !important;
-          font-size: 16px !important;
-          transition: all 0.3s ease !important;
-          font-family: inherit !important;
-          box-sizing: border-box !important;
-        }
-
-        .ca-form-input::placeholder {
-          color: rgba(255, 255, 255, 0.4) !important;
+          width: 100%;
+          background: rgba(255, 255, 255, 0.04);
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          border-radius: 12px;
+          padding: 14px 18px;
+          color: #FFF;
+          font-size: 15px;
+          transition: all 0.3s ease;
+          font-family: inherit;
+          box-sizing: border-box;
         }
 
         .ca-form-input:focus {
-          outline: none !important;
-          border-color: #F2B84B !important;
-          background: rgba(255, 255, 255, 0.1) !important;
-          box-shadow: 0 0 0 4px rgba(242, 184, 75, 0.1) !important;
+          outline: none;
+          background: rgba(255, 255, 255, 0.08);
+          border-color: #F2B84B;
+          box-shadow: 0 0 15px rgba(242, 184, 75, 0.2);
+        }
+
+        .ca-form-input::placeholder {
+          color: rgba(255, 255, 255, 0.25);
+        }
+
+        select.ca-form-input {
+          appearance: none;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23F2B84B' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position: right 16px center;
+          padding-right: 40px;
+          cursor: pointer;
+        }
+
+        select.ca-form-input option {
+          background: #1a050a;
+          color: #FFF;
         }
 
         textarea.ca-form-input {
-          resize: vertical !important;
-          min-height: 140px !important;
+          resize: vertical;
+          min-height: 100px;
         }
 
+        /* CHECKBOX GRID - SERVIÇOS */
+        .ca-checkbox-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 8px;
+        }
+
+        .ca-checkbox-item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 10px 14px;
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          border-radius: 10px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          user-select: none;
+        }
+
+        .ca-checkbox-item:hover {
+          background: rgba(255, 255, 255, 0.05);
+          border-color: rgba(242, 184, 75, 0.3);
+        }
+
+        .ca-checkbox-item.checked {
+          background: rgba(242, 184, 75, 0.08);
+          border-color: rgba(242, 184, 75, 0.5);
+        }
+
+        .ca-checkbox-item input[type="checkbox"] {
+          display: none;
+        }
+
+        .ca-checkbox-custom {
+          width: 20px;
+          height: 20px;
+          border: 2px solid rgba(255, 255, 255, 0.3);
+          border-radius: 5px;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+        }
+
+        .ca-checkbox-item.checked .ca-checkbox-custom {
+          background: #F2B84B;
+          border-color: #F2B84B;
+        }
+
+        .ca-checkbox-custom svg {
+          opacity: 0;
+          transition: opacity 0.2s;
+        }
+
+        .ca-checkbox-item.checked .ca-checkbox-custom svg {
+          opacity: 1;
+        }
+
+        .ca-checkbox-label {
+          color: rgba(255, 255, 255, 0.75);
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .ca-checkbox-item.checked .ca-checkbox-label {
+          color: #FFF;
+        }
+
+        /* SUBMIT BUTTON */
         .ca-form-submit {
-          width: 100% !important;
-          background: linear-gradient(90deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%) !important;
-          background-size: 200% auto !important;
-          color: #1a050a !important;
-          border: none !important;
-          padding: 18px 24px !important;
-          border-radius: 12px !important;
-          font-family: 'Inter', sans-serif !important;
-          font-size: 16px !important;
-          font-weight: 800 !important;
-          text-transform: uppercase !important;
-          letter-spacing: 1px !important;
-          cursor: pointer !important;
-          display: flex !important;
-          justify-content: center !important;
-          align-items: center !important;
-          gap: 12px !important;
-          transition: all 0.4s ease !important;
-          box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2) !important;
+          width: 100%;
+          background: linear-gradient(90deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+          background-size: 200% auto;
+          color: #1a050a;
+          border: none;
+          padding: 18px 30px;
+          border-radius: 12px;
+          font-size: 16px;
+          font-weight: 800;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: all 0.4s ease;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+          margin-top: 8px;
         }
 
         .ca-form-submit:hover {
-          background-position: right center !important;
-          transform: translateY(-2px) !important;
-          box-shadow: 0 15px 30px rgba(212, 175, 55, 0.3) !important;
+          background-position: right center;
+          transform: translateY(-2px);
+          box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
         }
 
-        .ca-form-submit svg {
-          width: 20px !important;
-          height: 20px !important;
+        /* TOAST */
+        .ca-toast {
+          position: fixed;
+          bottom: 30px;
+          left: 50%;
+          transform: translateX(-50%) translateY(100px);
+          background: #0a0102;
+          border: 1px solid rgba(242, 184, 75, 0.4);
+          color: #F2B84B;
+          padding: 16px 28px;
+          border-radius: 12px;
+          font-weight: 700;
+          font-size: 15px;
+          z-index: 99999;
+          opacity: 0;
+          transition: all 0.4s ease;
+          box-shadow: 0 10px 40px rgba(0,0,0,0.6);
         }
 
-        @media (max-width: 991px) {
+        .ca-toast.show {
+          transform: translateX(-50%) translateY(0);
+          opacity: 1;
+        }
+
+        .ca-toast.ca-toast--error {
+          border-color: rgba(255, 82, 82, 0.6);
+          color: #FF5252;
+        }
+
+        .ca-toast.ca-toast--success {
+          border-color: rgba(76, 175, 80, 0.6);
+          color: #4CAF50;
+        }
+
+        /* SUBMIT BUTTON STATES */
+        .ca-form-submit:disabled {
+          opacity: 0.7;
+          cursor: not-allowed;
+          transform: none !important;
+        }
+
+        .ca-form-submit.ca-btn-loading {
+          background: linear-gradient(90deg, #8a7324 0%, #b8a34d 50%, #8a7324 100%);
+          background-size: 200% auto;
+          animation: shimmer 1.5s infinite;
+        }
+
+        @keyframes shimmer {
+          0% { background-position: 0% center; }
+          100% { background-position: 200% center; }
+        }
+
+        .ca-form-submit .ca-btn-spinner {
+          display: none;
+          width: 18px;
+          height: 18px;
+          border: 2px solid rgba(26, 5, 10, 0.3);
+          border-top-color: #1a050a;
+          border-radius: 50%;
+          animation: spin 0.7s linear infinite;
+        }
+
+        .ca-form-submit.ca-btn-loading .ca-btn-spinner { display: inline-block; }
+        .ca-form-submit.ca-btn-loading .ca-btn-text { display: none; }
+
+        @keyframes spin {
+          to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 992px) {
           .ca-contato-container {
-            grid-template-columns: 1fr !important;
-            gap: 40px !important;
+            grid-template-columns: 1fr;
           }
+          .ca-contato-form-wrapper {
+            padding: 40px 24px;
+          }
+        }
 
-          .ca-form-row {
-            grid-template-columns: 1fr !important;
+        @media (max-width: 768px) {
+          .ca-form-row,
+          .ca-form-row-3,
+          .ca-checkbox-grid {
+            grid-template-columns: 1fr;
+          }
+          .ca-form-row,
+          .ca-form-row-3 {
+            gap: 0;
           }
         }
       </style>
+
       <section class="ca-contato-section">
         <div class="ca-contato-container">
+
           <!-- LEFT: Contact Cards -->
           <div class="ca-contato-info-grid sol-reveal slide-in-up sol-stagger-1">
-            <div class="ca-card">
+
+            <div class="ca-contato-card">
               <div class="ca-card-icon">
-                <svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="currentColor"
-                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <div class="ca-card-content">
                 <h3>Sede e Cobertura</h3>
-                <p>Nossa sede está localizada em <strong>Fortaleza, Ceará</strong>, com operações logísticas e
-                  atendimento corporativo em todo o <strong>Brasil</strong>.</p>
+                <p>Nossa sede está localizada em <strong>Fortaleza, Ceará</strong>, com operações logísticas e atendimento corporativo em todo o <strong>Brasil</strong>.</p>
               </div>
             </div>
-            <div class="ca-card">
+
+            <div class="ca-contato-card">
               <div class="ca-card-icon">
-                <svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="currentColor"
-                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                  </path>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </div>
               <div class="ca-card-content">
                 <h3>WhatsApp Comercial</h3>
-                <p><a href="https://wa.me/5585988601400" target="_blank">(85) 98860-1400</a><br />Atendimento rápido e
-                  direto com nossos consultores.</p>
+                <p><a href="https://wa.me/5585988601400" target="_blank">(85) 98860-1400</a><br>Atendimento rápido e direto com nossos consultores.</p>
               </div>
             </div>
-            <div class="ca-card">
+
+            <div class="ca-contato-card">
               <div class="ca-card-icon">
-                <svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="currentColor"
-                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
               <div class="ca-card-content">
                 <h3>E-mail</h3>
-                <p><a href="mailto:marcos.criaacao@gmail.com">marcos.criaacao@gmail.com</a><br />Envie seu projeto
-                  estruturado ou RFP para análise.</p>
+                <p><a href="mailto:marcos.criaacao@gmail.com">marcos.criaacao@gmail.com</a><br>Envie seu projeto estruturado ou RFP para análise.</p>
               </div>
             </div>
-            <div class="ca-card">
+
+            <div class="ca-contato-card">
               <div class="ca-card-icon">
-                <svg aria-hidden="true" focusable="false" fill="none" height="24" stroke="currentColor"
-                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               </div>
               <div class="ca-card-content">
-                <h3>Horário de atendimento</h3>
-                <p>De segunda a sexta-feira<br /><strong>das 8h às 18h</strong></p>
+                <h3>Horário de Atendimento</h3>
+                <p>Segunda a Sexta<br><strong>08:00 às 18:00</strong></p>
               </div>
             </div>
+
           </div>
+
           <!-- RIGHT: Contact Form -->
           <div class="ca-contato-form-wrapper sol-reveal slide-in-up sol-stagger-2">
-            <h2 class="ca-form-title">Solicite uma proposta</h2>
-            <p class="ca-form-subtitle">Preencha os dados abaixo e retornaremos rapidamente.</p>
+            <h2 class="ca-form-title">Solicite uma Proposta</h2>
+            <p class="ca-form-subtitle">Preencha os dados abaixo e nossa equipe retornará com uma proposta personalizada.</p>
+
             <form id="ca-form-contato">
-              <div class="ca-form-row">
-                <div class="ca-form-group">
-                  <label class="ca-form-label" for="ca-nome">Nome completo</label>
-                  <input aria-label="Preencha o campo campo" class="ca-form-input" id="ca-nome" placeholder="Seu nome"
-                    required="" type="text" />
+
+              <!-- SEÇÃO 1: DADOS DO SOLICITANTE -->
+              <div class="ca-form-section">
+                <div class="ca-form-section-title">Dados do Solicitante</div>
+
+                <div class="ca-form-row">
+                  <div class="ca-form-group">
+                    <label class="ca-form-label">Nome Comercial <span class="ca-required">*</span></label>
+                    <input type="text" id="ca-nome-comercial" class="ca-form-input" placeholder="Nome do Shopping ou Empresa" required>
+                  </div>
+                  <div class="ca-form-group">
+                    <label class="ca-form-label">Responsável <span class="ca-required">*</span></label>
+                    <input type="text" id="ca-responsavel" class="ca-form-input" placeholder="Nome do responsável pelo evento" required>
+                  </div>
                 </div>
+
+                <div class="ca-form-row">
+                  <div class="ca-form-group">
+                    <label class="ca-form-label">Cargo</label>
+                    <input type="text" id="ca-cargo" class="ca-form-input" placeholder="Gerente de Marketing, Supervisor, etc.">
+                  </div>
+                  <div class="ca-form-group">
+                    <label class="ca-form-label">Telefone / WhatsApp <span class="ca-required">*</span></label>
+                    <input type="tel" id="ca-telefone" class="ca-form-input" placeholder="(00) 00000-0000" required>
+                  </div>
+                </div>
+
                 <div class="ca-form-group">
-                  <label class="ca-form-label" for="ca-empresa">Shopping / empresa</label>
-                  <input aria-label="Preencha o campo campo" class="ca-form-input" id="ca-empresa"
-                    placeholder="Nome do Shopping" required="" type="text" />
+                  <label class="ca-form-label">E-mail</label>
+                  <input type="email" id="ca-email" class="ca-form-input" placeholder="contato@empresa.com.br">
                 </div>
               </div>
-              <div class="ca-form-row">
-                <div class="ca-form-group">
-                  <label class="ca-form-label" for="ca-telefone">Telefone / WhatsApp</label>
-                  <input aria-label="Preencha o campo campo" class="ca-form-input" id="ca-telefone"
-                    placeholder="(00) 00000-0000" required="" type="tel" />
+
+              <!-- SEÇÃO 2: DADOS DO EVENTO -->
+              <div class="ca-form-section">
+                <div class="ca-form-section-title">Dados do Evento</div>
+
+                <div class="ca-form-row">
+                  <div class="ca-form-group">
+                    <label class="ca-form-label">Data Inicial <span class="ca-required">*</span></label>
+                    <input type="date" id="ca-data-inicio" class="ca-form-input" required>
+                  </div>
+                  <div class="ca-form-group">
+                    <label class="ca-form-label">Data Término <span class="ca-required">*</span></label>
+                    <input type="date" id="ca-data-termino" class="ca-form-input" required>
+                  </div>
                 </div>
+
+                <div class="ca-form-row">
+                  <div class="ca-form-group">
+                    <label class="ca-form-label">Horário de Início</label>
+                    <input type="time" id="ca-hora-inicio" class="ca-form-input">
+                  </div>
+                  <div class="ca-form-group">
+                    <label class="ca-form-label">Horário de Término</label>
+                    <input type="time" id="ca-hora-termino" class="ca-form-input">
+                  </div>
+                </div>
+
                 <div class="ca-form-group">
-                  <label class="ca-form-label" for="ca-cargo">Cargo</label>
-                  <input aria-label="Preencha o campo campo" class="ca-form-input" id="ca-cargo"
-                    placeholder="Ex.: gerente de marketing ou supervisor" type="text" />
+                  <label class="ca-form-label">Cidade / Estado <span class="ca-required">*</span></label>
+                  <input type="text" id="ca-cidade-estado" class="ca-form-input" placeholder="Ex: Fortaleza, Ceará" required>
                 </div>
               </div>
-              <div class="ca-form-group">
-                <label class="ca-form-label" for="ca-mensagem">Mensagem / escopo do projeto</label>
-                <textarea aria-label="Preencha o campo campo" class="ca-form-input" id="ca-mensagem"
-                  placeholder="Fale um pouco sobre o que você imagina para o Natal do seu Shopping..."
-                  required=""></textarea>
+
+              <!-- SEÇÃO 3: SERVIÇOS E PERSONAGENS -->
+              <div class="ca-form-section">
+                <div class="ca-form-section-title">Serviços e Personagens de Interesse</div>
+                <p style="color: rgba(255,255,255,0.4); font-size: 13px; margin-bottom: 16px; margin-top: -8px;">Marque todos os itens que deseja incluir no seu evento.</p>
+
+                <div class="ca-checkbox-grid" id="ca-servicos-grid">
+
+                  <!-- Personagens -->
+                  <label class="ca-checkbox-item" data-value="Papai Noel">
+                    <input type="checkbox"><div class="ca-checkbox-custom"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a050a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <span class="ca-checkbox-label">🎅 Papai Noel</span>
+                  </label>
+
+                  <label class="ca-checkbox-item" data-value="Mamãe Noel">
+                    <input type="checkbox"><div class="ca-checkbox-custom"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a050a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <span class="ca-checkbox-label">🤶 Mamãe Noel</span>
+                  </label>
+
+                  <label class="ca-checkbox-item" data-value="Noeletes">
+                    <input type="checkbox"><div class="ca-checkbox-custom"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a050a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <span class="ca-checkbox-label">✨ Noeletes</span>
+                  </label>
+
+                  <label class="ca-checkbox-item" data-value="Duendes">
+                    <input type="checkbox"><div class="ca-checkbox-custom"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a050a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <span class="ca-checkbox-label">🧝 Duendes</span>
+                  </label>
+
+                  <!-- Estrutura -->
+                  <label class="ca-checkbox-item" data-value="Backdrop com poltrona, pufs e tapete">
+                    <input type="checkbox"><div class="ca-checkbox-custom"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a050a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <span class="ca-checkbox-label">🛋️ Backdrop com poltrona, pufs e tapete</span>
+                  </label>
+
+                  <label class="ca-checkbox-item" data-value="Tire fotos com revelação na hora">
+                    <input type="checkbox"><div class="ca-checkbox-custom"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a050a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <span class="ca-checkbox-label">📸 Tire fotos com revelação na hora</span>
+                  </label>
+
+                  <!-- Atrações e Equipe -->
+                  <label class="ca-checkbox-item" data-value="Ação Temática">
+                    <input type="checkbox"><div class="ca-checkbox-custom"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a050a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <span class="ca-checkbox-label">🎭 Ação Temática</span>
+                  </label>
+
+                  <label class="ca-checkbox-item" data-value="Brindes diversos">
+                    <input type="checkbox"><div class="ca-checkbox-custom"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a050a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <span class="ca-checkbox-label">🎁 Brindes diversos</span>
+                  </label>
+
+                  <label class="ca-checkbox-item" data-value="Monitores">
+                    <input type="checkbox"><div class="ca-checkbox-custom"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a050a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <span class="ca-checkbox-label">👤 Monitores</span>
+                  </label>
+
+                  <label class="ca-checkbox-item" data-value="Recreadores">
+                    <input type="checkbox"><div class="ca-checkbox-custom"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a050a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <span class="ca-checkbox-label">🎪 Recreadores</span>
+                  </label>
+
+                  <label class="ca-checkbox-item" data-value="Contadores de histórias">
+                    <input type="checkbox"><div class="ca-checkbox-custom"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a050a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <span class="ca-checkbox-label">📖 Contadores de histórias</span>
+                  </label>
+
+                  <label class="ca-checkbox-item" data-value="Recepcionistas">
+                    <input type="checkbox"><div class="ca-checkbox-custom"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a050a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <span class="ca-checkbox-label">🛎️ Recepcionistas</span>
+                  </label>
+                </div>
               </div>
-              <button class="ca-form-submit" type="submit">
-                <svg aria-hidden="true" focusable="false" fill="none" height="20" stroke="currentColor"
-                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <line x1="22" x2="11" y1="2" y2="13"></line>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                </svg>
-                Enviar solicitação
+
+              <!-- SEÇÃO 4: OBSERVAÇÕES -->
+              <div class="ca-form-section">
+                <div class="ca-form-section-title">Observações Adicionais</div>
+                <div class="ca-form-group" style="margin-bottom:0;">
+                  <textarea id="ca-mensagem" class="ca-form-input" placeholder="Descreva detalhes adicionais, necessidades específicas ou qualquer outra informação relevante para o seu evento..."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="ca-form-submit" id="ca-btn-submit">
+                <span class="ca-btn-spinner"></span>
+                <svg class="ca-btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <span class="ca-btn-text">Enviar Solicitação</span>
               </button>
+
+              <p style="text-align:center; color: rgba(255,255,255,0.3); font-size:12px; margin-top:16px;">Sua solicitação será enviada por e-mail e WhatsApp para nosso time comercial.</p>
             </form>
-            <!-- Script to handle form to WhatsApp -->
+
+            <!-- Toast Notification -->
+            <div class="ca-toast" id="ca-toast"></div>
+
+            <!-- Script: checkbox toggle + dual send (email + WhatsApp) -->
             <script>
-              document.getElementById('ca-form-contato').addEventListener('submit', function (e) {
-                e.preventDefault();
+              (function() {
+                // =============================================
+                // Web3Forms config — crie sua chave gratuita em
+                // https://web3forms.com/ e substitua abaixo
+                // =============================================
+                var WEB3FORMS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY'; // <-- TROQUE AQUI
 
-                const nome = document.getElementById('ca-nome').value;
-                const empresa = document.getElementById('ca-empresa').value;
-                const telefone = document.getElementById('ca-telefone').value;
-                const cargo = document.getElementById('ca-cargo').value;
-                const mensagem = document.getElementById('ca-mensagem').value;
+                // --- Checkbox toggle behavior ---
+                var grid = document.getElementById('ca-servicos-grid');
+                if (grid) {
+                  grid.addEventListener('click', function(e) {
+                    var item = e.target.closest('.ca-checkbox-item');
+                    if (!item) return;
+                    var cb = item.querySelector('input[type="checkbox"]');
+                    cb.checked = !cb.checked;
+                    item.classList.toggle('checked', cb.checked);
+                  });
+                }
 
-                let texto = `*Olá! Gostaria de solicitar uma proposta comercial.*\n\n`;
-                texto += `*Nome:* ${nome}\n`;
-                if (cargo) texto += `*Cargo:* ${cargo}\n`;
-                texto += `*Shopping/Empresa:* ${empresa}\n`;
-                texto += `*Telefone:* ${telefone}\n\n`;
-                texto += `*Detalhes do Projeto:*\n${mensagem}`;
+                // --- Toast helper ---
+                function showToast(msg, type) {
+                  var toast = document.getElementById('ca-toast');
+                  if (!toast) return;
+                  toast.textContent = msg;
+                  toast.className = 'ca-toast';
+                  if (type === 'error') toast.classList.add('ca-toast--error');
+                  if (type === 'success') toast.classList.add('ca-toast--success');
+                  toast.classList.add('show');
+                  clearTimeout(toast._t);
+                  toast._t = setTimeout(function() {
+                    toast.classList.remove('show');
+                  }, 4000);
+                }
 
-                const encodedText = encodeURIComponent(texto);
-                const whatsappUrl = `https://wa.me/5585988601400?text=${encodedText}`;
+                // --- Disable / enable button ---
+                function setButtonState(btn, state) {
+                  if (!btn) return;
+                  btn.className = 'ca-form-submit';
+                  if (state === 'loading') {
+                    btn.classList.add('ca-btn-loading');
+                    btn.disabled = true;
+                  } else {
+                    btn.disabled = false;
+                  }
+                }
 
-                window.open(whatsappUrl, '_blank');
-              });
+                // --- Get selected services ---
+                function getServicos() {
+                  var items = document.querySelectorAll('#ca-servicos-grid .ca-checkbox-item.checked');
+                  var list = [];
+                  items.forEach(function(item) { list.push(item.getAttribute('data-value')); });
+                  return list;
+                }
+
+                // --- Build plain-text email body ---
+                function buildEmailBody(data) {
+                  var body = 'NOVA SOLICITAÇÃO DE PROPOSTA — CRIA AÇÃO ENTRETENIMENTO\n';
+                  body += '========================================================\n\n';
+
+                  body += '--- DADOS DO SOLICITANTE ---\n';
+                  body += 'Nome Comercial: ' + data.nomeComercial + '\n';
+                  body += 'Responsável:    ' + data.responsavel + '\n';
+                  if (data.cargo)    body += 'Cargo:          ' + data.cargo + '\n';
+                  body += 'Telefone:       ' + data.telefone + '\n';
+                  if (data.email)    body += 'E-mail:         ' + data.email + '\n';
+
+                  body += '\n--- DADOS DO EVENTO ---\n';
+                  body += 'Data Início:    ' + data.dataInicio + '\n';
+                  body += 'Data Término:   ' + data.dataTermino + '\n';
+                  if (data.horaInicio)  body += 'Início:         ' + data.horaInicio + '\n';
+                  if (data.horaTermino) body += 'Término:        ' + data.horaTermino + '\n';
+                  body += 'Cidade/Estado:  ' + data.cidadeEstado + '\n';
+
+                  if (data.servicos.length > 0) {
+                    body += '\n--- SERVIÇOS SOLICITADOS ---\n';
+                    data.servicos.forEach(function(s) { body += '• ' + s + '\n'; });
+                  }
+
+                  if (data.mensagem) {
+                    body += '\n--- OBSERVAÇÕES ---\n';
+                    body += data.mensagem + '\n';
+                  }
+
+                  body += '\n========================================================\n';
+                  body += 'Enviado pelo formulário de contato do site criaacao.com\n';
+                  return body;
+                }
+
+                // --- Send via Web3Forms API ---
+                function sendEmail(data) {
+                  if (!WEB3FORMS_KEY || WEB3FORMS_KEY === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+                    // Key not configured — skip silently, WhatsApp still works
+                    return Promise.resolve({ ok: false, skipped: true });
+                  }
+
+                  var formData = new FormData();
+                  formData.append('access_key', WEB3FORMS_KEY);
+                  formData.append('subject', 'Novo Contato — ' + data.nomeComercial + ' (' + data.cidadeEstado + ')');
+                  formData.append('from_name', data.responsavel);
+                  formData.append('from_email', data.email || 'formulario@criaacao.com');
+                  formData.append('reply_to', data.email || '');
+                  formData.append('message', buildEmailBody(data));
+                  formData.append('Nome_Comercial', data.nomeComercial);
+                  formData.append('Responsavel', data.responsavel);
+                  formData.append('Cargo', data.cargo);
+                  formData.append('Telefone', data.telefone);
+                  formData.append('Data_Inicio', data.dataInicio);
+                  formData.append('Data_Termino', data.dataTermino);
+                  formData.append('Hora_Inicio', data.horaInicio);
+                  formData.append('Hora_Termino', data.horaTermino);
+                  formData.append('Cidade_Estado', data.cidadeEstado);
+                  formData.append('Servicos', data.servicos.join(', '));
+                  formData.append('Observacoes', data.mensagem);
+
+                  return fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                  }).then(function(res) { return res.json(); });
+                }
+
+                // --- Build WhatsApp URL ---
+                function buildWhatsAppUrl(data) {
+                  var texto = '*📋 NOVA SOLICITAÇÃO DE PROPOSTA — CRIA AÇÃO ENTRETENIMENTO*\n\n';
+                  texto += '*━━━ DADOS DO SOLICITANTE ━━━*\n';
+                  texto += '🏢 *Nome Comercial:* ' + data.nomeComercial + '\n';
+                  texto += '👤 *Responsável:* ' + data.responsavel + '\n';
+                  if (data.cargo) texto += '💼 *Cargo:* ' + data.cargo + '\n';
+                  texto += '📱 *Telefone:* ' + data.telefone + '\n';
+                  if (data.email) texto += '📧 *E-mail:* ' + data.email + '\n';
+
+                  texto += '\n*━━━ DADOS DO EVENTO ━━━*\n';
+                  texto += '📅 *Data Início:* ' + data.dataInicio + '\n';
+                  texto += '📅 *Data Término:* ' + data.dataTermino + '\n';
+                  if (data.horaInicio) texto += '⏰ *Início:* ' + data.horaInicio + '\n';
+                  if (data.horaTermino) texto += '⏳ *Término:* ' + data.horaTermino + '\n';
+                  texto += '📍 *Cidade/Estado:* ' + data.cidadeEstado + '\n';
+
+                  if (data.servicos.length > 0) {
+                    texto += '\n*━━━ SERVIÇOS SOLICITADOS ━━━*\n';
+                    data.servicos.forEach(function(s) { texto += '✅ ' + s + '\n'; });
+                  }
+
+                  if (data.mensagem) {
+                    texto += '\n*━━━ OBSERVAÇÕES ━━━*\n' + data.mensagem + '\n';
+                  }
+
+                  texto += '\n━━━━━━━━━━━━━━━━━━━━\n';
+                  texto += '_Enviado pelo formulário de contato do site._';
+
+                  return 'https://wa.me/5585988601400?text=' + encodeURIComponent(texto);
+                }
+
+                // --- Form submit ---
+                var form = document.getElementById('ca-form-contato');
+                if (form) {
+                  form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    var data = {
+                      nomeComercial: (document.getElementById('ca-nome-comercial')?.value || '').trim(),
+                      responsavel:   (document.getElementById('ca-responsavel')?.value || '').trim(),
+                      cargo:         (document.getElementById('ca-cargo')?.value || '').trim(),
+                      telefone:      (document.getElementById('ca-telefone')?.value || '').trim(),
+                      email:         (document.getElementById('ca-email')?.value || '').trim(),
+                      dataInicio:    (document.getElementById('ca-data-inicio')?.value || '').trim(),
+                      dataTermino:   (document.getElementById('ca-data-termino')?.value || '').trim(),
+                      horaInicio:    (document.getElementById('ca-hora-inicio')?.value || '').trim(),
+                      horaTermino:   (document.getElementById('ca-hora-termino')?.value || '').trim(),
+                      cidadeEstado:  (document.getElementById('ca-cidade-estado')?.value || '').trim(),
+                      mensagem:      (document.getElementById('ca-mensagem')?.value || '').trim(),
+                      servicos:      getServicos()
+                    };
+
+                    // Validate required fields
+                    if (!data.nomeComercial || !data.responsavel || !data.telefone || !data.dataInicio || !data.dataTermino || !data.cidadeEstado) {
+                      showToast('⚠️ Preencha todos os campos obrigatórios (*) antes de enviar.', 'error');
+                      return;
+                    }
+
+                    var btn = document.getElementById('ca-btn-submit');
+                    setButtonState(btn, 'loading');
+                    showToast('📨 Enviando sua solicitação...');
+
+                    // Fire BOTH in parallel: email + WhatsApp
+                    Promise.all([
+                      sendEmail(data),
+                      Promise.resolve().then(function() {
+                        // WhatsApp opens after a short delay so email has time to fire
+                        var waUrl = buildWhatsAppUrl(data);
+                        setTimeout(function() { window.open(waUrl, '_blank'); }, 800);
+                        return { ok: true, channel: 'whatsapp' };
+                      })
+                    ]).then(function(results) {
+                      var emailResult = results[0];
+
+                      if (emailResult && emailResult.success) {
+                        showToast('✅ Solicitação enviada por e-mail e WhatsApp! Retornaremos em breve.', 'success');
+                      } else if (emailResult && emailResult.skipped) {
+                        showToast('✅ Solicitação enviada via WhatsApp! Configure o Web3Forms para ativar o envio por e-mail.', 'success');
+                      } else {
+                        showToast('⚠️ Erro ao enviar e-mail, mas o WhatsApp foi aberto. Se preferir, envie diretamente para marcos.criaacao@gmail.com', 'error');
+                      }
+
+                      setButtonState(btn, 'default');
+                    }).catch(function() {
+                      showToast('⚠️ Algo deu errado. Tente novamente ou entre em contato diretamente pelo WhatsApp.', 'error');
+                      setButtonState(btn, 'default');
+                    });
+                  });
+                }
+              })();
             </script>
           </div>
+
         </div>
       </section>
+
       <!-- JS Animação Reveal -->
       <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -6494,62 +6963,11 @@
           revealOnScroll();
         });
       </script>
-      <!-- TRABALHE CONOSCO CTA -->
-      <section class="ca-section" style="background-color: var(--ca-primary-950); padding: 80px 0; overflow: hidden;">
-        <div class="ca-container" style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 2;">
-          <div class="ca-trabalhe-conosco-grid"
-            style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
-            <!-- Coluna Esquerda: Texto e Botão -->
-            <div class="sol-reveal slide-in-left">
-              <div class="ca-eyebrow" style="justify-content: flex-start;">
-                <div class="ca-eyebrow-line"></div>BANCO DE TALENTOS
-              </div>
-              <h2 class="ca-title sol-reveal slide-in-up sol-stagger-1"
-                style="color: var(--ca-white); margin-bottom: 24px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; text-align: left;">
-                Faça parte da equipe que cria <span style="color: var(--ca-gold-500);">experiências
-                  inesquecíveis.</span>
-              </h2>
-              <p class="sol-reveal slide-in-up sol-stagger-2"
-                style="color: var(--ca-cream-200); margin-bottom: 16px; font-size: 1.125rem; text-align: left;">
-                Todos os anos reunimos profissionais talentosos para atuar em projetos natalinos realizados em todo o
-                Brasil.
-              </p>
-              <p class="sol-reveal slide-in-up sol-stagger-3"
-                style="color: var(--ca-cream-200); margin-bottom: 40px; font-size: 1.125rem; text-align: left;">
-                Se você é Papai Noel, Mamãe Noel, personagem temático, fotógrafo, produtor, recreador, recepcionista ou
-                deseja integrar nossa equipe operacional, queremos conhecer seu perfil.<br /><br />Cadastre-se em nosso
-                banco de talentos.
-              </p>
-              <div class="sol-reveal slide-in-up sol-stagger-4" style="text-align: left;">
-                <a class="ca-button-secondary" href="./trabalhe-conosco">Cadastrar currículo</a>
-              </div>
-            </div>
-            <!-- Coluna Direita: Imagem -->
-            <div class="sol-reveal slide-in-right sol-stagger-2" style="position: relative;">
-              <div
-                style="position: absolute; inset: -20px; background: radial-gradient(circle at center, rgba(242, 184, 75, 0.15) 0%, transparent 70%); z-index: 1;">
-              </div>
-              <div
-                style="border-radius: 24px; overflow: hidden; border: 1px solid rgba(242, 184, 75, 0.2); position: relative; z-index: 2; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
-                <img alt="Equipe CriaAção" height="1024" loading="lazy" onmouseout="this.style.transform='scale(1.05)'"
-                  onmouseover="this.style.transform='scale(1)'"
-                  src="assets/images/gallery/equipe-criaacao-trabalhe-conosco.webp"
-                  style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 4/3; transform: scale(1.05); transition: transform 0.5s ease;"
-                  width="1024" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <style>
-        @media(max-width: 992px) {
-          .ca-trabalhe-conosco-grid {
-            grid-template-columns: 1fr !important;
-            gap: 40px !important;
-          }
-        }
-      </style>
+
     </main>
+
+
+
 <footer class="ca-footer" role="contentinfo" aria-label="Rodapé institucional">
     <div class="ca-footer-container">
       <div class="ca-footer-grid">
@@ -6989,3 +7407,5 @@
 </body>
 
 </html>
+
+

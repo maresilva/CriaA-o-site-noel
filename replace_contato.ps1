@@ -1,5 +1,5 @@
 $html = Get-Content -Path contato.html -Raw -Encoding UTF8
-$start = '<!-- MAIN CONTENT: SOLUCOES -->'
+$start = '<!-- MAIN CONTENT: CONTATO -->'
 $end = '</main>'
 $startIndex = $html.IndexOf($start)
 $endIndex = $html.IndexOf($end, $startIndex) + $end.Length
