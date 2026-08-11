@@ -703,6 +703,82 @@
         border: 2px solid currentColor;
       }
     }
+
+    /* ==============================================
+       VIDEO MODAL
+    =============================================== */
+    .ca-video-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: rgba(0, 0, 0, 0.92);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.35s ease, visibility 0.35s ease;
+    }
+
+    .ca-video-modal.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .ca-video-modal-inner {
+      position: relative;
+      width: 100%;
+      max-width: 960px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(242, 184, 75, 0.2);
+      transform: scale(0.9);
+      transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .ca-video-modal.is-open .ca-video-modal-inner {
+      transform: scale(1);
+    }
+
+    .ca-video-modal video {
+      width: 100%;
+      display: block;
+      border-radius: 16px;
+    }
+
+    .ca-video-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 42px;
+      height: 42px;
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      color: #FFF;
+      font-size: 22px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 2;
+      backdrop-filter: blur(4px);
+      line-height: 1;
+    }
+
+    .ca-video-close:hover {
+      background: rgba(242, 184, 75, 0.2);
+      border-color: #F2B84B;
+      color: #F2B84B;
+    }
+
+    /* Prevent body scroll when modal is open */
+    body.ca-no-scroll {
+      overflow: hidden;
+    }
   </style>
   <style id="ca-a11y-contrast">
     /* Acessibilidade: Melhorias de contraste (WCAG 1.4.3 - AA ratio 4.5:1) */
@@ -1522,7 +1598,7 @@
                 <rect x="14" y="14" width="7" height="7"></rect>
                 <rect x="3" y="14" width="7" height="7"></rect>
               </svg> <span class="hide-mobile">CONHEÇA NOSSAS&nbsp;</span>SOLUÇÕES</a>
-            <a class="ca-button-secondary" href="#video">
+            <a class="ca-button-secondary js-video-trigger" href="javascript:void(0)">
               <svg aria-hidden="true" focusable="false" fill="none" height="16" stroke="currentColor"
                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 style="margin-right:4px; margin-top:-2px" viewBox="0 0 24 24" width="16"
@@ -6061,6 +6137,54 @@
         });
       }
     });
+  </script>
+
+  <!-- Video Modal -->
+  <div class="ca-video-modal" id="ca-video-modal" role="dialog" aria-modal="true" aria-label="Vídeo CriaAção Entretenimento">
+    <div class="ca-video-modal-inner">
+      <button class="ca-video-close" id="ca-video-close" aria-label="Fechar vídeo">&#x2715;</button>
+      <video id="ca-video-player" controls preload="metadata" playsinline>
+        <source src="assets/images/hero/video-home-papai-noel.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var modal = document.getElementById('ca-video-modal');
+      var player = document.getElementById('ca-video-player');
+      var closeBtn = document.getElementById('ca-video-close');
+      var trigger = document.querySelector('.js-video-trigger');
+      var body = document.body;
+
+      function openModal() {
+        modal.classList.add('is-open');
+        body.classList.add('ca-no-scroll');
+        player.play().catch(function() {});
+      }
+
+      function closeModal() {
+        modal.classList.remove('is-open');
+        body.classList.remove('ca-no-scroll');
+        player.pause();
+      }
+
+      if (trigger) { trigger.addEventListener('click', openModal); }
+      if (closeBtn) { closeBtn.addEventListener('click', closeModal); }
+
+      // Close on backdrop click
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) closeModal();
+      });
+
+      // Close on Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('is-open')) {
+          closeModal();
+        }
+      });
+    })();
   </script>
 
 </body>
